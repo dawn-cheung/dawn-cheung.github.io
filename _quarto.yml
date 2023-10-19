@@ -8,7 +8,8 @@ website:
     left:
       - href: index.qmd #to hyperlink the file
         text: Home #to change the name of the tab
-      - about.qmd
+      - href: about.qmd
+        text: About
 
 format:
   html:
