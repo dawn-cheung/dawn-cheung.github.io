@@ -4,7 +4,7 @@ title: "dawn-cheung"
 
 *Work in progress for final project*
 
-```{r, eval=TRUE,echo=TRUE}
+```{r, eval=TRUE,echo=FALSE}
 library(tidyverse)
 library(tidyverse)
 library(ggplot2)
