@@ -3,13 +3,13 @@ project:
   output-dir: docs
 
 website:
-  title: "stressed, depressed and horrifically dressed"
+  title: "Placeholders!"
   navbar:
     left:
       - href: index.qmd #to hyperlink the file
-        text: Home #to change the name of the tab
+        text: Visualisations #to change the name of the tab
       - href: about.qmd
-        text: About
+        text: Write Up
 
 format:
   html:

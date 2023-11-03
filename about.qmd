@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "Write Up"
 ---
 
 About this site
@@ -8,6 +8,5 @@ About this site
 1 + 1
 ```
 
-not much here\
-NESSO DEPRESSOn\
+\
 \

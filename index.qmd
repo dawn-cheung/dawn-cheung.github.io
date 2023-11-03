@@ -2,12 +2,75 @@
 title: "dawn-cheung"
 ---
 
-This is a **Quarto** website.
+*Work in progress for final project*
 
-This is the home page. Click on "About" for the about page (theres not much there tho)
+```{r, eval=TRUE,echo=TRUE}
+library(tidyverse)
+library(tidyverse)
+library(ggplot2)
+library(maps)
+library(sf)
+library(dplyr)
+library(countrycode)
 
-```{r}
-1 + 1
+# Import the data with coordinates
+world_map <- map_data("world")
+world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
+accesstonet <- read.csv("accesstointernet.csv")
+netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
+netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv")
+
+#TO MAKE A FUNCTION FOR THE SWEET BROWNIE POINTS
+#data cleaning for access to net
+imstupid <- accesstonet %>%
+   pivot_longer(
+    cols = X1990:X2022,
+    names_to = "Xyear",
+    values_to = "percentaccess") %>%
+  rename(region = Country.Code)
+
+#data cleaning for speed of net
+imhungry <- netspeed %>%
+   pivot_longer(
+    cols = D2017:D2023,
+    names_to = "Dyear",
+    values_to = "meandownloadspeed") %>%
+  rename(region = Country.Code)
+
+#data cleaning for price of net
+imtired <- netspeed %>% #im ok i swear its just 2.30am 
+   pivot_longer(
+    cols = D2017:D2023,
+    names_to = "Dyear",
+    values_to = "meandownloadspeed") %>%
+  rename(region = Country.Code)
+
+#do i get brownie points if i make that a function,, sigh more work for me ig
+
+yearnetspecs <- imstupid %>% filter(Xyear == "X2020")
+sotired_map <- left_join(world_map, yearnetspecs, by = "region")
+
+#group = group connects the points in the correct order
+ggplot(sotired_map, aes(long, lat, group = group))+
+  geom_polygon(aes(fill = percentaccess), color = "white", size = 0.03)+
+  scale_fill_viridis_c(option = "B")
+
+ggplot(sotired_map, aes(long, lat, group = group))+
+  geom_polygon(aes(fill = percentaccess), color = "white", size = 0.03)+
+  scale_fill_viridis_c(option = "B")
+
+econineq <- read.csv("EconomicInequality.csv")
+GINIvaluesyear <- econineq %>%
+  filter(year == 2020) %>%
+  #select(gini, c3) %>%
+  rename(region = c3)
+
+datascatter <- left_join(GINIvaluesyear, yearnetspecs, by = "region")
+
+datascatter %>% 
+        drop_na(percentaccess) %>%
+  ggplot(data = datascatter, mapping = aes(x = gini, y = percentaccess, colour = gdp)) +
+  geom_point()
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
