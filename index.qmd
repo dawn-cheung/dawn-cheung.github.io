@@ -4,15 +4,17 @@ title: "dawn-cheung"
 
 *Work in progress for final project*
 
-```{r, eval=TRUE,echo=FALSE, warning=FALSE, message=FALSE}
-#remove all vent commenst when setting echo to true
-
+```{r, eval=TRUE,echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 12}
+#remove all non-pg13 commenst when setting echo to true
+#idea for shiny: have 2 graphs side by side where you can choose which time periods you want to compare with
 library(tidyverse)
 library(ggplot2)
 library(maps)
 library(sf)
 library(dplyr)
 library(countrycode)
+library(shiny)
+library(ggpubr)
 
 # Import the data with coordinates
 world_map <- map_data("world")
@@ -56,8 +58,8 @@ sostupid_map <- left_join(world_map, accessyear, by = "region")
 #filter by year
 speedyear <- imhungry %>% filter(Dyear == "D2020")
 #filter by year AND download speed: speedyear <- imhungry %>% filter(Dyear == "D2020", meandownloadspeed<70)
-#RESET ISO CODES (applies to priceyear as well)
-world_map$region <- countrycode(world_map$region, "iso3c", "iso2c")
+
+world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES (applies to priceyear as well)
 #join internet download speed (Mbps) with world map
 sohungry_map <- left_join(world_map, speedyear, by = "region")
 
@@ -70,21 +72,21 @@ sohungry_map$meandownloadspeed <- as.numeric(sohungry_map$meandownloadspeed)
 sotired_map$meanprice <- as.numeric(sotired_map$meanprice)
 
 #group = group connects the points in the correct order
-ggplot(sostupid_map, aes(long, lat, group = group))+
-  geom_polygon(aes(fill = percentaccess), color = "white", size = 0.03)+
-  scale_fill_viridis_c(option = "B")
+mapplotting <- function(mapdataset, filldata, colourscheme) {
+  ggplot(mapdataset, aes(long, lat, group = group)) +
+    geom_polygon(aes(fill = filldata), color = "white", size = 0.03) +
+    scale_fill_viridis_c(option = colourscheme) +
+    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
+}
 
-ggplot(sohungry_map, aes(long, lat, group = group))+
-  geom_polygon(aes(fill = meandownloadspeed), color = "white", size = 0.03)+
-  scale_fill_viridis_c(option = "C")
-
-ggplot(sotired_map, aes(long, lat, group = group))+
-  geom_polygon(aes(fill = meanprice), color = "white", size = 0.03)+
-  scale_fill_viridis_c(option = "C")
+mapplotting(sostupid_map, sostupid_map$percentaccess, "B")
+mapplotting(sohungry_map, sohungry_map$meandownloadspeed, "C")
+mapplotting(sotired_map, sotired_map$meanprice, "C")
 
 econineq <- read.csv("EconomicInequality.csv")
 gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv") %>% rename(year = Year) #ISO3 used!
-desi <- read.csv("desi-data.csv") #need to clean this data
+desidata <- read.csv("desi-data.csv") #ISO2 used!
+
 GINIvaluesyearc3 <- econineq %>%
   filter(year == 2020) %>%
   #select(gini, c3) %>%
@@ -95,31 +97,42 @@ GINIvaluesyearc2 <- econineq %>%
   #select(gini, c3) %>%
   rename(region = c2)
 
+desi <- desidata %>%
+  filter(period == "desi_2020") %>%
+  #select(gini, c2) %>%
+  rename(region = country)
+
 gdpPERCAPITA <- gdpPERCAPITA %>%
   filter(year == 2020) %>%
   #select(gini, c3) %>%
   rename(region = Code)
 
 accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region") %>%
-  left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y 
-head(accessscatter)
+  left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y [ADD TO DIARY ENTRY]
+options(repr.plot.width = 10, repr.plot.height =4)
 accessscatter %>% 
         drop_na(percentaccess) %>%
-  ggplot(data = accessscatter, mapping = aes(x = gdp, y = percentaccess, colour = gini)) +
-  geom_point()
+  ggplot(data = accessscatter, mapping = aes(x = percentaccess, y = log(gdp), colour = gini)) +
+  geom_point() + geom_smooth(method="lm", col="black")
+
+accessscatter %>% 
+        drop_na(percentaccess) %>%
+  ggplot(data = accessscatter, mapping = aes(x = log(percentaccess), y = gdp, colour = gini)) +
+  geom_point() + geom_smooth(method="lm", col="black")
 
 gdpPERCAPITA$region <- countrycode(gdpPERCAPITA$region, "iso3c", "iso2c") #converting ISO3 to ISO2
 speedscatter <- left_join(GINIvaluesyearc2, speedyear, by = "region") %>%
   left_join(. , gdpPERCAPITA, by = "region")
-head(speedscatter)
+
+options(repr.plot.width = 10, repr.plot.height =3) 
 speedscatter %>% 
         drop_na(meandownloadspeed) %>%
   ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = as.numeric(meandownloadspeed), colour = gini)) +
-  geom_point()
+  geom_point() + geom_smooth(method="lm", col="black")
 
 speedscatter %>% 
         drop_na(meandownloadspeed) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) +
+  ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(meandownloadspeed), colour = region_wb)) +
   geom_point()
 
 pricescatter <- left_join(GINIvaluesyearc2, priceyear, by = "region") %>%
@@ -127,12 +140,12 @@ pricescatter <- left_join(GINIvaluesyearc2, priceyear, by = "region") %>%
 pricescatter %>% 
         drop_na(meanprice) %>%
   ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = GDP.per.capita, colour = gini)) +
-  geom_point()
+  geom_point() + geom_smooth(method="lm", col="black")
 
 pricescatter %>% 
         drop_na(meanprice) %>%
   ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = gdp, colour = region_wb)) +
-  geom_point()
+  geom_point() + geom_smooth(method="lm", col="black")
 
 accessyear$region <- countrycode(accessyear$region, "iso3c", "iso2c")
 priceaccessscatter <- left_join(accessyear, priceyear, by = "region")
@@ -141,8 +154,95 @@ priceaccessscatter %>%
         drop_na(meanprice, percentaccess) %>%
   ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(meanprice), y = percentaccess, colour = Continental.region)) +
   geom_point()
+
+AgreeDisagreePie <- function(percent, my_title) {
+  percent = as.numeric(percent)
+  data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
+  ggplot(data, aes(x="", y=amount, fill=category)) +
+    geom_bar(stat="identity", width=1) +
+    coord_polar("y") +
+    labs(title = str_wrap(my_title, 60))
+}
+
+AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right")
+AgreeDisagreePie(66, "The internet has improved life in my country")
+AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members")
+
+ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"), AgreeDisagreePie(66, "The internet has improved life in my country"), AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"), ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
+
+
+#shiny testing ground
+ui <- fluidPage(
+  sidebarLayout(
+    sidebarPanel(
+      textOutput("panel")
+    ),
+    mainPanel(
+      tabsetPanel(
+        id = "tabset",
+        tabPanel("panel 1", "one"),
+        tabPanel("panel 2", "two"),
+        tabPanel("panel 3", "three")
+      )
+    )
+  )
+)
+server <- function(input, output, session) {
+  output$panel <- renderText({
+    mapplotting(sotired_map, sotired_map$meanprice, "C")
+  })
+}
+
+shinyApp(ui, server)
+
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
 \
 (2) github folder: <https://github.com/dawn-cheung/NM2207-Folder-Upload>
+
+ui \<- fluidPage(
+
+sidebarLayout(
+
+sidebarPanel(
+
+textOutput("panel")
+
+),
+
+mainPanel(
+
+tabsetPanel(
+
+id = "tabset",
+
+tabPanel("panel 1", "one"),
+
+tabPanel("panel 2", "two"),
+
+tabPanel("panel 3", "three")
+
+)
+
+)
+
+)
+
+)
+
+server \<- function(input, output, session) {
+
+output\$panel \<- renderText({
+
+speedscatter %\>%
+
+drop_na(meandownloadspeed) %\>%
+
+ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) + geom_point()
+
+})
+
+}
+
+ui
