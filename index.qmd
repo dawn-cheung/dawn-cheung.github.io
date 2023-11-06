@@ -45,7 +45,7 @@ imtired <- netprice %>% #im ok i swear its just 2.30am now 3.17
     values_to = "meanprice") %>%
   rename(region = Country.Code)
 
-imtired$meanprice <- gsub('[$,]', '', imtired$meanprice)#apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.
+imtired$meanprice <- gsub('[$,]', '', imtired$meanprice) #apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.
 
 #filter by year
 accessyear <- imstupid %>% filter(Xyear == "X2020")
@@ -83,6 +83,8 @@ ggplot(sotired_map, aes(long, lat, group = group))+
   scale_fill_viridis_c(option = "C")
 
 econineq <- read.csv("EconomicInequality.csv")
+gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv") %>% rename(year = Year) #ISO3 used!
+desi <- read.csv("desi-data.csv") #need to clean this data
 GINIvaluesyearc3 <- econineq %>%
   filter(year == 2020) %>%
   #select(gini, c3) %>%
@@ -93,24 +95,43 @@ GINIvaluesyearc2 <- econineq %>%
   #select(gini, c3) %>%
   rename(region = c2)
 
-accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region")
+gdpPERCAPITA <- gdpPERCAPITA %>%
+  filter(year == 2020) %>%
+  #select(gini, c3) %>%
+  rename(region = Code)
 
+accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region") %>%
+  left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y 
+head(accessscatter)
 accessscatter %>% 
         drop_na(percentaccess) %>%
   ggplot(data = accessscatter, mapping = aes(x = gdp, y = percentaccess, colour = gini)) +
   geom_point()
 
-speedscatter <- left_join(GINIvaluesyearc2, speedyear, by = "region")
+gdpPERCAPITA$region <- countrycode(gdpPERCAPITA$region, "iso3c", "iso2c") #converting ISO3 to ISO2
+speedscatter <- left_join(GINIvaluesyearc2, speedyear, by = "region") %>%
+  left_join(. , gdpPERCAPITA, by = "region")
+head(speedscatter)
+speedscatter %>% 
+        drop_na(meandownloadspeed) %>%
+  ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = as.numeric(meandownloadspeed), colour = gini)) +
+  geom_point()
 
 speedscatter %>% 
         drop_na(meandownloadspeed) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gdp, y = meandownloadspeed, colour = gini)) +
+  ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) +
   geom_point()
 
-pricescatter <- left_join(GINIvaluesyearc2, priceyear, by = "region")
+pricescatter <- left_join(GINIvaluesyearc2, priceyear, by = "region") %>%
+  left_join(. , gdpPERCAPITA, by = "region")
 pricescatter %>% 
         drop_na(meanprice) %>%
-  ggplot(data = pricescatter, mapping = aes(x = meanprice, y = gdp, colour = gini)) +
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = GDP.per.capita, colour = gini)) +
+  geom_point()
+
+pricescatter %>% 
+        drop_na(meanprice) %>%
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = gdp, colour = region_wb)) +
   geom_point()
 
 accessyear$region <- countrycode(accessyear$region, "iso3c", "iso2c")
@@ -118,7 +139,7 @@ priceaccessscatter <- left_join(accessyear, priceyear, by = "region")
 head(priceaccessscatter)
 priceaccessscatter %>% 
         drop_na(meanprice, percentaccess) %>%
-  ggplot(data = priceaccessscatter, mapping = aes(x = meanprice, y = percentaccess, colour = Continental.region)) +
+  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(meanprice), y = percentaccess, colour = Continental.region)) +
   geom_point()
 ```
 
