@@ -38,52 +38,50 @@ netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
 netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
 
 #data cleaning for access to net
-imstupid <- accesstonet %>%
+access_dataset <- accesstonet %>%
    pivot_longer(
     cols = X1990:X2022,
     names_to = "Xyear",
-    values_to = "percentaccess") %>%
+    values_to = "values") %>%
   rename(region = Country.Code)
 
 #data cleaning for speed of net
-imhungry <- netspeed %>%
+speed_dataset <- netspeed %>%
    pivot_longer(
     cols = D2017:D2023,
     names_to = "Dyear",
-    values_to = "meandownloadspeed") %>%
+    values_to = "values") %>%
   rename(region = Country.Code)
 
 #data cleaning for price of net
-imtired <- netprice %>% #im ok i swear its just 2.30am now 3.17
+price_dataset <- netprice %>% #im ok i swear its just 2.30am now 3.17
    pivot_longer(
     cols = D2019:D2023,
     names_to = "Dyear",
-    values_to = "meanprice") %>%
+    values_to = "values") %>%
   rename(region = Country.Code)
 
-imtired$meanprice <- gsub('[$,]', '', imtired$meanprice) #apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.
+price_dataset$values <- gsub('[$,]', '', price_dataset$values) #apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.
 
 #filter by year
-accessyear <- imstupid %>% filter(Xyear == "X2020")
-
+accessyear <- access_dataset %>% filter(Xyear == "X2020")
 #join % pop access with world map
 sostupid_map <- left_join(world_map, accessyear, by = "region")
 
-#filter by year
-speedyear <- imhungry %>% filter(Dyear == "D2020")
-#filter by year AND download speed: speedyear <- imhungry %>% filter(Dyear == "D2020", meandownloadspeed<70)
-
 world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES (applies to priceyear as well)
+
+#filter by year
+speedyear <- speed_dataset %>% filter(Dyear == "D2020")
 #join internet download speed (Mbps) with world map
 sohungry_map <- left_join(world_map, speedyear, by = "region")
 
 #filter by year
-priceyear <- imtired %>% filter(Dyear == "D2020")
+priceyear <- price_dataset %>% filter(Dyear == "D2020")
 #join internet price with world map
 sotired_map <- left_join(world_map, priceyear, by = "region")
 
-sohungry_map$meandownloadspeed <- as.numeric(sohungry_map$meandownloadspeed)
-sotired_map$meanprice <- as.numeric(sotired_map$meanprice)
+sohungry_map$values <- as.numeric(sohungry_map$values)
+sotired_map$values <- as.numeric(sotired_map$values)
 
 #group = group connects the points in the correct order
 mapplotting <- function(mapdataset, filldata, colourscheme) {
@@ -93,9 +91,9 @@ mapplotting <- function(mapdataset, filldata, colourscheme) {
     theme(plot.margin = margin(0, 0, 0, 0, "cm"))
 }
 
-mapplotting(sostupid_map, sostupid_map$percentaccess, "B")
-mapplotting(sohungry_map, sohungry_map$meandownloadspeed, "C")
-mapplotting(sotired_map, sotired_map$meanprice, "C")
+mapplotting(sostupid_map, sostupid_map$values, "B")
+mapplotting(sohungry_map, sohungry_map$values, "C")
+mapplotting(sotired_map, sotired_map$values, "C")
 
 econineq <- read.csv("EconomicInequality.csv")
 gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv") %>% rename(year = Year) #ISO3 used!
@@ -125,13 +123,13 @@ accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region") %>%
   left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y [ADD TO DIARY ENTRY]
 
 accessscatter %>% 
-        drop_na(percentaccess) %>%
-  ggplot(data = accessscatter, mapping = aes(x = percentaccess, y = log(gdp), colour = gini)) +
+        drop_na(values) %>%
+  ggplot(data = accessscatter, mapping = aes(x = values, y = log(gdp), colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 accessscatter %>% 
-        drop_na(percentaccess) %>%
-  ggplot(data = accessscatter, mapping = aes(x = log(percentaccess), y = gdp, colour = gini)) +
+        drop_na(values) %>%
+  ggplot(data = accessscatter, mapping = aes(x = log(values), y = gdp, colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 gdpPERCAPITA$region <- countrycode(gdpPERCAPITA$region, "iso3c", "iso2c") #converting ISO3 to ISO2
@@ -140,34 +138,39 @@ speedscatter <- left_join(GINIvaluesyearc2, speedyear, by = "region") %>%
 
 options(repr.plot.width = 10, repr.plot.height =3) 
 speedscatter %>% 
-        drop_na(meandownloadspeed) %>%
-  ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = as.numeric(meandownloadspeed), colour = gini)) +
+        drop_na(values) %>%
+  ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values), colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 speedscatter %>% 
-        drop_na(meandownloadspeed) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(meandownloadspeed), colour = region_wb)) +
+        drop_na(values) %>%
+  ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(values), colour = region_wb)) +
   geom_point()
 
 pricescatter <- left_join(GINIvaluesyearc2, priceyear, by = "region") %>%
   left_join(. , gdpPERCAPITA, by = "region")
 pricescatter %>% 
-        drop_na(meanprice) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = GDP.per.capita, colour = gini)) +
+        drop_na(values) %>%
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = GDP.per.capita, colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 pricescatter %>% 
-        drop_na(meanprice) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(meanprice), y = gdp, colour = region_wb)) +
+        drop_na(values) %>%
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = gdp, colour = region_wb)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 accessyear$region <- countrycode(accessyear$region, "iso3c", "iso2c")
+accessyear %>% rename(accessyear_values = values)
+priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
 priceaccessscatter <- left_join(accessyear, priceyear, by = "region")
 head(priceaccessscatter)
-priceaccessscatter %>% 
-        drop_na(meanprice, percentaccess) %>%
-  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(meanprice), y = percentaccess, colour = Continental.region)) +
-  geom_point()
+#priceaccessscatter %>% 
+#        drop_na(priceyear, accessyear) %>%
+#  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
+#  geom_point()
+
+#accessyear %>% rename(values = accessyear_values)
+#priceyear %>% rename(values = priceyear_values)
 
 AgreeDisagreePie <- function(percent, my_title) {
   percent = as.numeric(percent)
@@ -202,9 +205,7 @@ ui <- fluidPage(
     mainPanel(
       
       # Output: Verbatim text for data summary ----
-      plotOutput(outputId = "mapy"),
-      textOutput("text"),
-      dataTableOutput("help")
+      plotOutput(outputId = "mapy")
       
     )
   )
@@ -213,19 +214,45 @@ ui <- fluidPage(
 # Define server logic to summarize and view selected dataset ----
 server <- function(input, output) {
   filtered_data <- reactive({
-    imstupid %>%
+    access_dataset %>%
       filter(Xyear == paste0("X", as.character(input$year)))
   })
-
-  output$mapy <- renderPlot({
+  
+  mapplotting <- reactive(function(mapdataset, filldata, colourscheme) {
+    price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
+    #join % pop access with world map
     sostupid_map <- left_join(world_map, filtered_data(), by = "region")
-    mapplotting(sostupid_map, sostupid_map$percentaccess, "B")
+
+    #filter by year
+    speedyear <- speed_dataset %>% filter(Dyear == "D2020")
+    #filter by year AND download speed: speedyear <- speed_dataset %>% filter(Dyear == "D2020", values<70)
+
+    world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES (applies to priceyear as well)
+    #join internet download speed (Mbps) with world map
+    sohungry_map <- left_join(world_map, speedyear, by = "region")
+
+    #filter by year
+    priceyear <- price_dataset %>% filter(Dyear == "D2020")
+    #join internet price with world map
+    sotired_map <- left_join(world_map, priceyear, by = "region")
+
+    sohungry_map$values <- as.numeric(sohungry_map$values)
+    sotired_map$values <- as.numeric(sotired_map$values)
+
+    
+    ggplot(mapdataset, aes(long, lat, group = group)) +
+      geom_polygon(aes(fill = filldata), color = "white", size = 0.03) +
+      scale_fill_viridis_c(option = colourscheme) +
+      theme(plot.margin = margin(0, 0, 0, 0, "cm"))
+  })
+  output$mapy <- renderPlot({
+    mapplotting(sostupid_map, sostupid_map$values, "B")
   })
   
 }
 
 # Create Shiny app ----
-shinyApp(ui, server)
+#shinyApp(ui, server)
 
 ```
 

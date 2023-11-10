@@ -158,26 +158,53 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="index_files/figure-html/unnamed-chunk-1-9.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 266 × 4
+   Country.Name                region Xyear accessyear_values
+   &lt;chr&gt;                       &lt;chr&gt;  &lt;chr&gt;             &lt;dbl&gt;
+ 1 Aruba                       AW     X2020              NA  
+ 2 Africa Eastern and Southern &lt;NA&gt;   X2020              25.0
+ 3 Afghanistan                 AF     X2020              18.4
+ 4 Africa Western and Central  &lt;NA&gt;   X2020              41.7
+ 5 Angola                      AO     X2020              32.6
+ 6 Albania                     AL     X2020              72.2
+ 7 Andorra                     AD     X2020              93.2
+ 8 Arab World                  &lt;NA&gt;   X2020              66.4
+ 9 United Arab Emirates        AE     X2020             100  
+10 Argentina                   AR     X2020              85.5
+# ℹ 256 more rows</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code># A tibble: 247 × 6
+   region Name  Continental.region Price.per.GB...chang…¹ Dyear priceyear_values
+   &lt;chr&gt;  &lt;chr&gt; &lt;chr&gt;              &lt;chr&gt;                  &lt;chr&gt; &lt;chr&gt;           
+ 1 IL     Isra… NEAR EAST          -97.57%                D2020 0.11            
+ 2 IT     Italy WESTERN EUROPE     -95.04%                D2020 0.43            
+ 3 FJ     Fiji  OCEANIA            -97.54%                D2020 0.59            
+ 4 SM     San … WESTERN EUROPE     -98.60%                D2020 1.16            
+ 5 KH     Camb… ASIA (EX. NEAR EA… -98.82%                D2020 1.50            
+ 6 PK     Paki… ASIA (EX. NEAR EA… -93.31%                D2020 0.69            
+ 7 IN     India ASIA (EX. NEAR EA… -38.18%                D2020 0.09            
+ 8 KG     Kyrg… CIS (FORMER USSR)  -35.17%                D2020 0.21            
+ 9 FR     Fran… WESTERN EUROPE     -83.71%                D2020 0.81            
+10 CO     Colo… SOUTH AMERICA      -93.84%                D2020 3.46            
+# ℹ 237 more rows
+# ℹ abbreviated name: ¹​Price.per.GB...change..5.years.</code></pre>
+</div>
+<div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 9
-  Country.Name               region Xyear percentaccess Name  Continental.region
-  &lt;chr&gt;                      &lt;chr&gt;  &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;             
-1 Aruba                      AW     X2020          NA   Aruba CARIBBEAN         
-2 Africa Eastern and Southe… &lt;NA&gt;   X2020          25.0 Nami… SUB-SAHARAN AFRICA
-3 Afghanistan                AF     X2020          18.4 Afgh… ASIA (EX. NEAR EA…
-4 Africa Western and Central &lt;NA&gt;   X2020          41.7 Nami… SUB-SAHARAN AFRICA
-5 Angola                     AO     X2020          32.6 Ango… SUB-SAHARAN AFRICA
-6 Albania                    AL     X2020          72.2 Alba… EASTERN EUROPE    
+  Country.Name                region Xyear values.x Name      Continental.region
+  &lt;chr&gt;                       &lt;chr&gt;  &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;             
+1 Aruba                       AW     X2020     NA   Aruba     CARIBBEAN         
+2 Africa Eastern and Southern &lt;NA&gt;   X2020     25.0 Namibia   SUB-SAHARAN AFRICA
+3 Afghanistan                 AF     X2020     18.4 Afghanis… ASIA (EX. NEAR EA…
+4 Africa Western and Central  &lt;NA&gt;   X2020     41.7 Namibia   SUB-SAHARAN AFRICA
+5 Angola                      AO     X2020     32.6 Angola    SUB-SAHARAN AFRICA
+6 Albania                     AL     X2020     72.2 Albania   EASTERN EUROPE    
 # ℹ 3 more variables: Price.per.GB...change..5.years. &lt;chr&gt;, Dyear &lt;chr&gt;,
-#   meanprice &lt;chr&gt;</code></pre>
+#   values.y &lt;chr&gt;</code></pre>
 </div>
 <div class="cell-output-display">
 <p><img src="index_files/figure-html/unnamed-chunk-1-10.png" class="img-fluid" width="1152"></p>
-</div>
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-11.png" class="img-fluid" width="1152"></p>
-</div>
-<div class="cell-output-display">
-<p><iframe data-deferred-src="app3f9625e948178ff74df764a4a2c18b7a/?w=&amp;__subapp__=1" width="100%" height="400" class="shiny-frame shiny-frame-deferred"></iframe></p>
 </div>
 </div>
 <p>(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.<br>
