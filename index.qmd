@@ -1,8 +1,22 @@
 ---
 title: "dawn-cheung"
+output: html_document
+runtime: shiny
 ---
 
 *Work in progress for final project*
+
+mapplotting \<- function(mapdataset, filldata, colourscheme) {
+
+ggplot(mapdataset, aes(long, lat, group = group)) +
+
+geom_polygon(aes(fill = filldata), color = "white", size = 0.03) +
+
+scale_fill_viridis_c(option = colourscheme) +
+
+theme(plot.margin = margin(0, 0, 0, 0, "cm"))
+
+}
 
 ```{r, eval=TRUE,echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 12}
 #remove all non-pg13 commenst when setting echo to true
@@ -109,7 +123,7 @@ gdpPERCAPITA <- gdpPERCAPITA %>%
 
 accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region") %>%
   left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y [ADD TO DIARY ENTRY]
-options(repr.plot.width = 10, repr.plot.height =4)
+
 accessscatter %>% 
         drop_na(percentaccess) %>%
   ggplot(data = accessscatter, mapping = aes(x = percentaccess, y = log(gdp), colour = gini)) +
@@ -161,38 +175,56 @@ AgreeDisagreePie <- function(percent, my_title) {
   ggplot(data, aes(x="", y=amount, fill=category)) +
     geom_bar(stat="identity", width=1) +
     coord_polar("y") +
-    labs(title = str_wrap(my_title, 60))
+    labs(title = str_wrap(my_title, 45))
 }
 
-AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right")
-AgreeDisagreePie(66, "The internet has improved life in my country")
-AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members")
+ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
+          AgreeDisagreePie(66, "The internet has improved life in my country"),
+          AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
+          ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
 
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"), AgreeDisagreePie(66, "The internet has improved life in my country"), AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"), ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
 
-
-#shiny testing ground
+# Define UI for dataset viewer app ----
 ui <- fluidPage(
+  # App title ----
+  titlePanel("my head hurts"),
+  # Sidebar layout with input and output definitions ----
   sidebarLayout(
+    # Sidebar panel for inputs ----
     sidebarPanel(
-      textOutput("panel")
+      # Input: Selector for choosing year ----
+      selectInput(inputId = "year",
+                  label = "Choose a year:",
+                  choices = c(2000:2020))
     ),
+
+    # Main panel for displaying outputs ----
     mainPanel(
-      tabsetPanel(
-        id = "tabset",
-        tabPanel("panel 1", "one"),
-        tabPanel("panel 2", "two"),
-        tabPanel("panel 3", "three")
-      )
+      
+      # Output: Verbatim text for data summary ----
+      plotOutput(outputId = "mapy"),
+      textOutput("text"),
+      dataTableOutput("help")
+      
     )
   )
 )
-server <- function(input, output, session) {
-  output$panel <- renderText({
-    mapplotting(sotired_map, sotired_map$meanprice, "C")
+
+# Define server logic to summarize and view selected dataset ----
+server <- function(input, output) {
+  filtered_data <- reactive({
+    imstupid %>%
+      filter(Xyear == paste0("X", as.character(input$year)))
   })
+
+  output$mapy <- renderPlot({
+    sostupid_map <- left_join(world_map, filtered_data(), by = "region")
+    mapplotting(sostupid_map, sostupid_map$percentaccess, "B")
+  })
+  
 }
 
+# Create Shiny app ----
 shinyApp(ui, server)
 
 ```
@@ -200,49 +232,3 @@ shinyApp(ui, server)
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
 \
 (2) github folder: <https://github.com/dawn-cheung/NM2207-Folder-Upload>
-
-ui \<- fluidPage(
-
-sidebarLayout(
-
-sidebarPanel(
-
-textOutput("panel")
-
-),
-
-mainPanel(
-
-tabsetPanel(
-
-id = "tabset",
-
-tabPanel("panel 1", "one"),
-
-tabPanel("panel 2", "two"),
-
-tabPanel("panel 3", "three")
-
-)
-
-)
-
-)
-
-)
-
-server \<- function(input, output, session) {
-
-output\$panel \<- renderText({
-
-speedscatter %\>%
-
-drop_na(meandownloadspeed) %\>%
-
-ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) + geom_point()
-
-})
-
-}
-
-ui

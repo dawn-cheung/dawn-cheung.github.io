@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "dawn-cheung",
+    "section": "",
+    "text": "Work in progress for final project\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n# A tibble: 6 × 9\n  Country.Name               region Xyear percentaccess Name  Continental.region\n  &lt;chr&gt;                      &lt;chr&gt;  &lt;chr&gt;         &lt;dbl&gt; &lt;chr&gt; &lt;chr&gt;             \n1 Aruba                      AW     X2020          NA   Aruba CARIBBEAN         \n2 Africa Eastern and Southe… &lt;NA&gt;   X2020          25.0 Nami… SUB-SAHARAN AFRICA\n3 Afghanistan                AF     X2020          18.4 Afgh… ASIA (EX. NEAR EA…\n4 Africa Western and Central &lt;NA&gt;   X2020          41.7 Nami… SUB-SAHARAN AFRICA\n5 Angola                     AO     X2020          32.6 Ango… SUB-SAHARAN AFRICA\n6 Albania                    AL     X2020          72.2 Alba… EASTERN EUROPE    \n# ℹ 3 more variables: Price.per.GB...change..5.years. &lt;chr&gt;, Dyear &lt;chr&gt;,\n#   meanprice &lt;chr&gt;\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nShiny applications not supported in static R Markdown documents\n\n\n(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\n\n(2) github folder: https://github.com/dawn-cheung/NM2207-Folder-Upload\nui &lt;- fluidPage(\nsidebarLayout(\nsidebarPanel(\ntextOutput(“panel”)\n),\nmainPanel(\ntabsetPanel(\nid = “tabset”,\ntabPanel(“panel 1”, “one”),\ntabPanel(“panel 2”, “two”),\ntabPanel(“panel 3”, “three”)\n)\n)\n)\n)\nserver &lt;- function(input, output, session) {\noutput$panel &lt;- renderText({\nspeedscatter %&gt;%\ndrop_na(meandownloadspeed) %&gt;%\nggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) + geom_point()\n})\n}\nui"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Write Up",
+    "section": "",
+    "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nThis is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up.\nThis is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up. This is placeholder text for the write up."
+  }
+]

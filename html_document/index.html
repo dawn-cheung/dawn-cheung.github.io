@@ -123,12 +123,6 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p><em>Work in progress for final project</em></p>
-<p>mapplotting &lt;- function(mapdataset, filldata, colourscheme) {</p>
-<p>ggplot(mapdataset, aes(long, lat, group = group)) +</p>
-<p>geom_polygon(aes(fill = filldata), color = “white”, size = 0.03) +</p>
-<p>scale_fill_viridis_c(option = colourscheme) +</p>
-<p>theme(plot.margin = margin(0, 0, 0, 0, “cm”))</p>
-<p>}</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="1152"></p>
@@ -177,12 +171,44 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="index_files/figure-html/unnamed-chunk-1-11.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><iframe data-deferred-src="app3f9625e948178ff74df764a4a2c18b7a/?w=&amp;__subapp__=1" width="100%" height="400" class="shiny-frame shiny-frame-deferred"></iframe></p>
+<p><img src="index_files/figure-html/unnamed-chunk-1-12.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-13.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unnamed-chunk-1-14.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output-display">
+<p></p><div style="width: 100% ; height: 400px ; text-align: center; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;" class="muted well">Shiny applications not supported in static R Markdown documents</div><p></p>
 </div>
 </div>
 <p>(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.<br>
 <br>
 (2) github folder: <a href="https://github.com/dawn-cheung/NM2207-Folder-Upload" class="uri">https://github.com/dawn-cheung/NM2207-Folder-Upload</a></p>
+<p>ui &lt;- fluidPage(</p>
+<p>sidebarLayout(</p>
+<p>sidebarPanel(</p>
+<p>textOutput(“panel”)</p>
+<p>),</p>
+<p>mainPanel(</p>
+<p>tabsetPanel(</p>
+<p>id = “tabset”,</p>
+<p>tabPanel(“panel 1”, “one”),</p>
+<p>tabPanel(“panel 2”, “two”),</p>
+<p>tabPanel(“panel 3”, “three”)</p>
+<p>)</p>
+<p>)</p>
+<p>)</p>
+<p>)</p>
+<p>server &lt;- function(input, output, session) {</p>
+<p>output$panel &lt;- renderText({</p>
+<p>speedscatter %&gt;%</p>
+<p>drop_na(meandownloadspeed) %&gt;%</p>
+<p>ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(meandownloadspeed), colour = region_wb)) + geom_point()</p>
+<p>})</p>
+<p>}</p>
+<p>ui</p>
 
 
 
