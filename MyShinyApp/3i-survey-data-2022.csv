@@ -1,0 +1,1622 @@
+Q1. In which country do you live? Select one.  (FBCountry),,
+Algeria,50,1.00%
+Angola,50,1.00%
+Argentina,50,1.00%
+Australia,50,1.00%
+Austria,50,1.00%
+Bahrain,50,1.00%
+Bangladesh,50,1.00%
+Belgium,50,1.00%
+Benin,50,1.00%
+Botswana,51,1.00%
+Brazil,50,1.00%
+Bulgaria,50,1.00%
+Burkina Faso,50,1.00%
+Cambodia,50,1.00%
+Cameroon,50,1.00%
+Canada,50,1.00%
+Chile,50,1.00%
+China,50,1.00%
+Colombia,50,1.00%
+Congo (DRC),50,1.00%
+Côte d’Ivoire,50,1.00%
+Cuba,50,1.00%
+Denmark,50,1.00%
+Dominican Republic,50,1.00%
+Egypt,50,1.00%
+El Salvador,50,1.00%
+Estonia,50,1.00%
+Ethiopia,50,1.00%
+France,50,1.00%
+Gabon,50,1.00%
+Germany,50,1.00%
+Ghana,50,1.00%
+Greece,50,1.00%
+Guatemala,50,1.00%
+Honduras,50,1.00%
+Hungary,52,1.00%
+India,51,1.00%
+Indonesia,50,1.00%
+Ireland,50,1.00%
+Italy,51,1.00%
+Jamaica,50,1.00%
+Japan,50,1.00%
+Jordan,50,1.00%
+Kazakhstan,50,1.00%
+Kenya,50,1.00%
+South Korea,51,1.00%
+Kuwait,50,1.00%
+Lebanon,50,1.00%
+Liberia,50,1.00%
+Lithuania,50,1.00%
+Madagascar,50,1.00%
+Malawi,50,1.00%
+Malaysia,50,1.00%
+Mali,50,1.00%
+Mexico,50,1.00%
+Mongolia,50,1.00%
+Morocco,50,1.00%
+Mozambique,51,1.00%
+Myanmar,50,1.00%
+Namibia,51,1.00%
+Netherlands,50,1.00%
+New Zealand,50,1.00%
+Nigeria,51,1.00%
+Oman,50,1.00%
+Pakistan,50,1.00%
+Panama,50,1.00%
+Paraguay,50,1.00%
+Peru,50,1.00%
+Philippines,50,1.00%
+Poland,50,1.00%
+Portugal,50,1.00%
+Qatar,50,1.00%
+Romania,50,1.00%
+Russia,50,1.00%
+Rwanda,50,1.00%
+Saudi Arabia,50,1.00%
+Senegal,50,1.00%
+Singapore,50,1.00%
+South Africa,50,1.00%
+Spain,50,1.00%
+Sri Lanka,50,1.00%
+Sudan,50,1.00%
+Sweden,50,1.00%
+Switzerland,50,1.00%
+Taiwan,50,1.00%
+Tanzania,50,1.00%
+Thailand,50,1.00%
+Trinidad and Tobago,50,1.00%
+Tunisia,50,1.00%
+Turkey,50,1.00%
+Uganda,50,1.00%
+United Arab Emirates,51,1.00%
+United Kingdom,50,1.00%
+United States,50,1.00%
+Uzbekistan,50,1.00%
+Vietnam,50,1.00%
+Zambia,50,1.00%
+Zimbabwe,50,1.00%
+Total,4910,100.00%
+,,
+Q1. In which country do you live? Select one. [EMBEDDED TAG: MACRO REGIONS] (Q1HID_MACRO),,
+North America,100,2.00%
+LatAm,750,15.00%
+Europe,1103,22.00%
+Asia,1052,21.00%
+MENA,601,12.00%
+SSA,1304,27.00%
+Total,4910,100.00%
+,,
+Q1. In which country do you live? Select one. [EMBEDDED TAG: INCOME GROUP] (Q1HID_Income),,
+High Income,1705,35.00%
+Low Income,551,11.00%
+Lower middle income,1402,29.00%
+Upper middle income,1252,25.00%
+Total,4910,100.00%
+,,
+Q1. In which country do you live? Select one. [EMBEDDED TAG: WBREGION] (Q1HID_WBREGION),,
+East Asia & Pacific,751,15.00%
+Europe & Central Asia,1203,25.00%
+Latin America & Caribbean,750,15.00%
+Middle East & North Africa,601,12.00%
+North America,100,2.00%
+South Asia,201,4.00%
+Sub-Saharan Africa,1304,27.00%
+Total,4910,100.00%
+,,
+Q2. In what year were you born? Select one. (Q2),,
+2004 or later,0,0.00%
+2003,66,1.00%
+2002,90,2.00%
+2001,105,2.00%
+2000,176,4.00%
+1999,130,3.00%
+1998,118,2.00%
+1997,107,2.00%
+1996,114,2.00%
+1995,114,2.00%
+1994,125,3.00%
+1993,117,2.00%
+1992,119,2.00%
+1991,127,3.00%
+1990,135,3.00%
+1989,83,2.00%
+1988,82,2.00%
+1987,83,2.00%
+1986,77,2.00%
+1985,98,2.00%
+1984,83,2.00%
+1983,81,2.00%
+1982,68,1.00%
+1981,81,2.00%
+1980,171,3.00%
+1979,124,3.00%
+1978,110,2.00%
+1977,99,2.00%
+1976,115,2.00%
+1975,120,2.00%
+1974,96,2.00%
+1973,77,2.00%
+1972,95,2.00%
+1971,90,2.00%
+1970,70,1.00%
+1969,66,1.00%
+1968,52,1.00%
+1967,49,1.00%
+1966,47,1.00%
+1965,32,1.00%
+1964,124,3.00%
+1963,129,3.00%
+1962,109,2.00%
+1961,76,2.00%
+1960,70,1.00%
+1959,72,1.00%
+1958,72,1.00%
+1957,61,1.00%
+1956,56,1.00%
+1955,50,1.00%
+1954,52,1.00%
+1953,40,1.00%
+1952,37,1.00%
+1951,52,1.00%
+1950,31,1.00%
+1949,28,1.00%
+1948,37,1.00%
+1947,17,0.00%
+1946,5,0.00%
+1945,0,0.00%
+1944,0,0.00%
+1943,0,0.00%
+1942,0,0.00%
+1941,0,0.00%
+1940,0,0.00%
+1939,0,0.00%
+1938,0,0.00%
+1937,0,0.00%
+1936,0,0.00%
+1935,0,0.00%
+1934,0,0.00%
+1933,0,0.00%
+1932,0,0.00%
+1931,0,0.00%
+1930,0,0.00%
+1929,0,0.00%
+1928,0,0.00%
+1927,0,0.00%
+1926,0,0.00%
+1925,0,0.00%
+1924,0,0.00%
+1923,0,0.00%
+1922,0,0.00%
+1921,0,0.00%
+1920,0,0.00%
+Total,4910,100.00%
+,,
+Q2. In what year were you born? Select one. [EMBEDDED TAG: AGE] (Q2HID),,
+18-29,1381,28.00%
+30-39,917,19.00%
+40-49,1088,22.00%
+50-59,768,16.00%
+60+,756,15.00%
+Total,4910,100.00%
+,,
+Q2. In what year were you born? Select one. [EMBEDDED TAG: GENERATION] (Q2HID_1),,
+Millennials/Gen Z (born 1981-2003),2379,48.00%
+Gen X (born 1965-1980),1413,29.00%
+Baby Boomers (born 1946-1964),1118,23.00%
+Total,4910,100.00%
+,,
+Q3. Which best represents your gender? Select one. (Q3),,
+Male,2652,54.00%
+Female,2244,46.00%
+Other,7,0.00%
+Do not care to answer,7,0.00%
+Total,4910,100.00%
+,,
+Q4Main. Which of the following ranges best represents your household income? Select one. [EMBEDDED TAG: HHI]  (Q4HID),,
+Below median,2432,50.00%
+Above median,2422,49.00%
+Do not care to answer,56,1.00%
+Total,4910,100.00%
+,,
+Q5. Which of the following best represents your ethnicity or race? Select one. [BASE : Q1 = US-ONLY] (Q5),,
+Caucasian/white,23,46.00%
+African American/black,16,32.00%
+Hispanic/Latino/Spanish,6,12.00%
+Asian,1,2.00%
+Native American/American Indian (Inuit/Eskimo/Aleut),1,2.00%
+Native Hawaiian / Pacific Islander,0,0.00%
+Mixed race/ethnicity,2,4.00%
+"Other race or ethnicity, please specify",0,0.00%
+Do not care to answer,1,2.00%
+Total,50,100.00%
+,,
+Q6. How often do you connect to the internet? Select one. (Q7),,
+Several times a day,3203,65.00%
+Every day,1543,31.00%
+Several times a week,103,2.00%
+At least once a week,23,0.00%
+At least once a month,13,0.00%
+At least once every 6 months,4,0.00%
+At least once every 12 months,4,0.00%
+Less often than once every 12 months,4,0.00%
+Not sure,13,0.00%
+Total,4910,100.00%
+,,
+Q6. How often do you connect to the internet? Select one. [EMBEDDED TAG: FREQUENCY]  (Q7HID),,
+Connected,4872,99.00%
+Under-connected,25,1.00%
+Not sure,13,0.00%
+Total,4910,100.00%
+,,
+Q7. Where do you most often use the internet? Select one. (Q8),,
+At home,3416,70.00%
+At the home of a friend or family member,71,1.00%
+At school,33,1.00%
+Library,2,0.00%
+At work,523,11.00%
+Internet caf‚ or other setting open to the public,23,0.00%
+"Via mobile device (e.g., phone, tablet or smart watch)",838,17.00%
+"Other, please specify",2,0.00%
+Not sure,2,0.00%
+Total,4910,100.00%
+,,
+Q7. Where do you most often use the internet? Select one. [EMBEDDED TAG: ACCESS LOCATION]  (Q8HID),,
+Private,4325,88.00%
+Public,581,12.00%
+Other,2,0.00%
+Not sure,2,0.00%
+Total,4910,100.00%
+,,
+Q8. How do you most often connect to the internet? Select one.  (Q9),,
+"Mobile device (e.g., phone, tablet or smart watch)",3386,69.00%
+Personal or family computer,1090,22.00%
+Work computer,371,8.00%
+Public computer,42,1.00%
+"Other, please specify",2,0.00%
+Not sure,19,0.00%
+Total,4910,100.00%
+,,
+Q8. How do you most often connect to the internet? Select one. [EMBEDDED TAG: ACCESS TYPE]  (Q9HID),,
+Private,4476,91.00%
+Public,413,8.00%
+Other,2,0.00%
+Not sure,19,0.00%
+Total,4910,100.00%
+,,
+Q9. Which of the following best describes your current employment status? Select one. (Q10),,
+Owner/founder/co-founder of a business,251,5.00%
+Self-employed,654,13.00%
+Entrepreneur,140,3.00%
+Employed full-time,1998,41.00%
+"Employed part-time or temporary worker (freelancer, independent contractor, etc.)",501,10.00%
+Not currently working but looking for work,362,7.00%
+Not working by choice,121,2.00%
+Retired,315,6.00%
+Student,534,11.00%
+"Other, please specify",32,1.00%
+Don?t know,2,0.00%
+Total,4910,100.00%
+,,
+Q9. Which of the following best describes your current employment status? Select one. [EMBEDDED TAG: EMPLOYMENT] (Q10HID),,
+Working,3544,72.00%
+Not working,1332,27.00%
+Other,32,1.00%
+Don?t know,2,0.00%
+Total,4910,100.00%
+,,
+Q9. Which of the following best describes your current employment status? Select one. [EMBEDDED TAG: BOE] (Q10HID_1),,
+Business owner/entrepreneur (BOE),1045,21.00%
+Non-BOE,3831,78.00%
+Other,32,1.00%
+Don?t know,2,0.00%
+Total,4910,100.00%
+,,
+Q10. Which of the following best describes the community in which you live? Select one. (Q6),,
+Urban (in/near a city),2758,56.00%
+Suburban (close to a city),1547,32.00%
+Rural (far from a city),563,11.00%
+Do not care to respond,42,1.00%
+Total,4910,100.00%
+,,
+Q10. Which of the following best describes the community in which you live? Select one. [EMBEDDED TAG: COMMUNITY TYPE] (Q6HID),,
+Urban,2758,56.00%
+Non-urban,2110,43.00%
+Do not care to respond,42,1.00%
+Total,4910,100.00%
+,,
+Community type  (Q6Banner),,
+Urban,2758,56.00%
+Non-Urban,2110,43.00%
+Suburban,1547,32.00%
+Rural,563,11.00%
+Do not care to respond,42,1.00%
+Total,4910,100.00%
+,,
+Q11. Which of the following aspects of your life have seen the most significant shift to online channels as a result of the pandemic? Select up to three.  (Q11),,
+Work,1868,38.00%
+Education,1324,27.00%
+"Personal health (online doctor?s visits, information about health topics, etc)",743,15.00%
+"Personal fitness (online exercise classes, etc)",462,9.00%
+Entertainment,1304,27.00%
+Reading/watching/consuming news,1106,23.00%
+Connecting with friends/family,1803,37.00%
+Meeting new people,644,13.00%
+Personal finances,980,20.00%
+Shopping for goods and services,1639,33.00%
+"Other, please specify",2,0.00%
+No aspect of my life has seen a dramatic shift to online channels as a result of the pandemic,202,4.00%
+Don?t know,38,1.00%
+Total,4910,100.00%
+,,
+Q12 (Q12) - Work [BASE: Q11 = WORK] (1),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,184,10.00%
+Somewhat less than during the pandemic,291,16.00%
+About the same as during the pandemic,529,28.00%
+Somewhat more than during the pandemic,350,19.00%
+Much more than during the pandemic,490,26.00%
+Don?t know,24,1.00%
+Total,1868,100.00%
+,,
+Q12 (Q12) - Education [BASE: Q11 = EDUCATION] (2),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,171,13.00%
+Somewhat less than during the pandemic,229,17.00%
+About the same as during the pandemic,312,24.00%
+Somewhat more than during the pandemic,252,19.00%
+Much more than during the pandemic,340,26.00%
+Don?t know,20,2.00%
+Total,1324,100.00%
+,,
+"Q12 (Q12) - Personal health (online doctor?s visits, information about health topics, etc)  [BASE: Q11 = PERSONAL HEALTH (ONLINE DOCTOR?S VISITS, INFORMATION ABOUT HEALTH TOPICS, ETC)] (3)",,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,85,11.00%
+Somewhat less than during the pandemic,126,17.00%
+About the same as during the pandemic,185,25.00%
+Somewhat more than during the pandemic,169,23.00%
+Much more than during the pandemic,169,23.00%
+Don?t know,9,1.00%
+Total,743,100.00%
+,,
+"Q12 (Q12) - Personal fitness (online exercise classes, etc) [BASE: Q11 = PERSONAL FITNESS (ONLINE EXERCISE CLASSES, ETC)] (4)",,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,50,11.00%
+Somewhat less than during the pandemic,74,16.00%
+About the same as during the pandemic,112,24.00%
+Somewhat more than during the pandemic,103,22.00%
+Much more than during the pandemic,121,26.00%
+Don?t know,2,0.00%
+Total,462,100.00%
+,,
+Q12 (Q12) - Entertainment [BASE: Q11 = ENTERTAINMENT] (5),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,95,7.00%
+Somewhat less than during the pandemic,232,18.00%
+About the same as during the pandemic,404,31.00%
+Somewhat more than during the pandemic,256,20.00%
+Much more than during the pandemic,309,24.00%
+Don?t know,8,1.00%
+Total,1304,100.00%
+,,
+Q12 (Q12) - Reading/watching/consuming news [BASE: Q11 = READING/WATCHING/CONSUMING NEWS] (6),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,49,4.00%
+Somewhat less than during the pandemic,124,11.00%
+About the same as during the pandemic,450,41.00%
+Somewhat more than during the pandemic,227,21.00%
+Much more than during the pandemic,247,22.00%
+Don?t know,9,1.00%
+Total,1106,100.00%
+,,
+Q12 (Q12) - Connecting with friends/family [BASE: Q11 = CONNECTING WITH FRIENDS/FAMILY] (7),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,200,11.00%
+Somewhat less than during the pandemic,322,18.00%
+About the same as during the pandemic,518,29.00%
+Somewhat more than during the pandemic,338,19.00%
+Much more than during the pandemic,415,23.00%
+Don?t know,10,1.00%
+Total,1803,100.00%
+,,
+Q12 (Q12) - Meeting new people  [BASE: Q11 = MEETING NEW PEOPLE] (8),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,84,13.00%
+Somewhat less than during the pandemic,117,18.00%
+About the same as during the pandemic,150,23.00%
+Somewhat more than during the pandemic,141,22.00%
+Much more than during the pandemic,144,22.00%
+Don?t know,8,1.00%
+Total,644,100.00%
+,,
+Q12 (Q12) - Personal finances [BASE: Q11 = PERSONAL FINANCES] (9),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,59,6.00%
+Somewhat less than during the pandemic,92,9.00%
+About the same as during the pandemic,312,32.00%
+Somewhat more than during the pandemic,219,22.00%
+Much more than during the pandemic,285,29.00%
+Don?t know,13,1.00%
+Total,980,100.00%
+,,
+Q12 (Q12) - Shopping for goods and services  [BASE: Q11 = SHOPPING FOR GOODS AND SERVICES] (10),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,110,7.00%
+Somewhat less than during the pandemic,213,13.00%
+About the same as during the pandemic,564,34.00%
+Somewhat more than during the pandemic,354,22.00%
+Much more than during the pandemic,382,23.00%
+Don?t know,16,1.00%
+Total,1639,100.00%
+,,
+Q12 (Q12) - [Pipe in response from Q11 Other]  [BASE: Q11 = OTHER] (11),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW]",,
+Much less than during the pandemic,0,0.00%
+Somewhat less than during the pandemic,0,0.00%
+About the same as during the pandemic,1,50.00%
+Somewhat more than during the pandemic,1,50.00%
+Much more than during the pandemic,0,0.00%
+Don?t know,0,0.00%
+Total,2,100.00%
+,,
+Q12HID (Q12HID) - Work [BASE: Q11 = WORK] (1),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,475,25.00%
+About the same,529,28.00%
+More,840,45.00%
+Don?t know,24,1.00%
+Total,1868,100.00%
+,,
+Q12HID (Q12HID) - Education [BASE: Q11 = EDUCATION] (2),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,400,30.00%
+About the same,312,24.00%
+More,592,45.00%
+Don?t know,20,2.00%
+Total,1324,100.00%
+,,
+"Q12HID (Q12HID) - Personal health (online doctor?s visits, information about health topics, etc)  [BASE: Q11 = PERSONAL HEALTH (ONLINE DOCTOR?S VISITS, INFORMATION ABOUT HEALTH TOPICS, ETC)] (3)",,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,211,28.00%
+About the same,185,25.00%
+More,338,45.00%
+Don?t know,9,1.00%
+Total,743,100.00%
+,,
+"Q12HID (Q12HID) - Personal fitness (online exercise classes, etc) [BASE: Q11 = PERSONAL FITNESS (ONLINE EXERCISE CLASSES, ETC)] (4)",,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,124,27.00%
+About the same,112,24.00%
+More,224,48.00%
+Don?t know,2,0.00%
+Total,462,100.00%
+,,
+Q12HID (Q12HID) - Entertainment [BASE: Q11 = ENTERTAINMENT] (5),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,327,25.00%
+About the same,404,31.00%
+More,565,43.00%
+Don?t know,8,1.00%
+Total,1304,100.00%
+,,
+Q12HID (Q12HID) - Reading/watching/consuming news [BASE: Q11 = READING/WATCHING/CONSUMING NEWS] (6),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,173,16.00%
+About the same,450,41.00%
+More,474,43.00%
+Don?t know,9,1.00%
+Total,1106,100.00%
+,,
+Q12HID (Q12HID) - Connecting with friends/family [BASE: Q11 = CONNECTING WITH FRIENDS/FAMILY] (7),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,522,29.00%
+About the same,518,29.00%
+More,753,42.00%
+Don?t know,10,1.00%
+Total,1803,100.00%
+,,
+Q12HID (Q12HID) - Meeting new people  [BASE: Q11 = MEETING NEW PEOPLE] (8),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,201,31.00%
+About the same,150,23.00%
+More,285,44.00%
+Don?t know,8,1.00%
+Total,644,100.00%
+,,
+Q12HID (Q12HID) - Personal finances [BASE: Q11 = PERSONAL FINANCES] (9),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,151,15.00%
+About the same,312,32.00%
+More,504,51.00%
+Don?t know,13,1.00%
+Total,980,100.00%
+,,
+Q12HID (Q12HID) - Shopping for goods and services  [BASE: Q11 = SHOPPING FOR GOODS AND SERVICES] (10),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,323,20.00%
+About the same,564,34.00%
+More,736,45.00%
+Don?t know,16,1.00%
+Total,1639,100.00%
+,,
+Q12HID (Q12HID) - [Pipe in response from Q11 Other]  [BASE: Q11 = OTHER] (11),,
+"Q12. Once the pandemic passes in your country, to what extent do you believe you will continue your use of online channels for these activities? Select one in each row. [EMBEDDED TAG ? Q12HID] [BASE : Q11 = NO ASPECT OF MY LIFE HAS SEEN A DRAMATIC SHIFT TO ONLINE CHANNELS AS A RESULT OF THE PANDEMIC / DON'T KNOW] ",,
+Less,0,0.00%
+About the same,1,50.00%
+More,1,50.00%
+Don?t know,0,0.00%
+Total,2,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. (Q13) - Connection speed (1),,
+Much worse,347,7.00%
+Somewhat worse,742,15.00%
+Neither worse nor better,1852,38.00%
+Somewhat better,1111,23.00%
+Much better,824,17.00%
+Don?t know,34,1.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. (Q13) - Affordability (2),,
+Much worse,310,6.00%
+Somewhat worse,776,16.00%
+Neither worse nor better,1939,39.00%
+Somewhat better,1101,22.00%
+Much better,711,14.00%
+Don?t know,73,1.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. (Q13) - Reliability (3),,
+Much worse,207,4.00%
+Somewhat worse,639,13.00%
+Neither worse nor better,1881,38.00%
+Somewhat better,1296,26.00%
+Much better,808,16.00%
+Don?t know,79,2.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. (Q13) - Availability of network (4),,
+Much worse,246,5.00%
+Somewhat worse,592,12.00%
+Neither worse nor better,1787,36.00%
+Somewhat better,1239,25.00%
+Much better,1002,20.00%
+Don?t know,44,1.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. [EMBEDDED TAG: Q13HID] (Q13HID) - Connection speed (1),,
+Worse,1089,22.00%
+Neither,1852,38.00%
+Better,1935,39.00%
+Don?t know,34,1.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. [EMBEDDED TAG: Q13HID] (Q13HID) - Affordability (2),,
+Worse,1086,22.00%
+Neither,1939,39.00%
+Better,1812,37.00%
+Don?t know,73,1.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. [EMBEDDED TAG: Q13HID] (Q13HID) - Reliability (3),,
+Worse,846,17.00%
+Neither,1881,38.00%
+Better,2104,43.00%
+Don?t know,79,2.00%
+Total,4910,100.00%
+,,
+Q13. How have the following aspects of your internet access changed since the beginning of the pandemic in your country? Select one in each row. [EMBEDDED TAG: Q13HID] (Q13HID) - Availability of network (4),,
+Worse,838,17.00%
+Neither,1787,36.00%
+Better,2241,46.00%
+Don?t know,44,1.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. (Q14) - The internet has helped mitigate the  isolating effects of the pandemic (1),,
+Disagree strongly,172,4.00%
+Disagree somewhat,289,6.00%
+Neither agree nor disagree,693,14.00%
+Agree somewhat,1724,35.00%
+Agree strongly,2006,41.00%
+Don?t know,26,1.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. (Q14) - The pandemic has resulted in increased internet dependence (2),,
+Disagree strongly,195,4.00%
+Disagree somewhat,319,6.00%
+Neither agree nor disagree,595,12.00%
+Agree somewhat,1506,31.00%
+Agree strongly,2268,46.00%
+Don?t know,27,1.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. (Q14) - Greater use of the internet in all aspects of life is a ?new normal? that will persist indefinitely (3),,
+Disagree strongly,165,3.00%
+Disagree somewhat,334,7.00%
+Neither agree nor disagree,759,15.00%
+Agree somewhat,1893,39.00%
+Agree strongly,1698,35.00%
+Don?t know,61,1.00%
+Total,4910,100.00%
+,,
+"Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. (Q14) - Once the pandemic passes, most aspects of life will return to in-person interaction (4)",,
+Disagree strongly,267,5.00%
+Disagree somewhat,956,19.00%
+Neither agree nor disagree,1129,23.00%
+Agree somewhat,1677,34.00%
+Agree strongly,794,16.00%
+Don?t know,87,2.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. [EMBEDDED TAG: Q14HID] (Q14HID) - The internet has helped mitigate the  isolating effects of the pandemic (1),,
+Disagree,461,9.00%
+Neither,693,14.00%
+Agree,3730,76.00%
+Don?t know,26,1.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. [EMBEDDED TAG: Q14HID] (Q14HID) - The pandemic has resulted in increased internet dependence (2),,
+Disagree,514,10.00%
+Neither,595,12.00%
+Agree,3774,77.00%
+Don?t know,27,1.00%
+Total,4910,100.00%
+,,
+Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. [EMBEDDED TAG: Q14HID] (Q14HID) - Greater use of the internet in all aspects of life is a ?new normal? that will persist indefinitely (3),,
+Disagree,499,10.00%
+Neither,759,15.00%
+Agree,3591,73.00%
+Don?t know,61,1.00%
+Total,4910,100.00%
+,,
+"Q14. To what extent do you agree with the following statements regarding how the pandemic has changed the role of the internet in society? Select one in each row. [EMBEDDED TAG: Q14HID] (Q14HID) - Once the pandemic passes, most aspects of life will return to in-person interaction (4)",,
+Disagree,1223,25.00%
+Neither,1129,23.00%
+Agree,2471,50.00%
+Don?t know,87,2.00%
+Total,4910,100.00%
+,,
+"Q15. Which of the following tasks, if any, do you commonly perform using the internet? Select all that apply. (Q15)",,
+Checking my account balance(s),2996,61.00%
+Transferring money,3072,63.00%
+Making payments to/from personal accounts,2382,49.00%
+Managing investments,1231,25.00%
+Borrowing money,582,12.00%
+Managing loans,615,13.00%
+Paying bills,3056,62.00%
+Making or receiving work-related payments [BASE: Q9 = WORKING OR LOOKING FOR WORK],1578,32.00%
+Buying goods and services,2855,58.00%
+Selling goods and services,1297,26.00%
+"Other, please specify",20,0.00%
+None of the above,198,4.00%
+Don?t know,50,1.00%
+Total,4910,100.00%
+,,
+Q16. How often do you typically purchase goods and services via the internet? Select one. (Q16),,
+I have never purchased any goods via the internet,409,8.00%
+A few times a year,1346,27.00%
+About once a month,1407,29.00%
+About once a week,983,20.00%
+More than once a week,694,14.00%
+Don?t know,71,1.00%
+Total,4910,100.00%
+,,
+Q16. How often do you typically purchase goods and services via the internet? Select one. [EMBEDDED TAG: Q16HID1]  (Q16HID1),,
+Never,409,8.00%
+A few times a year,1346,27.00%
+Once a month or more often,3084,63.00%
+Don?t know,71,1.00%
+Total,4910,100.00%
+,,
+Q17. Which of the following do you use most often to pay for everyday goods and services? Select one.  [BASE: Q16 ? I HAVE NEVER PURCHASED ANY GOODS VIA THE INTERNET] (Q17),,
+Hard currency/cash,605,13.00%
+Physical credit card,649,14.00%
+Physical bank/debit card,1238,28.00%
+"Smartphone app/service (e-money wallet, QR code, touch payment, etc)",1388,31.00%
+"Text message-based mobile service (mobile money account, etc)",375,8.00%
+Cryptocurrency,177,4.00%
+"Other, please specify",17,0.00%
+Don?t know,52,1.00%
+Total,4501,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. (Q18) - Making purchases online is safe and secure (1),,
+Disagree strongly,191,4.00%
+Disagree somewhat,512,10.00%
+Neither agree nor disagree,1239,25.00%
+Agree somewhat,2002,41.00%
+Agree strongly,946,19.00%
+Don?t know,20,0.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. (Q18) - The internet gives me access to goods and services I wouldn?t otherwise be able to purchase (2),,
+Disagree strongly,170,3.00%
+Disagree somewhat,312,6.00%
+Neither agree nor disagree,738,15.00%
+Agree somewhat,1892,39.00%
+Agree strongly,1774,36.00%
+Don?t know,24,0.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. (Q18) - Fears that someone will steal my personal data affect where I shop online (3),,
+Disagree strongly,330,7.00%
+Disagree somewhat,576,12.00%
+Neither agree nor disagree,1027,21.00%
+Agree somewhat,1671,34.00%
+Agree strongly,1271,26.00%
+Don?t know,35,1.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. (Q18) - The internet allows me to better understand products and  services through peer reviews (4),,
+Disagree strongly,144,3.00%
+Disagree somewhat,272,6.00%
+Neither agree nor disagree,751,15.00%
+Agree somewhat,1927,39.00%
+Agree strongly,1793,37.00%
+Don?t know,23,0.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q18HID] (Q18HID) - Making purchases online is safe and secure (1),,
+Disagree,703,14.00%
+Neither,1239,25.00%
+Agree,2948,60.00%
+Don?t know,20,0.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q18HID] (Q18HID) - The internet gives me access to goods and services I wouldn?t otherwise be able to purchase (2),,
+Disagree,482,10.00%
+Neither,738,15.00%
+Agree,3666,75.00%
+Don?t know,24,0.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q18HID] (Q18HID) - Fears that someone will steal my personal data affect where I shop online (3),,
+Disagree,906,18.00%
+Neither,1027,21.00%
+Agree,2942,60.00%
+Don?t know,35,1.00%
+Total,4910,100.00%
+,,
+Q18. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q18HID] (Q18HID) - The internet allows me to better understand products and  services through peer reviews (4),,
+Disagree,416,8.00%
+Neither,751,15.00%
+Agree,3720,76.00%
+Don?t know,23,0.00%
+Total,4910,100.00%
+,,
+"Q19. How often do you use the internet for entertainment purposes? This includes watching movies/TV, streaming video, playing video games, etc. Select one. (Q19)",,
+Several times a day,1940,40.00%
+Every day,1692,34.00%
+Several times a week,685,14.00%
+At least once a week,298,6.00%
+At least once a month,96,2.00%
+Less than once a month,74,2.00%
+Never,96,2.00%
+Don?t know,29,1.00%
+Total,4910,100.00%
+,,
+"How often do you use the internet for entertainment purposes? This includes watching movies/TV, streaming video, playing video games, etc. (Q19_Recode)",,
+Several times a week or more often,4317,88.00%
+Less often then several times a week,468,10.00%
+Never,96,2.00%
+Don?t know,29,1.00%
+Total,4910,100.00%
+,,
+"Q19. How often do you use the internet for entertainment purposes? This includes watching movies/TV, streaming video, playing video games, etc. Select one. [EMBEDDED TAG: Q19HID] (Q19HID)",,
+Daily,3632,74.00%
+Weekly,983,20.00%
+Monthly or less often,170,3.00%
+Never,96,2.00%
+Don?t know,29,1.00%
+Total,4910,100.00%
+,,
+Q20. Which of the following health-related tasks do you use the internet for? Select all that apply.  (Q20),,
+Communicating with my doctor or healthcare provider,1294,26.00%
+Taking online fitness classes,1260,26.00%
+Ordering food or groceries for delivery,1969,40.00%
+Ordering food or groceries for pick-up,1321,27.00%
+Reading/watching/consuming news or social media posts about covid-19,2767,56.00%
+Reading/watching/consuming news or social media posts about other health-related topics,2649,54.00%
+Posting on social media about health/fitness topics,1254,26.00%
+"Other, please specify",9,0.00%
+None of the above,342,7.00%
+Don?t know,28,1.00%
+Total,4910,100.00%
+,,
+Q21. How often do you use the internet for work purposes? Select one. [BASE: Q9 = WORKING OR LOOKING FOR WORK]  (Q21),,
+Several times a day,1583,41.00%
+Every day,1315,34.00%
+Several times a week,488,12.00%
+At least once a week,143,4.00%
+At least once a month,77,2.00%
+Less than once a month,59,2.00%
+"Never, I do not use the internet for work",206,5.00%
+Don?t know,35,1.00%
+Total,3906,100.00%
+,,
+Q21. How often do you use the internet for work purposes? Select one. [EMBEDDED TAG: Q21HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK]  (Q21HID),,
+Daily,2898,74.00%
+Weekly,631,16.00%
+Monthly or less often,136,3.00%
+Never,206,5.00%
+Don?t know,35,1.00%
+Total,3906,100.00%
+,,
+Q22 (Q22) - I use or have used the internet to look for jobs  (1),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,267,7.00%
+Disagree somewhat,260,7.00%
+Neither agree nor disagree,480,13.00%
+Agree somewhat,1082,29.00%
+Agree strongly,1599,43.00%
+Don?t know,12,0.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - I would not be able to do my job without the internet (2),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,243,7.00%
+Disagree somewhat,367,10.00%
+Neither agree nor disagree,556,15.00%
+Agree somewhat,981,27.00%
+Agree strongly,1528,41.00%
+Don?t know,25,1.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - I use or have used the internet to find ?gig? or freelance work (3),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,343,9.00%
+Disagree somewhat,331,9.00%
+Neither agree nor disagree,648,18.00%
+Agree somewhat,1164,31.00%
+Agree strongly,1174,32.00%
+Don?t know,40,1.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - The internet allows me to do my job more safely during the pandemic (4),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,153,4.00%
+Disagree somewhat,224,6.00%
+Neither agree nor disagree,581,16.00%
+Agree somewhat,1175,32.00%
+Agree strongly,1552,42.00%
+Don?t know,15,0.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - I started working remotely when the pandemic began (5),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,463,13.00%
+Disagree somewhat,392,11.00%
+Neither agree nor disagree,596,16.00%
+Agree somewhat,1063,29.00%
+Agree strongly,1150,31.00%
+Don?t know,36,1.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - I use or have used the internet to develop new skills that make me better at my current job (6),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,140,4.00%
+Disagree somewhat,187,5.00%
+Neither agree nor disagree,497,13.00%
+Agree somewhat,1266,34.00%
+Agree strongly,1590,43.00%
+Don?t know,20,1.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - The internet provides me with job security by helping my employer succeed (7),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,168,5.00%
+Disagree somewhat,249,7.00%
+Neither agree nor disagree,814,22.00%
+Agree somewhat,1276,34.00%
+Agree strongly,1145,31.00%
+Don?t know,48,1.00%
+Total,3700,100.00%
+,,
+Q22 (Q22) - My job prospects have improved thanks to my use of the internet (8),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,163,4.00%
+Disagree somewhat,229,6.00%
+Neither agree nor disagree,774,21.00%
+Agree somewhat,1266,34.00%
+Agree strongly,1232,33.00%
+Don?t know,36,1.00%
+Total,3700,100.00%
+,,
+"Q22 (Q22) - I use or have used the internet to manage my business [BASE: Q9 = BOE AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK] (9)",,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree strongly,36,3.00%
+Disagree somewhat,56,5.00%
+Neither agree nor disagree,116,11.00%
+Agree somewhat,349,34.00%
+Agree strongly,460,45.00%
+Don?t know,12,1.00%
+Total,1029,100.00%
+,,
+Q22HID (Q22HID) - I use or have used the internet to look for jobs (1),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,527,14.00%
+Neither,480,13.00%
+Agree,2681,72.00%
+Don?t know,12,0.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - I would not be able to do my job without the internet (2),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,610,16.00%
+Neither,556,15.00%
+Agree,2509,68.00%
+Don?t know,25,1.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - I use or have used the internet to find ?gig? or freelance work (3),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,674,18.00%
+Neither,648,18.00%
+Agree,2338,63.00%
+Don?t know,40,1.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - The internet allows me to do my job more safely during the pandemic (4),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,377,10.00%
+Neither,581,16.00%
+Agree,2727,74.00%
+Don?t know,15,0.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - I started working remotely when the pandemic began (5),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,855,23.00%
+Neither,596,16.00%
+Agree,2213,60.00%
+Don?t know,36,1.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - I use or have used the internet to develop new skills that make me better at my current job (6),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,327,9.00%
+Neither,497,13.00%
+Agree,2856,77.00%
+Don?t know,20,1.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - The internet provides me with job security by helping my employer succeed (7),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,417,11.00%
+Neither,814,22.00%
+Agree,2421,65.00%
+Don?t know,48,1.00%
+Total,3700,100.00%
+,,
+Q22HID (Q22HID) - My job prospects have improved thanks to my use of the internet (8),,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,392,11.00%
+Neither,774,21.00%
+Agree,2498,68.00%
+Don?t know,36,1.00%
+Total,3700,100.00%
+,,
+"Q22HID (Q22HID) - I use or have used the internet to manage my business [BASE: Q9 = BOE AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK] (9)",,
+"Q22. To what extent do you agree with the following statements regarding how the internet has contributed to your work during the pandemic? Select one in each row. [EMBEDDED TAG: Q22HID] [BASE: Q9 = WORKING OR LOOKING FOR WORK  AND Q21 ? NEVER, I DO NOT USE THE INTERNET FOR WORK]",,
+Disagree,92,9.00%
+Neither,116,11.00%
+Agree,809,79.00%
+Don?t know,12,1.00%
+Total,1029,100.00%
+,,
+Have your and/or a member of your household needed to engage in online education due to school closures as a result of the pandemic? (Q23),,
+Yes,0,0.00%
+No,0,0.00%
+Don?t know,0,0.00%
+Total,0,100.00%
+,,
+Q23NEW. Which of the following online educational activities have you and/or members of your household participated in since the start of the pandemic? Select all that apply. (Q23NEW),,
+Massive open online courses (MOOCs?courses open to anyone around the world),1303,27.00%
+Compulsory private or public school courses,1511,31.00%
+"Courses hosted by a local community institution (library, etc)",838,17.00%
+Webinars/training hosted by my employer/place of work,1454,30.00%
+Virtual visits to museums/historical sites/cultural institutions,689,14.00%
+Virtual one-to-one tutorial sessions,1173,24.00%
+Virtual small group tutorial sessions,1298,26.00%
+"Virtual hands-on workshops (music lessons, cooking classes, etc)",1170,24.00%
+Virtual book clubs,711,14.00%
+"Other, please specify",6,0.00%
+None of the above,887,18.00%
+Don?t know,108,2.00%
+Total,4910,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Affordability (1),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,549,14.00%
+Somewhat satisfied,789,20.00%
+Neither satisfied nor dissatisfied,843,22.00%
+Somewhat dissatisfied,1037,26.00%
+Very dissatisfied,662,17.00%
+Don?t know,35,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Availability of content in my language (2),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,670,17.00%
+Somewhat satisfied,655,17.00%
+Neither satisfied nor dissatisfied,630,16.00%
+Somewhat dissatisfied,1038,27.00%
+Very dissatisfied,895,23.00%
+Don?t know,27,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Quality of content (3),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,621,16.00%
+Somewhat satisfied,805,21.00%
+Neither satisfied nor dissatisfied,666,17.00%
+Somewhat dissatisfied,1109,28.00%
+Very dissatisfied,692,18.00%
+Don?t know,22,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Curriculum delivery (4),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,508,13.00%
+Somewhat satisfied,869,22.00%
+Neither satisfied nor dissatisfied,839,21.00%
+Somewhat dissatisfied,1058,27.00%
+Very dissatisfied,590,15.00%
+Don?t know,51,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Available resources (5),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,617,16.00%
+Somewhat satisfied,799,20.00%
+Neither satisfied nor dissatisfied,686,18.00%
+Somewhat dissatisfied,1085,28.00%
+Very dissatisfied,700,18.00%
+Don?t know,28,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Student experience (6),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,587,15.00%
+Somewhat satisfied,847,22.00%
+Neither satisfied nor dissatisfied,784,20.00%
+Somewhat dissatisfied,1048,27.00%
+Very dissatisfied,592,15.00%
+Don?t know,57,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Learning outcomes (7),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,616,16.00%
+Somewhat satisfied,866,22.00%
+Neither satisfied nor dissatisfied,719,18.00%
+Somewhat dissatisfied,1041,27.00%
+Very dissatisfied,651,17.00%
+Don?t know,22,1.00%
+Total,3915,100.00%
+,,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW = NONE OF THE ABOVE / DON'T KNOW]  (Q24) - Socialising and relationships (8),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Very satisfied,611,16.00%
+Somewhat satisfied,834,21.00%
+Neither satisfied nor dissatisfied,773,20.00%
+Somewhat dissatisfied,1019,26.00%
+Very dissatisfied,645,16.00%
+Don?t know,33,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Affordability (1),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1699,43.00%
+Neither,843,22.00%
+Satisfied,1338,34.00%
+Don?t know,35,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Availability of content in my language (2),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1933,49.00%
+Neither,630,16.00%
+Satisfied,1325,34.00%
+Don?t know,27,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Quality of content (3),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1801,46.00%
+Neither,666,17.00%
+Satisfied,1426,36.00%
+Don?t know,22,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Curriculum delivery (4),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1648,42.00%
+Neither,839,21.00%
+Satisfied,1377,35.00%
+Don?t know,51,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Available resources (5),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1785,46.00%
+Neither,686,18.00%
+Satisfied,1416,36.00%
+Don?t know,28,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Student experience (6),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1640,42.00%
+Neither,784,20.00%
+Satisfied,1434,37.00%
+Don?t know,57,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Learning outcomes (7),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1692,43.00%
+Neither,719,18.00%
+Satisfied,1482,38.00%
+Don?t know,22,1.00%
+Total,3915,100.00%
+,,
+Q24HID (Q24HID) - Socialising and relationships (8),,
+Q24. To what extent are you satisfied with the following aspects of the online educational activities you and/or members of your household have participated in during the pandemic? Select one in each row. [EMBEDDED TAG: Q24HID] [BASE: Q23NEW ? NONE OF THE ABOVE / DON'T KNOW] ,,
+Dissatisfied,1664,43.00%
+Neither,773,20.00%
+Satisfied,1445,37.00%
+Don?t know,33,1.00%
+Total,3915,100.00%
+,,
+Q25. Which of the following subjects have you sought information about via the internet at least once since the onset of the pandemic? Select all that apply.  (Q25),,
+Personal finances,2339,48.00%
+Health and fitness,2563,52.00%
+Government and politics,2209,45.00%
+Business,2170,44.00%
+Education,2501,51.00%
+News and current events,3051,62.00%
+The covid-19 pandemic,3414,70.00%
+"Other, please specify",5,0.00%
+None of the above,94,2.00%
+Don?t know,25,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Government websites/apps (1),,
+Not at all,348,7.00%
+To a limited degree,761,15.00%
+Somewhat,1272,26.00%
+Mostly,1516,31.00%
+Completely,942,19.00%
+Don?t know,71,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Non-government websites/apps that are based in my country (2),,
+Not at all,325,7.00%
+To a limited degree,1131,23.00%
+Somewhat,1648,34.00%
+Mostly,1158,24.00%
+Completely,532,11.00%
+Don?t know,116,2.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Non-government websites/apps that are based in other countries (3),,
+Not at all,417,8.00%
+To a limited degree,1216,25.00%
+Somewhat,1645,34.00%
+Mostly,1020,21.00%
+Completely,456,9.00%
+Don?t know,156,3.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Companies using social media (4),,
+Not at all,247,5.00%
+To a limited degree,978,20.00%
+Somewhat,1658,34.00%
+Mostly,1337,27.00%
+Completely,615,13.00%
+Don?t know,75,2.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Other people using social media (5),,
+Not at all,418,9.00%
+To a limited degree,1483,30.00%
+Somewhat,1526,31.00%
+Mostly,954,19.00%
+Completely,461,9.00%
+Don?t know,68,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Government organisations using social media (6),,
+Not at all,355,7.00%
+To a limited degree,858,17.00%
+Somewhat,1398,28.00%
+Mostly,1423,29.00%
+Completely,803,16.00%
+Don?t know,73,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. (Q26) - Non-governmental organisations using social media (7),,
+Not at all,365,7.00%
+To a limited degree,1088,22.00%
+Somewhat,1694,35.00%
+Mostly,1169,24.00%
+Completely,505,10.00%
+Don?t know,89,2.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Government websites/apps (1),,
+To a limited degree/not at all,1109,23.00%
+Somewhat,1272,26.00%
+Mostly/completely,2458,50.00%
+Don?t know,71,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Non-government websites/apps that are based in my country (2),,
+To a limited degree/not at all,1456,30.00%
+Somewhat,1648,34.00%
+Mostly/completely,1690,34.00%
+Don?t know,116,2.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Non-government websites/apps that are based in other countries (3),,
+To a limited degree/not at all,1633,33.00%
+Somewhat,1645,34.00%
+Mostly/completely,1476,30.00%
+Don?t know,156,3.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Companies using social media (4),,
+To a limited degree/not at all,1225,25.00%
+Somewhat,1658,34.00%
+Mostly/completely,1952,40.00%
+Don?t know,75,2.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Other people using social media (5),,
+To a limited degree/not at all,1901,39.00%
+Somewhat,1526,31.00%
+Mostly/completely,1415,29.00%
+Don?t know,68,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Government organisations using social media (6),,
+To a limited degree/not at all,1213,25.00%
+Somewhat,1398,28.00%
+Mostly/completely,2226,45.00%
+Don?t know,73,1.00%
+Total,4910,100.00%
+,,
+Q26. To what extent do you trust the information you receive from the following sources online? Select one in each row. [EMBEDDED TAG: Q26HID] (Q26HID) - Non-governmental organisations using social media (7),,
+To a limited degree/not at all,1453,30.00%
+Somewhat,1694,35.00%
+Mostly/completely,1674,34.00%
+Don?t know,89,2.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me decide what I want to do in life (1),,
+Disagree strongly,391,8.00%
+Disagree somewhat,510,10.00%
+Neither agree nor disagree,1120,23.00%
+Agree somewhat,1662,34.00%
+Agree strongly,1208,25.00%
+Don?t know,19,0.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me discover who I am (2),,
+Disagree strongly,544,11.00%
+Disagree somewhat,612,12.00%
+Neither agree nor disagree,1312,27.00%
+Agree somewhat,1440,29.00%
+Agree strongly,960,20.00%
+Don?t know,42,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me support social causes I care about (3),,
+Disagree strongly,253,5.00%
+Disagree somewhat,409,8.00%
+Neither agree nor disagree,1106,23.00%
+Agree somewhat,1805,37.00%
+Agree strongly,1281,26.00%
+Don?t know,56,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me become more financially independent (4),,
+Disagree strongly,397,8.00%
+Disagree somewhat,522,11.00%
+Neither agree nor disagree,1207,25.00%
+Agree somewhat,1567,32.00%
+Agree strongly,1184,24.00%
+Don?t know,33,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me express my own political opinions (5),,
+Disagree strongly,532,11.00%
+Disagree somewhat,521,11.00%
+Neither agree nor disagree,1267,26.00%
+Agree somewhat,1507,31.00%
+Agree strongly,1022,21.00%
+Don?t know,61,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped me pursue my education or that of my household members (6),,
+Disagree strongly,302,6.00%
+Disagree somewhat,379,8.00%
+Neither agree nor disagree,878,18.00%
+Agree somewhat,1627,33.00%
+Agree strongly,1681,34.00%
+Don?t know,43,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. (Q27) - Using the internet has helped give me the confidence to express myself (7),,
+Disagree strongly,369,8.00%
+Disagree somewhat,473,10.00%
+Neither agree nor disagree,1157,24.00%
+Agree somewhat,1607,33.00%
+Agree strongly,1275,26.00%
+Don?t know,29,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me decide what I want to do in life (1),,
+Disagree,901,18.00%
+Neither,1120,23.00%
+Agree,2870,58.00%
+Don?t know,19,0.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me discover who I am (2),,
+Disagree,1156,24.00%
+Neither,1312,27.00%
+Agree,2400,49.00%
+Don?t know,42,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me support social causes I care about (3),,
+Disagree,662,13.00%
+Neither,1106,23.00%
+Agree,3086,63.00%
+Don?t know,56,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me become more financially independent (4),,
+Disagree,919,19.00%
+Neither,1207,25.00%
+Agree,2751,56.00%
+Don?t know,33,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me express my own political opinions (5),,
+Disagree,1053,21.00%
+Neither,1267,26.00%
+Agree,2529,52.00%
+Don?t know,61,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped me pursue my education or that of my household members (6),,
+Disagree,681,14.00%
+Neither,878,18.00%
+Agree,3308,67.00%
+Don?t know,43,1.00%
+Total,4910,100.00%
+,,
+Q27. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q27HID] (Q27HID) - Using the internet has helped give me the confidence to express myself (7),,
+Disagree,842,17.00%
+Neither,1157,24.00%
+Agree,2882,59.00%
+Don?t know,29,1.00%
+Total,4910,100.00%
+,,
+Q28. How confident are you that your activity online is private? Select one. (Q28),,
+Not at all confident,667,14.00%
+Not very confident,1521,31.00%
+Somewhat confident,1825,37.00%
+Very confident,842,17.00%
+Don?t know,55,1.00%
+Total,4910,100.00%
+,,
+Q28. How confident are you that your activity online is private? Select one. [EMBEDDED TAG: Q28HID] (Q28HID),,
+Less confident,2188,45.00%
+More confident,2667,54.00%
+Don?t know,55,1.00%
+Total,4910,100.00%
+,,
+Q29. How have privacy concerns changed the way you use the internet? Select all that apply.  (Q29),,
+I am more careful about which websites I visit,2771,56.00%
+I am more careful about which apps I use,2599,53.00%
+I limit how much financial information I share online,2302,47.00%
+I limit how much personal health and medical information I share online,1633,33.00%
+I interact with fewer people online,1185,24.00%
+I interact online only with people I know in real life,1583,32.00%
+I avoid expressing personal opinions and beliefs online,1496,30.00%
+I avoid spending too much money online,1639,33.00%
+I avoid posting personal photos online,1997,41.00%
+"Other, please specify",4,0.00%
+Privacy concerns have not changed the way I use the internet,273,6.00%
+Don?t know,62,1.00%
+Total,4910,100.00%
+,,
+How have privacy concerns changed the way you use the internet? (Q29_Recode),,
+ANY NET,4575,93.00%
+Privacy concerns /Don't know,335,7.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - The pandemic has widened the economic divide between those who have access to the internet and those who do not (1),,
+Disagree strongly,160,3.00%
+Disagree somewhat,379,8.00%
+Neither agree nor disagree,1097,22.00%
+Agree somewhat,1763,36.00%
+Agree strongly,1403,29.00%
+Don?t know,108,2.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - My life would be worse without the internet (2),,
+Disagree strongly,289,6.00%
+Disagree somewhat,434,9.00%
+Neither agree nor disagree,1031,21.00%
+Agree somewhat,1561,32.00%
+Agree strongly,1552,32.00%
+Don?t know,43,1.00%
+Total,4910,100.00%
+,,
+"Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - The internet has helped to improve gender equality (eg, equal rights and opportunities for  all genders) in my country  (3)",,
+Disagree strongly,267,5.00%
+Disagree somewhat,384,8.00%
+Neither agree nor disagree,1469,30.00%
+Agree somewhat,1620,33.00%
+Agree strongly,1058,22.00%
+Don?t know,112,2.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - Being able to use the internet to access information and express opinions should be a human right (4),,
+Disagree strongly,136,3.00%
+Disagree somewhat,223,5.00%
+Neither agree nor disagree,926,19.00%
+Agree somewhat,1663,34.00%
+Agree strongly,1908,39.00%
+Don?t know,54,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - The internet has improved life in my country (5),,
+Disagree strongly,181,4.00%
+Disagree somewhat,346,7.00%
+Neither agree nor disagree,1075,22.00%
+Agree somewhat,1804,37.00%
+Agree strongly,1435,29.00%
+Don?t know,69,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - The internet is not good for everyone (6),,
+Disagree strongly,560,11.00%
+Disagree somewhat,654,13.00%
+Neither agree nor disagree,1096,22.00%
+Agree somewhat,1462,30.00%
+Agree strongly,1086,22.00%
+Don?t know,52,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - The internet is a significant source of misinformation (7),,
+Disagree strongly,474,10.00%
+Disagree somewhat,607,12.00%
+Neither agree nor disagree,1156,24.00%
+Agree somewhat,1541,31.00%
+Agree strongly,1084,22.00%
+Don?t know,48,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. (Q30) - Online harassment and cyberbullying are more common than in the past   (8),,
+Disagree strongly,133,3.00%
+Disagree somewhat,317,6.00%
+Neither agree nor disagree,840,17.00%
+Agree somewhat,1720,35.00%
+Agree strongly,1769,36.00%
+Don?t know,131,3.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - The pandemic has widened the economic divide between those who have access to the internet and those who do not (1),,
+Disagree,539,11.00%
+Neither,1097,22.00%
+Agree,3166,64.00%
+Don?t know,108,2.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - My life would be worse without the internet (2),,
+Disagree,723,15.00%
+Neither,1031,21.00%
+Agree,3113,63.00%
+Don?t know,43,1.00%
+Total,4910,100.00%
+,,
+"Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - The internet has helped to improve gender equality (eg, equal rights and opportunities for  all genders) in my country  (3)",,
+Disagree,651,13.00%
+Neither,1469,30.00%
+Agree,2678,55.00%
+Don?t know,112,2.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - Being able to use the internet to access information and express opinions should be a human right (4),,
+Disagree,359,7.00%
+Neither,926,19.00%
+Agree,3571,73.00%
+Don?t know,54,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - The internet has improved life in my country (5),,
+Disagree,527,11.00%
+Neither,1075,22.00%
+Agree,3239,66.00%
+Don?t know,69,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - The internet is not good for everyone (6),,
+Disagree,1214,25.00%
+Neither,1096,22.00%
+Agree,2548,52.00%
+Don?t know,52,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - The internet is a significant source of misinformation (7),,
+Disagree,1081,22.00%
+Neither,1156,24.00%
+Agree,2625,53.00%
+Don?t know,48,1.00%
+Total,4910,100.00%
+,,
+Q30. To what extent do you agree with the following statements? Select one in each row. [EMBEDDED TAG: Q30HID] (Q30HID) - Online harassment and cyberbullying are more common than in the past   (8),,
+Disagree,450,9.00%
+Neither,840,17.00%
+Agree,3489,71.00%
+Don?t know,131,3.00%
+Total,4910,100.00%
+,,
+Q31. What is the highest level of education you have completed? Select one. (Q31),,
+Less than high school,139,3.00%
+High school / GED,875,18.00%
+"Some college or technical school, no degree",413,8.00%
+Currently attending technical school,43,1.00%
+Currently attending college/university,321,7.00%
+Technical degree,306,6.00%
+College/university degree,1852,38.00%
+"Currently attending advanced program (Master?s, Doctoral or Professional)",62,1.00%
+Master?s degree,642,13.00%
+Doctoral degree,93,2.00%
+"Professional degree (e.g., Doctor of Law or Medicine)",126,3.00%
+Do not care to respond,38,1.00%
+Total,4910,100.00%
+,,
+Q31. What is the highest level of education you have completed? Select one. [EMBEDDED TAG: EDUCATION] (Q31HID),,
+Less than college,2097,43.00%
+College degree or more,2775,57.00%
+Do not care to respond,38,1.00%
+Total,4910,100.00%
+,,
+Q32. Which if any of the following apply to you? Select all that apply.  (Q32),,
+Married or in a committed relationship,2244,46.00%
+Not married or in a relationship,1121,23.00%
+Parent of child(ren) ages 12 and under,916,19.00%
+Parent of child(ren) ages 13-17,419,9.00%
+Parent of child(ren) 18+,413,8.00%
+Living alone,466,9.00%
+Living with family,1480,30.00%
+Living with roommates or flatmates,160,3.00%
+None of these,40,1.00%
+Do not care to answer,68,1.00%
+Total,4910,100.00%

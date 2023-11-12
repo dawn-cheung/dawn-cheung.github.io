@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -123,54 +157,84 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 <p><em>Work in progress for final project</em></p>
-<p>mapplotting &lt;- function(mapdataset, filldata, colourscheme) {</p>
-<p>ggplot(mapdataset, aes(long, lat, group = group)) +</p>
-<p>geom_polygon(aes(fill = filldata), color = “white”, size = 0.03) +</p>
-<p>scale_fill_viridis_c(option = colourscheme) +</p>
-<p>theme(plot.margin = margin(0, 0, 0, 0, “cm”))</p>
-<p>}</p>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="1152"></p>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] "YES OK ITS ISO3C"
+[1] "isTRUE(wee$values == accessyear$values"
+       long      lat group order region subregion Country.Name Dyear values
+1 -69.89912 12.45200     1     1     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA
+2 -69.89571 12.42300     1     2     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA
+3 -69.94219 12.43853     1     3     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA
+4 -70.00415 12.50049     1     4     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA
+5 -70.06612 12.54697     1     5     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA
+6 -70.05088 12.59707     1     6     AW      &lt;NA&gt;         &lt;NA&gt;  &lt;NA&gt;     NA</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-2.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-1.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       long      lat group order region subregion Country Dyear values
+1 -69.89912 12.45200     1     1     AW      &lt;NA&gt;   Aruba D2019  15.15
+2 -69.89571 12.42300     1     2     AW      &lt;NA&gt;   Aruba D2019  15.15
+3 -69.94219 12.43853     1     3     AW      &lt;NA&gt;   Aruba D2019  15.15
+4 -70.00415 12.50049     1     4     AW      &lt;NA&gt;   Aruba D2019  15.15
+5 -70.06612 12.54697     1     5     AW      &lt;NA&gt;   Aruba D2019  15.15
+6 -70.05088 12.59707     1     6     AW      &lt;NA&gt;   Aruba D2019  15.15</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-3.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-2.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output cell-output-stdout">
+<pre><code>       long      lat group order region subregion  Name Continental.region
+1 -69.89912 12.45200     1     1     AW      &lt;NA&gt; Aruba          CARIBBEAN
+2 -69.89571 12.42300     1     2     AW      &lt;NA&gt; Aruba          CARIBBEAN
+3 -69.94219 12.43853     1     3     AW      &lt;NA&gt; Aruba          CARIBBEAN
+4 -70.00415 12.50049     1     4     AW      &lt;NA&gt; Aruba          CARIBBEAN
+5 -70.06612 12.54697     1     5     AW      &lt;NA&gt; Aruba          CARIBBEAN
+6 -70.05088 12.59707     1     6     AW      &lt;NA&gt; Aruba          CARIBBEAN
+  Price.per.GB...change..5.years. Dyear values
+1                         -66.62% D2019   5.56
+2                         -66.62% D2019   5.56
+3                         -66.62% D2019   5.56
+4                         -66.62% D2019   5.56
+5                         -66.62% D2019   5.56
+6                         -66.62% D2019   5.56</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-4.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-3.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-5.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-4.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-6.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-5.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-7.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-6.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-8.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-7.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-9.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-8.png" class="img-fluid" width="1152"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/myversion-9.png" class="img-fluid" width="1152"></p>
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 266 × 4
-   Country.Name                region Xyear accessyear_values
+   Country.Name                region Dyear accessyear_values
    &lt;chr&gt;                       &lt;chr&gt;  &lt;chr&gt;             &lt;dbl&gt;
- 1 Aruba                       AW     X2020              NA  
- 2 Africa Eastern and Southern &lt;NA&gt;   X2020              25.0
- 3 Afghanistan                 AF     X2020              18.4
- 4 Africa Western and Central  &lt;NA&gt;   X2020              41.7
- 5 Angola                      AO     X2020              32.6
- 6 Albania                     AL     X2020              72.2
- 7 Andorra                     AD     X2020              93.2
- 8 Arab World                  &lt;NA&gt;   X2020              66.4
- 9 United Arab Emirates        AE     X2020             100  
-10 Argentina                   AR     X2020              85.5
+ 1 Aruba                       AW     D2020              NA  
+ 2 Africa Eastern and Southern &lt;NA&gt;   D2020              25.0
+ 3 Afghanistan                 AF     D2020              18.4
+ 4 Africa Western and Central  &lt;NA&gt;   D2020              41.7
+ 5 Angola                      AO     D2020              32.6
+ 6 Albania                     AL     D2020              72.2
+ 7 Andorra                     AD     D2020              93.2
+ 8 Arab World                  &lt;NA&gt;   D2020              66.4
+ 9 United Arab Emirates        AE     D2020             100  
+10 Argentina                   AR     D2020              85.5
 # ℹ 256 more rows</code></pre>
 </div>
 <div class="cell-output cell-output-stdout">
@@ -192,20 +256,191 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="cell-output cell-output-stdout">
 <pre><code># A tibble: 6 × 9
-  Country.Name                region Xyear values.x Name      Continental.region
-  &lt;chr&gt;                       &lt;chr&gt;  &lt;chr&gt;    &lt;dbl&gt; &lt;chr&gt;     &lt;chr&gt;             
-1 Aruba                       AW     X2020     NA   Aruba     CARIBBEAN         
-2 Africa Eastern and Southern &lt;NA&gt;   X2020     25.0 Namibia   SUB-SAHARAN AFRICA
-3 Afghanistan                 AF     X2020     18.4 Afghanis… ASIA (EX. NEAR EA…
-4 Africa Western and Central  &lt;NA&gt;   X2020     41.7 Namibia   SUB-SAHARAN AFRICA
-5 Angola                      AO     X2020     32.6 Angola    SUB-SAHARAN AFRICA
-6 Albania                     AL     X2020     72.2 Albania   EASTERN EUROPE    
-# ℹ 3 more variables: Price.per.GB...change..5.years. &lt;chr&gt;, Dyear &lt;chr&gt;,
+  Country.Name                region Dyear.x values.x Name    Continental.region
+  &lt;chr&gt;                       &lt;chr&gt;  &lt;chr&gt;      &lt;dbl&gt; &lt;chr&gt;   &lt;chr&gt;             
+1 Aruba                       AW     D2020       NA   Aruba   CARIBBEAN         
+2 Africa Eastern and Southern &lt;NA&gt;   D2020       25.0 Namibia SUB-SAHARAN AFRICA
+3 Afghanistan                 AF     D2020       18.4 Afghan… ASIA (EX. NEAR EA…
+4 Africa Western and Central  &lt;NA&gt;   D2020       41.7 Namibia SUB-SAHARAN AFRICA
+5 Angola                      AO     D2020       32.6 Angola  SUB-SAHARAN AFRICA
+6 Albania                     AL     D2020       72.2 Albania EASTERN EUROPE    
+# ℹ 3 more variables: Price.per.GB...change..5.years. &lt;chr&gt;, Dyear.y &lt;chr&gt;,
 #   values.y &lt;chr&gt;</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unnamed-chunk-1-10.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/myversion-10.png" class="img-fluid" width="1152"></p>
 </div>
+<div class="cell-output-display">
+<p><iframe data-deferred-src="appb6f2f6eb060fd1c309e0bd51b92502a3/?w=&amp;__subapp__=1" width="100%" height="400" class="shiny-frame shiny-frame-deferred"></iframe></p>
+</div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countrycode)</span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the data with coordinates</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a>world_map <span class="ot">&lt;-</span> <span class="fu">map_data</span>(<span class="st">"world"</span>)</span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>world_map<span class="sc">$</span>region <span class="ot">&lt;-</span> <span class="fu">countrycode</span>(world_map<span class="sc">$</span>region, <span class="st">"country.name"</span>, <span class="st">"iso3c"</span>)</span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a>accesstonet <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"accesstointernet.csv"</span>)</span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>netspeed <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"worldwideInternetSpeed.csv"</span>) <span class="co">#ISO2 code used in dataset!</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a>netprice <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"worldwideMobileDataPricing2019to2023.csv"</span>) <span class="co">#ISO2 code used in dataset!</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="co">#data cleaning for access to net</span></span>
+<span id="cb7-18"><a href="#cb7-18" aria-hidden="true" tabindex="-1"></a>access_dataset <span class="ot">&lt;-</span> accesstonet <span class="sc">%&gt;%</span></span>
+<span id="cb7-19"><a href="#cb7-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb7-20"><a href="#cb7-20" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> X1990<span class="sc">:</span>X2022,</span>
+<span id="cb7-21"><a href="#cb7-21" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"Xyear"</span>,</span>
+<span id="cb7-22"><a href="#cb7-22" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"values"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-23"><a href="#cb7-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">region =</span> Country.Code)</span>
+<span id="cb7-24"><a href="#cb7-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-25"><a href="#cb7-25" aria-hidden="true" tabindex="-1"></a><span class="co">#data cleaning for speed of net</span></span>
+<span id="cb7-26"><a href="#cb7-26" aria-hidden="true" tabindex="-1"></a>speed_dataset <span class="ot">&lt;-</span> netspeed <span class="sc">%&gt;%</span></span>
+<span id="cb7-27"><a href="#cb7-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb7-28"><a href="#cb7-28" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> D2017<span class="sc">:</span>D2023,</span>
+<span id="cb7-29"><a href="#cb7-29" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"Dyear"</span>,</span>
+<span id="cb7-30"><a href="#cb7-30" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"values"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-31"><a href="#cb7-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">region =</span> Country.Code)</span>
+<span id="cb7-32"><a href="#cb7-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-33"><a href="#cb7-33" aria-hidden="true" tabindex="-1"></a><span class="co">#data cleaning for price of net</span></span>
+<span id="cb7-34"><a href="#cb7-34" aria-hidden="true" tabindex="-1"></a>price_dataset <span class="ot">&lt;-</span> netprice <span class="sc">%&gt;%</span> <span class="co">#im ok i swear its just 2.30am now 3.17</span></span>
+<span id="cb7-35"><a href="#cb7-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">pivot_longer</span>(</span>
+<span id="cb7-36"><a href="#cb7-36" aria-hidden="true" tabindex="-1"></a>    <span class="at">cols =</span> D2019<span class="sc">:</span>D2023,</span>
+<span id="cb7-37"><a href="#cb7-37" aria-hidden="true" tabindex="-1"></a>    <span class="at">names_to =</span> <span class="st">"Dyear"</span>,</span>
+<span id="cb7-38"><a href="#cb7-38" aria-hidden="true" tabindex="-1"></a>    <span class="at">values_to =</span> <span class="st">"values"</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb7-39"><a href="#cb7-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">region =</span> Country.Code)</span>
+<span id="cb7-40"><a href="#cb7-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-41"><a href="#cb7-41" aria-hidden="true" tabindex="-1"></a>price_dataset<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">gsub</span>(<span class="st">'[$,]'</span>, <span class="st">''</span>, price_dataset<span class="sc">$</span>values) <span class="co">#apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.</span></span>
+<span id="cb7-42"><a href="#cb7-42" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-43"><a href="#cb7-43" aria-hidden="true" tabindex="-1"></a><span class="co">#filter by year</span></span>
+<span id="cb7-44"><a href="#cb7-44" aria-hidden="true" tabindex="-1"></a>accessyear <span class="ot">&lt;-</span> access_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Xyear <span class="sc">==</span> input<span class="sc">$</span>accessyear)</span>
+<span id="cb7-45"><a href="#cb7-45" aria-hidden="true" tabindex="-1"></a><span class="co">#join % pop access with world map</span></span>
+<span id="cb7-46"><a href="#cb7-46" aria-hidden="true" tabindex="-1"></a>sostupid_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, accessyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb7-47"><a href="#cb7-47" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-48"><a href="#cb7-48" aria-hidden="true" tabindex="-1"></a>world_map<span class="sc">$</span>region <span class="ot">&lt;-</span> <span class="fu">countrycode</span>(world_map<span class="sc">$</span>region, <span class="st">"iso3c"</span>, <span class="st">"iso2c"</span>) <span class="co">#RESET ISO CODES (applies to priceyear as well)</span></span>
+<span id="cb7-49"><a href="#cb7-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-50"><a href="#cb7-50" aria-hidden="true" tabindex="-1"></a><span class="co">#filter by year</span></span>
+<span id="cb7-51"><a href="#cb7-51" aria-hidden="true" tabindex="-1"></a>speedyear <span class="ot">&lt;-</span> speed_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Dyear <span class="sc">==</span> input<span class="sc">$</span>speedyear)</span>
+<span id="cb7-52"><a href="#cb7-52" aria-hidden="true" tabindex="-1"></a><span class="co">#join internet download speed (Mbps) with world map</span></span>
+<span id="cb7-53"><a href="#cb7-53" aria-hidden="true" tabindex="-1"></a>sohungry_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, speedyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb7-54"><a href="#cb7-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-55"><a href="#cb7-55" aria-hidden="true" tabindex="-1"></a><span class="co">#filter by year</span></span>
+<span id="cb7-56"><a href="#cb7-56" aria-hidden="true" tabindex="-1"></a>priceyear <span class="ot">&lt;-</span> price_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Dyear <span class="sc">==</span> input<span class="sc">$</span>priceyear)</span>
+<span id="cb7-57"><a href="#cb7-57" aria-hidden="true" tabindex="-1"></a><span class="co">#join internet price with world map</span></span>
+<span id="cb7-58"><a href="#cb7-58" aria-hidden="true" tabindex="-1"></a>sotired_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, priceyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb7-59"><a href="#cb7-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-60"><a href="#cb7-60" aria-hidden="true" tabindex="-1"></a>sohungry_map<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sohungry_map<span class="sc">$</span>values)</span>
+<span id="cb7-61"><a href="#cb7-61" aria-hidden="true" tabindex="-1"></a>sotired_map<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sotired_map<span class="sc">$</span>values)</span>
+<span id="cb7-62"><a href="#cb7-62" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-63"><a href="#cb7-63" aria-hidden="true" tabindex="-1"></a><span class="co">#group = group connects the points in the correct order</span></span>
+<span id="cb7-64"><a href="#cb7-64" aria-hidden="true" tabindex="-1"></a>mapplotting <span class="ot">&lt;-</span> <span class="cf">function</span>(mapdataset, filldata, colourscheme) {</span>
+<span id="cb7-65"><a href="#cb7-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(mapdataset, <span class="fu">aes</span>(long, lat, <span class="at">group =</span> group)) <span class="sc">+</span></span>
+<span id="cb7-66"><a href="#cb7-66" aria-hidden="true" tabindex="-1"></a>    <span class="fu">geom_polygon</span>(<span class="fu">aes</span>(<span class="at">fill =</span> filldata), <span class="at">color =</span> <span class="st">"white"</span>, <span class="at">size =</span> <span class="fl">0.03</span>) <span class="sc">+</span></span>
+<span id="cb7-67"><a href="#cb7-67" aria-hidden="true" tabindex="-1"></a>    <span class="fu">scale_fill_viridis_c</span>(<span class="at">option =</span> colourscheme) <span class="sc">+</span></span>
+<span id="cb7-68"><a href="#cb7-68" aria-hidden="true" tabindex="-1"></a>    <span class="fu">theme</span>(<span class="at">plot.margin =</span> <span class="fu">margin</span>(<span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="dv">0</span>, <span class="st">"cm"</span>))</span>
+<span id="cb7-69"><a href="#cb7-69" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb7-70"><a href="#cb7-70" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-71"><a href="#cb7-71" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb7-72"><a href="#cb7-72" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-73"><a href="#cb7-73" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Application title</span></span>
+<span id="cb7-74"><a href="#cb7-74" aria-hidden="true" tabindex="-1"></a>    <span class="fu">titlePanel</span>(<span class="st">"Internet Access, Speed, and Price by Year"</span>),</span>
+<span id="cb7-75"><a href="#cb7-75" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-76"><a href="#cb7-76" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Sidebar with a slider input for the year</span></span>
+<span id="cb7-77"><a href="#cb7-77" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarLayout</span>(</span>
+<span id="cb7-78"><a href="#cb7-78" aria-hidden="true" tabindex="-1"></a>        <span class="fu">sidebarPanel</span>(</span>
+<span id="cb7-79"><a href="#cb7-79" aria-hidden="true" tabindex="-1"></a>            <span class="fu">sliderInput</span>(<span class="st">"accessyear"</span>, <span class="st">"Access to Internet Year"</span>, <span class="at">min =</span> <span class="dv">1990</span>, <span class="at">max =</span> <span class="dv">2022</span>, <span class="at">value =</span> <span class="dv">2020</span>),</span>
+<span id="cb7-80"><a href="#cb7-80" aria-hidden="true" tabindex="-1"></a>            <span class="fu">sliderInput</span>(<span class="st">"speedyear"</span>, <span class="st">"Internet Speed Year"</span>, <span class="at">min =</span> <span class="dv">2017</span>, <span class="at">max =</span> <span class="dv">2023</span>, <span class="at">value =</span> <span class="dv">2020</span>),</span>
+<span id="cb7-81"><a href="#cb7-81" aria-hidden="true" tabindex="-1"></a>            <span class="fu">sliderInput</span>(<span class="st">"priceyear"</span>, <span class="st">"Internet Price Year"</span>, <span class="at">min =</span> <span class="dv">2019</span>, <span class="at">max =</span> <span class="dv">2023</span>, <span class="at">value =</span> <span class="dv">2020</span>)</span>
+<span id="cb7-82"><a href="#cb7-82" aria-hidden="true" tabindex="-1"></a>        ),</span>
+<span id="cb7-83"><a href="#cb7-83" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-84"><a href="#cb7-84" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Show a map with the corresponding data</span></span>
+<span id="cb7-85"><a href="#cb7-85" aria-hidden="true" tabindex="-1"></a>        <span class="fu">mainPanel</span>(</span>
+<span id="cb7-86"><a href="#cb7-86" aria-hidden="true" tabindex="-1"></a>            <span class="fu">mapplotting</span>(sostupid_map, sostupid_map<span class="sc">$</span>values, <span class="st">"B"</span>),</span>
+<span id="cb7-87"><a href="#cb7-87" aria-hidden="true" tabindex="-1"></a>            <span class="fu">mapplotting</span>(sohungry_map, sohungry_map<span class="sc">$</span>values, <span class="st">"C"</span>)</span>
+<span id="cb7-88"><a href="#cb7-88" aria-hidden="true" tabindex="-1"></a>        )</span>
+<span id="cb7-89"><a href="#cb7-89" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb7-90"><a href="#cb7-90" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(maps)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(sf)</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countrycode)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(shiny)</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggpubr)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Import the data with coordinates</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>world_map <span class="ot">&lt;-</span> <span class="fu">map_data</span>(<span class="st">"world"</span>)</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>world_map<span class="sc">$</span>region <span class="ot">&lt;-</span> <span class="fu">countrycode</span>(world_map<span class="sc">$</span>region, <span class="st">"country.name"</span>, <span class="st">"iso3c"</span>)</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>accesstonet <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"accesstointernet.csv"</span>)</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>netspeed <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"worldwideInternetSpeed.csv"</span>) <span class="co">#ISO2 code used in dataset!</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>netprice <span class="ot">&lt;-</span> <span class="fu">read.csv</span>(<span class="st">"worldwideMobileDataPricing2019to2023.csv"</span>) <span class="co">#ISO2 code used in dataset!</span></span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Data cleaning functions</span></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a>clean_data <span class="ot">&lt;-</span> <span class="cf">function</span>(dataset, year_col, value_cols) {</span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>  dataset <span class="sc">%&gt;%</span></span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">pivot_longer</span>(</span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>      <span class="at">cols =</span> value_cols,</span>
+<span id="cb8-21"><a href="#cb8-21" aria-hidden="true" tabindex="-1"></a>      <span class="at">names_to =</span> year_col,</span>
+<span id="cb8-22"><a href="#cb8-22" aria-hidden="true" tabindex="-1"></a>      <span class="at">values_to =</span> <span class="st">"values"</span></span>
+<span id="cb8-23"><a href="#cb8-23" aria-hidden="true" tabindex="-1"></a>    ) <span class="sc">%&gt;%</span></span>
+<span id="cb8-24"><a href="#cb8-24" aria-hidden="true" tabindex="-1"></a>    <span class="fu">rename</span>(<span class="at">region =</span> Country.Code)</span>
+<span id="cb8-25"><a href="#cb8-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-26"><a href="#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean access data</span></span>
+<span id="cb8-28"><a href="#cb8-28" aria-hidden="true" tabindex="-1"></a>access_dataset <span class="ot">&lt;-</span> <span class="fu">clean_data</span>(accesstonet, <span class="st">"Xyear"</span>, <span class="st">"X1990:X2022"</span>)</span>
+<span id="cb8-29"><a href="#cb8-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-30"><a href="#cb8-30" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean speed data</span></span>
+<span id="cb8-31"><a href="#cb8-31" aria-hidden="true" tabindex="-1"></a>speed_dataset <span class="ot">&lt;-</span> <span class="fu">clean_data</span>(netspeed, <span class="st">"Dyear"</span>, <span class="st">"D2017:D2023"</span>)</span>
+<span id="cb8-32"><a href="#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-33"><a href="#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co"># Clean price data</span></span>
+<span id="cb8-34"><a href="#cb8-34" aria-hidden="true" tabindex="-1"></a>price_dataset <span class="ot">&lt;-</span> <span class="fu">clean_data</span>(netprice, <span class="st">"Dyear"</span>, <span class="st">"D2019:D2023"</span>)</span>
+<span id="cb8-35"><a href="#cb8-35" aria-hidden="true" tabindex="-1"></a>price_dataset<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">'[$,]'</span>, <span class="st">''</span>, price_dataset<span class="sc">$</span>values))</span>
+<span id="cb8-36"><a href="#cb8-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-37"><a href="#cb8-37" aria-hidden="true" tabindex="-1"></a><span class="co"># Shiny app</span></span>
+<span id="cb8-38"><a href="#cb8-38" aria-hidden="true" tabindex="-1"></a>ui <span class="ot">&lt;-</span> <span class="fu">fluidPage</span>(</span>
+<span id="cb8-39"><a href="#cb8-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">titlePanel</span>(<span class="st">"Worldwide Internet Data"</span>),</span>
+<span id="cb8-40"><a href="#cb8-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">sidebarLayout</span>(</span>
+<span id="cb8-41"><a href="#cb8-41" aria-hidden="true" tabindex="-1"></a>    <span class="fu">sidebarPanel</span>(</span>
+<span id="cb8-42"><a href="#cb8-42" aria-hidden="true" tabindex="-1"></a>      <span class="fu">selectInput</span>(<span class="st">"yearInput"</span>, <span class="st">"Select Year"</span>, <span class="at">choices =</span> <span class="fu">unique</span>(access_dataset<span class="sc">$</span>Xyear))</span>
+<span id="cb8-43"><a href="#cb8-43" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb8-44"><a href="#cb8-44" aria-hidden="true" tabindex="-1"></a>    <span class="fu">mainPanel</span>(</span>
+<span id="cb8-45"><a href="#cb8-45" aria-hidden="true" tabindex="-1"></a>      <span class="fu">plotOutput</span>(<span class="st">"mapPlot"</span>)</span>
+<span id="cb8-46"><a href="#cb8-46" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb8-47"><a href="#cb8-47" aria-hidden="true" tabindex="-1"></a>  )</span>
+<span id="cb8-48"><a href="#cb8-48" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-49"><a href="#cb8-49" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-50"><a href="#cb8-50" aria-hidden="true" tabindex="-1"></a>server <span class="ot">&lt;-</span> <span class="cf">function</span>(input, output) {</span>
+<span id="cb8-51"><a href="#cb8-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">observe</span>({</span>
+<span id="cb8-52"><a href="#cb8-52" aria-hidden="true" tabindex="-1"></a>    accessyear <span class="ot">&lt;-</span> access_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Xyear <span class="sc">==</span> input<span class="sc">$</span>yearInput)</span>
+<span id="cb8-53"><a href="#cb8-53" aria-hidden="true" tabindex="-1"></a>    sostupid_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, accessyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb8-54"><a href="#cb8-54" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-55"><a href="#cb8-55" aria-hidden="true" tabindex="-1"></a>    speedyear <span class="ot">&lt;-</span> speed_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Dyear <span class="sc">==</span> input<span class="sc">$</span>yearInput)</span>
+<span id="cb8-56"><a href="#cb8-56" aria-hidden="true" tabindex="-1"></a>    sohungry_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, speedyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb8-57"><a href="#cb8-57" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-58"><a href="#cb8-58" aria-hidden="true" tabindex="-1"></a>    priceyear <span class="ot">&lt;-</span> price_dataset <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Dyear <span class="sc">==</span> input<span class="sc">$</span>yearInput)</span>
+<span id="cb8-59"><a href="#cb8-59" aria-hidden="true" tabindex="-1"></a>    sotired_map <span class="ot">&lt;-</span> <span class="fu">left_join</span>(world_map, priceyear, <span class="at">by =</span> <span class="st">"region"</span>)</span>
+<span id="cb8-60"><a href="#cb8-60" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>    sostupid_map<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sostupid_map<span class="sc">$</span>values)</span>
+<span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>    sohungry_map<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sohungry_map<span class="sc">$</span>values)</span>
+<span id="cb8-63"><a href="#cb8-63" aria-hidden="true" tabindex="-1"></a>    sotired_map<span class="sc">$</span>values <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(sotired_map<span class="sc">$</span>values)</span>
+<span id="cb8-64"><a href="#cb8-64" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb8-65"><a href="#cb8-65" aria-hidden="true" tabindex="-1"></a>    output<span class="sc">$</span>mapPlot <span class="ot">&lt;-</span> <span class="fu">renderPlot</span>({</span>
+<span id="cb8-66"><a href="#cb8-66" aria-hidden="true" tabindex="-1"></a>      <span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">3</span>), <span class="at">mar =</span> <span class="fu">c</span>(<span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>, <span class="dv">2</span>))</span>
+<span id="cb8-67"><a href="#cb8-67" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mapplotting</span>(sostupid_map, sostupid_map<span class="sc">$</span>values, <span class="st">"B"</span>)</span>
+<span id="cb8-68"><a href="#cb8-68" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mapplotting</span>(sohungry_map, sohungry_map<span class="sc">$</span>values, <span class="st">"C"</span>)</span>
+<span id="cb8-69"><a href="#cb8-69" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mapplotting</span>(sotired_map, sotired_map<span class="sc">$</span>values, <span class="st">"C"</span>)</span>
+<span id="cb8-70"><a href="#cb8-70" aria-hidden="true" tabindex="-1"></a>    })</span>
+<span id="cb8-71"><a href="#cb8-71" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb8-72"><a href="#cb8-72" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-73"><a href="#cb8-73" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-74"><a href="#cb8-74" aria-hidden="true" tabindex="-1"></a><span class="fu">shinyApp</span>(ui, server)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.<br>
 <br>
