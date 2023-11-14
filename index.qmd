@@ -18,6 +18,10 @@ library(countrycode)
 library(shiny)
 library(ggpubr)
 
+#SOURCES:
+#accesstointernet.csv: https://data.worldbank.org/indicator/IT.NET.USER.ZS?end=2022&start=2009&view=chart [Individuals using the Internet (% of population)]
+#https://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/ + https://www.worldometers.info/world-population/japan-population/ [to estimate Individuals using the Internet (% of population) in 2022 where there was insufficient data in the earlier datatset]
+
 # Import the data with coordinates
 world_map <- map_data("world")
 world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
@@ -196,11 +200,11 @@ ui <- fluidPage(
       # Input: Selector for choosing dataset ----
       selectInput(inputId = "dataset",
                   label = "Choose a dataset:",
-                  choices = c("speedyear", "priceyear", "accessyear")),
+                  choices = c("SPEED: Mean download speed (Mbps)", "PRICE: Average price of 1GB (in USD)", "ACCESS: Individuals using the Internet (% of population)")),
 
       sliderInput(inputId = "year",
-                  label = "Choose the year",
-                  min = 1990, max = 2022, value = 2023),
+                  label = "Choose the year:",
+                  min = 1990, max = 2022, value = 2020, sep = ""),
     ),
 
     # Main panel for displaying outputs ----
@@ -214,201 +218,39 @@ ui <- fluidPage(
     )
   )
 )
-server <- function(input, output) {
+server <- function(input, output, session) {
 
   # Return the requested dataset ----
   datasetInput <- reactive({
     switch(input$dataset,
-           "accessyear" = access_dataset,
-           "priceyear" = price_dataset,
-           "speedyear" = speed_dataset)
+           "ACCESS: Individuals using the Internet (% of population)" = access_dataset,
+           "PRICE: Average price of 1GB (in USD)" = price_dataset, #2019-2023
+           "SPEED: Mean download speed (Mbps)" = speed_dataset) #2017 to 2023
   })
-
-  # Generate a summary of the dataset ----
-  output$summary <- renderPrint({
-    head(input$dataset)
+  observe({
+    if (identical(datasetInput(),access_dataset)) {
+      minnie = 1990L
+      maxxie = 2022L
+    } else if (identical(datasetInput(),price_dataset)) {
+      minnie = 2019L
+      maxxie = 2023L
+    } else if (identical(datasetInput(),speed_dataset)){
+      minnie = 2017L
+      maxxie = 2023L
+    }
+    updateSliderInput(
+      session = session,
+      inputId = "year",
+      min = minnie,
+      max = maxxie
+    )
   })
-
-  # Show the first "n" observations ----
   output$view <- renderPlot({
     mapplotting(datasetInput(), as.character(input$year), "B")
   })
 
 }
 shinyApp(ui, server)
-
-```
-
-```{r, eval = FALSE}
-library(tidyverse)
-library(ggplot2)
-library(maps)
-library(sf)
-library(dplyr)
-library(countrycode)
-library(shiny)
-library(ggpubr)
-
-# Import the data with coordinates
-world_map <- map_data("world")
-world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-accesstonet <- read.csv("accesstointernet.csv")
-netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
-
-#data cleaning for access to net
-access_dataset <- accesstonet %>%
-  pivot_longer(
-    cols = X1990:X2022,
-    names_to = "Xyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for speed of net
-speed_dataset <- netspeed %>%
-  pivot_longer(
-    cols = D2017:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for price of net
-price_dataset <- netprice %>% #im ok i swear its just 2.30am now 3.17
-  pivot_longer(
-    cols = D2019:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-price_dataset$values <- gsub('[$,]', '', price_dataset$values) #apparently the [] is required for non-alphabets?? gonna put this in the what i learned on my own thing.
-
-#filter by year
-accessyear <- access_dataset %>% filter(Xyear == input$accessyear)
-#join % pop access with world map
-sostupid_map <- left_join(world_map, accessyear, by = "region")
-
-world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES (applies to priceyear as well)
-
-#filter by year
-speedyear <- speed_dataset %>% filter(Dyear == input$speedyear)
-#join internet download speed (Mbps) with world map
-sohungry_map <- left_join(world_map, speedyear, by = "region")
-
-#filter by year
-priceyear <- price_dataset %>% filter(Dyear == input$priceyear)
-#join internet price with world map
-sotired_map <- left_join(world_map, priceyear, by = "region")
-
-sohungry_map$values <- as.numeric(sohungry_map$values)
-sotired_map$values <- as.numeric(sotired_map$values)
-
-#group = group connects the points in the correct order
-mapplotting <- function(mapdataset, filldata, colourscheme) {
-  ggplot(mapdataset, aes(long, lat, group = group)) +
-    geom_polygon(aes(fill = filldata), color = "white", size = 0.03) +
-    scale_fill_viridis_c(option = colourscheme) +
-    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
-}
-
-ui <- fluidPage(
-
-    # Application title
-    titlePanel("Internet Access, Speed, and Price by Year"),
-
-    # Sidebar with a slider input for the year
-    sidebarLayout(
-        sidebarPanel(
-            sliderInput("accessyear", "Access to Internet Year", min = 1990, max = 2022, value = 2020),
-            sliderInput("speedyear", "Internet Speed Year", min = 2017, max = 2023, value = 2020),
-            sliderInput("priceyear", "Internet Price Year", min = 2019, max = 2023, value = 2020)
-        ),
-
-        # Show a map with the corresponding data
-        mainPanel(
-            mapplotting(sostupid_map, sostupid_map$values, "B"),
-            mapplotting(sohungry_map, sohungry_map$values, "C")
-        )
-    )
-)
-```
-
-```{r, eval = FALSE}
-library(tidyverse)
-library(maps)
-library(sf)
-library(dplyr)
-library(countrycode)
-library(shiny)
-library(ggpubr)
-
-# Import the data with coordinates
-world_map <- map_data("world")
-world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-accesstonet <- read.csv("accesstointernet.csv")
-netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
-
-# Data cleaning functions
-clean_data <- function(dataset, year_col, value_cols) {
-  dataset %>%
-    pivot_longer(
-      cols = value_cols,
-      names_to = year_col,
-      values_to = "values"
-    ) %>%
-    rename(region = Country.Code)
-}
-
-# Clean access data
-access_dataset <- clean_data(accesstonet, "Xyear", "X1990:X2022")
-
-# Clean speed data
-speed_dataset <- clean_data(netspeed, "Dyear", "D2017:D2023")
-
-# Clean price data
-price_dataset <- clean_data(netprice, "Dyear", "D2019:D2023")
-price_dataset$values <- as.numeric(gsub('[$,]', '', price_dataset$values))
-
-# Shiny app
-ui <- fluidPage(
-  titlePanel("Worldwide Internet Data"),
-  sidebarLayout(
-    sidebarPanel(
-      selectInput("yearInput", "Select Year", choices = unique(access_dataset$Xyear))
-    ),
-    mainPanel(
-      plotOutput("mapPlot")
-    )
-  )
-)
-
-server <- function(input, output) {
-  observe({
-    accessyear <- access_dataset %>% filter(Xyear == input$yearInput)
-    sostupid_map <- left_join(world_map, accessyear, by = "region")
-    
-    speedyear <- speed_dataset %>% filter(Dyear == input$yearInput)
-    sohungry_map <- left_join(world_map, speedyear, by = "region")
-    
-    priceyear <- price_dataset %>% filter(Dyear == input$yearInput)
-    sotired_map <- left_join(world_map, priceyear, by = "region")
-    
-    sostupid_map$values <- as.numeric(sostupid_map$values)
-    sohungry_map$values <- as.numeric(sohungry_map$values)
-    sotired_map$values <- as.numeric(sotired_map$values)
-    
-    output$mapPlot <- renderPlot({
-      par(mfrow = c(1, 3), mar = c(2, 2, 2, 2))
-      mapplotting(sostupid_map, sostupid_map$values, "B")
-      mapplotting(sohungry_map, sohungry_map$values, "C")
-      mapplotting(sotired_map, sotired_map$values, "C")
-    })
-  })
-}
-
-shinyApp(ui, server)
-
-
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
