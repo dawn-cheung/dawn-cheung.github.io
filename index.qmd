@@ -1,10 +1,11 @@
 ---
 title: "dawn-cheung"
 output: html_document
-runtime: shiny
 ---
 
 *Work in progress for final project*
+
+<iframe height = "400" width = "100%" frameborder = "no" src = "https://myshinyappplease.shinyapps.io/MyShinyApp/"></iframe>
 
 ```{r myversion, eval=TRUE,echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 12}
 #remove all non-pg13 commenst when setting echo to true
@@ -17,6 +18,11 @@ library(dplyr)
 library(countrycode)
 library(shiny)
 library(ggpubr)
+library(rsconnect)
+
+#Shiny app:
+#https://myshinyappplease.shinyapps.io/MyShinyApp/
+
 
 #SOURCES:
 #accesstointernet.csv: https://data.worldbank.org/indicator/IT.NET.USER.ZS?end=2022&start=2009&view=chart [Individuals using the Internet (% of population)]
@@ -60,7 +66,7 @@ price_dataset$values <- gsub('[$,]', '', price_dataset$values)
 accessyear <- access_dataset %>% filter(Dyear == "D2020")
 sostupid_map <- left_join(world_map, accessyear, by = "region")
 
-world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES (applies to priceyear as well)
+world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES
 ISOCODESAREGGFKINGKILLME <- "iso2c"
 
 speedyear <- speed_dataset %>% filter(Dyear == "D2020")
