@@ -5,7 +5,7 @@ output: html_document
 
 *Work in progress for final project*
 
-<iframe height="425" width="145%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
+<iframe height="435" width="145%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
 
 </iframe>
 
@@ -192,72 +192,6 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           AgreeDisagreePie(66, "The internet has improved life in my country"),
           AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
-
-ui <- fluidPage(
-
-  # App title ----
-  titlePanel("Shiny Text"),
-
-  # Sidebar layout with a input and output definitions ----
-  sidebarLayout(
-
-    # Sidebar panel for inputs ----
-    sidebarPanel(
-
-      # Input: Selector for choosing dataset ----
-      selectInput(inputId = "dataset",
-                  label = "Choose a dataset:",
-                  choices = c("SPEED: Mean download speed (Mbps)", "PRICE: Average price of 1GB (in USD)", "ACCESS: Individuals using the Internet (% of population)")),
-
-      sliderInput(inputId = "year",
-                  label = "Choose the year:",
-                  min = 1990, max = 2022, value = 2020, sep = ""),
-    ),
-
-    # Main panel for displaying outputs ----
-    mainPanel(
-
-      # Output: Verbatim text for data summary ----
-      verbatimTextOutput("summary"),
-
-      # Output: HTML table with requested number of observations ----
-      plotOutput("view")
-    )
-  )
-)
-server <- function(input, output, session) {
-
-  # Return the requested dataset ----
-  datasetInput <- reactive({
-    switch(input$dataset,
-           "ACCESS: Individuals using the Internet (% of population)" = access_dataset,
-           "PRICE: Average price of 1GB (in USD)" = price_dataset, #2019-2023
-           "SPEED: Mean download speed (Mbps)" = speed_dataset) #2017 to 2023
-  })
-  observe({
-    if (identical(datasetInput(),access_dataset)) {
-      minnie = 1990L
-      maxxie = 2022L
-    } else if (identical(datasetInput(),price_dataset)) {
-      minnie = 2019L
-      maxxie = 2023L
-    } else if (identical(datasetInput(),speed_dataset)){
-      minnie = 2017L
-      maxxie = 2023L
-    }
-    updateSliderInput(
-      session = session,
-      inputId = "year",
-      min = minnie,
-      max = maxxie
-    )
-  })
-  output$view <- renderPlot({
-    mapplotting(datasetInput(), as.character(input$year), "B")
-  })
-
-}
-shinyApp(ui, server)
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
