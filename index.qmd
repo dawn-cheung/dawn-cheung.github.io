@@ -11,7 +11,6 @@ output: html_document
 
 ```{r myversion, eval=TRUE,echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 12}
 #remove all non-pg13 commenst when setting echo to true
-#idea for shiny: have 2 graphs side by side where you can choose which time periods you want to compare with
 library(tidyverse)
 library(ggplot2)
 library(maps)
