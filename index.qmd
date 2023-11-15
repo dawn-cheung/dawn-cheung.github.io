@@ -5,7 +5,7 @@ output: html_document
 
 *Work in progress for final project*
 
-<iframe height="400" width="100%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
+<iframe height="425" width="145%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
 
 </iframe>
 
