@@ -7,7 +7,6 @@ library(ggpubr)
 library(plotly)
 
 # Import the data with coordinates
-# Import the data with coordinates
 world_map <- map_data("world")
 world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
 ISOCODESAREGGFKINGKILLME <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
@@ -132,5 +131,6 @@ server <- function(input, output, session) {
     ggplotly(mapplotting(datasetInput(), as.character(input$year), "B"))
   }) %>% bindCache(datasetInput(), input$year)
   
+  shinyOptions(cache = cachem::cache_disk("./cache"))
 }
 shinyApp(ui, server)
