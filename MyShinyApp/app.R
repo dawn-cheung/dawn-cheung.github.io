@@ -1,6 +1,5 @@
 library(tidyverse)
 library(maps)
-library(sf)
 library(dplyr)
 library(countrycode)
 library(shiny)
@@ -131,7 +130,7 @@ server <- function(input, output, session) {
   })
   output$view <- renderPlotly({
     ggplotly(mapplotting(datasetInput(), as.character(input$year), "B"))
-  })
+  }) %>% bindCache(datasetInput(), input$year)
   
 }
 shinyApp(ui, server)
