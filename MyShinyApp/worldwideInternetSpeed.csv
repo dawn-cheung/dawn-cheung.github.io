@@ -1,248 +1,1730 @@
-Country,Country Code,D2017,D2018,D2019,D2020,D2021,D2022,D2023
-Jersey,JE,23.3,30.9,67.46,218.37,274.27,256.59,264.52
-Liechtenstein,LI,11.4,17.71,22.04,229.98,211.26,166.22,246.76
-Macao,MO,20.52,16.12,19.19,14.66,128.56,262.74,231.4
-Iceland,IS,10.55,18.85,22.13,116.88,191.83,216.56,229.35
-Gibraltar,GI,13.18,14.71,20.27,183.09,151.34,159.9,206.27
-Andorra,AD,12.07,27.14,38.31,213.41,164.66,159.8,190.4
-Luxembourg,LU,15.52,35.14,41.69,118.05,107.94,131.95,162.21
-Taiwan,TW,34.4,28.09,85.02,54.77,46.43,135.88,153.51
-France,FR,13.43,24.23,30.44,51.33,85.96,120.01,152.45
-Netherlands,NL,33.52,35.95,40.21,95.6,107.3,113.98,142.49
-Slovakia,SK,18.85,25.3,29.45,72.26,54.92,21.19,138.03
-United States,US,20,25.86,32.89,71.3,92.42,118.01,136.48
-Canada,CA,18.37,19.48,28.76,52.6,79.96,106.8,136.08
-Spain,ES,19.6,27.19,36.06,55.84,89.59,115.61,133.66
-San Marino,SM,Sample too small,Sample too small,38.73,24.26,40.55,40.34,126.88
-Monaco,MC,16.13,11.02,20.2,104.98,144.29,100.26,126.3
-Cayman Islands,KY,13.15,11.49,16.12,57.96,71.47,99.42,125.08
-Japan,JP,24.47,28.94,42.77,54.62,96.36,122.33,124.7
-Malta,MT,10.17,13.6,18.16,87.36,85.2,107.7,123.85
-Uruguay,UY,1.31,6.19,9.16,22.16,21.73,59.29,111.46
-Portugal,PT,21.72,21.28,22.75,37.99,63.02,91.61,106.53
-Belgium,BE,27.37,36.71,35.69,66.49,78.46,91.74,102.33
-Singapore,SG,55.13,60.39,70.86,72.75,97.61,116.62,101.75
-Norway,NO,29.13,40.12,38.46,67.31,88.67,88.8,101.66
-Romania,RO,21.33,38.6,21.8,61.08,67.4,112.39,100.66
-North Macedonia,MK,7.34,8.82,7.97,11.48,15.38,21.59,97.88
-New Zealand,NZ,16.85,23.77,32.72,66.66,85.95,94.44,97.09
-Slovenia,SI,18.37,21.41,27.83,65.46,67.2,38.15,97
-Puerto Rico,PR,6.44,6.88,8,47.87,40.52,72.78,96.65
-Bermuda,BM,5.94,9.13,13.55,73.6,96.54,91.96,95.58
-Sweden,SE,40.16,46,55.18,81.29,88.98,86.76,94.3
-Poland,PL,14.88,19.73,24.38,55.4,63.84,55.82,94.1
-Republic of Korea,KR,22.9,20.63,19.18,40.81,61.72,87.59,94
-United Kingdom,GB,16.51,18.57,22.37,37.82,51.48,72.06,93.63
-Barbados,BB,6.62,17.08,16.03,56.9,55.92,42.08,93.5
-Republic of Moldova,MD,10.75,13.88,11.56,27.48,36.47,66.08,92.1
-Lithuania,LT,25.12,27.17,30.66,56.63,56.17,84.8,87.09
-Estonia,EE,24.11,27.91,31.55,70.9,84.72,89.81,86.39
-Isle of Man,IM,9.01,10.54,11.04,44.16,52.1,91.97,85.89
-Chile,CL,1.67,4.74,3.89,16.1,13.76,89.18,85.49
-Hong Kong,HK,27.16,26.45,31.37,105.32,91.04,100.89,83.05
-Germany,DE,18.8,24,24.64,42.33,60.55,72.95,81.73
-Ireland,IE,13.92,18.22,23.87,34.87,51.41,70.42,76.16
-Switzerland,CH,26.93,29.92,38.85,110.45,50.83,63.2,75.39
-Grenada,GD,Sample too small,2.46,5.07,38.64,20.49,38.44,75.21
-Israel,IL,7.2,7.64,8.85,26.49,34.97,47.05,75.03
-Aruba,AW,3.12,13.27,15.15,89.81,70.66,61.1,73.42
-Brazil,BR,1.49,2.58,4.84,17.89,33.34,53.89,72.7
-U.S. Virgin Islands,VI,5.14,10.55,11.45,21.39,29.34,44.55,67.38
-Latvia,LV,30.36,28.63,32.74,52.32,63.28,62.55,66.79
-Dominica,DM,2.68,5.38,9.48,9.96,12.41,20.18,66.24
-Guernsey,GG,8.76,11.58,18.26,36.83,31.2,45.51,66.14
-Vatican City,VA,Sample too small,Sample too small,Sample too small,19.12,73.49,Sample too small,65.46
-Hungary,HU,23.16,34.01,31.1,99.74,104.07,42.99,63.41
-Finland,FI,20.9,24,29.34,44.05,55.08,56.28,62.82
-Thailand,TH,16.85,17.06,18.21,30.61,53.95,63.3,62.75
-Saint Pierre and Miquelon,PM,Sample too small,Sample too small,Sample too small,30.31,47.92,53.52,60.77
-Serbia,RS,12.25,13,19.17,24.74,36.59,51.84,60.53
-British Virgin Islands,VG,5.49,4.46,7.75,13.63,19.4,40.44,59.69
-Bahamas,BS,10.06,9.95,11.13,38.14,39.71,45.7,58.95
-Italy,IT,10.71,15.1,17.3,23.18,36.69,46.77,58.22
-Russia,RU,11.59,13.51,14.89,24.98,35.73,47.71,57.95
-Saint Vincent and the Grenadines,VC,Sample too small,2.6,3.81,15.69,14.32,30.03,57.71
-Kosovo,XK,Sample too small,11.64,12.07,20.3,22.21,38.64,57.32
-Panama,PA,2.3,7.05,8.09,36.55,30.58,30.04,56.93
-Trinidad and Tobago,TT,3.28,11.37,12.9,29.7,35.81,35.79,56.08
-Austria,AT,15.26,17.51,19.33,27.74,37.99,45.56,55.82
-Greece,GR,7.56,11.3,13.41,26.01,29.76,39.31,53.85
-Australia,AU,7.7,11.69,16.36,25.65,40.5,47.22,51.27
-Qatar,QA,3.89,3.8,5.35,23.98,24.16,25.02,50.68
-Denmark,DK,33.54,43.99,49.19,85.03,49.24,52.57,49.98
-Montenegro,ME,5.85,6.74,9.1,25.07,40.14,38.65,49.46
-Turks and Caicos Islands,TC,6.74,11.7,8.78,36.29,36.09,42.05,48.95
-India,IN,2.06,5.19,8.66,13.46,22.53,32.44,47.99
-Bahrain,BH,3.13,5.05,6.24,10.87,16.37,18.36,47.72
-St Kitts and Nevis,KN,1.72,6.12,6.16,7.11,12.96,17.55,47.27
-Czechia,CZ,17.31,23.71,23.27,28.12,37.23,39.15,46.81
-Guadeloupe,GP,1.63,4.21,6.72,11.49,21.32,21.34,45.93
-Réunion,RE,0.97,2.38,10.02,16.35,43.62,37.44,45.51
-Colombia,CO,2.12,3.25,3.48,8.8,13.13,32.41,45.13
-Jamaica,JM,6.6,8.25,9.08,20.01,20.96,26.46,45.07
-Bosnia and Herzegovina,BA,7,7.37,7.53,15.66,31.72,8.16,44.01
-Saint Lucia,LC,1.98,3,6.08,16.35,15.02,30.77,43.86
-United Arab Emirates,AE,4.17,4.35,9.62,28.33,29.9,22.75,43.62
-Saint Martin,MF,Sample too small,Sample too small,3.98,14.49,40.19,39.91,43.44
-Philippines,PH,3.69,5.18,6.05,8.77,16.84,31.6,43.36
-Argentina,AR,1.15,3.18,2.83,6.2,8.68,20.34,43.02
-Cyprus,CY,8.24,11.1,11,15.62,28.3,38.52,42.93
-Paraguay,PY,0.75,1.73,3.55,16.5,19.41,25.27,42.76
-Costa Rica,CR,1.53,3.96,4.52,16.42,19.02,24.58,42.51
-Malaysia,MY,6.69,13.3,23.86,46.82,42.83,50.44,42.2
-Faroe Islands,FO,7.48,10.38,10.21,15.47,21.59,28.4,41.97
-Curaçao,CW,1.99,5.99,7.64,20.87,20.18,29.26,41.51
-Saint-Barthélemy,BL,Sample too small,Sample too small,4.12,6.3,12.25,16.51,41.22
-Greenland,GL,3.15,Sample too small,6.51,18.65,41.56,48.42,41.19
-Peru,PE,1.41,3.31,2.86,7.98,11.35,32,41.04
-Kuwait,KW,2.21,2.76,3.88,12.06,18.06,30.87,41.02
-Bulgaria,BG,17.54,20.2,16.95,46.22,63.41,24.77,40.43
-Rwanda,RW,2.11,2.64,3.34,3.8,6.29,52.17,39.89
-Belize,BZ,5.14,3.93,6.8,16.57,23.12,27.1,38.86
-Ukraine,UA,8.18,11.28,7.72,15.09,25.26,47.74,38.13
-French Guiana,GF,1.34,2.37,2.26,5.8,10.99,14.81,37.98
-Marshall Islands,MH,Sample too small,Sample too small,Sample too small,2.75,6.71,5.76,36.89
-South Africa,ZA,4.36,6.38,8.4,14.04,19.94,28.62,36.46
-Martinique,MQ,2.3,5.74,7.23,14.02,19.88,19.28,35.87
-Mexico,MX,7.59,5.69,6.02,16.19,18.83,27.62,35.85
-New Caledonia,NC,2.23,3.16,4.34,15.15,31.79,32.34,35.72
-Burkina Faso,BF,0.49,0.84,1.02,4.19,10.73,13.43,35.64
-Belarus,BY,6.68,9.21,13.19,16.08,19.86,27.69,34.1
-Northern Mariana Islands,MP,Sample too small,Sample too small,Sample too small,9.53,13.15,35.94,34.03
-Armenia,AM,3.29,3.94,4.85,11.86,18.05,23.83,33.63
-Hashemite Kingdom of Jordan,JO,2.98,4.11,5.2,14.54,15.25,17.69,33.63
-Oman,OM,2.61,3.83,5.07,12.25,16.73,16.59,32.61
-Saudi Arabia,SA,3.06,4.09,5.27,12.67,18.1,22.42,32.42
-Brunei,BN,3.83,4.15,4.78,8.97,15.79,16.29,32.07
-Guyana,GY,0.89,2.64,3.49,4.43,9.26,14.81,31.45
-Mauritius,MU,1.53,2.39,5.02,7.28,8.53,13.44,29.78
-Vietnam,VN,5.46,6.72,7.02,13.41,20.66,21.54,29.25
-Anguilla,AI,Sample too small,Sample too small,4.59,5.38,9,13,29.15
-Antigua and Barbuda,AG,1.86,3.85,5.91,9.63,8.69,15.99,27.03
-Ecuador,EC,1.28,2.76,3.46,8.48,10.25,13.47,26.56
-"Bonaire, Sint Eustatius, and Saba",BQ,Sample too small,Sample too small,7.92,14.28,19.6,23.53,26.27
-Guam,GU,2.22,2.77,3.73,5.95,20.76,29.41,25.75
-Croatia,HR,12.57,15.6,17.22,33.82,49.77,20.74,25.72
-Albania,AL,4.67,5.56,7.61,12.36,19.36,11.47,25.36
-Nicaragua,NI,1.14,2.64,2.54,6.65,9.75,15.38,25.28
-Turkey,TR,3.96,4.9,5.27,8.86,11.58,16,24.84
-El Salvador,SV,2.34,2.78,2.93,6.13,9.95,12.53,23.56
-Guatemala,GT,3.31,3.13,3.22,7.61,9.85,13.36,23.26
-American Samoa,AS,Sample too small,Sample too small,Sample too small,11.28,11.76,16.52,22.01
-Uzbekistan,UZ,0.76,1.02,1.37,2.1,6.64,9.65,21.67
-Sri Lanka,LK,3.83,5.84,7.67,20.73,9.95,13.46,21.23
-Nigeria,NG,3.15,1.86,1.56,3.34,8.68,15.37,20.83
-Madagascar,MG,3.49,24.87,22.57,18,16.28,19.29,20.43
-Bhutan,BT,Sample too small,Sample too small,Sample too small,4.62,6.44,11.13,20.08
-Nepal,NP,0.97,2.36,3.62,5.22,6.84,11.78,19.99
-Dominican Republic,DO,6.22,4.41,4.09,10.69,11.87,12.66,19.48
-Seychelles,SC,5.84,1.72,2.93,3.96,12.04,14.89,18.75
-Georgia,GE,5.86,6.25,7.14,13.5,13.83,15.2,18.54
-Laos,LA,1.94,4.29,2.92,4.47,5.91,9.64,17.64
-Mayotte,YT,Sample too small,0.97,1.09,3.52,7.7,8.26,17.34
-Kyrgyzstan,KG,0.98,1.52,2.5,5.47,7.44,11.78,17.31
-Honduras,HN,3.47,2.8,2.84,5.93,7.17,10.88,16.76
-Morocco,MA,4.38,4.03,5.48,6.55,10.33,13.03,16.49
-Ivory Coast,CI,1.22,1.7,1.83,5.55,9.54,10.14,16.45
-Mongolia,MN,1.6,1.57,2.1,5.25,14.94,17.56,16.4
-Sint Maarten,SX,1.39,4.68,5.13,4.69,6.15,10.01,16
-Bolivia,BO,0.91,1.9,1.73,5.06,7.36,10.66,16
-Cambodia,KH,3.1,4.1,4.03,5.21,8.49,10.01,14.68
-French Polynesia,PF,1.34,1.42,1.51,4.28,7.67,8.72,14.55
-Republic of the Congo,CG,0.55,0.85,0.93,2,12.07,6.79,14.36
-Indonesia,ID,5.19,5.77,6.65,7.16,9.58,11.58,14.3
-Fiji,FJ,1.24,2.65,4.62,8.83,9.4,10.14,13.96
-Iran,IR,1.56,2.2,4.39,4.5,7.05,10.43,13.93
-Kazakhstan,KZ,4,4.45,4.66,5.01,5.83,9.89,13.13
-China,CN,1.55,2.38,2.69,2.09,2.06,2.78,12.66
-Uganda,UG,2.12,2.39,3.22,5.16,8.52,11.01,12.64
-Maldives,MV,1.62,1.98,1.81,5.88,7.45,13.57,12.49
-Suriname,SR,1.25,2.47,3.4,4.42,7.44,9.48,12.48
-Kenya,KE,8.83,10.11,7.62,8.2,11.27,12.42,12.46
-Ghana,GH,2.3,2.88,3.2,5.46,9.23,11.24,12.33
-Tanzania,TZ,1.49,1.96,2.34,4.54,8.6,10.52,11.92
-Lesotho,LS,Sample too small,Sample too small,Sample too small,7.43,8.46,10.68,11.75
-Palestine,PS,1.96,1.75,1.83,3.13,3.65,5.36,11.59
-Cabo Verde,CV,2,3.24,3.31,6.64,7.94,9.08,11.49
-Gabon,GA,0.41,1.13,1.26,4.37,4.99,5.81,11.22
-Mozambique,MZ,1.45,1.76,2.16,3.47,7.17,8.38,11.06
-Venezuela,VE,0.7,1.24,1.37,1.61,2.62,4.47,10.92
-Namibia,NA,1.81,2.62,3.39,3.91,4.42,9.28,10.8
-Haiti,HT,2.62,2.42,2.94,5.75,12.12,9.54,10.75
-Azerbaijan,AZ,2.67,2.52,3.1,4.89,6.63,6.61,10.2
-Egypt,EG,1.22,1.33,1.62,4.71,6.94,7.81,9.75
-Botswana,BW,1.07,1.5,1.92,2.78,3.65,9.36,9.61
-Tunisia,TN,3.5,3.67,4.64,5.66,7.46,8.32,9.6
-Solomon Islands,SB,Sample too small,Sample too small,Sample too small,Sample too small,5.33,Sample too small,9.51
-Iraq,IQ,1.6,1.21,1.39,2.69,5.58,6.48,9.37
-Senegal,SN,1.17,1.4,2.25,5.93,7.02,6.53,9.22
-Zimbabwe,ZW,2.49,2.86,2.73,6.92,7.92,8.94,9.18
-Angola,AO,1.05,1.49,1.21,4.15,5.88,6.66,9.13
-Benin,BJ,0.73,1.23,0.94,1.67,2.59,3.14,9.12
-Myanmar,MM,2.09,4.15,4.87,7.11,4.58,6.68,9.02
-Mauritania,MR,1.54,0.7,0.59,1.47,2.54,3.98,8.95
-Togo,TG,1.24,1.27,1.96,4.03,3.54,4.15,8.9
-Papua New Guinea,PG,1.19,1.92,2.47,2.67,5.1,7.55,8.75
-Guinea,GN,0.84,0.65,1.25,3.04,2.39,3.7,8.5
-Malawi,MW,0.92,1.17,1.59,4.07,4.96,8.48,8.26
-Algeria,DZ,1.11,1.25,1.37,1.83,3.08,6.27,7.73
-Mali,ML,0.84,0.95,1.56,3.45,4.72,4.69,7.56
-Sierra Leone,SL,Sample too small,1.61,1.2,3.86,2.19,3.79,7
-Vanuatu,VU,Sample too small,Sample too small,Sample too small,2.22,2.9,6.53,6.57
-Lebanon,LB,1.07,1.6,1.84,2.34,5.67,3.86,6.55
-Zambia,ZM,2.45,2.03,3.13,3.84,5.48,8.36,6.53
-São Tomé and Príncipe,ST,Sample too small,1.13,0.87,1.99,2.43,2.81,6.52
-Bangladesh,BD,1.34,1.97,2.72,3.24,2.9,3.74,6.41
-Libya,LY,0.89,1.42,1.88,2.6,3.73,5.27,6.32
-Chad,TD,Sample too small,Sample too small,Sample too small,2.25,2.39,3.49,5.83
-eSwatini (Formerly Swaziland),SZ,Sample too small,1.26,1.45,4.51,3.73,4.76,5.76
-Liberia,LR,2.12,1.61,2.11,6.83,5.23,4.19,5.6
-Niger,NE,Sample too small,0.83,0.71,2.77,3.23,4.33,5.5
-Pakistan,PK,0.91,1.32,1.44,2.14,2.82,3.55,5.32
-Sudan,SD,1.1,1.56,1.93,1.35,1.8,2.57,5.24
-Guinea-Bissau,GW,Sample too small,Sample too small,Sample too small,1.61,1.24,0.98,5.09
-Somalia,SO,0.62,0.6,0.86,1.14,1.59,1.6,5
-Djibouti,DJ,1.25,0.92,0.88,1.5,1.46,2.34,4.66
-Democratic Republic of the Congo,CD,0.72,0.86,1.1,2.06,3.63,4.9,4.62
-Turkmenistan,TM,1.4,0.56,0.7,0.74,0.5,0.77,4.49
-Gambia,GM,Sample too small,1.45,1.21,1.6,2.04,2.75,4.35
-Federated States of Micronesia,FM,Sample too small,Sample too small,Sample too small,4.49,1.63,3.96,4.25
-Cuba,CU,Sample too small,5.83,1.66,3.16,2.92,3.26,4.14
-South Sudan,SS,Sample too small,Sample too small,Sample too small,0.58,1.4,3.73,3.89
-Burundi,BI,Sample too small,2.56,3.03,4.04,2.82,3.44,3.7
-Ethiopia,ET,1.34,1.13,0.8,1.12,1.2,1.68,3.54
-Cameroon,CM,0.97,1.29,1.03,2.78,3.04,3.35,3.16
-Tajikistan,TJ,0.83,0.94,1.05,1.01,1.82,2.02,2.98
-Equatorial Guinea,GQ,Sample too small,Sample too small,0.51,0.75,1.3,1.34,2.7
-Democratic Republic of Timor-Leste,TL,Sample too small,0.49,0.45,0.89,1.33,0.94,2.5
-Syria,SY,0.68,0.81,0.95,0.76,1.67,2.88,2.3
-Yemen,YE,0.34,0.31,0.38,0.65,0.68,0.97,1.79
-Afghanistan,AF,1.27,1.15,1.26,1.37,1.41,0.98,1.71
-Aland Islands,AX,Sample too small,Sample too small,Sample too small,81.31,81.31,78.47,Sample too small
-Samoa,WS,Sample too small,Sample too small,Sample too small,Sample too small,6.8,Sample too small,Sample too small
-Palau,PW,Sample too small,Sample too small,Sample too small,4.24,4.84,Sample too small,Sample too small
-Comoros,KM,Sample too small,Sample too small,2.54,4.85,3.99,Sample too small,Sample too small
-Eritrea,ER,Sample too small,Sample too small,Sample too small,Sample too small,2.41,1.89,Sample too small
-Wallis and Futuna,WF,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Cocos (Keeling) Islands,CC,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Central African Republic,CF,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Cook Islands,CK,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Christmas Island,CX,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Western Sahara,EH,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Falkland Islands,FK,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-British Indian Ocean Territory,IO,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Kiribati,KI,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-North Korea,KP,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Montserrat,MS,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Norfolk Island,NF,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Nauru,NR,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Niue,NU,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Pitcairn Islands,PN,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Svalbard and Jan Mayen,SJ,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-French Southern and Antarctic Lands,TF,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Tokelau,TK,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Tonga,TO,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Tuvalu,TV,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-United States Minor Outlying Islands,UM,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small,Sample too small
-Global regional averages,,7.41,9.14,11.03,24.83,29.79,35.98,46.79
+Country,region,Dyear,values
+Jersey,JE,D2017,23.3
+Jersey,JE,D2018,30.9
+Jersey,JE,D2019,67.46
+Jersey,JE,D2020,218.37
+Jersey,JE,D2021,274.27
+Jersey,JE,D2022,256.59
+Jersey,JE,D2023,264.52
+Liechtenstein,LI,D2017,11.4
+Liechtenstein,LI,D2018,17.71
+Liechtenstein,LI,D2019,22.04
+Liechtenstein,LI,D2020,229.98
+Liechtenstein,LI,D2021,211.26
+Liechtenstein,LI,D2022,166.22
+Liechtenstein,LI,D2023,246.76
+Macao,MO,D2017,20.52
+Macao,MO,D2018,16.12
+Macao,MO,D2019,19.19
+Macao,MO,D2020,14.66
+Macao,MO,D2021,128.56
+Macao,MO,D2022,262.74
+Macao,MO,D2023,231.4
+Iceland,IS,D2017,10.55
+Iceland,IS,D2018,18.85
+Iceland,IS,D2019,22.13
+Iceland,IS,D2020,116.88
+Iceland,IS,D2021,191.83
+Iceland,IS,D2022,216.56
+Iceland,IS,D2023,229.35
+Gibraltar,GI,D2017,13.18
+Gibraltar,GI,D2018,14.71
+Gibraltar,GI,D2019,20.27
+Gibraltar,GI,D2020,183.09
+Gibraltar,GI,D2021,151.34
+Gibraltar,GI,D2022,159.9
+Gibraltar,GI,D2023,206.27
+Andorra,AD,D2017,12.07
+Andorra,AD,D2018,27.14
+Andorra,AD,D2019,38.31
+Andorra,AD,D2020,213.41
+Andorra,AD,D2021,164.66
+Andorra,AD,D2022,159.8
+Andorra,AD,D2023,190.4
+Luxembourg,LU,D2017,15.52
+Luxembourg,LU,D2018,35.14
+Luxembourg,LU,D2019,41.69
+Luxembourg,LU,D2020,118.05
+Luxembourg,LU,D2021,107.94
+Luxembourg,LU,D2022,131.95
+Luxembourg,LU,D2023,162.21
+Taiwan,TW,D2017,34.4
+Taiwan,TW,D2018,28.09
+Taiwan,TW,D2019,85.02
+Taiwan,TW,D2020,54.77
+Taiwan,TW,D2021,46.43
+Taiwan,TW,D2022,135.88
+Taiwan,TW,D2023,153.51
+France,FR,D2017,13.43
+France,FR,D2018,24.23
+France,FR,D2019,30.44
+France,FR,D2020,51.33
+France,FR,D2021,85.96
+France,FR,D2022,120.01
+France,FR,D2023,152.45
+Netherlands,NL,D2017,33.52
+Netherlands,NL,D2018,35.95
+Netherlands,NL,D2019,40.21
+Netherlands,NL,D2020,95.6
+Netherlands,NL,D2021,107.3
+Netherlands,NL,D2022,113.98
+Netherlands,NL,D2023,142.49
+Slovakia,SK,D2017,18.85
+Slovakia,SK,D2018,25.3
+Slovakia,SK,D2019,29.45
+Slovakia,SK,D2020,72.26
+Slovakia,SK,D2021,54.92
+Slovakia,SK,D2022,21.19
+Slovakia,SK,D2023,138.03
+United States,US,D2017,20
+United States,US,D2018,25.86
+United States,US,D2019,32.89
+United States,US,D2020,71.3
+United States,US,D2021,92.42
+United States,US,D2022,118.01
+United States,US,D2023,136.48
+Canada,CA,D2017,18.37
+Canada,CA,D2018,19.48
+Canada,CA,D2019,28.76
+Canada,CA,D2020,52.6
+Canada,CA,D2021,79.96
+Canada,CA,D2022,106.8
+Canada,CA,D2023,136.08
+Spain,ES,D2017,19.6
+Spain,ES,D2018,27.19
+Spain,ES,D2019,36.06
+Spain,ES,D2020,55.84
+Spain,ES,D2021,89.59
+Spain,ES,D2022,115.61
+Spain,ES,D2023,133.66
+San Marino,SM,D2017,Sample too small
+San Marino,SM,D2018,Sample too small
+San Marino,SM,D2019,38.73
+San Marino,SM,D2020,24.26
+San Marino,SM,D2021,40.55
+San Marino,SM,D2022,40.34
+San Marino,SM,D2023,126.88
+Monaco,MC,D2017,16.13
+Monaco,MC,D2018,11.02
+Monaco,MC,D2019,20.2
+Monaco,MC,D2020,104.98
+Monaco,MC,D2021,144.29
+Monaco,MC,D2022,100.26
+Monaco,MC,D2023,126.3
+Cayman Islands,KY,D2017,13.15
+Cayman Islands,KY,D2018,11.49
+Cayman Islands,KY,D2019,16.12
+Cayman Islands,KY,D2020,57.96
+Cayman Islands,KY,D2021,71.47
+Cayman Islands,KY,D2022,99.42
+Cayman Islands,KY,D2023,125.08
+Japan,JP,D2017,24.47
+Japan,JP,D2018,28.94
+Japan,JP,D2019,42.77
+Japan,JP,D2020,54.62
+Japan,JP,D2021,96.36
+Japan,JP,D2022,122.33
+Japan,JP,D2023,124.7
+Malta,MT,D2017,10.17
+Malta,MT,D2018,13.6
+Malta,MT,D2019,18.16
+Malta,MT,D2020,87.36
+Malta,MT,D2021,85.2
+Malta,MT,D2022,107.7
+Malta,MT,D2023,123.85
+Uruguay,UY,D2017,1.31
+Uruguay,UY,D2018,6.19
+Uruguay,UY,D2019,9.16
+Uruguay,UY,D2020,22.16
+Uruguay,UY,D2021,21.73
+Uruguay,UY,D2022,59.29
+Uruguay,UY,D2023,111.46
+Portugal,PT,D2017,21.72
+Portugal,PT,D2018,21.28
+Portugal,PT,D2019,22.75
+Portugal,PT,D2020,37.99
+Portugal,PT,D2021,63.02
+Portugal,PT,D2022,91.61
+Portugal,PT,D2023,106.53
+Belgium,BE,D2017,27.37
+Belgium,BE,D2018,36.71
+Belgium,BE,D2019,35.69
+Belgium,BE,D2020,66.49
+Belgium,BE,D2021,78.46
+Belgium,BE,D2022,91.74
+Belgium,BE,D2023,102.33
+Singapore,SG,D2017,55.13
+Singapore,SG,D2018,60.39
+Singapore,SG,D2019,70.86
+Singapore,SG,D2020,72.75
+Singapore,SG,D2021,97.61
+Singapore,SG,D2022,116.62
+Singapore,SG,D2023,101.75
+Norway,NO,D2017,29.13
+Norway,NO,D2018,40.12
+Norway,NO,D2019,38.46
+Norway,NO,D2020,67.31
+Norway,NO,D2021,88.67
+Norway,NO,D2022,88.8
+Norway,NO,D2023,101.66
+Romania,RO,D2017,21.33
+Romania,RO,D2018,38.6
+Romania,RO,D2019,21.8
+Romania,RO,D2020,61.08
+Romania,RO,D2021,67.4
+Romania,RO,D2022,112.39
+Romania,RO,D2023,100.66
+North Macedonia,MK,D2017,7.34
+North Macedonia,MK,D2018,8.82
+North Macedonia,MK,D2019,7.97
+North Macedonia,MK,D2020,11.48
+North Macedonia,MK,D2021,15.38
+North Macedonia,MK,D2022,21.59
+North Macedonia,MK,D2023,97.88
+New Zealand,NZ,D2017,16.85
+New Zealand,NZ,D2018,23.77
+New Zealand,NZ,D2019,32.72
+New Zealand,NZ,D2020,66.66
+New Zealand,NZ,D2021,85.95
+New Zealand,NZ,D2022,94.44
+New Zealand,NZ,D2023,97.09
+Slovenia,SI,D2017,18.37
+Slovenia,SI,D2018,21.41
+Slovenia,SI,D2019,27.83
+Slovenia,SI,D2020,65.46
+Slovenia,SI,D2021,67.2
+Slovenia,SI,D2022,38.15
+Slovenia,SI,D2023,97
+Puerto Rico,PR,D2017,6.44
+Puerto Rico,PR,D2018,6.88
+Puerto Rico,PR,D2019,8
+Puerto Rico,PR,D2020,47.87
+Puerto Rico,PR,D2021,40.52
+Puerto Rico,PR,D2022,72.78
+Puerto Rico,PR,D2023,96.65
+Bermuda,BM,D2017,5.94
+Bermuda,BM,D2018,9.13
+Bermuda,BM,D2019,13.55
+Bermuda,BM,D2020,73.6
+Bermuda,BM,D2021,96.54
+Bermuda,BM,D2022,91.96
+Bermuda,BM,D2023,95.58
+Sweden,SE,D2017,40.16
+Sweden,SE,D2018,46
+Sweden,SE,D2019,55.18
+Sweden,SE,D2020,81.29
+Sweden,SE,D2021,88.98
+Sweden,SE,D2022,86.76
+Sweden,SE,D2023,94.3
+Poland,PL,D2017,14.88
+Poland,PL,D2018,19.73
+Poland,PL,D2019,24.38
+Poland,PL,D2020,55.4
+Poland,PL,D2021,63.84
+Poland,PL,D2022,55.82
+Poland,PL,D2023,94.1
+Republic of Korea,KR,D2017,22.9
+Republic of Korea,KR,D2018,20.63
+Republic of Korea,KR,D2019,19.18
+Republic of Korea,KR,D2020,40.81
+Republic of Korea,KR,D2021,61.72
+Republic of Korea,KR,D2022,87.59
+Republic of Korea,KR,D2023,94
+United Kingdom,GB,D2017,16.51
+United Kingdom,GB,D2018,18.57
+United Kingdom,GB,D2019,22.37
+United Kingdom,GB,D2020,37.82
+United Kingdom,GB,D2021,51.48
+United Kingdom,GB,D2022,72.06
+United Kingdom,GB,D2023,93.63
+Barbados,BB,D2017,6.62
+Barbados,BB,D2018,17.08
+Barbados,BB,D2019,16.03
+Barbados,BB,D2020,56.9
+Barbados,BB,D2021,55.92
+Barbados,BB,D2022,42.08
+Barbados,BB,D2023,93.5
+Republic of Moldova,MD,D2017,10.75
+Republic of Moldova,MD,D2018,13.88
+Republic of Moldova,MD,D2019,11.56
+Republic of Moldova,MD,D2020,27.48
+Republic of Moldova,MD,D2021,36.47
+Republic of Moldova,MD,D2022,66.08
+Republic of Moldova,MD,D2023,92.1
+Lithuania,LT,D2017,25.12
+Lithuania,LT,D2018,27.17
+Lithuania,LT,D2019,30.66
+Lithuania,LT,D2020,56.63
+Lithuania,LT,D2021,56.17
+Lithuania,LT,D2022,84.8
+Lithuania,LT,D2023,87.09
+Estonia,EE,D2017,24.11
+Estonia,EE,D2018,27.91
+Estonia,EE,D2019,31.55
+Estonia,EE,D2020,70.9
+Estonia,EE,D2021,84.72
+Estonia,EE,D2022,89.81
+Estonia,EE,D2023,86.39
+Isle of Man,IM,D2017,9.01
+Isle of Man,IM,D2018,10.54
+Isle of Man,IM,D2019,11.04
+Isle of Man,IM,D2020,44.16
+Isle of Man,IM,D2021,52.1
+Isle of Man,IM,D2022,91.97
+Isle of Man,IM,D2023,85.89
+Chile,CL,D2017,1.67
+Chile,CL,D2018,4.74
+Chile,CL,D2019,3.89
+Chile,CL,D2020,16.1
+Chile,CL,D2021,13.76
+Chile,CL,D2022,89.18
+Chile,CL,D2023,85.49
+Hong Kong,HK,D2017,27.16
+Hong Kong,HK,D2018,26.45
+Hong Kong,HK,D2019,31.37
+Hong Kong,HK,D2020,105.32
+Hong Kong,HK,D2021,91.04
+Hong Kong,HK,D2022,100.89
+Hong Kong,HK,D2023,83.05
+Germany,DE,D2017,18.8
+Germany,DE,D2018,24
+Germany,DE,D2019,24.64
+Germany,DE,D2020,42.33
+Germany,DE,D2021,60.55
+Germany,DE,D2022,72.95
+Germany,DE,D2023,81.73
+Ireland,IE,D2017,13.92
+Ireland,IE,D2018,18.22
+Ireland,IE,D2019,23.87
+Ireland,IE,D2020,34.87
+Ireland,IE,D2021,51.41
+Ireland,IE,D2022,70.42
+Ireland,IE,D2023,76.16
+Switzerland,CH,D2017,26.93
+Switzerland,CH,D2018,29.92
+Switzerland,CH,D2019,38.85
+Switzerland,CH,D2020,110.45
+Switzerland,CH,D2021,50.83
+Switzerland,CH,D2022,63.2
+Switzerland,CH,D2023,75.39
+Grenada,GD,D2017,Sample too small
+Grenada,GD,D2018,2.46
+Grenada,GD,D2019,5.07
+Grenada,GD,D2020,38.64
+Grenada,GD,D2021,20.49
+Grenada,GD,D2022,38.44
+Grenada,GD,D2023,75.21
+Israel,IL,D2017,7.2
+Israel,IL,D2018,7.64
+Israel,IL,D2019,8.85
+Israel,IL,D2020,26.49
+Israel,IL,D2021,34.97
+Israel,IL,D2022,47.05
+Israel,IL,D2023,75.03
+Aruba,AW,D2017,3.12
+Aruba,AW,D2018,13.27
+Aruba,AW,D2019,15.15
+Aruba,AW,D2020,89.81
+Aruba,AW,D2021,70.66
+Aruba,AW,D2022,61.1
+Aruba,AW,D2023,73.42
+Brazil,BR,D2017,1.49
+Brazil,BR,D2018,2.58
+Brazil,BR,D2019,4.84
+Brazil,BR,D2020,17.89
+Brazil,BR,D2021,33.34
+Brazil,BR,D2022,53.89
+Brazil,BR,D2023,72.7
+U.S. Virgin Islands,VI,D2017,5.14
+U.S. Virgin Islands,VI,D2018,10.55
+U.S. Virgin Islands,VI,D2019,11.45
+U.S. Virgin Islands,VI,D2020,21.39
+U.S. Virgin Islands,VI,D2021,29.34
+U.S. Virgin Islands,VI,D2022,44.55
+U.S. Virgin Islands,VI,D2023,67.38
+Latvia,LV,D2017,30.36
+Latvia,LV,D2018,28.63
+Latvia,LV,D2019,32.74
+Latvia,LV,D2020,52.32
+Latvia,LV,D2021,63.28
+Latvia,LV,D2022,62.55
+Latvia,LV,D2023,66.79
+Dominica,DM,D2017,2.68
+Dominica,DM,D2018,5.38
+Dominica,DM,D2019,9.48
+Dominica,DM,D2020,9.96
+Dominica,DM,D2021,12.41
+Dominica,DM,D2022,20.18
+Dominica,DM,D2023,66.24
+Guernsey,GG,D2017,8.76
+Guernsey,GG,D2018,11.58
+Guernsey,GG,D2019,18.26
+Guernsey,GG,D2020,36.83
+Guernsey,GG,D2021,31.2
+Guernsey,GG,D2022,45.51
+Guernsey,GG,D2023,66.14
+Vatican City,VA,D2017,Sample too small
+Vatican City,VA,D2018,Sample too small
+Vatican City,VA,D2019,Sample too small
+Vatican City,VA,D2020,19.12
+Vatican City,VA,D2021,73.49
+Vatican City,VA,D2022,Sample too small
+Vatican City,VA,D2023,65.46
+Hungary,HU,D2017,23.16
+Hungary,HU,D2018,34.01
+Hungary,HU,D2019,31.1
+Hungary,HU,D2020,99.74
+Hungary,HU,D2021,104.07
+Hungary,HU,D2022,42.99
+Hungary,HU,D2023,63.41
+Finland,FI,D2017,20.9
+Finland,FI,D2018,24
+Finland,FI,D2019,29.34
+Finland,FI,D2020,44.05
+Finland,FI,D2021,55.08
+Finland,FI,D2022,56.28
+Finland,FI,D2023,62.82
+Thailand,TH,D2017,16.85
+Thailand,TH,D2018,17.06
+Thailand,TH,D2019,18.21
+Thailand,TH,D2020,30.61
+Thailand,TH,D2021,53.95
+Thailand,TH,D2022,63.3
+Thailand,TH,D2023,62.75
+Saint Pierre and Miquelon,PM,D2017,Sample too small
+Saint Pierre and Miquelon,PM,D2018,Sample too small
+Saint Pierre and Miquelon,PM,D2019,Sample too small
+Saint Pierre and Miquelon,PM,D2020,30.31
+Saint Pierre and Miquelon,PM,D2021,47.92
+Saint Pierre and Miquelon,PM,D2022,53.52
+Saint Pierre and Miquelon,PM,D2023,60.77
+Serbia,RS,D2017,12.25
+Serbia,RS,D2018,13
+Serbia,RS,D2019,19.17
+Serbia,RS,D2020,24.74
+Serbia,RS,D2021,36.59
+Serbia,RS,D2022,51.84
+Serbia,RS,D2023,60.53
+British Virgin Islands,VG,D2017,5.49
+British Virgin Islands,VG,D2018,4.46
+British Virgin Islands,VG,D2019,7.75
+British Virgin Islands,VG,D2020,13.63
+British Virgin Islands,VG,D2021,19.4
+British Virgin Islands,VG,D2022,40.44
+British Virgin Islands,VG,D2023,59.69
+Bahamas,BS,D2017,10.06
+Bahamas,BS,D2018,9.95
+Bahamas,BS,D2019,11.13
+Bahamas,BS,D2020,38.14
+Bahamas,BS,D2021,39.71
+Bahamas,BS,D2022,45.7
+Bahamas,BS,D2023,58.95
+Italy,IT,D2017,10.71
+Italy,IT,D2018,15.1
+Italy,IT,D2019,17.3
+Italy,IT,D2020,23.18
+Italy,IT,D2021,36.69
+Italy,IT,D2022,46.77
+Italy,IT,D2023,58.22
+Russia,RU,D2017,11.59
+Russia,RU,D2018,13.51
+Russia,RU,D2019,14.89
+Russia,RU,D2020,24.98
+Russia,RU,D2021,35.73
+Russia,RU,D2022,47.71
+Russia,RU,D2023,57.95
+Saint Vincent and the Grenadines,VC,D2017,Sample too small
+Saint Vincent and the Grenadines,VC,D2018,2.6
+Saint Vincent and the Grenadines,VC,D2019,3.81
+Saint Vincent and the Grenadines,VC,D2020,15.69
+Saint Vincent and the Grenadines,VC,D2021,14.32
+Saint Vincent and the Grenadines,VC,D2022,30.03
+Saint Vincent and the Grenadines,VC,D2023,57.71
+Kosovo,XK,D2017,Sample too small
+Kosovo,XK,D2018,11.64
+Kosovo,XK,D2019,12.07
+Kosovo,XK,D2020,20.3
+Kosovo,XK,D2021,22.21
+Kosovo,XK,D2022,38.64
+Kosovo,XK,D2023,57.32
+Panama,PA,D2017,2.3
+Panama,PA,D2018,7.05
+Panama,PA,D2019,8.09
+Panama,PA,D2020,36.55
+Panama,PA,D2021,30.58
+Panama,PA,D2022,30.04
+Panama,PA,D2023,56.93
+Trinidad and Tobago,TT,D2017,3.28
+Trinidad and Tobago,TT,D2018,11.37
+Trinidad and Tobago,TT,D2019,12.9
+Trinidad and Tobago,TT,D2020,29.7
+Trinidad and Tobago,TT,D2021,35.81
+Trinidad and Tobago,TT,D2022,35.79
+Trinidad and Tobago,TT,D2023,56.08
+Austria,AT,D2017,15.26
+Austria,AT,D2018,17.51
+Austria,AT,D2019,19.33
+Austria,AT,D2020,27.74
+Austria,AT,D2021,37.99
+Austria,AT,D2022,45.56
+Austria,AT,D2023,55.82
+Greece,GR,D2017,7.56
+Greece,GR,D2018,11.3
+Greece,GR,D2019,13.41
+Greece,GR,D2020,26.01
+Greece,GR,D2021,29.76
+Greece,GR,D2022,39.31
+Greece,GR,D2023,53.85
+Australia,AU,D2017,7.7
+Australia,AU,D2018,11.69
+Australia,AU,D2019,16.36
+Australia,AU,D2020,25.65
+Australia,AU,D2021,40.5
+Australia,AU,D2022,47.22
+Australia,AU,D2023,51.27
+Qatar,QA,D2017,3.89
+Qatar,QA,D2018,3.8
+Qatar,QA,D2019,5.35
+Qatar,QA,D2020,23.98
+Qatar,QA,D2021,24.16
+Qatar,QA,D2022,25.02
+Qatar,QA,D2023,50.68
+Denmark,DK,D2017,33.54
+Denmark,DK,D2018,43.99
+Denmark,DK,D2019,49.19
+Denmark,DK,D2020,85.03
+Denmark,DK,D2021,49.24
+Denmark,DK,D2022,52.57
+Denmark,DK,D2023,49.98
+Montenegro,ME,D2017,5.85
+Montenegro,ME,D2018,6.74
+Montenegro,ME,D2019,9.1
+Montenegro,ME,D2020,25.07
+Montenegro,ME,D2021,40.14
+Montenegro,ME,D2022,38.65
+Montenegro,ME,D2023,49.46
+Turks and Caicos Islands,TC,D2017,6.74
+Turks and Caicos Islands,TC,D2018,11.7
+Turks and Caicos Islands,TC,D2019,8.78
+Turks and Caicos Islands,TC,D2020,36.29
+Turks and Caicos Islands,TC,D2021,36.09
+Turks and Caicos Islands,TC,D2022,42.05
+Turks and Caicos Islands,TC,D2023,48.95
+India,IN,D2017,2.06
+India,IN,D2018,5.19
+India,IN,D2019,8.66
+India,IN,D2020,13.46
+India,IN,D2021,22.53
+India,IN,D2022,32.44
+India,IN,D2023,47.99
+Bahrain,BH,D2017,3.13
+Bahrain,BH,D2018,5.05
+Bahrain,BH,D2019,6.24
+Bahrain,BH,D2020,10.87
+Bahrain,BH,D2021,16.37
+Bahrain,BH,D2022,18.36
+Bahrain,BH,D2023,47.72
+St Kitts and Nevis,KN,D2017,1.72
+St Kitts and Nevis,KN,D2018,6.12
+St Kitts and Nevis,KN,D2019,6.16
+St Kitts and Nevis,KN,D2020,7.11
+St Kitts and Nevis,KN,D2021,12.96
+St Kitts and Nevis,KN,D2022,17.55
+St Kitts and Nevis,KN,D2023,47.27
+Czechia,CZ,D2017,17.31
+Czechia,CZ,D2018,23.71
+Czechia,CZ,D2019,23.27
+Czechia,CZ,D2020,28.12
+Czechia,CZ,D2021,37.23
+Czechia,CZ,D2022,39.15
+Czechia,CZ,D2023,46.81
+Guadeloupe,GP,D2017,1.63
+Guadeloupe,GP,D2018,4.21
+Guadeloupe,GP,D2019,6.72
+Guadeloupe,GP,D2020,11.49
+Guadeloupe,GP,D2021,21.32
+Guadeloupe,GP,D2022,21.34
+Guadeloupe,GP,D2023,45.93
+Réunion,RE,D2017,0.97
+Réunion,RE,D2018,2.38
+Réunion,RE,D2019,10.02
+Réunion,RE,D2020,16.35
+Réunion,RE,D2021,43.62
+Réunion,RE,D2022,37.44
+Réunion,RE,D2023,45.51
+Colombia,CO,D2017,2.12
+Colombia,CO,D2018,3.25
+Colombia,CO,D2019,3.48
+Colombia,CO,D2020,8.8
+Colombia,CO,D2021,13.13
+Colombia,CO,D2022,32.41
+Colombia,CO,D2023,45.13
+Jamaica,JM,D2017,6.6
+Jamaica,JM,D2018,8.25
+Jamaica,JM,D2019,9.08
+Jamaica,JM,D2020,20.01
+Jamaica,JM,D2021,20.96
+Jamaica,JM,D2022,26.46
+Jamaica,JM,D2023,45.07
+Bosnia and Herzegovina,BA,D2017,7
+Bosnia and Herzegovina,BA,D2018,7.37
+Bosnia and Herzegovina,BA,D2019,7.53
+Bosnia and Herzegovina,BA,D2020,15.66
+Bosnia and Herzegovina,BA,D2021,31.72
+Bosnia and Herzegovina,BA,D2022,8.16
+Bosnia and Herzegovina,BA,D2023,44.01
+Saint Lucia,LC,D2017,1.98
+Saint Lucia,LC,D2018,3
+Saint Lucia,LC,D2019,6.08
+Saint Lucia,LC,D2020,16.35
+Saint Lucia,LC,D2021,15.02
+Saint Lucia,LC,D2022,30.77
+Saint Lucia,LC,D2023,43.86
+United Arab Emirates,AE,D2017,4.17
+United Arab Emirates,AE,D2018,4.35
+United Arab Emirates,AE,D2019,9.62
+United Arab Emirates,AE,D2020,28.33
+United Arab Emirates,AE,D2021,29.9
+United Arab Emirates,AE,D2022,22.75
+United Arab Emirates,AE,D2023,43.62
+Saint Martin,MF,D2017,Sample too small
+Saint Martin,MF,D2018,Sample too small
+Saint Martin,MF,D2019,3.98
+Saint Martin,MF,D2020,14.49
+Saint Martin,MF,D2021,40.19
+Saint Martin,MF,D2022,39.91
+Saint Martin,MF,D2023,43.44
+Philippines,PH,D2017,3.69
+Philippines,PH,D2018,5.18
+Philippines,PH,D2019,6.05
+Philippines,PH,D2020,8.77
+Philippines,PH,D2021,16.84
+Philippines,PH,D2022,31.6
+Philippines,PH,D2023,43.36
+Argentina,AR,D2017,1.15
+Argentina,AR,D2018,3.18
+Argentina,AR,D2019,2.83
+Argentina,AR,D2020,6.2
+Argentina,AR,D2021,8.68
+Argentina,AR,D2022,20.34
+Argentina,AR,D2023,43.02
+Cyprus,CY,D2017,8.24
+Cyprus,CY,D2018,11.1
+Cyprus,CY,D2019,11
+Cyprus,CY,D2020,15.62
+Cyprus,CY,D2021,28.3
+Cyprus,CY,D2022,38.52
+Cyprus,CY,D2023,42.93
+Paraguay,PY,D2017,0.75
+Paraguay,PY,D2018,1.73
+Paraguay,PY,D2019,3.55
+Paraguay,PY,D2020,16.5
+Paraguay,PY,D2021,19.41
+Paraguay,PY,D2022,25.27
+Paraguay,PY,D2023,42.76
+Costa Rica,CR,D2017,1.53
+Costa Rica,CR,D2018,3.96
+Costa Rica,CR,D2019,4.52
+Costa Rica,CR,D2020,16.42
+Costa Rica,CR,D2021,19.02
+Costa Rica,CR,D2022,24.58
+Costa Rica,CR,D2023,42.51
+Malaysia,MY,D2017,6.69
+Malaysia,MY,D2018,13.3
+Malaysia,MY,D2019,23.86
+Malaysia,MY,D2020,46.82
+Malaysia,MY,D2021,42.83
+Malaysia,MY,D2022,50.44
+Malaysia,MY,D2023,42.2
+Faroe Islands,FO,D2017,7.48
+Faroe Islands,FO,D2018,10.38
+Faroe Islands,FO,D2019,10.21
+Faroe Islands,FO,D2020,15.47
+Faroe Islands,FO,D2021,21.59
+Faroe Islands,FO,D2022,28.4
+Faroe Islands,FO,D2023,41.97
+Curaçao,CW,D2017,1.99
+Curaçao,CW,D2018,5.99
+Curaçao,CW,D2019,7.64
+Curaçao,CW,D2020,20.87
+Curaçao,CW,D2021,20.18
+Curaçao,CW,D2022,29.26
+Curaçao,CW,D2023,41.51
+Saint-Barthélemy,BL,D2017,Sample too small
+Saint-Barthélemy,BL,D2018,Sample too small
+Saint-Barthélemy,BL,D2019,4.12
+Saint-Barthélemy,BL,D2020,6.3
+Saint-Barthélemy,BL,D2021,12.25
+Saint-Barthélemy,BL,D2022,16.51
+Saint-Barthélemy,BL,D2023,41.22
+Greenland,GL,D2017,3.15
+Greenland,GL,D2018,Sample too small
+Greenland,GL,D2019,6.51
+Greenland,GL,D2020,18.65
+Greenland,GL,D2021,41.56
+Greenland,GL,D2022,48.42
+Greenland,GL,D2023,41.19
+Peru,PE,D2017,1.41
+Peru,PE,D2018,3.31
+Peru,PE,D2019,2.86
+Peru,PE,D2020,7.98
+Peru,PE,D2021,11.35
+Peru,PE,D2022,32
+Peru,PE,D2023,41.04
+Kuwait,KW,D2017,2.21
+Kuwait,KW,D2018,2.76
+Kuwait,KW,D2019,3.88
+Kuwait,KW,D2020,12.06
+Kuwait,KW,D2021,18.06
+Kuwait,KW,D2022,30.87
+Kuwait,KW,D2023,41.02
+Bulgaria,BG,D2017,17.54
+Bulgaria,BG,D2018,20.2
+Bulgaria,BG,D2019,16.95
+Bulgaria,BG,D2020,46.22
+Bulgaria,BG,D2021,63.41
+Bulgaria,BG,D2022,24.77
+Bulgaria,BG,D2023,40.43
+Rwanda,RW,D2017,2.11
+Rwanda,RW,D2018,2.64
+Rwanda,RW,D2019,3.34
+Rwanda,RW,D2020,3.8
+Rwanda,RW,D2021,6.29
+Rwanda,RW,D2022,52.17
+Rwanda,RW,D2023,39.89
+Belize,BZ,D2017,5.14
+Belize,BZ,D2018,3.93
+Belize,BZ,D2019,6.8
+Belize,BZ,D2020,16.57
+Belize,BZ,D2021,23.12
+Belize,BZ,D2022,27.1
+Belize,BZ,D2023,38.86
+Ukraine,UA,D2017,8.18
+Ukraine,UA,D2018,11.28
+Ukraine,UA,D2019,7.72
+Ukraine,UA,D2020,15.09
+Ukraine,UA,D2021,25.26
+Ukraine,UA,D2022,47.74
+Ukraine,UA,D2023,38.13
+French Guiana,GF,D2017,1.34
+French Guiana,GF,D2018,2.37
+French Guiana,GF,D2019,2.26
+French Guiana,GF,D2020,5.8
+French Guiana,GF,D2021,10.99
+French Guiana,GF,D2022,14.81
+French Guiana,GF,D2023,37.98
+Marshall Islands,MH,D2017,Sample too small
+Marshall Islands,MH,D2018,Sample too small
+Marshall Islands,MH,D2019,Sample too small
+Marshall Islands,MH,D2020,2.75
+Marshall Islands,MH,D2021,6.71
+Marshall Islands,MH,D2022,5.76
+Marshall Islands,MH,D2023,36.89
+South Africa,ZA,D2017,4.36
+South Africa,ZA,D2018,6.38
+South Africa,ZA,D2019,8.4
+South Africa,ZA,D2020,14.04
+South Africa,ZA,D2021,19.94
+South Africa,ZA,D2022,28.62
+South Africa,ZA,D2023,36.46
+Martinique,MQ,D2017,2.3
+Martinique,MQ,D2018,5.74
+Martinique,MQ,D2019,7.23
+Martinique,MQ,D2020,14.02
+Martinique,MQ,D2021,19.88
+Martinique,MQ,D2022,19.28
+Martinique,MQ,D2023,35.87
+Mexico,MX,D2017,7.59
+Mexico,MX,D2018,5.69
+Mexico,MX,D2019,6.02
+Mexico,MX,D2020,16.19
+Mexico,MX,D2021,18.83
+Mexico,MX,D2022,27.62
+Mexico,MX,D2023,35.85
+New Caledonia,NC,D2017,2.23
+New Caledonia,NC,D2018,3.16
+New Caledonia,NC,D2019,4.34
+New Caledonia,NC,D2020,15.15
+New Caledonia,NC,D2021,31.79
+New Caledonia,NC,D2022,32.34
+New Caledonia,NC,D2023,35.72
+Burkina Faso,BF,D2017,0.49
+Burkina Faso,BF,D2018,0.84
+Burkina Faso,BF,D2019,1.02
+Burkina Faso,BF,D2020,4.19
+Burkina Faso,BF,D2021,10.73
+Burkina Faso,BF,D2022,13.43
+Burkina Faso,BF,D2023,35.64
+Belarus,BY,D2017,6.68
+Belarus,BY,D2018,9.21
+Belarus,BY,D2019,13.19
+Belarus,BY,D2020,16.08
+Belarus,BY,D2021,19.86
+Belarus,BY,D2022,27.69
+Belarus,BY,D2023,34.1
+Northern Mariana Islands,MP,D2017,Sample too small
+Northern Mariana Islands,MP,D2018,Sample too small
+Northern Mariana Islands,MP,D2019,Sample too small
+Northern Mariana Islands,MP,D2020,9.53
+Northern Mariana Islands,MP,D2021,13.15
+Northern Mariana Islands,MP,D2022,35.94
+Northern Mariana Islands,MP,D2023,34.03
+Armenia,AM,D2017,3.29
+Armenia,AM,D2018,3.94
+Armenia,AM,D2019,4.85
+Armenia,AM,D2020,11.86
+Armenia,AM,D2021,18.05
+Armenia,AM,D2022,23.83
+Armenia,AM,D2023,33.63
+Hashemite Kingdom of Jordan,JO,D2017,2.98
+Hashemite Kingdom of Jordan,JO,D2018,4.11
+Hashemite Kingdom of Jordan,JO,D2019,5.2
+Hashemite Kingdom of Jordan,JO,D2020,14.54
+Hashemite Kingdom of Jordan,JO,D2021,15.25
+Hashemite Kingdom of Jordan,JO,D2022,17.69
+Hashemite Kingdom of Jordan,JO,D2023,33.63
+Oman,OM,D2017,2.61
+Oman,OM,D2018,3.83
+Oman,OM,D2019,5.07
+Oman,OM,D2020,12.25
+Oman,OM,D2021,16.73
+Oman,OM,D2022,16.59
+Oman,OM,D2023,32.61
+Saudi Arabia,SA,D2017,3.06
+Saudi Arabia,SA,D2018,4.09
+Saudi Arabia,SA,D2019,5.27
+Saudi Arabia,SA,D2020,12.67
+Saudi Arabia,SA,D2021,18.1
+Saudi Arabia,SA,D2022,22.42
+Saudi Arabia,SA,D2023,32.42
+Brunei,BN,D2017,3.83
+Brunei,BN,D2018,4.15
+Brunei,BN,D2019,4.78
+Brunei,BN,D2020,8.97
+Brunei,BN,D2021,15.79
+Brunei,BN,D2022,16.29
+Brunei,BN,D2023,32.07
+Guyana,GY,D2017,0.89
+Guyana,GY,D2018,2.64
+Guyana,GY,D2019,3.49
+Guyana,GY,D2020,4.43
+Guyana,GY,D2021,9.26
+Guyana,GY,D2022,14.81
+Guyana,GY,D2023,31.45
+Mauritius,MU,D2017,1.53
+Mauritius,MU,D2018,2.39
+Mauritius,MU,D2019,5.02
+Mauritius,MU,D2020,7.28
+Mauritius,MU,D2021,8.53
+Mauritius,MU,D2022,13.44
+Mauritius,MU,D2023,29.78
+Vietnam,VN,D2017,5.46
+Vietnam,VN,D2018,6.72
+Vietnam,VN,D2019,7.02
+Vietnam,VN,D2020,13.41
+Vietnam,VN,D2021,20.66
+Vietnam,VN,D2022,21.54
+Vietnam,VN,D2023,29.25
+Anguilla,AI,D2017,Sample too small
+Anguilla,AI,D2018,Sample too small
+Anguilla,AI,D2019,4.59
+Anguilla,AI,D2020,5.38
+Anguilla,AI,D2021,9
+Anguilla,AI,D2022,13
+Anguilla,AI,D2023,29.15
+Antigua and Barbuda,AG,D2017,1.86
+Antigua and Barbuda,AG,D2018,3.85
+Antigua and Barbuda,AG,D2019,5.91
+Antigua and Barbuda,AG,D2020,9.63
+Antigua and Barbuda,AG,D2021,8.69
+Antigua and Barbuda,AG,D2022,15.99
+Antigua and Barbuda,AG,D2023,27.03
+Ecuador,EC,D2017,1.28
+Ecuador,EC,D2018,2.76
+Ecuador,EC,D2019,3.46
+Ecuador,EC,D2020,8.48
+Ecuador,EC,D2021,10.25
+Ecuador,EC,D2022,13.47
+Ecuador,EC,D2023,26.56
+"Bonaire, Sint Eustatius, and Saba",BQ,D2017,Sample too small
+"Bonaire, Sint Eustatius, and Saba",BQ,D2018,Sample too small
+"Bonaire, Sint Eustatius, and Saba",BQ,D2019,7.92
+"Bonaire, Sint Eustatius, and Saba",BQ,D2020,14.28
+"Bonaire, Sint Eustatius, and Saba",BQ,D2021,19.6
+"Bonaire, Sint Eustatius, and Saba",BQ,D2022,23.53
+"Bonaire, Sint Eustatius, and Saba",BQ,D2023,26.27
+Guam,GU,D2017,2.22
+Guam,GU,D2018,2.77
+Guam,GU,D2019,3.73
+Guam,GU,D2020,5.95
+Guam,GU,D2021,20.76
+Guam,GU,D2022,29.41
+Guam,GU,D2023,25.75
+Croatia,HR,D2017,12.57
+Croatia,HR,D2018,15.6
+Croatia,HR,D2019,17.22
+Croatia,HR,D2020,33.82
+Croatia,HR,D2021,49.77
+Croatia,HR,D2022,20.74
+Croatia,HR,D2023,25.72
+Albania,AL,D2017,4.67
+Albania,AL,D2018,5.56
+Albania,AL,D2019,7.61
+Albania,AL,D2020,12.36
+Albania,AL,D2021,19.36
+Albania,AL,D2022,11.47
+Albania,AL,D2023,25.36
+Nicaragua,NI,D2017,1.14
+Nicaragua,NI,D2018,2.64
+Nicaragua,NI,D2019,2.54
+Nicaragua,NI,D2020,6.65
+Nicaragua,NI,D2021,9.75
+Nicaragua,NI,D2022,15.38
+Nicaragua,NI,D2023,25.28
+Turkey,TR,D2017,3.96
+Turkey,TR,D2018,4.9
+Turkey,TR,D2019,5.27
+Turkey,TR,D2020,8.86
+Turkey,TR,D2021,11.58
+Turkey,TR,D2022,16
+Turkey,TR,D2023,24.84
+El Salvador,SV,D2017,2.34
+El Salvador,SV,D2018,2.78
+El Salvador,SV,D2019,2.93
+El Salvador,SV,D2020,6.13
+El Salvador,SV,D2021,9.95
+El Salvador,SV,D2022,12.53
+El Salvador,SV,D2023,23.56
+Guatemala,GT,D2017,3.31
+Guatemala,GT,D2018,3.13
+Guatemala,GT,D2019,3.22
+Guatemala,GT,D2020,7.61
+Guatemala,GT,D2021,9.85
+Guatemala,GT,D2022,13.36
+Guatemala,GT,D2023,23.26
+American Samoa,AS,D2017,Sample too small
+American Samoa,AS,D2018,Sample too small
+American Samoa,AS,D2019,Sample too small
+American Samoa,AS,D2020,11.28
+American Samoa,AS,D2021,11.76
+American Samoa,AS,D2022,16.52
+American Samoa,AS,D2023,22.01
+Uzbekistan,UZ,D2017,0.76
+Uzbekistan,UZ,D2018,1.02
+Uzbekistan,UZ,D2019,1.37
+Uzbekistan,UZ,D2020,2.1
+Uzbekistan,UZ,D2021,6.64
+Uzbekistan,UZ,D2022,9.65
+Uzbekistan,UZ,D2023,21.67
+Sri Lanka,LK,D2017,3.83
+Sri Lanka,LK,D2018,5.84
+Sri Lanka,LK,D2019,7.67
+Sri Lanka,LK,D2020,20.73
+Sri Lanka,LK,D2021,9.95
+Sri Lanka,LK,D2022,13.46
+Sri Lanka,LK,D2023,21.23
+Nigeria,NG,D2017,3.15
+Nigeria,NG,D2018,1.86
+Nigeria,NG,D2019,1.56
+Nigeria,NG,D2020,3.34
+Nigeria,NG,D2021,8.68
+Nigeria,NG,D2022,15.37
+Nigeria,NG,D2023,20.83
+Madagascar,MG,D2017,3.49
+Madagascar,MG,D2018,24.87
+Madagascar,MG,D2019,22.57
+Madagascar,MG,D2020,18
+Madagascar,MG,D2021,16.28
+Madagascar,MG,D2022,19.29
+Madagascar,MG,D2023,20.43
+Bhutan,BT,D2017,Sample too small
+Bhutan,BT,D2018,Sample too small
+Bhutan,BT,D2019,Sample too small
+Bhutan,BT,D2020,4.62
+Bhutan,BT,D2021,6.44
+Bhutan,BT,D2022,11.13
+Bhutan,BT,D2023,20.08
+Nepal,NP,D2017,0.97
+Nepal,NP,D2018,2.36
+Nepal,NP,D2019,3.62
+Nepal,NP,D2020,5.22
+Nepal,NP,D2021,6.84
+Nepal,NP,D2022,11.78
+Nepal,NP,D2023,19.99
+Dominican Republic,DO,D2017,6.22
+Dominican Republic,DO,D2018,4.41
+Dominican Republic,DO,D2019,4.09
+Dominican Republic,DO,D2020,10.69
+Dominican Republic,DO,D2021,11.87
+Dominican Republic,DO,D2022,12.66
+Dominican Republic,DO,D2023,19.48
+Seychelles,SC,D2017,5.84
+Seychelles,SC,D2018,1.72
+Seychelles,SC,D2019,2.93
+Seychelles,SC,D2020,3.96
+Seychelles,SC,D2021,12.04
+Seychelles,SC,D2022,14.89
+Seychelles,SC,D2023,18.75
+Georgia,GE,D2017,5.86
+Georgia,GE,D2018,6.25
+Georgia,GE,D2019,7.14
+Georgia,GE,D2020,13.5
+Georgia,GE,D2021,13.83
+Georgia,GE,D2022,15.2
+Georgia,GE,D2023,18.54
+Laos,LA,D2017,1.94
+Laos,LA,D2018,4.29
+Laos,LA,D2019,2.92
+Laos,LA,D2020,4.47
+Laos,LA,D2021,5.91
+Laos,LA,D2022,9.64
+Laos,LA,D2023,17.64
+Mayotte,YT,D2017,Sample too small
+Mayotte,YT,D2018,0.97
+Mayotte,YT,D2019,1.09
+Mayotte,YT,D2020,3.52
+Mayotte,YT,D2021,7.7
+Mayotte,YT,D2022,8.26
+Mayotte,YT,D2023,17.34
+Kyrgyzstan,KG,D2017,0.98
+Kyrgyzstan,KG,D2018,1.52
+Kyrgyzstan,KG,D2019,2.5
+Kyrgyzstan,KG,D2020,5.47
+Kyrgyzstan,KG,D2021,7.44
+Kyrgyzstan,KG,D2022,11.78
+Kyrgyzstan,KG,D2023,17.31
+Honduras,HN,D2017,3.47
+Honduras,HN,D2018,2.8
+Honduras,HN,D2019,2.84
+Honduras,HN,D2020,5.93
+Honduras,HN,D2021,7.17
+Honduras,HN,D2022,10.88
+Honduras,HN,D2023,16.76
+Morocco,MA,D2017,4.38
+Morocco,MA,D2018,4.03
+Morocco,MA,D2019,5.48
+Morocco,MA,D2020,6.55
+Morocco,MA,D2021,10.33
+Morocco,MA,D2022,13.03
+Morocco,MA,D2023,16.49
+Ivory Coast,CI,D2017,1.22
+Ivory Coast,CI,D2018,1.7
+Ivory Coast,CI,D2019,1.83
+Ivory Coast,CI,D2020,5.55
+Ivory Coast,CI,D2021,9.54
+Ivory Coast,CI,D2022,10.14
+Ivory Coast,CI,D2023,16.45
+Mongolia,MN,D2017,1.6
+Mongolia,MN,D2018,1.57
+Mongolia,MN,D2019,2.1
+Mongolia,MN,D2020,5.25
+Mongolia,MN,D2021,14.94
+Mongolia,MN,D2022,17.56
+Mongolia,MN,D2023,16.4
+Sint Maarten,SX,D2017,1.39
+Sint Maarten,SX,D2018,4.68
+Sint Maarten,SX,D2019,5.13
+Sint Maarten,SX,D2020,4.69
+Sint Maarten,SX,D2021,6.15
+Sint Maarten,SX,D2022,10.01
+Sint Maarten,SX,D2023,16
+Bolivia,BO,D2017,0.91
+Bolivia,BO,D2018,1.9
+Bolivia,BO,D2019,1.73
+Bolivia,BO,D2020,5.06
+Bolivia,BO,D2021,7.36
+Bolivia,BO,D2022,10.66
+Bolivia,BO,D2023,16
+Cambodia,KH,D2017,3.1
+Cambodia,KH,D2018,4.1
+Cambodia,KH,D2019,4.03
+Cambodia,KH,D2020,5.21
+Cambodia,KH,D2021,8.49
+Cambodia,KH,D2022,10.01
+Cambodia,KH,D2023,14.68
+French Polynesia,PF,D2017,1.34
+French Polynesia,PF,D2018,1.42
+French Polynesia,PF,D2019,1.51
+French Polynesia,PF,D2020,4.28
+French Polynesia,PF,D2021,7.67
+French Polynesia,PF,D2022,8.72
+French Polynesia,PF,D2023,14.55
+Republic of the Congo,CG,D2017,0.55
+Republic of the Congo,CG,D2018,0.85
+Republic of the Congo,CG,D2019,0.93
+Republic of the Congo,CG,D2020,2
+Republic of the Congo,CG,D2021,12.07
+Republic of the Congo,CG,D2022,6.79
+Republic of the Congo,CG,D2023,14.36
+Indonesia,ID,D2017,5.19
+Indonesia,ID,D2018,5.77
+Indonesia,ID,D2019,6.65
+Indonesia,ID,D2020,7.16
+Indonesia,ID,D2021,9.58
+Indonesia,ID,D2022,11.58
+Indonesia,ID,D2023,14.3
+Fiji,FJ,D2017,1.24
+Fiji,FJ,D2018,2.65
+Fiji,FJ,D2019,4.62
+Fiji,FJ,D2020,8.83
+Fiji,FJ,D2021,9.4
+Fiji,FJ,D2022,10.14
+Fiji,FJ,D2023,13.96
+Iran,IR,D2017,1.56
+Iran,IR,D2018,2.2
+Iran,IR,D2019,4.39
+Iran,IR,D2020,4.5
+Iran,IR,D2021,7.05
+Iran,IR,D2022,10.43
+Iran,IR,D2023,13.93
+Kazakhstan,KZ,D2017,4
+Kazakhstan,KZ,D2018,4.45
+Kazakhstan,KZ,D2019,4.66
+Kazakhstan,KZ,D2020,5.01
+Kazakhstan,KZ,D2021,5.83
+Kazakhstan,KZ,D2022,9.89
+Kazakhstan,KZ,D2023,13.13
+China,CN,D2017,1.55
+China,CN,D2018,2.38
+China,CN,D2019,2.69
+China,CN,D2020,2.09
+China,CN,D2021,2.06
+China,CN,D2022,2.78
+China,CN,D2023,12.66
+Uganda,UG,D2017,2.12
+Uganda,UG,D2018,2.39
+Uganda,UG,D2019,3.22
+Uganda,UG,D2020,5.16
+Uganda,UG,D2021,8.52
+Uganda,UG,D2022,11.01
+Uganda,UG,D2023,12.64
+Maldives,MV,D2017,1.62
+Maldives,MV,D2018,1.98
+Maldives,MV,D2019,1.81
+Maldives,MV,D2020,5.88
+Maldives,MV,D2021,7.45
+Maldives,MV,D2022,13.57
+Maldives,MV,D2023,12.49
+Suriname,SR,D2017,1.25
+Suriname,SR,D2018,2.47
+Suriname,SR,D2019,3.4
+Suriname,SR,D2020,4.42
+Suriname,SR,D2021,7.44
+Suriname,SR,D2022,9.48
+Suriname,SR,D2023,12.48
+Kenya,KE,D2017,8.83
+Kenya,KE,D2018,10.11
+Kenya,KE,D2019,7.62
+Kenya,KE,D2020,8.2
+Kenya,KE,D2021,11.27
+Kenya,KE,D2022,12.42
+Kenya,KE,D2023,12.46
+Ghana,GH,D2017,2.3
+Ghana,GH,D2018,2.88
+Ghana,GH,D2019,3.2
+Ghana,GH,D2020,5.46
+Ghana,GH,D2021,9.23
+Ghana,GH,D2022,11.24
+Ghana,GH,D2023,12.33
+Tanzania,TZ,D2017,1.49
+Tanzania,TZ,D2018,1.96
+Tanzania,TZ,D2019,2.34
+Tanzania,TZ,D2020,4.54
+Tanzania,TZ,D2021,8.6
+Tanzania,TZ,D2022,10.52
+Tanzania,TZ,D2023,11.92
+Lesotho,LS,D2017,Sample too small
+Lesotho,LS,D2018,Sample too small
+Lesotho,LS,D2019,Sample too small
+Lesotho,LS,D2020,7.43
+Lesotho,LS,D2021,8.46
+Lesotho,LS,D2022,10.68
+Lesotho,LS,D2023,11.75
+Palestine,PS,D2017,1.96
+Palestine,PS,D2018,1.75
+Palestine,PS,D2019,1.83
+Palestine,PS,D2020,3.13
+Palestine,PS,D2021,3.65
+Palestine,PS,D2022,5.36
+Palestine,PS,D2023,11.59
+Cabo Verde,CV,D2017,2
+Cabo Verde,CV,D2018,3.24
+Cabo Verde,CV,D2019,3.31
+Cabo Verde,CV,D2020,6.64
+Cabo Verde,CV,D2021,7.94
+Cabo Verde,CV,D2022,9.08
+Cabo Verde,CV,D2023,11.49
+Gabon,GA,D2017,0.41
+Gabon,GA,D2018,1.13
+Gabon,GA,D2019,1.26
+Gabon,GA,D2020,4.37
+Gabon,GA,D2021,4.99
+Gabon,GA,D2022,5.81
+Gabon,GA,D2023,11.22
+Mozambique,MZ,D2017,1.45
+Mozambique,MZ,D2018,1.76
+Mozambique,MZ,D2019,2.16
+Mozambique,MZ,D2020,3.47
+Mozambique,MZ,D2021,7.17
+Mozambique,MZ,D2022,8.38
+Mozambique,MZ,D2023,11.06
+Venezuela,VE,D2017,0.7
+Venezuela,VE,D2018,1.24
+Venezuela,VE,D2019,1.37
+Venezuela,VE,D2020,1.61
+Venezuela,VE,D2021,2.62
+Venezuela,VE,D2022,4.47
+Venezuela,VE,D2023,10.92
+Namibia,NA,D2017,1.81
+Namibia,NA,D2018,2.62
+Namibia,NA,D2019,3.39
+Namibia,NA,D2020,3.91
+Namibia,NA,D2021,4.42
+Namibia,NA,D2022,9.28
+Namibia,NA,D2023,10.8
+Haiti,HT,D2017,2.62
+Haiti,HT,D2018,2.42
+Haiti,HT,D2019,2.94
+Haiti,HT,D2020,5.75
+Haiti,HT,D2021,12.12
+Haiti,HT,D2022,9.54
+Haiti,HT,D2023,10.75
+Azerbaijan,AZ,D2017,2.67
+Azerbaijan,AZ,D2018,2.52
+Azerbaijan,AZ,D2019,3.1
+Azerbaijan,AZ,D2020,4.89
+Azerbaijan,AZ,D2021,6.63
+Azerbaijan,AZ,D2022,6.61
+Azerbaijan,AZ,D2023,10.2
+Egypt,EG,D2017,1.22
+Egypt,EG,D2018,1.33
+Egypt,EG,D2019,1.62
+Egypt,EG,D2020,4.71
+Egypt,EG,D2021,6.94
+Egypt,EG,D2022,7.81
+Egypt,EG,D2023,9.75
+Botswana,BW,D2017,1.07
+Botswana,BW,D2018,1.5
+Botswana,BW,D2019,1.92
+Botswana,BW,D2020,2.78
+Botswana,BW,D2021,3.65
+Botswana,BW,D2022,9.36
+Botswana,BW,D2023,9.61
+Tunisia,TN,D2017,3.5
+Tunisia,TN,D2018,3.67
+Tunisia,TN,D2019,4.64
+Tunisia,TN,D2020,5.66
+Tunisia,TN,D2021,7.46
+Tunisia,TN,D2022,8.32
+Tunisia,TN,D2023,9.6
+Solomon Islands,SB,D2017,Sample too small
+Solomon Islands,SB,D2018,Sample too small
+Solomon Islands,SB,D2019,Sample too small
+Solomon Islands,SB,D2020,Sample too small
+Solomon Islands,SB,D2021,5.33
+Solomon Islands,SB,D2022,Sample too small
+Solomon Islands,SB,D2023,9.51
+Iraq,IQ,D2017,1.6
+Iraq,IQ,D2018,1.21
+Iraq,IQ,D2019,1.39
+Iraq,IQ,D2020,2.69
+Iraq,IQ,D2021,5.58
+Iraq,IQ,D2022,6.48
+Iraq,IQ,D2023,9.37
+Senegal,SN,D2017,1.17
+Senegal,SN,D2018,1.4
+Senegal,SN,D2019,2.25
+Senegal,SN,D2020,5.93
+Senegal,SN,D2021,7.02
+Senegal,SN,D2022,6.53
+Senegal,SN,D2023,9.22
+Zimbabwe,ZW,D2017,2.49
+Zimbabwe,ZW,D2018,2.86
+Zimbabwe,ZW,D2019,2.73
+Zimbabwe,ZW,D2020,6.92
+Zimbabwe,ZW,D2021,7.92
+Zimbabwe,ZW,D2022,8.94
+Zimbabwe,ZW,D2023,9.18
+Angola,AO,D2017,1.05
+Angola,AO,D2018,1.49
+Angola,AO,D2019,1.21
+Angola,AO,D2020,4.15
+Angola,AO,D2021,5.88
+Angola,AO,D2022,6.66
+Angola,AO,D2023,9.13
+Benin,BJ,D2017,0.73
+Benin,BJ,D2018,1.23
+Benin,BJ,D2019,0.94
+Benin,BJ,D2020,1.67
+Benin,BJ,D2021,2.59
+Benin,BJ,D2022,3.14
+Benin,BJ,D2023,9.12
+Myanmar,MM,D2017,2.09
+Myanmar,MM,D2018,4.15
+Myanmar,MM,D2019,4.87
+Myanmar,MM,D2020,7.11
+Myanmar,MM,D2021,4.58
+Myanmar,MM,D2022,6.68
+Myanmar,MM,D2023,9.02
+Mauritania,MR,D2017,1.54
+Mauritania,MR,D2018,0.7
+Mauritania,MR,D2019,0.59
+Mauritania,MR,D2020,1.47
+Mauritania,MR,D2021,2.54
+Mauritania,MR,D2022,3.98
+Mauritania,MR,D2023,8.95
+Togo,TG,D2017,1.24
+Togo,TG,D2018,1.27
+Togo,TG,D2019,1.96
+Togo,TG,D2020,4.03
+Togo,TG,D2021,3.54
+Togo,TG,D2022,4.15
+Togo,TG,D2023,8.9
+Papua New Guinea,PG,D2017,1.19
+Papua New Guinea,PG,D2018,1.92
+Papua New Guinea,PG,D2019,2.47
+Papua New Guinea,PG,D2020,2.67
+Papua New Guinea,PG,D2021,5.1
+Papua New Guinea,PG,D2022,7.55
+Papua New Guinea,PG,D2023,8.75
+Guinea,GN,D2017,0.84
+Guinea,GN,D2018,0.65
+Guinea,GN,D2019,1.25
+Guinea,GN,D2020,3.04
+Guinea,GN,D2021,2.39
+Guinea,GN,D2022,3.7
+Guinea,GN,D2023,8.5
+Malawi,MW,D2017,0.92
+Malawi,MW,D2018,1.17
+Malawi,MW,D2019,1.59
+Malawi,MW,D2020,4.07
+Malawi,MW,D2021,4.96
+Malawi,MW,D2022,8.48
+Malawi,MW,D2023,8.26
+Algeria,DZ,D2017,1.11
+Algeria,DZ,D2018,1.25
+Algeria,DZ,D2019,1.37
+Algeria,DZ,D2020,1.83
+Algeria,DZ,D2021,3.08
+Algeria,DZ,D2022,6.27
+Algeria,DZ,D2023,7.73
+Mali,ML,D2017,0.84
+Mali,ML,D2018,0.95
+Mali,ML,D2019,1.56
+Mali,ML,D2020,3.45
+Mali,ML,D2021,4.72
+Mali,ML,D2022,4.69
+Mali,ML,D2023,7.56
+Sierra Leone,SL,D2017,Sample too small
+Sierra Leone,SL,D2018,1.61
+Sierra Leone,SL,D2019,1.2
+Sierra Leone,SL,D2020,3.86
+Sierra Leone,SL,D2021,2.19
+Sierra Leone,SL,D2022,3.79
+Sierra Leone,SL,D2023,7
+Vanuatu,VU,D2017,Sample too small
+Vanuatu,VU,D2018,Sample too small
+Vanuatu,VU,D2019,Sample too small
+Vanuatu,VU,D2020,2.22
+Vanuatu,VU,D2021,2.9
+Vanuatu,VU,D2022,6.53
+Vanuatu,VU,D2023,6.57
+Lebanon,LB,D2017,1.07
+Lebanon,LB,D2018,1.6
+Lebanon,LB,D2019,1.84
+Lebanon,LB,D2020,2.34
+Lebanon,LB,D2021,5.67
+Lebanon,LB,D2022,3.86
+Lebanon,LB,D2023,6.55
+Zambia,ZM,D2017,2.45
+Zambia,ZM,D2018,2.03
+Zambia,ZM,D2019,3.13
+Zambia,ZM,D2020,3.84
+Zambia,ZM,D2021,5.48
+Zambia,ZM,D2022,8.36
+Zambia,ZM,D2023,6.53
+São Tomé and Príncipe,ST,D2017,Sample too small
+São Tomé and Príncipe,ST,D2018,1.13
+São Tomé and Príncipe,ST,D2019,0.87
+São Tomé and Príncipe,ST,D2020,1.99
+São Tomé and Príncipe,ST,D2021,2.43
+São Tomé and Príncipe,ST,D2022,2.81
+São Tomé and Príncipe,ST,D2023,6.52
+Bangladesh,BD,D2017,1.34
+Bangladesh,BD,D2018,1.97
+Bangladesh,BD,D2019,2.72
+Bangladesh,BD,D2020,3.24
+Bangladesh,BD,D2021,2.9
+Bangladesh,BD,D2022,3.74
+Bangladesh,BD,D2023,6.41
+Libya,LY,D2017,0.89
+Libya,LY,D2018,1.42
+Libya,LY,D2019,1.88
+Libya,LY,D2020,2.6
+Libya,LY,D2021,3.73
+Libya,LY,D2022,5.27
+Libya,LY,D2023,6.32
+Chad,TD,D2017,Sample too small
+Chad,TD,D2018,Sample too small
+Chad,TD,D2019,Sample too small
+Chad,TD,D2020,2.25
+Chad,TD,D2021,2.39
+Chad,TD,D2022,3.49
+Chad,TD,D2023,5.83
+eSwatini (Formerly Swaziland),SZ,D2017,Sample too small
+eSwatini (Formerly Swaziland),SZ,D2018,1.26
+eSwatini (Formerly Swaziland),SZ,D2019,1.45
+eSwatini (Formerly Swaziland),SZ,D2020,4.51
+eSwatini (Formerly Swaziland),SZ,D2021,3.73
+eSwatini (Formerly Swaziland),SZ,D2022,4.76
+eSwatini (Formerly Swaziland),SZ,D2023,5.76
+Liberia,LR,D2017,2.12
+Liberia,LR,D2018,1.61
+Liberia,LR,D2019,2.11
+Liberia,LR,D2020,6.83
+Liberia,LR,D2021,5.23
+Liberia,LR,D2022,4.19
+Liberia,LR,D2023,5.6
+Niger,NE,D2017,Sample too small
+Niger,NE,D2018,0.83
+Niger,NE,D2019,0.71
+Niger,NE,D2020,2.77
+Niger,NE,D2021,3.23
+Niger,NE,D2022,4.33
+Niger,NE,D2023,5.5
+Pakistan,PK,D2017,0.91
+Pakistan,PK,D2018,1.32
+Pakistan,PK,D2019,1.44
+Pakistan,PK,D2020,2.14
+Pakistan,PK,D2021,2.82
+Pakistan,PK,D2022,3.55
+Pakistan,PK,D2023,5.32
+Sudan,SD,D2017,1.1
+Sudan,SD,D2018,1.56
+Sudan,SD,D2019,1.93
+Sudan,SD,D2020,1.35
+Sudan,SD,D2021,1.8
+Sudan,SD,D2022,2.57
+Sudan,SD,D2023,5.24
+Guinea-Bissau,GW,D2017,Sample too small
+Guinea-Bissau,GW,D2018,Sample too small
+Guinea-Bissau,GW,D2019,Sample too small
+Guinea-Bissau,GW,D2020,1.61
+Guinea-Bissau,GW,D2021,1.24
+Guinea-Bissau,GW,D2022,0.98
+Guinea-Bissau,GW,D2023,5.09
+Somalia,SO,D2017,0.62
+Somalia,SO,D2018,0.6
+Somalia,SO,D2019,0.86
+Somalia,SO,D2020,1.14
+Somalia,SO,D2021,1.59
+Somalia,SO,D2022,1.6
+Somalia,SO,D2023,5
+Djibouti,DJ,D2017,1.25
+Djibouti,DJ,D2018,0.92
+Djibouti,DJ,D2019,0.88
+Djibouti,DJ,D2020,1.5
+Djibouti,DJ,D2021,1.46
+Djibouti,DJ,D2022,2.34
+Djibouti,DJ,D2023,4.66
+Democratic Republic of the Congo,CD,D2017,0.72
+Democratic Republic of the Congo,CD,D2018,0.86
+Democratic Republic of the Congo,CD,D2019,1.1
+Democratic Republic of the Congo,CD,D2020,2.06
+Democratic Republic of the Congo,CD,D2021,3.63
+Democratic Republic of the Congo,CD,D2022,4.9
+Democratic Republic of the Congo,CD,D2023,4.62
+Turkmenistan,TM,D2017,1.4
+Turkmenistan,TM,D2018,0.56
+Turkmenistan,TM,D2019,0.7
+Turkmenistan,TM,D2020,0.74
+Turkmenistan,TM,D2021,0.5
+Turkmenistan,TM,D2022,0.77
+Turkmenistan,TM,D2023,4.49
+Gambia,GM,D2017,Sample too small
+Gambia,GM,D2018,1.45
+Gambia,GM,D2019,1.21
+Gambia,GM,D2020,1.6
+Gambia,GM,D2021,2.04
+Gambia,GM,D2022,2.75
+Gambia,GM,D2023,4.35
+Federated States of Micronesia,FM,D2017,Sample too small
+Federated States of Micronesia,FM,D2018,Sample too small
+Federated States of Micronesia,FM,D2019,Sample too small
+Federated States of Micronesia,FM,D2020,4.49
+Federated States of Micronesia,FM,D2021,1.63
+Federated States of Micronesia,FM,D2022,3.96
+Federated States of Micronesia,FM,D2023,4.25
+Cuba,CU,D2017,Sample too small
+Cuba,CU,D2018,5.83
+Cuba,CU,D2019,1.66
+Cuba,CU,D2020,3.16
+Cuba,CU,D2021,2.92
+Cuba,CU,D2022,3.26
+Cuba,CU,D2023,4.14
+South Sudan,SS,D2017,Sample too small
+South Sudan,SS,D2018,Sample too small
+South Sudan,SS,D2019,Sample too small
+South Sudan,SS,D2020,0.58
+South Sudan,SS,D2021,1.4
+South Sudan,SS,D2022,3.73
+South Sudan,SS,D2023,3.89
+Burundi,BI,D2017,Sample too small
+Burundi,BI,D2018,2.56
+Burundi,BI,D2019,3.03
+Burundi,BI,D2020,4.04
+Burundi,BI,D2021,2.82
+Burundi,BI,D2022,3.44
+Burundi,BI,D2023,3.7
+Ethiopia,ET,D2017,1.34
+Ethiopia,ET,D2018,1.13
+Ethiopia,ET,D2019,0.8
+Ethiopia,ET,D2020,1.12
+Ethiopia,ET,D2021,1.2
+Ethiopia,ET,D2022,1.68
+Ethiopia,ET,D2023,3.54
+Cameroon,CM,D2017,0.97
+Cameroon,CM,D2018,1.29
+Cameroon,CM,D2019,1.03
+Cameroon,CM,D2020,2.78
+Cameroon,CM,D2021,3.04
+Cameroon,CM,D2022,3.35
+Cameroon,CM,D2023,3.16
+Tajikistan,TJ,D2017,0.83
+Tajikistan,TJ,D2018,0.94
+Tajikistan,TJ,D2019,1.05
+Tajikistan,TJ,D2020,1.01
+Tajikistan,TJ,D2021,1.82
+Tajikistan,TJ,D2022,2.02
+Tajikistan,TJ,D2023,2.98
+Equatorial Guinea,GQ,D2017,Sample too small
+Equatorial Guinea,GQ,D2018,Sample too small
+Equatorial Guinea,GQ,D2019,0.51
+Equatorial Guinea,GQ,D2020,0.75
+Equatorial Guinea,GQ,D2021,1.3
+Equatorial Guinea,GQ,D2022,1.34
+Equatorial Guinea,GQ,D2023,2.7
+Democratic Republic of Timor-Leste,TL,D2017,Sample too small
+Democratic Republic of Timor-Leste,TL,D2018,0.49
+Democratic Republic of Timor-Leste,TL,D2019,0.45
+Democratic Republic of Timor-Leste,TL,D2020,0.89
+Democratic Republic of Timor-Leste,TL,D2021,1.33
+Democratic Republic of Timor-Leste,TL,D2022,0.94
+Democratic Republic of Timor-Leste,TL,D2023,2.5
+Syria,SY,D2017,0.68
+Syria,SY,D2018,0.81
+Syria,SY,D2019,0.95
+Syria,SY,D2020,0.76
+Syria,SY,D2021,1.67
+Syria,SY,D2022,2.88
+Syria,SY,D2023,2.3
+Yemen,YE,D2017,0.34
+Yemen,YE,D2018,0.31
+Yemen,YE,D2019,0.38
+Yemen,YE,D2020,0.65
+Yemen,YE,D2021,0.68
+Yemen,YE,D2022,0.97
+Yemen,YE,D2023,1.79
+Afghanistan,AF,D2017,1.27
+Afghanistan,AF,D2018,1.15
+Afghanistan,AF,D2019,1.26
+Afghanistan,AF,D2020,1.37
+Afghanistan,AF,D2021,1.41
+Afghanistan,AF,D2022,0.98
+Afghanistan,AF,D2023,1.71
+Aland Islands,AX,D2017,Sample too small
+Aland Islands,AX,D2018,Sample too small
+Aland Islands,AX,D2019,Sample too small
+Aland Islands,AX,D2020,81.31
+Aland Islands,AX,D2021,81.31
+Aland Islands,AX,D2022,78.47
+Aland Islands,AX,D2023,Sample too small
+Samoa,WS,D2017,Sample too small
+Samoa,WS,D2018,Sample too small
+Samoa,WS,D2019,Sample too small
+Samoa,WS,D2020,Sample too small
+Samoa,WS,D2021,6.8
+Samoa,WS,D2022,Sample too small
+Samoa,WS,D2023,Sample too small
+Palau,PW,D2017,Sample too small
+Palau,PW,D2018,Sample too small
+Palau,PW,D2019,Sample too small
+Palau,PW,D2020,4.24
+Palau,PW,D2021,4.84
+Palau,PW,D2022,Sample too small
+Palau,PW,D2023,Sample too small
+Comoros,KM,D2017,Sample too small
+Comoros,KM,D2018,Sample too small
+Comoros,KM,D2019,2.54
+Comoros,KM,D2020,4.85
+Comoros,KM,D2021,3.99
+Comoros,KM,D2022,Sample too small
+Comoros,KM,D2023,Sample too small
+Eritrea,ER,D2017,Sample too small
+Eritrea,ER,D2018,Sample too small
+Eritrea,ER,D2019,Sample too small
+Eritrea,ER,D2020,Sample too small
+Eritrea,ER,D2021,2.41
+Eritrea,ER,D2022,1.89
+Eritrea,ER,D2023,Sample too small
+Wallis and Futuna,WF,D2017,Sample too small
+Wallis and Futuna,WF,D2018,Sample too small
+Wallis and Futuna,WF,D2019,Sample too small
+Wallis and Futuna,WF,D2020,Sample too small
+Wallis and Futuna,WF,D2021,Sample too small
+Wallis and Futuna,WF,D2022,Sample too small
+Wallis and Futuna,WF,D2023,Sample too small
+Cocos (Keeling) Islands,CC,D2017,Sample too small
+Cocos (Keeling) Islands,CC,D2018,Sample too small
+Cocos (Keeling) Islands,CC,D2019,Sample too small
+Cocos (Keeling) Islands,CC,D2020,Sample too small
+Cocos (Keeling) Islands,CC,D2021,Sample too small
+Cocos (Keeling) Islands,CC,D2022,Sample too small
+Cocos (Keeling) Islands,CC,D2023,Sample too small
+Central African Republic,CF,D2017,Sample too small
+Central African Republic,CF,D2018,Sample too small
+Central African Republic,CF,D2019,Sample too small
+Central African Republic,CF,D2020,Sample too small
+Central African Republic,CF,D2021,Sample too small
+Central African Republic,CF,D2022,Sample too small
+Central African Republic,CF,D2023,Sample too small
+Cook Islands,CK,D2017,Sample too small
+Cook Islands,CK,D2018,Sample too small
+Cook Islands,CK,D2019,Sample too small
+Cook Islands,CK,D2020,Sample too small
+Cook Islands,CK,D2021,Sample too small
+Cook Islands,CK,D2022,Sample too small
+Cook Islands,CK,D2023,Sample too small
+Christmas Island,CX,D2017,Sample too small
+Christmas Island,CX,D2018,Sample too small
+Christmas Island,CX,D2019,Sample too small
+Christmas Island,CX,D2020,Sample too small
+Christmas Island,CX,D2021,Sample too small
+Christmas Island,CX,D2022,Sample too small
+Christmas Island,CX,D2023,Sample too small
+Western Sahara,EH,D2017,Sample too small
+Western Sahara,EH,D2018,Sample too small
+Western Sahara,EH,D2019,Sample too small
+Western Sahara,EH,D2020,Sample too small
+Western Sahara,EH,D2021,Sample too small
+Western Sahara,EH,D2022,Sample too small
+Western Sahara,EH,D2023,Sample too small
+Falkland Islands,FK,D2017,Sample too small
+Falkland Islands,FK,D2018,Sample too small
+Falkland Islands,FK,D2019,Sample too small
+Falkland Islands,FK,D2020,Sample too small
+Falkland Islands,FK,D2021,Sample too small
+Falkland Islands,FK,D2022,Sample too small
+Falkland Islands,FK,D2023,Sample too small
+British Indian Ocean Territory,IO,D2017,Sample too small
+British Indian Ocean Territory,IO,D2018,Sample too small
+British Indian Ocean Territory,IO,D2019,Sample too small
+British Indian Ocean Territory,IO,D2020,Sample too small
+British Indian Ocean Territory,IO,D2021,Sample too small
+British Indian Ocean Territory,IO,D2022,Sample too small
+British Indian Ocean Territory,IO,D2023,Sample too small
+Kiribati,KI,D2017,Sample too small
+Kiribati,KI,D2018,Sample too small
+Kiribati,KI,D2019,Sample too small
+Kiribati,KI,D2020,Sample too small
+Kiribati,KI,D2021,Sample too small
+Kiribati,KI,D2022,Sample too small
+Kiribati,KI,D2023,Sample too small
+North Korea,KP,D2017,Sample too small
+North Korea,KP,D2018,Sample too small
+North Korea,KP,D2019,Sample too small
+North Korea,KP,D2020,Sample too small
+North Korea,KP,D2021,Sample too small
+North Korea,KP,D2022,Sample too small
+North Korea,KP,D2023,Sample too small
+Montserrat,MS,D2017,Sample too small
+Montserrat,MS,D2018,Sample too small
+Montserrat,MS,D2019,Sample too small
+Montserrat,MS,D2020,Sample too small
+Montserrat,MS,D2021,Sample too small
+Montserrat,MS,D2022,Sample too small
+Montserrat,MS,D2023,Sample too small
+Norfolk Island,NF,D2017,Sample too small
+Norfolk Island,NF,D2018,Sample too small
+Norfolk Island,NF,D2019,Sample too small
+Norfolk Island,NF,D2020,Sample too small
+Norfolk Island,NF,D2021,Sample too small
+Norfolk Island,NF,D2022,Sample too small
+Norfolk Island,NF,D2023,Sample too small
+Nauru,NR,D2017,Sample too small
+Nauru,NR,D2018,Sample too small
+Nauru,NR,D2019,Sample too small
+Nauru,NR,D2020,Sample too small
+Nauru,NR,D2021,Sample too small
+Nauru,NR,D2022,Sample too small
+Nauru,NR,D2023,Sample too small
+Niue,NU,D2017,Sample too small
+Niue,NU,D2018,Sample too small
+Niue,NU,D2019,Sample too small
+Niue,NU,D2020,Sample too small
+Niue,NU,D2021,Sample too small
+Niue,NU,D2022,Sample too small
+Niue,NU,D2023,Sample too small
+Pitcairn Islands,PN,D2017,Sample too small
+Pitcairn Islands,PN,D2018,Sample too small
+Pitcairn Islands,PN,D2019,Sample too small
+Pitcairn Islands,PN,D2020,Sample too small
+Pitcairn Islands,PN,D2021,Sample too small
+Pitcairn Islands,PN,D2022,Sample too small
+Pitcairn Islands,PN,D2023,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2017,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2018,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2019,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2020,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2021,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2022,Sample too small
+"Saint Helena, Ascension and Tristan da Cunha",SH,D2023,Sample too small
+Svalbard and Jan Mayen,SJ,D2017,Sample too small
+Svalbard and Jan Mayen,SJ,D2018,Sample too small
+Svalbard and Jan Mayen,SJ,D2019,Sample too small
+Svalbard and Jan Mayen,SJ,D2020,Sample too small
+Svalbard and Jan Mayen,SJ,D2021,Sample too small
+Svalbard and Jan Mayen,SJ,D2022,Sample too small
+Svalbard and Jan Mayen,SJ,D2023,Sample too small
+French Southern and Antarctic Lands,TF,D2017,Sample too small
+French Southern and Antarctic Lands,TF,D2018,Sample too small
+French Southern and Antarctic Lands,TF,D2019,Sample too small
+French Southern and Antarctic Lands,TF,D2020,Sample too small
+French Southern and Antarctic Lands,TF,D2021,Sample too small
+French Southern and Antarctic Lands,TF,D2022,Sample too small
+French Southern and Antarctic Lands,TF,D2023,Sample too small
+Tokelau,TK,D2017,Sample too small
+Tokelau,TK,D2018,Sample too small
+Tokelau,TK,D2019,Sample too small
+Tokelau,TK,D2020,Sample too small
+Tokelau,TK,D2021,Sample too small
+Tokelau,TK,D2022,Sample too small
+Tokelau,TK,D2023,Sample too small
+Tonga,TO,D2017,Sample too small
+Tonga,TO,D2018,Sample too small
+Tonga,TO,D2019,Sample too small
+Tonga,TO,D2020,Sample too small
+Tonga,TO,D2021,Sample too small
+Tonga,TO,D2022,Sample too small
+Tonga,TO,D2023,Sample too small
+Tuvalu,TV,D2017,Sample too small
+Tuvalu,TV,D2018,Sample too small
+Tuvalu,TV,D2019,Sample too small
+Tuvalu,TV,D2020,Sample too small
+Tuvalu,TV,D2021,Sample too small
+Tuvalu,TV,D2022,Sample too small
+Tuvalu,TV,D2023,Sample too small
+United States Minor Outlying Islands,UM,D2017,Sample too small
+United States Minor Outlying Islands,UM,D2018,Sample too small
+United States Minor Outlying Islands,UM,D2019,Sample too small
+United States Minor Outlying Islands,UM,D2020,Sample too small
+United States Minor Outlying Islands,UM,D2021,Sample too small
+United States Minor Outlying Islands,UM,D2022,Sample too small
+United States Minor Outlying Islands,UM,D2023,Sample too small
+Global regional averages,,D2017,7.41
+Global regional averages,,D2018,9.14
+Global regional averages,,D2019,11.03
+Global regional averages,,D2020,24.83
+Global regional averages,,D2021,29.79
+Global regional averages,,D2022,35.98
+Global regional averages,,D2023,46.79

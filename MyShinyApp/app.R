@@ -10,33 +10,9 @@ library(plotly)
 world_map <- map_data("world")
 world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
 ISOCODESAREGGFKINGKILLME <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
-accesstonet <- read.csv("accesstointernet.csv")
-netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
-
-#data cleaning for access to net
-access_dataset <- accesstonet %>%
-  pivot_longer(
-    cols = D1990:D2022,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for speed of net
-speed_dataset <- netspeed %>%
-  pivot_longer(
-    cols = D2017:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for price of net
-price_dataset <- netprice %>% 
-  pivot_longer(
-    cols = D2019:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
+access_dataset <- read.csv("accesstointernet.csv")
+speed_dataset <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
+price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
 
 price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
 world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES
