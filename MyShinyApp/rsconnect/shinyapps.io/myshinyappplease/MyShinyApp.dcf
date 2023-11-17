@@ -5,7 +5,7 @@ account: myshinyappplease
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 10530496
-bundleId: 7930054
+bundleId: 7940017
 url: https://myshinyappplease.shinyapps.io/MyShinyApp/
 version: 1
 asMultiple: FALSE

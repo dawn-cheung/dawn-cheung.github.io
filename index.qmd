@@ -32,34 +32,10 @@ library(rsconnect)
 # Import the data with coordinates
 world_map <- map_data("world")
 world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-ISOCODESAREGGFKINGKILLME <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
-accesstonet <- read.csv("accesstointernet.csv")
-netspeed <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-netprice <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
-
-#data cleaning for access to net
-access_dataset <- accesstonet %>%
-   pivot_longer(
-    cols = D1990:D2022,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for speed of net
-speed_dataset <- netspeed %>%
-   pivot_longer(
-    cols = D2017:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
-
-#data cleaning for price of net
-price_dataset <- netprice %>% 
-   pivot_longer(
-    cols = D2019:D2023,
-    names_to = "Dyear",
-    values_to = "values") %>%
-  rename(region = Country.Code)
+isocode <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
+access_dataset <- read.csv("accesstointernet.csv")
+speed_dataset <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
+price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
 
 price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
 
@@ -68,7 +44,7 @@ accessyear <- access_dataset %>% filter(Dyear == "D2020")
 sostupid_map <- left_join(world_map, accessyear, by = "region")
 
 world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES
-ISOCODESAREGGFKINGKILLME <- "iso2c"
+isocode <- "iso2c"
 
 speedyear <- speed_dataset %>% filter(Dyear == "D2020")
 sohungry_map <- left_join(world_map, speedyear, by = "region")
@@ -79,14 +55,14 @@ sotired_map <- left_join(world_map, priceyear, by = "region")
 #group = group connects the points in the correct order
 mapplotting <- function(wee, dayear, colourscheme) {
   if(identical(wee, access_dataset)) { 
-    if (ISOCODESAREGGFKINGKILLME == "iso2c") { #its a global variable so its fine
+    if (isocode == "iso2c") { #its a global variable so its fine
       world_map$region <- countrycode(world_map$region, "iso2c", "iso3c")
-      ISOCODESAREGGFKINGKILLME == "iso3c"
+      isocode == "iso3c"
     } 
   } else {
-      if (ISOCODESAREGGFKINGKILLME == "iso3c") {
+      if (isocode == "iso3c") {
         world_map$region <- countrycode(world_map$region, "iso3c", "iso2c")
-        ISOCODESAREGGFKINGKILLME == "iso2c"
+        isocode == "iso2c"
       }
   }
   weep <- wee %>% filter(Dyear == paste0("D", dayear))
@@ -127,8 +103,7 @@ gdpPERCAPITA <- gdpPERCAPITA %>%
   rename(region = Code)
 
 accessscatter <- left_join(GINIvaluesyearc3, accessyear, by = "region") %>%
-  left_join(. , gdpPERCAPITA, by = "region") #In tidyverse, the . refers to the entire object from the lhs of %>% So, it is the data.frame created from the left join of x and y [ADD TO DIARY ENTRY]
-
+  left_join(. , gdpPERCAPITA, by = "region")
 accessscatter %>% 
         drop_na(values) %>%
   ggplot(data = accessscatter, mapping = aes(x = values, y = log(gdp), colour = gini)) +
