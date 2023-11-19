@@ -25,6 +25,17 @@ library(plotly)
 #Shiny app:
 #https://myshinyappplease.shinyapps.io/MyShinyApp/
 
+#FROM PREVIOUS CODE
+#group = group connects the points in the correct order
+mapplotting <- function(wee, dayear, colourscheme) {
+  weep <- wee %>% filter(Dyear == paste0("D", dayear))
+  weep$values <- as.numeric(weep$values)
+  mapdataset <- left_join(world_map, weep, by = "region")
+  ggplot(mapdataset, aes(long, lat, group = group)) +
+    geom_polygon(aes(fill = values), color = "white", size = 0.03) +
+    scale_fill_viridis_c(option = colourscheme) +
+    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
+}
 
 #SOURCES:
 #accesstointernet.csv: https://data.worldbank.org/indicator/IT.NET.USER.ZS?end=2022&start=2009&view=chart [Individuals using the Internet (% of population)]
@@ -183,51 +194,38 @@ access_dataset <- read.csv("accesstointernet.csv")
 speed_dataset <- read.csv("worldwideInternetSpeed.csv")
 price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv")
 
-price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
-
 #filter by year
 accessyear <- access_dataset %>% filter(Dyear == "D2020")
 speedyear <- speed_dataset %>% filter(Dyear == "D2020")
 priceyear <- price_dataset %>% filter(Dyear == "D2020")
 
-#group = group connects the points in the correct order
-mapplotting <- function(wee, dayear, colourscheme) {
-  weep <- wee %>% filter(Dyear == paste0("D", dayear))
-  weep$values <- as.numeric(weep$values)
-  mapdataset <- left_join(world_map, weep, by = "region")
-  ggplot(mapdataset, aes(long, lat, group = group)) +
-    geom_polygon(aes(fill = values), color = "white", size = 0.03) +
-    scale_fill_viridis_c(option = colourscheme) +
-    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
-}
-
 econineq <- read.csv("EconomicInequality.csv") #ISO3 used
 desidata <- read.csv("desi-data.csv") #ISO3 used!
+gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv")
 
-econindicator <- econineq %>%
-  filter(year == 2020)
+econindicator <- econineq %>% filter(year == 2020)
+desi <- desidata %>% filter(period == "desi_2020")
+gdpPERCAPITA <- gdpPERCAPITA %>% filter(year == 2020)
 
-desi <- desidata %>%
-  filter(period == "desi_2020")
+econindicator$gdp <- as.numeric(econindicator$gdp)
+gdpPERCAPITA$GDP.per.capita <- as.numeric(gdpPERCAPITA$GDP.per.capita)
+speedyear$values <- as.numeric(speedyear$values)
+priceyear$values <- as.numeric(priceyear$values)
 
-accessscatter <- left_join(econindicator, accessyear, by = "region")
-
+accessscatter <- left_join(econindicator, accessyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region")
 accessscatter %>% 
         drop_na(values) %>%
-  ggplot(data = accessscatter, mapping = aes(x = values, y = log(gdp), colour = gini)) +
+  ggplot(data = accessscatter, mapping = aes(x = values, y = log(GDP.per.capita), colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
-accessscatter %>% 
-        drop_na(values) %>%
-  ggplot(data = accessscatter, mapping = aes(x = log(values), y = gdp, colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-speedscatter <- left_join(econindicator, speedyear, by = "region")
-
-options(repr.plot.width = 10, repr.plot.height =3) 
+speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region")
+head(speedscatter)
+#options(repr.plot.width = 10, repr.plot.height =3) #seemingly does nothing
 speedscatter %>% 
         drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(values), colour = gini)) +
+  ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values), colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 speedscatter %>% #probelm
@@ -235,16 +233,17 @@ speedscatter %>% #probelm
   ggplot(data = speedscatter, mapping = aes(x = as.numeric(gini), y = as.numeric(values), colour = region_wb)) +
   geom_point()
 
-pricescatter <- left_join(econindicator, priceyear, by = "region")
+pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region")
 
 pricescatter %>% 
         drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = gdp, colour = gini)) +
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = GDP.per.capita, colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 pricescatter %>% 
         drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = gdp, colour = region_wb)) +
+  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = GDP.per.capita, colour = region_wb)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 accessyear %>% rename(accessyear_values = values)
