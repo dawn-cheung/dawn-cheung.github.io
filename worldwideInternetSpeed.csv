@@ -1,1730 +1,1236 @@
-Country,region,Dyear,values
-Jersey,JE,D2017,23.3
-Jersey,JE,D2018,30.9
-Jersey,JE,D2019,67.46
-Jersey,JE,D2020,218.37
-Jersey,JE,D2021,274.27
-Jersey,JE,D2022,256.59
-Jersey,JE,D2023,264.52
-Liechtenstein,LI,D2017,11.4
-Liechtenstein,LI,D2018,17.71
-Liechtenstein,LI,D2019,22.04
-Liechtenstein,LI,D2020,229.98
-Liechtenstein,LI,D2021,211.26
-Liechtenstein,LI,D2022,166.22
-Liechtenstein,LI,D2023,246.76
-Macao,MO,D2017,20.52
-Macao,MO,D2018,16.12
-Macao,MO,D2019,19.19
-Macao,MO,D2020,14.66
-Macao,MO,D2021,128.56
-Macao,MO,D2022,262.74
-Macao,MO,D2023,231.4
-Iceland,IS,D2017,10.55
-Iceland,IS,D2018,18.85
-Iceland,IS,D2019,22.13
-Iceland,IS,D2020,116.88
-Iceland,IS,D2021,191.83
-Iceland,IS,D2022,216.56
-Iceland,IS,D2023,229.35
-Gibraltar,GI,D2017,13.18
-Gibraltar,GI,D2018,14.71
-Gibraltar,GI,D2019,20.27
-Gibraltar,GI,D2020,183.09
-Gibraltar,GI,D2021,151.34
-Gibraltar,GI,D2022,159.9
-Gibraltar,GI,D2023,206.27
-Andorra,AD,D2017,12.07
-Andorra,AD,D2018,27.14
-Andorra,AD,D2019,38.31
-Andorra,AD,D2020,213.41
-Andorra,AD,D2021,164.66
-Andorra,AD,D2022,159.8
-Andorra,AD,D2023,190.4
-Luxembourg,LU,D2017,15.52
-Luxembourg,LU,D2018,35.14
-Luxembourg,LU,D2019,41.69
-Luxembourg,LU,D2020,118.05
-Luxembourg,LU,D2021,107.94
-Luxembourg,LU,D2022,131.95
-Luxembourg,LU,D2023,162.21
-Taiwan,TW,D2017,34.4
-Taiwan,TW,D2018,28.09
-Taiwan,TW,D2019,85.02
-Taiwan,TW,D2020,54.77
-Taiwan,TW,D2021,46.43
-Taiwan,TW,D2022,135.88
-Taiwan,TW,D2023,153.51
-France,FR,D2017,13.43
-France,FR,D2018,24.23
-France,FR,D2019,30.44
-France,FR,D2020,51.33
-France,FR,D2021,85.96
-France,FR,D2022,120.01
-France,FR,D2023,152.45
-Netherlands,NL,D2017,33.52
-Netherlands,NL,D2018,35.95
-Netherlands,NL,D2019,40.21
-Netherlands,NL,D2020,95.6
-Netherlands,NL,D2021,107.3
-Netherlands,NL,D2022,113.98
-Netherlands,NL,D2023,142.49
-Slovakia,SK,D2017,18.85
-Slovakia,SK,D2018,25.3
-Slovakia,SK,D2019,29.45
-Slovakia,SK,D2020,72.26
-Slovakia,SK,D2021,54.92
-Slovakia,SK,D2022,21.19
-Slovakia,SK,D2023,138.03
-United States,US,D2017,20
-United States,US,D2018,25.86
-United States,US,D2019,32.89
-United States,US,D2020,71.3
-United States,US,D2021,92.42
-United States,US,D2022,118.01
-United States,US,D2023,136.48
-Canada,CA,D2017,18.37
-Canada,CA,D2018,19.48
-Canada,CA,D2019,28.76
-Canada,CA,D2020,52.6
-Canada,CA,D2021,79.96
-Canada,CA,D2022,106.8
-Canada,CA,D2023,136.08
-Spain,ES,D2017,19.6
-Spain,ES,D2018,27.19
-Spain,ES,D2019,36.06
-Spain,ES,D2020,55.84
-Spain,ES,D2021,89.59
-Spain,ES,D2022,115.61
-Spain,ES,D2023,133.66
-San Marino,SM,D2017,Sample too small
-San Marino,SM,D2018,Sample too small
-San Marino,SM,D2019,38.73
-San Marino,SM,D2020,24.26
-San Marino,SM,D2021,40.55
-San Marino,SM,D2022,40.34
-San Marino,SM,D2023,126.88
-Monaco,MC,D2017,16.13
-Monaco,MC,D2018,11.02
-Monaco,MC,D2019,20.2
-Monaco,MC,D2020,104.98
-Monaco,MC,D2021,144.29
-Monaco,MC,D2022,100.26
-Monaco,MC,D2023,126.3
-Cayman Islands,KY,D2017,13.15
-Cayman Islands,KY,D2018,11.49
-Cayman Islands,KY,D2019,16.12
-Cayman Islands,KY,D2020,57.96
-Cayman Islands,KY,D2021,71.47
-Cayman Islands,KY,D2022,99.42
-Cayman Islands,KY,D2023,125.08
-Japan,JP,D2017,24.47
-Japan,JP,D2018,28.94
-Japan,JP,D2019,42.77
-Japan,JP,D2020,54.62
-Japan,JP,D2021,96.36
-Japan,JP,D2022,122.33
-Japan,JP,D2023,124.7
-Malta,MT,D2017,10.17
-Malta,MT,D2018,13.6
-Malta,MT,D2019,18.16
-Malta,MT,D2020,87.36
-Malta,MT,D2021,85.2
-Malta,MT,D2022,107.7
-Malta,MT,D2023,123.85
-Uruguay,UY,D2017,1.31
-Uruguay,UY,D2018,6.19
-Uruguay,UY,D2019,9.16
-Uruguay,UY,D2020,22.16
-Uruguay,UY,D2021,21.73
-Uruguay,UY,D2022,59.29
-Uruguay,UY,D2023,111.46
-Portugal,PT,D2017,21.72
-Portugal,PT,D2018,21.28
-Portugal,PT,D2019,22.75
-Portugal,PT,D2020,37.99
-Portugal,PT,D2021,63.02
-Portugal,PT,D2022,91.61
-Portugal,PT,D2023,106.53
-Belgium,BE,D2017,27.37
-Belgium,BE,D2018,36.71
-Belgium,BE,D2019,35.69
-Belgium,BE,D2020,66.49
-Belgium,BE,D2021,78.46
-Belgium,BE,D2022,91.74
-Belgium,BE,D2023,102.33
-Singapore,SG,D2017,55.13
-Singapore,SG,D2018,60.39
-Singapore,SG,D2019,70.86
-Singapore,SG,D2020,72.75
-Singapore,SG,D2021,97.61
-Singapore,SG,D2022,116.62
-Singapore,SG,D2023,101.75
-Norway,NO,D2017,29.13
-Norway,NO,D2018,40.12
-Norway,NO,D2019,38.46
-Norway,NO,D2020,67.31
-Norway,NO,D2021,88.67
-Norway,NO,D2022,88.8
-Norway,NO,D2023,101.66
-Romania,RO,D2017,21.33
-Romania,RO,D2018,38.6
-Romania,RO,D2019,21.8
-Romania,RO,D2020,61.08
-Romania,RO,D2021,67.4
-Romania,RO,D2022,112.39
-Romania,RO,D2023,100.66
-North Macedonia,MK,D2017,7.34
-North Macedonia,MK,D2018,8.82
-North Macedonia,MK,D2019,7.97
-North Macedonia,MK,D2020,11.48
-North Macedonia,MK,D2021,15.38
-North Macedonia,MK,D2022,21.59
-North Macedonia,MK,D2023,97.88
-New Zealand,NZ,D2017,16.85
-New Zealand,NZ,D2018,23.77
-New Zealand,NZ,D2019,32.72
-New Zealand,NZ,D2020,66.66
-New Zealand,NZ,D2021,85.95
-New Zealand,NZ,D2022,94.44
-New Zealand,NZ,D2023,97.09
-Slovenia,SI,D2017,18.37
-Slovenia,SI,D2018,21.41
-Slovenia,SI,D2019,27.83
-Slovenia,SI,D2020,65.46
-Slovenia,SI,D2021,67.2
-Slovenia,SI,D2022,38.15
-Slovenia,SI,D2023,97
-Puerto Rico,PR,D2017,6.44
-Puerto Rico,PR,D2018,6.88
-Puerto Rico,PR,D2019,8
-Puerto Rico,PR,D2020,47.87
-Puerto Rico,PR,D2021,40.52
-Puerto Rico,PR,D2022,72.78
-Puerto Rico,PR,D2023,96.65
-Bermuda,BM,D2017,5.94
-Bermuda,BM,D2018,9.13
-Bermuda,BM,D2019,13.55
-Bermuda,BM,D2020,73.6
-Bermuda,BM,D2021,96.54
-Bermuda,BM,D2022,91.96
-Bermuda,BM,D2023,95.58
-Sweden,SE,D2017,40.16
-Sweden,SE,D2018,46
-Sweden,SE,D2019,55.18
-Sweden,SE,D2020,81.29
-Sweden,SE,D2021,88.98
-Sweden,SE,D2022,86.76
-Sweden,SE,D2023,94.3
-Poland,PL,D2017,14.88
-Poland,PL,D2018,19.73
-Poland,PL,D2019,24.38
-Poland,PL,D2020,55.4
-Poland,PL,D2021,63.84
-Poland,PL,D2022,55.82
-Poland,PL,D2023,94.1
-Republic of Korea,KR,D2017,22.9
-Republic of Korea,KR,D2018,20.63
-Republic of Korea,KR,D2019,19.18
-Republic of Korea,KR,D2020,40.81
-Republic of Korea,KR,D2021,61.72
-Republic of Korea,KR,D2022,87.59
-Republic of Korea,KR,D2023,94
-United Kingdom,GB,D2017,16.51
-United Kingdom,GB,D2018,18.57
-United Kingdom,GB,D2019,22.37
-United Kingdom,GB,D2020,37.82
-United Kingdom,GB,D2021,51.48
-United Kingdom,GB,D2022,72.06
-United Kingdom,GB,D2023,93.63
-Barbados,BB,D2017,6.62
-Barbados,BB,D2018,17.08
-Barbados,BB,D2019,16.03
-Barbados,BB,D2020,56.9
-Barbados,BB,D2021,55.92
-Barbados,BB,D2022,42.08
-Barbados,BB,D2023,93.5
-Republic of Moldova,MD,D2017,10.75
-Republic of Moldova,MD,D2018,13.88
-Republic of Moldova,MD,D2019,11.56
-Republic of Moldova,MD,D2020,27.48
-Republic of Moldova,MD,D2021,36.47
-Republic of Moldova,MD,D2022,66.08
-Republic of Moldova,MD,D2023,92.1
-Lithuania,LT,D2017,25.12
-Lithuania,LT,D2018,27.17
-Lithuania,LT,D2019,30.66
-Lithuania,LT,D2020,56.63
-Lithuania,LT,D2021,56.17
-Lithuania,LT,D2022,84.8
-Lithuania,LT,D2023,87.09
-Estonia,EE,D2017,24.11
-Estonia,EE,D2018,27.91
-Estonia,EE,D2019,31.55
-Estonia,EE,D2020,70.9
-Estonia,EE,D2021,84.72
-Estonia,EE,D2022,89.81
-Estonia,EE,D2023,86.39
-Isle of Man,IM,D2017,9.01
-Isle of Man,IM,D2018,10.54
-Isle of Man,IM,D2019,11.04
-Isle of Man,IM,D2020,44.16
-Isle of Man,IM,D2021,52.1
-Isle of Man,IM,D2022,91.97
-Isle of Man,IM,D2023,85.89
-Chile,CL,D2017,1.67
-Chile,CL,D2018,4.74
-Chile,CL,D2019,3.89
-Chile,CL,D2020,16.1
-Chile,CL,D2021,13.76
-Chile,CL,D2022,89.18
-Chile,CL,D2023,85.49
-Hong Kong,HK,D2017,27.16
-Hong Kong,HK,D2018,26.45
-Hong Kong,HK,D2019,31.37
-Hong Kong,HK,D2020,105.32
-Hong Kong,HK,D2021,91.04
-Hong Kong,HK,D2022,100.89
-Hong Kong,HK,D2023,83.05
-Germany,DE,D2017,18.8
-Germany,DE,D2018,24
-Germany,DE,D2019,24.64
-Germany,DE,D2020,42.33
-Germany,DE,D2021,60.55
-Germany,DE,D2022,72.95
-Germany,DE,D2023,81.73
-Ireland,IE,D2017,13.92
-Ireland,IE,D2018,18.22
-Ireland,IE,D2019,23.87
-Ireland,IE,D2020,34.87
-Ireland,IE,D2021,51.41
-Ireland,IE,D2022,70.42
-Ireland,IE,D2023,76.16
-Switzerland,CH,D2017,26.93
-Switzerland,CH,D2018,29.92
-Switzerland,CH,D2019,38.85
-Switzerland,CH,D2020,110.45
-Switzerland,CH,D2021,50.83
-Switzerland,CH,D2022,63.2
-Switzerland,CH,D2023,75.39
-Grenada,GD,D2017,Sample too small
-Grenada,GD,D2018,2.46
-Grenada,GD,D2019,5.07
-Grenada,GD,D2020,38.64
-Grenada,GD,D2021,20.49
-Grenada,GD,D2022,38.44
-Grenada,GD,D2023,75.21
-Israel,IL,D2017,7.2
-Israel,IL,D2018,7.64
-Israel,IL,D2019,8.85
-Israel,IL,D2020,26.49
-Israel,IL,D2021,34.97
-Israel,IL,D2022,47.05
-Israel,IL,D2023,75.03
-Aruba,AW,D2017,3.12
-Aruba,AW,D2018,13.27
-Aruba,AW,D2019,15.15
-Aruba,AW,D2020,89.81
-Aruba,AW,D2021,70.66
-Aruba,AW,D2022,61.1
-Aruba,AW,D2023,73.42
-Brazil,BR,D2017,1.49
-Brazil,BR,D2018,2.58
-Brazil,BR,D2019,4.84
-Brazil,BR,D2020,17.89
-Brazil,BR,D2021,33.34
-Brazil,BR,D2022,53.89
-Brazil,BR,D2023,72.7
-U.S. Virgin Islands,VI,D2017,5.14
-U.S. Virgin Islands,VI,D2018,10.55
-U.S. Virgin Islands,VI,D2019,11.45
-U.S. Virgin Islands,VI,D2020,21.39
-U.S. Virgin Islands,VI,D2021,29.34
-U.S. Virgin Islands,VI,D2022,44.55
-U.S. Virgin Islands,VI,D2023,67.38
-Latvia,LV,D2017,30.36
-Latvia,LV,D2018,28.63
-Latvia,LV,D2019,32.74
-Latvia,LV,D2020,52.32
-Latvia,LV,D2021,63.28
-Latvia,LV,D2022,62.55
-Latvia,LV,D2023,66.79
-Dominica,DM,D2017,2.68
-Dominica,DM,D2018,5.38
-Dominica,DM,D2019,9.48
-Dominica,DM,D2020,9.96
-Dominica,DM,D2021,12.41
-Dominica,DM,D2022,20.18
-Dominica,DM,D2023,66.24
-Guernsey,GG,D2017,8.76
-Guernsey,GG,D2018,11.58
-Guernsey,GG,D2019,18.26
-Guernsey,GG,D2020,36.83
-Guernsey,GG,D2021,31.2
-Guernsey,GG,D2022,45.51
-Guernsey,GG,D2023,66.14
-Vatican City,VA,D2017,Sample too small
-Vatican City,VA,D2018,Sample too small
-Vatican City,VA,D2019,Sample too small
-Vatican City,VA,D2020,19.12
-Vatican City,VA,D2021,73.49
-Vatican City,VA,D2022,Sample too small
-Vatican City,VA,D2023,65.46
-Hungary,HU,D2017,23.16
-Hungary,HU,D2018,34.01
-Hungary,HU,D2019,31.1
-Hungary,HU,D2020,99.74
-Hungary,HU,D2021,104.07
-Hungary,HU,D2022,42.99
-Hungary,HU,D2023,63.41
-Finland,FI,D2017,20.9
-Finland,FI,D2018,24
-Finland,FI,D2019,29.34
-Finland,FI,D2020,44.05
-Finland,FI,D2021,55.08
-Finland,FI,D2022,56.28
-Finland,FI,D2023,62.82
-Thailand,TH,D2017,16.85
-Thailand,TH,D2018,17.06
-Thailand,TH,D2019,18.21
-Thailand,TH,D2020,30.61
-Thailand,TH,D2021,53.95
-Thailand,TH,D2022,63.3
-Thailand,TH,D2023,62.75
-Saint Pierre and Miquelon,PM,D2017,Sample too small
-Saint Pierre and Miquelon,PM,D2018,Sample too small
-Saint Pierre and Miquelon,PM,D2019,Sample too small
-Saint Pierre and Miquelon,PM,D2020,30.31
-Saint Pierre and Miquelon,PM,D2021,47.92
-Saint Pierre and Miquelon,PM,D2022,53.52
-Saint Pierre and Miquelon,PM,D2023,60.77
-Serbia,RS,D2017,12.25
-Serbia,RS,D2018,13
-Serbia,RS,D2019,19.17
-Serbia,RS,D2020,24.74
-Serbia,RS,D2021,36.59
-Serbia,RS,D2022,51.84
-Serbia,RS,D2023,60.53
-British Virgin Islands,VG,D2017,5.49
-British Virgin Islands,VG,D2018,4.46
-British Virgin Islands,VG,D2019,7.75
-British Virgin Islands,VG,D2020,13.63
-British Virgin Islands,VG,D2021,19.4
-British Virgin Islands,VG,D2022,40.44
-British Virgin Islands,VG,D2023,59.69
-Bahamas,BS,D2017,10.06
-Bahamas,BS,D2018,9.95
-Bahamas,BS,D2019,11.13
-Bahamas,BS,D2020,38.14
-Bahamas,BS,D2021,39.71
-Bahamas,BS,D2022,45.7
-Bahamas,BS,D2023,58.95
-Italy,IT,D2017,10.71
-Italy,IT,D2018,15.1
-Italy,IT,D2019,17.3
-Italy,IT,D2020,23.18
-Italy,IT,D2021,36.69
-Italy,IT,D2022,46.77
-Italy,IT,D2023,58.22
-Russia,RU,D2017,11.59
-Russia,RU,D2018,13.51
-Russia,RU,D2019,14.89
-Russia,RU,D2020,24.98
-Russia,RU,D2021,35.73
-Russia,RU,D2022,47.71
-Russia,RU,D2023,57.95
-Saint Vincent and the Grenadines,VC,D2017,Sample too small
-Saint Vincent and the Grenadines,VC,D2018,2.6
-Saint Vincent and the Grenadines,VC,D2019,3.81
-Saint Vincent and the Grenadines,VC,D2020,15.69
-Saint Vincent and the Grenadines,VC,D2021,14.32
-Saint Vincent and the Grenadines,VC,D2022,30.03
-Saint Vincent and the Grenadines,VC,D2023,57.71
-Kosovo,XK,D2017,Sample too small
-Kosovo,XK,D2018,11.64
-Kosovo,XK,D2019,12.07
-Kosovo,XK,D2020,20.3
-Kosovo,XK,D2021,22.21
-Kosovo,XK,D2022,38.64
-Kosovo,XK,D2023,57.32
-Panama,PA,D2017,2.3
-Panama,PA,D2018,7.05
-Panama,PA,D2019,8.09
-Panama,PA,D2020,36.55
-Panama,PA,D2021,30.58
-Panama,PA,D2022,30.04
-Panama,PA,D2023,56.93
-Trinidad and Tobago,TT,D2017,3.28
-Trinidad and Tobago,TT,D2018,11.37
-Trinidad and Tobago,TT,D2019,12.9
-Trinidad and Tobago,TT,D2020,29.7
-Trinidad and Tobago,TT,D2021,35.81
-Trinidad and Tobago,TT,D2022,35.79
-Trinidad and Tobago,TT,D2023,56.08
-Austria,AT,D2017,15.26
-Austria,AT,D2018,17.51
-Austria,AT,D2019,19.33
-Austria,AT,D2020,27.74
-Austria,AT,D2021,37.99
-Austria,AT,D2022,45.56
-Austria,AT,D2023,55.82
-Greece,GR,D2017,7.56
-Greece,GR,D2018,11.3
-Greece,GR,D2019,13.41
-Greece,GR,D2020,26.01
-Greece,GR,D2021,29.76
-Greece,GR,D2022,39.31
-Greece,GR,D2023,53.85
-Australia,AU,D2017,7.7
-Australia,AU,D2018,11.69
-Australia,AU,D2019,16.36
-Australia,AU,D2020,25.65
-Australia,AU,D2021,40.5
-Australia,AU,D2022,47.22
-Australia,AU,D2023,51.27
-Qatar,QA,D2017,3.89
-Qatar,QA,D2018,3.8
-Qatar,QA,D2019,5.35
-Qatar,QA,D2020,23.98
-Qatar,QA,D2021,24.16
-Qatar,QA,D2022,25.02
-Qatar,QA,D2023,50.68
-Denmark,DK,D2017,33.54
-Denmark,DK,D2018,43.99
-Denmark,DK,D2019,49.19
-Denmark,DK,D2020,85.03
-Denmark,DK,D2021,49.24
-Denmark,DK,D2022,52.57
-Denmark,DK,D2023,49.98
-Montenegro,ME,D2017,5.85
-Montenegro,ME,D2018,6.74
-Montenegro,ME,D2019,9.1
-Montenegro,ME,D2020,25.07
-Montenegro,ME,D2021,40.14
-Montenegro,ME,D2022,38.65
-Montenegro,ME,D2023,49.46
-Turks and Caicos Islands,TC,D2017,6.74
-Turks and Caicos Islands,TC,D2018,11.7
-Turks and Caicos Islands,TC,D2019,8.78
-Turks and Caicos Islands,TC,D2020,36.29
-Turks and Caicos Islands,TC,D2021,36.09
-Turks and Caicos Islands,TC,D2022,42.05
-Turks and Caicos Islands,TC,D2023,48.95
-India,IN,D2017,2.06
-India,IN,D2018,5.19
-India,IN,D2019,8.66
-India,IN,D2020,13.46
-India,IN,D2021,22.53
-India,IN,D2022,32.44
-India,IN,D2023,47.99
-Bahrain,BH,D2017,3.13
-Bahrain,BH,D2018,5.05
-Bahrain,BH,D2019,6.24
-Bahrain,BH,D2020,10.87
-Bahrain,BH,D2021,16.37
-Bahrain,BH,D2022,18.36
-Bahrain,BH,D2023,47.72
-St Kitts and Nevis,KN,D2017,1.72
-St Kitts and Nevis,KN,D2018,6.12
-St Kitts and Nevis,KN,D2019,6.16
-St Kitts and Nevis,KN,D2020,7.11
-St Kitts and Nevis,KN,D2021,12.96
-St Kitts and Nevis,KN,D2022,17.55
-St Kitts and Nevis,KN,D2023,47.27
-Czechia,CZ,D2017,17.31
-Czechia,CZ,D2018,23.71
-Czechia,CZ,D2019,23.27
-Czechia,CZ,D2020,28.12
-Czechia,CZ,D2021,37.23
-Czechia,CZ,D2022,39.15
-Czechia,CZ,D2023,46.81
-Guadeloupe,GP,D2017,1.63
-Guadeloupe,GP,D2018,4.21
-Guadeloupe,GP,D2019,6.72
-Guadeloupe,GP,D2020,11.49
-Guadeloupe,GP,D2021,21.32
-Guadeloupe,GP,D2022,21.34
-Guadeloupe,GP,D2023,45.93
-Réunion,RE,D2017,0.97
-Réunion,RE,D2018,2.38
-Réunion,RE,D2019,10.02
-Réunion,RE,D2020,16.35
-Réunion,RE,D2021,43.62
-Réunion,RE,D2022,37.44
-Réunion,RE,D2023,45.51
-Colombia,CO,D2017,2.12
-Colombia,CO,D2018,3.25
-Colombia,CO,D2019,3.48
-Colombia,CO,D2020,8.8
-Colombia,CO,D2021,13.13
-Colombia,CO,D2022,32.41
-Colombia,CO,D2023,45.13
-Jamaica,JM,D2017,6.6
-Jamaica,JM,D2018,8.25
-Jamaica,JM,D2019,9.08
-Jamaica,JM,D2020,20.01
-Jamaica,JM,D2021,20.96
-Jamaica,JM,D2022,26.46
-Jamaica,JM,D2023,45.07
-Bosnia and Herzegovina,BA,D2017,7
-Bosnia and Herzegovina,BA,D2018,7.37
-Bosnia and Herzegovina,BA,D2019,7.53
-Bosnia and Herzegovina,BA,D2020,15.66
-Bosnia and Herzegovina,BA,D2021,31.72
-Bosnia and Herzegovina,BA,D2022,8.16
-Bosnia and Herzegovina,BA,D2023,44.01
-Saint Lucia,LC,D2017,1.98
-Saint Lucia,LC,D2018,3
-Saint Lucia,LC,D2019,6.08
-Saint Lucia,LC,D2020,16.35
-Saint Lucia,LC,D2021,15.02
-Saint Lucia,LC,D2022,30.77
-Saint Lucia,LC,D2023,43.86
-United Arab Emirates,AE,D2017,4.17
-United Arab Emirates,AE,D2018,4.35
-United Arab Emirates,AE,D2019,9.62
-United Arab Emirates,AE,D2020,28.33
-United Arab Emirates,AE,D2021,29.9
-United Arab Emirates,AE,D2022,22.75
-United Arab Emirates,AE,D2023,43.62
-Saint Martin,MF,D2017,Sample too small
-Saint Martin,MF,D2018,Sample too small
-Saint Martin,MF,D2019,3.98
-Saint Martin,MF,D2020,14.49
-Saint Martin,MF,D2021,40.19
-Saint Martin,MF,D2022,39.91
-Saint Martin,MF,D2023,43.44
-Philippines,PH,D2017,3.69
-Philippines,PH,D2018,5.18
-Philippines,PH,D2019,6.05
-Philippines,PH,D2020,8.77
-Philippines,PH,D2021,16.84
-Philippines,PH,D2022,31.6
-Philippines,PH,D2023,43.36
-Argentina,AR,D2017,1.15
-Argentina,AR,D2018,3.18
-Argentina,AR,D2019,2.83
-Argentina,AR,D2020,6.2
-Argentina,AR,D2021,8.68
-Argentina,AR,D2022,20.34
-Argentina,AR,D2023,43.02
-Cyprus,CY,D2017,8.24
-Cyprus,CY,D2018,11.1
-Cyprus,CY,D2019,11
-Cyprus,CY,D2020,15.62
-Cyprus,CY,D2021,28.3
-Cyprus,CY,D2022,38.52
-Cyprus,CY,D2023,42.93
-Paraguay,PY,D2017,0.75
-Paraguay,PY,D2018,1.73
-Paraguay,PY,D2019,3.55
-Paraguay,PY,D2020,16.5
-Paraguay,PY,D2021,19.41
-Paraguay,PY,D2022,25.27
-Paraguay,PY,D2023,42.76
-Costa Rica,CR,D2017,1.53
-Costa Rica,CR,D2018,3.96
-Costa Rica,CR,D2019,4.52
-Costa Rica,CR,D2020,16.42
-Costa Rica,CR,D2021,19.02
-Costa Rica,CR,D2022,24.58
-Costa Rica,CR,D2023,42.51
-Malaysia,MY,D2017,6.69
-Malaysia,MY,D2018,13.3
-Malaysia,MY,D2019,23.86
-Malaysia,MY,D2020,46.82
-Malaysia,MY,D2021,42.83
-Malaysia,MY,D2022,50.44
-Malaysia,MY,D2023,42.2
-Faroe Islands,FO,D2017,7.48
-Faroe Islands,FO,D2018,10.38
-Faroe Islands,FO,D2019,10.21
-Faroe Islands,FO,D2020,15.47
-Faroe Islands,FO,D2021,21.59
-Faroe Islands,FO,D2022,28.4
-Faroe Islands,FO,D2023,41.97
-Curaçao,CW,D2017,1.99
-Curaçao,CW,D2018,5.99
-Curaçao,CW,D2019,7.64
-Curaçao,CW,D2020,20.87
-Curaçao,CW,D2021,20.18
-Curaçao,CW,D2022,29.26
-Curaçao,CW,D2023,41.51
-Saint-Barthélemy,BL,D2017,Sample too small
-Saint-Barthélemy,BL,D2018,Sample too small
-Saint-Barthélemy,BL,D2019,4.12
-Saint-Barthélemy,BL,D2020,6.3
-Saint-Barthélemy,BL,D2021,12.25
-Saint-Barthélemy,BL,D2022,16.51
-Saint-Barthélemy,BL,D2023,41.22
-Greenland,GL,D2017,3.15
-Greenland,GL,D2018,Sample too small
-Greenland,GL,D2019,6.51
-Greenland,GL,D2020,18.65
-Greenland,GL,D2021,41.56
-Greenland,GL,D2022,48.42
-Greenland,GL,D2023,41.19
-Peru,PE,D2017,1.41
-Peru,PE,D2018,3.31
-Peru,PE,D2019,2.86
-Peru,PE,D2020,7.98
-Peru,PE,D2021,11.35
-Peru,PE,D2022,32
-Peru,PE,D2023,41.04
-Kuwait,KW,D2017,2.21
-Kuwait,KW,D2018,2.76
-Kuwait,KW,D2019,3.88
-Kuwait,KW,D2020,12.06
-Kuwait,KW,D2021,18.06
-Kuwait,KW,D2022,30.87
-Kuwait,KW,D2023,41.02
-Bulgaria,BG,D2017,17.54
-Bulgaria,BG,D2018,20.2
-Bulgaria,BG,D2019,16.95
-Bulgaria,BG,D2020,46.22
-Bulgaria,BG,D2021,63.41
-Bulgaria,BG,D2022,24.77
-Bulgaria,BG,D2023,40.43
-Rwanda,RW,D2017,2.11
-Rwanda,RW,D2018,2.64
-Rwanda,RW,D2019,3.34
-Rwanda,RW,D2020,3.8
-Rwanda,RW,D2021,6.29
-Rwanda,RW,D2022,52.17
-Rwanda,RW,D2023,39.89
-Belize,BZ,D2017,5.14
-Belize,BZ,D2018,3.93
-Belize,BZ,D2019,6.8
-Belize,BZ,D2020,16.57
-Belize,BZ,D2021,23.12
-Belize,BZ,D2022,27.1
-Belize,BZ,D2023,38.86
-Ukraine,UA,D2017,8.18
-Ukraine,UA,D2018,11.28
-Ukraine,UA,D2019,7.72
-Ukraine,UA,D2020,15.09
-Ukraine,UA,D2021,25.26
-Ukraine,UA,D2022,47.74
-Ukraine,UA,D2023,38.13
-French Guiana,GF,D2017,1.34
-French Guiana,GF,D2018,2.37
-French Guiana,GF,D2019,2.26
-French Guiana,GF,D2020,5.8
-French Guiana,GF,D2021,10.99
-French Guiana,GF,D2022,14.81
-French Guiana,GF,D2023,37.98
-Marshall Islands,MH,D2017,Sample too small
-Marshall Islands,MH,D2018,Sample too small
-Marshall Islands,MH,D2019,Sample too small
-Marshall Islands,MH,D2020,2.75
-Marshall Islands,MH,D2021,6.71
-Marshall Islands,MH,D2022,5.76
-Marshall Islands,MH,D2023,36.89
-South Africa,ZA,D2017,4.36
-South Africa,ZA,D2018,6.38
-South Africa,ZA,D2019,8.4
-South Africa,ZA,D2020,14.04
-South Africa,ZA,D2021,19.94
-South Africa,ZA,D2022,28.62
-South Africa,ZA,D2023,36.46
-Martinique,MQ,D2017,2.3
-Martinique,MQ,D2018,5.74
-Martinique,MQ,D2019,7.23
-Martinique,MQ,D2020,14.02
-Martinique,MQ,D2021,19.88
-Martinique,MQ,D2022,19.28
-Martinique,MQ,D2023,35.87
-Mexico,MX,D2017,7.59
-Mexico,MX,D2018,5.69
-Mexico,MX,D2019,6.02
-Mexico,MX,D2020,16.19
-Mexico,MX,D2021,18.83
-Mexico,MX,D2022,27.62
-Mexico,MX,D2023,35.85
-New Caledonia,NC,D2017,2.23
-New Caledonia,NC,D2018,3.16
-New Caledonia,NC,D2019,4.34
-New Caledonia,NC,D2020,15.15
-New Caledonia,NC,D2021,31.79
-New Caledonia,NC,D2022,32.34
-New Caledonia,NC,D2023,35.72
-Burkina Faso,BF,D2017,0.49
-Burkina Faso,BF,D2018,0.84
-Burkina Faso,BF,D2019,1.02
-Burkina Faso,BF,D2020,4.19
-Burkina Faso,BF,D2021,10.73
-Burkina Faso,BF,D2022,13.43
-Burkina Faso,BF,D2023,35.64
-Belarus,BY,D2017,6.68
-Belarus,BY,D2018,9.21
-Belarus,BY,D2019,13.19
-Belarus,BY,D2020,16.08
-Belarus,BY,D2021,19.86
-Belarus,BY,D2022,27.69
-Belarus,BY,D2023,34.1
-Northern Mariana Islands,MP,D2017,Sample too small
-Northern Mariana Islands,MP,D2018,Sample too small
-Northern Mariana Islands,MP,D2019,Sample too small
-Northern Mariana Islands,MP,D2020,9.53
-Northern Mariana Islands,MP,D2021,13.15
-Northern Mariana Islands,MP,D2022,35.94
-Northern Mariana Islands,MP,D2023,34.03
-Armenia,AM,D2017,3.29
-Armenia,AM,D2018,3.94
-Armenia,AM,D2019,4.85
-Armenia,AM,D2020,11.86
-Armenia,AM,D2021,18.05
-Armenia,AM,D2022,23.83
-Armenia,AM,D2023,33.63
-Hashemite Kingdom of Jordan,JO,D2017,2.98
-Hashemite Kingdom of Jordan,JO,D2018,4.11
-Hashemite Kingdom of Jordan,JO,D2019,5.2
-Hashemite Kingdom of Jordan,JO,D2020,14.54
-Hashemite Kingdom of Jordan,JO,D2021,15.25
-Hashemite Kingdom of Jordan,JO,D2022,17.69
-Hashemite Kingdom of Jordan,JO,D2023,33.63
-Oman,OM,D2017,2.61
-Oman,OM,D2018,3.83
-Oman,OM,D2019,5.07
-Oman,OM,D2020,12.25
-Oman,OM,D2021,16.73
-Oman,OM,D2022,16.59
-Oman,OM,D2023,32.61
-Saudi Arabia,SA,D2017,3.06
-Saudi Arabia,SA,D2018,4.09
-Saudi Arabia,SA,D2019,5.27
-Saudi Arabia,SA,D2020,12.67
-Saudi Arabia,SA,D2021,18.1
-Saudi Arabia,SA,D2022,22.42
-Saudi Arabia,SA,D2023,32.42
-Brunei,BN,D2017,3.83
-Brunei,BN,D2018,4.15
-Brunei,BN,D2019,4.78
-Brunei,BN,D2020,8.97
-Brunei,BN,D2021,15.79
-Brunei,BN,D2022,16.29
-Brunei,BN,D2023,32.07
-Guyana,GY,D2017,0.89
-Guyana,GY,D2018,2.64
-Guyana,GY,D2019,3.49
-Guyana,GY,D2020,4.43
-Guyana,GY,D2021,9.26
-Guyana,GY,D2022,14.81
-Guyana,GY,D2023,31.45
-Mauritius,MU,D2017,1.53
-Mauritius,MU,D2018,2.39
-Mauritius,MU,D2019,5.02
-Mauritius,MU,D2020,7.28
-Mauritius,MU,D2021,8.53
-Mauritius,MU,D2022,13.44
-Mauritius,MU,D2023,29.78
-Vietnam,VN,D2017,5.46
-Vietnam,VN,D2018,6.72
-Vietnam,VN,D2019,7.02
-Vietnam,VN,D2020,13.41
-Vietnam,VN,D2021,20.66
-Vietnam,VN,D2022,21.54
-Vietnam,VN,D2023,29.25
-Anguilla,AI,D2017,Sample too small
-Anguilla,AI,D2018,Sample too small
-Anguilla,AI,D2019,4.59
-Anguilla,AI,D2020,5.38
-Anguilla,AI,D2021,9
-Anguilla,AI,D2022,13
-Anguilla,AI,D2023,29.15
-Antigua and Barbuda,AG,D2017,1.86
-Antigua and Barbuda,AG,D2018,3.85
-Antigua and Barbuda,AG,D2019,5.91
-Antigua and Barbuda,AG,D2020,9.63
-Antigua and Barbuda,AG,D2021,8.69
-Antigua and Barbuda,AG,D2022,15.99
-Antigua and Barbuda,AG,D2023,27.03
-Ecuador,EC,D2017,1.28
-Ecuador,EC,D2018,2.76
-Ecuador,EC,D2019,3.46
-Ecuador,EC,D2020,8.48
-Ecuador,EC,D2021,10.25
-Ecuador,EC,D2022,13.47
-Ecuador,EC,D2023,26.56
-"Bonaire, Sint Eustatius, and Saba",BQ,D2017,Sample too small
-"Bonaire, Sint Eustatius, and Saba",BQ,D2018,Sample too small
-"Bonaire, Sint Eustatius, and Saba",BQ,D2019,7.92
-"Bonaire, Sint Eustatius, and Saba",BQ,D2020,14.28
-"Bonaire, Sint Eustatius, and Saba",BQ,D2021,19.6
-"Bonaire, Sint Eustatius, and Saba",BQ,D2022,23.53
-"Bonaire, Sint Eustatius, and Saba",BQ,D2023,26.27
-Guam,GU,D2017,2.22
-Guam,GU,D2018,2.77
-Guam,GU,D2019,3.73
-Guam,GU,D2020,5.95
-Guam,GU,D2021,20.76
-Guam,GU,D2022,29.41
-Guam,GU,D2023,25.75
-Croatia,HR,D2017,12.57
-Croatia,HR,D2018,15.6
-Croatia,HR,D2019,17.22
-Croatia,HR,D2020,33.82
-Croatia,HR,D2021,49.77
-Croatia,HR,D2022,20.74
-Croatia,HR,D2023,25.72
-Albania,AL,D2017,4.67
-Albania,AL,D2018,5.56
-Albania,AL,D2019,7.61
-Albania,AL,D2020,12.36
-Albania,AL,D2021,19.36
-Albania,AL,D2022,11.47
-Albania,AL,D2023,25.36
-Nicaragua,NI,D2017,1.14
-Nicaragua,NI,D2018,2.64
-Nicaragua,NI,D2019,2.54
-Nicaragua,NI,D2020,6.65
-Nicaragua,NI,D2021,9.75
-Nicaragua,NI,D2022,15.38
-Nicaragua,NI,D2023,25.28
-Turkey,TR,D2017,3.96
-Turkey,TR,D2018,4.9
-Turkey,TR,D2019,5.27
-Turkey,TR,D2020,8.86
-Turkey,TR,D2021,11.58
-Turkey,TR,D2022,16
-Turkey,TR,D2023,24.84
-El Salvador,SV,D2017,2.34
-El Salvador,SV,D2018,2.78
-El Salvador,SV,D2019,2.93
-El Salvador,SV,D2020,6.13
-El Salvador,SV,D2021,9.95
-El Salvador,SV,D2022,12.53
-El Salvador,SV,D2023,23.56
-Guatemala,GT,D2017,3.31
-Guatemala,GT,D2018,3.13
-Guatemala,GT,D2019,3.22
-Guatemala,GT,D2020,7.61
-Guatemala,GT,D2021,9.85
-Guatemala,GT,D2022,13.36
-Guatemala,GT,D2023,23.26
-American Samoa,AS,D2017,Sample too small
-American Samoa,AS,D2018,Sample too small
-American Samoa,AS,D2019,Sample too small
-American Samoa,AS,D2020,11.28
-American Samoa,AS,D2021,11.76
-American Samoa,AS,D2022,16.52
-American Samoa,AS,D2023,22.01
-Uzbekistan,UZ,D2017,0.76
-Uzbekistan,UZ,D2018,1.02
-Uzbekistan,UZ,D2019,1.37
-Uzbekistan,UZ,D2020,2.1
-Uzbekistan,UZ,D2021,6.64
-Uzbekistan,UZ,D2022,9.65
-Uzbekistan,UZ,D2023,21.67
-Sri Lanka,LK,D2017,3.83
-Sri Lanka,LK,D2018,5.84
-Sri Lanka,LK,D2019,7.67
-Sri Lanka,LK,D2020,20.73
-Sri Lanka,LK,D2021,9.95
-Sri Lanka,LK,D2022,13.46
-Sri Lanka,LK,D2023,21.23
-Nigeria,NG,D2017,3.15
-Nigeria,NG,D2018,1.86
-Nigeria,NG,D2019,1.56
-Nigeria,NG,D2020,3.34
-Nigeria,NG,D2021,8.68
-Nigeria,NG,D2022,15.37
-Nigeria,NG,D2023,20.83
-Madagascar,MG,D2017,3.49
-Madagascar,MG,D2018,24.87
-Madagascar,MG,D2019,22.57
-Madagascar,MG,D2020,18
-Madagascar,MG,D2021,16.28
-Madagascar,MG,D2022,19.29
-Madagascar,MG,D2023,20.43
-Bhutan,BT,D2017,Sample too small
-Bhutan,BT,D2018,Sample too small
-Bhutan,BT,D2019,Sample too small
-Bhutan,BT,D2020,4.62
-Bhutan,BT,D2021,6.44
-Bhutan,BT,D2022,11.13
-Bhutan,BT,D2023,20.08
-Nepal,NP,D2017,0.97
-Nepal,NP,D2018,2.36
-Nepal,NP,D2019,3.62
-Nepal,NP,D2020,5.22
-Nepal,NP,D2021,6.84
-Nepal,NP,D2022,11.78
-Nepal,NP,D2023,19.99
-Dominican Republic,DO,D2017,6.22
-Dominican Republic,DO,D2018,4.41
-Dominican Republic,DO,D2019,4.09
-Dominican Republic,DO,D2020,10.69
-Dominican Republic,DO,D2021,11.87
-Dominican Republic,DO,D2022,12.66
-Dominican Republic,DO,D2023,19.48
-Seychelles,SC,D2017,5.84
-Seychelles,SC,D2018,1.72
-Seychelles,SC,D2019,2.93
-Seychelles,SC,D2020,3.96
-Seychelles,SC,D2021,12.04
-Seychelles,SC,D2022,14.89
-Seychelles,SC,D2023,18.75
-Georgia,GE,D2017,5.86
-Georgia,GE,D2018,6.25
-Georgia,GE,D2019,7.14
-Georgia,GE,D2020,13.5
-Georgia,GE,D2021,13.83
-Georgia,GE,D2022,15.2
-Georgia,GE,D2023,18.54
-Laos,LA,D2017,1.94
-Laos,LA,D2018,4.29
-Laos,LA,D2019,2.92
-Laos,LA,D2020,4.47
-Laos,LA,D2021,5.91
-Laos,LA,D2022,9.64
-Laos,LA,D2023,17.64
-Mayotte,YT,D2017,Sample too small
-Mayotte,YT,D2018,0.97
-Mayotte,YT,D2019,1.09
-Mayotte,YT,D2020,3.52
-Mayotte,YT,D2021,7.7
-Mayotte,YT,D2022,8.26
-Mayotte,YT,D2023,17.34
-Kyrgyzstan,KG,D2017,0.98
-Kyrgyzstan,KG,D2018,1.52
-Kyrgyzstan,KG,D2019,2.5
-Kyrgyzstan,KG,D2020,5.47
-Kyrgyzstan,KG,D2021,7.44
-Kyrgyzstan,KG,D2022,11.78
-Kyrgyzstan,KG,D2023,17.31
-Honduras,HN,D2017,3.47
-Honduras,HN,D2018,2.8
-Honduras,HN,D2019,2.84
-Honduras,HN,D2020,5.93
-Honduras,HN,D2021,7.17
-Honduras,HN,D2022,10.88
-Honduras,HN,D2023,16.76
-Morocco,MA,D2017,4.38
-Morocco,MA,D2018,4.03
-Morocco,MA,D2019,5.48
-Morocco,MA,D2020,6.55
-Morocco,MA,D2021,10.33
-Morocco,MA,D2022,13.03
-Morocco,MA,D2023,16.49
-Ivory Coast,CI,D2017,1.22
-Ivory Coast,CI,D2018,1.7
-Ivory Coast,CI,D2019,1.83
-Ivory Coast,CI,D2020,5.55
-Ivory Coast,CI,D2021,9.54
-Ivory Coast,CI,D2022,10.14
-Ivory Coast,CI,D2023,16.45
-Mongolia,MN,D2017,1.6
-Mongolia,MN,D2018,1.57
-Mongolia,MN,D2019,2.1
-Mongolia,MN,D2020,5.25
-Mongolia,MN,D2021,14.94
-Mongolia,MN,D2022,17.56
-Mongolia,MN,D2023,16.4
-Sint Maarten,SX,D2017,1.39
-Sint Maarten,SX,D2018,4.68
-Sint Maarten,SX,D2019,5.13
-Sint Maarten,SX,D2020,4.69
-Sint Maarten,SX,D2021,6.15
-Sint Maarten,SX,D2022,10.01
-Sint Maarten,SX,D2023,16
-Bolivia,BO,D2017,0.91
-Bolivia,BO,D2018,1.9
-Bolivia,BO,D2019,1.73
-Bolivia,BO,D2020,5.06
-Bolivia,BO,D2021,7.36
-Bolivia,BO,D2022,10.66
-Bolivia,BO,D2023,16
-Cambodia,KH,D2017,3.1
-Cambodia,KH,D2018,4.1
-Cambodia,KH,D2019,4.03
-Cambodia,KH,D2020,5.21
-Cambodia,KH,D2021,8.49
-Cambodia,KH,D2022,10.01
-Cambodia,KH,D2023,14.68
-French Polynesia,PF,D2017,1.34
-French Polynesia,PF,D2018,1.42
-French Polynesia,PF,D2019,1.51
-French Polynesia,PF,D2020,4.28
-French Polynesia,PF,D2021,7.67
-French Polynesia,PF,D2022,8.72
-French Polynesia,PF,D2023,14.55
-Republic of the Congo,CG,D2017,0.55
-Republic of the Congo,CG,D2018,0.85
-Republic of the Congo,CG,D2019,0.93
-Republic of the Congo,CG,D2020,2
-Republic of the Congo,CG,D2021,12.07
-Republic of the Congo,CG,D2022,6.79
-Republic of the Congo,CG,D2023,14.36
-Indonesia,ID,D2017,5.19
-Indonesia,ID,D2018,5.77
-Indonesia,ID,D2019,6.65
-Indonesia,ID,D2020,7.16
-Indonesia,ID,D2021,9.58
-Indonesia,ID,D2022,11.58
-Indonesia,ID,D2023,14.3
-Fiji,FJ,D2017,1.24
-Fiji,FJ,D2018,2.65
-Fiji,FJ,D2019,4.62
-Fiji,FJ,D2020,8.83
-Fiji,FJ,D2021,9.4
-Fiji,FJ,D2022,10.14
-Fiji,FJ,D2023,13.96
-Iran,IR,D2017,1.56
-Iran,IR,D2018,2.2
-Iran,IR,D2019,4.39
-Iran,IR,D2020,4.5
-Iran,IR,D2021,7.05
-Iran,IR,D2022,10.43
-Iran,IR,D2023,13.93
-Kazakhstan,KZ,D2017,4
-Kazakhstan,KZ,D2018,4.45
-Kazakhstan,KZ,D2019,4.66
-Kazakhstan,KZ,D2020,5.01
-Kazakhstan,KZ,D2021,5.83
-Kazakhstan,KZ,D2022,9.89
-Kazakhstan,KZ,D2023,13.13
-China,CN,D2017,1.55
-China,CN,D2018,2.38
-China,CN,D2019,2.69
-China,CN,D2020,2.09
-China,CN,D2021,2.06
-China,CN,D2022,2.78
-China,CN,D2023,12.66
-Uganda,UG,D2017,2.12
-Uganda,UG,D2018,2.39
-Uganda,UG,D2019,3.22
-Uganda,UG,D2020,5.16
-Uganda,UG,D2021,8.52
-Uganda,UG,D2022,11.01
-Uganda,UG,D2023,12.64
-Maldives,MV,D2017,1.62
-Maldives,MV,D2018,1.98
-Maldives,MV,D2019,1.81
-Maldives,MV,D2020,5.88
-Maldives,MV,D2021,7.45
-Maldives,MV,D2022,13.57
-Maldives,MV,D2023,12.49
-Suriname,SR,D2017,1.25
-Suriname,SR,D2018,2.47
-Suriname,SR,D2019,3.4
-Suriname,SR,D2020,4.42
-Suriname,SR,D2021,7.44
-Suriname,SR,D2022,9.48
-Suriname,SR,D2023,12.48
-Kenya,KE,D2017,8.83
-Kenya,KE,D2018,10.11
-Kenya,KE,D2019,7.62
-Kenya,KE,D2020,8.2
-Kenya,KE,D2021,11.27
-Kenya,KE,D2022,12.42
-Kenya,KE,D2023,12.46
-Ghana,GH,D2017,2.3
-Ghana,GH,D2018,2.88
-Ghana,GH,D2019,3.2
-Ghana,GH,D2020,5.46
-Ghana,GH,D2021,9.23
-Ghana,GH,D2022,11.24
-Ghana,GH,D2023,12.33
-Tanzania,TZ,D2017,1.49
-Tanzania,TZ,D2018,1.96
-Tanzania,TZ,D2019,2.34
-Tanzania,TZ,D2020,4.54
-Tanzania,TZ,D2021,8.6
-Tanzania,TZ,D2022,10.52
-Tanzania,TZ,D2023,11.92
-Lesotho,LS,D2017,Sample too small
-Lesotho,LS,D2018,Sample too small
-Lesotho,LS,D2019,Sample too small
-Lesotho,LS,D2020,7.43
-Lesotho,LS,D2021,8.46
-Lesotho,LS,D2022,10.68
-Lesotho,LS,D2023,11.75
-Palestine,PS,D2017,1.96
-Palestine,PS,D2018,1.75
-Palestine,PS,D2019,1.83
-Palestine,PS,D2020,3.13
-Palestine,PS,D2021,3.65
-Palestine,PS,D2022,5.36
-Palestine,PS,D2023,11.59
-Cabo Verde,CV,D2017,2
-Cabo Verde,CV,D2018,3.24
-Cabo Verde,CV,D2019,3.31
-Cabo Verde,CV,D2020,6.64
-Cabo Verde,CV,D2021,7.94
-Cabo Verde,CV,D2022,9.08
-Cabo Verde,CV,D2023,11.49
-Gabon,GA,D2017,0.41
-Gabon,GA,D2018,1.13
-Gabon,GA,D2019,1.26
-Gabon,GA,D2020,4.37
-Gabon,GA,D2021,4.99
-Gabon,GA,D2022,5.81
-Gabon,GA,D2023,11.22
-Mozambique,MZ,D2017,1.45
-Mozambique,MZ,D2018,1.76
-Mozambique,MZ,D2019,2.16
-Mozambique,MZ,D2020,3.47
-Mozambique,MZ,D2021,7.17
-Mozambique,MZ,D2022,8.38
-Mozambique,MZ,D2023,11.06
-Venezuela,VE,D2017,0.7
-Venezuela,VE,D2018,1.24
-Venezuela,VE,D2019,1.37
-Venezuela,VE,D2020,1.61
-Venezuela,VE,D2021,2.62
-Venezuela,VE,D2022,4.47
-Venezuela,VE,D2023,10.92
-Namibia,NA,D2017,1.81
-Namibia,NA,D2018,2.62
-Namibia,NA,D2019,3.39
-Namibia,NA,D2020,3.91
-Namibia,NA,D2021,4.42
-Namibia,NA,D2022,9.28
-Namibia,NA,D2023,10.8
-Haiti,HT,D2017,2.62
-Haiti,HT,D2018,2.42
-Haiti,HT,D2019,2.94
-Haiti,HT,D2020,5.75
-Haiti,HT,D2021,12.12
-Haiti,HT,D2022,9.54
-Haiti,HT,D2023,10.75
-Azerbaijan,AZ,D2017,2.67
-Azerbaijan,AZ,D2018,2.52
-Azerbaijan,AZ,D2019,3.1
-Azerbaijan,AZ,D2020,4.89
-Azerbaijan,AZ,D2021,6.63
-Azerbaijan,AZ,D2022,6.61
-Azerbaijan,AZ,D2023,10.2
-Egypt,EG,D2017,1.22
-Egypt,EG,D2018,1.33
-Egypt,EG,D2019,1.62
-Egypt,EG,D2020,4.71
-Egypt,EG,D2021,6.94
-Egypt,EG,D2022,7.81
-Egypt,EG,D2023,9.75
-Botswana,BW,D2017,1.07
-Botswana,BW,D2018,1.5
-Botswana,BW,D2019,1.92
-Botswana,BW,D2020,2.78
-Botswana,BW,D2021,3.65
-Botswana,BW,D2022,9.36
-Botswana,BW,D2023,9.61
-Tunisia,TN,D2017,3.5
-Tunisia,TN,D2018,3.67
-Tunisia,TN,D2019,4.64
-Tunisia,TN,D2020,5.66
-Tunisia,TN,D2021,7.46
-Tunisia,TN,D2022,8.32
-Tunisia,TN,D2023,9.6
-Solomon Islands,SB,D2017,Sample too small
-Solomon Islands,SB,D2018,Sample too small
-Solomon Islands,SB,D2019,Sample too small
-Solomon Islands,SB,D2020,Sample too small
-Solomon Islands,SB,D2021,5.33
-Solomon Islands,SB,D2022,Sample too small
-Solomon Islands,SB,D2023,9.51
-Iraq,IQ,D2017,1.6
-Iraq,IQ,D2018,1.21
-Iraq,IQ,D2019,1.39
-Iraq,IQ,D2020,2.69
-Iraq,IQ,D2021,5.58
-Iraq,IQ,D2022,6.48
-Iraq,IQ,D2023,9.37
-Senegal,SN,D2017,1.17
-Senegal,SN,D2018,1.4
-Senegal,SN,D2019,2.25
-Senegal,SN,D2020,5.93
-Senegal,SN,D2021,7.02
-Senegal,SN,D2022,6.53
-Senegal,SN,D2023,9.22
-Zimbabwe,ZW,D2017,2.49
-Zimbabwe,ZW,D2018,2.86
-Zimbabwe,ZW,D2019,2.73
-Zimbabwe,ZW,D2020,6.92
-Zimbabwe,ZW,D2021,7.92
-Zimbabwe,ZW,D2022,8.94
-Zimbabwe,ZW,D2023,9.18
-Angola,AO,D2017,1.05
-Angola,AO,D2018,1.49
-Angola,AO,D2019,1.21
-Angola,AO,D2020,4.15
-Angola,AO,D2021,5.88
-Angola,AO,D2022,6.66
-Angola,AO,D2023,9.13
-Benin,BJ,D2017,0.73
-Benin,BJ,D2018,1.23
-Benin,BJ,D2019,0.94
-Benin,BJ,D2020,1.67
-Benin,BJ,D2021,2.59
-Benin,BJ,D2022,3.14
-Benin,BJ,D2023,9.12
-Myanmar,MM,D2017,2.09
-Myanmar,MM,D2018,4.15
-Myanmar,MM,D2019,4.87
-Myanmar,MM,D2020,7.11
-Myanmar,MM,D2021,4.58
-Myanmar,MM,D2022,6.68
-Myanmar,MM,D2023,9.02
-Mauritania,MR,D2017,1.54
-Mauritania,MR,D2018,0.7
-Mauritania,MR,D2019,0.59
-Mauritania,MR,D2020,1.47
-Mauritania,MR,D2021,2.54
-Mauritania,MR,D2022,3.98
-Mauritania,MR,D2023,8.95
-Togo,TG,D2017,1.24
-Togo,TG,D2018,1.27
-Togo,TG,D2019,1.96
-Togo,TG,D2020,4.03
-Togo,TG,D2021,3.54
-Togo,TG,D2022,4.15
-Togo,TG,D2023,8.9
-Papua New Guinea,PG,D2017,1.19
-Papua New Guinea,PG,D2018,1.92
-Papua New Guinea,PG,D2019,2.47
-Papua New Guinea,PG,D2020,2.67
-Papua New Guinea,PG,D2021,5.1
-Papua New Guinea,PG,D2022,7.55
-Papua New Guinea,PG,D2023,8.75
-Guinea,GN,D2017,0.84
-Guinea,GN,D2018,0.65
-Guinea,GN,D2019,1.25
-Guinea,GN,D2020,3.04
-Guinea,GN,D2021,2.39
-Guinea,GN,D2022,3.7
-Guinea,GN,D2023,8.5
-Malawi,MW,D2017,0.92
-Malawi,MW,D2018,1.17
-Malawi,MW,D2019,1.59
-Malawi,MW,D2020,4.07
-Malawi,MW,D2021,4.96
-Malawi,MW,D2022,8.48
-Malawi,MW,D2023,8.26
-Algeria,DZ,D2017,1.11
-Algeria,DZ,D2018,1.25
-Algeria,DZ,D2019,1.37
-Algeria,DZ,D2020,1.83
-Algeria,DZ,D2021,3.08
-Algeria,DZ,D2022,6.27
-Algeria,DZ,D2023,7.73
-Mali,ML,D2017,0.84
-Mali,ML,D2018,0.95
-Mali,ML,D2019,1.56
-Mali,ML,D2020,3.45
-Mali,ML,D2021,4.72
-Mali,ML,D2022,4.69
-Mali,ML,D2023,7.56
-Sierra Leone,SL,D2017,Sample too small
-Sierra Leone,SL,D2018,1.61
-Sierra Leone,SL,D2019,1.2
-Sierra Leone,SL,D2020,3.86
-Sierra Leone,SL,D2021,2.19
-Sierra Leone,SL,D2022,3.79
-Sierra Leone,SL,D2023,7
-Vanuatu,VU,D2017,Sample too small
-Vanuatu,VU,D2018,Sample too small
-Vanuatu,VU,D2019,Sample too small
-Vanuatu,VU,D2020,2.22
-Vanuatu,VU,D2021,2.9
-Vanuatu,VU,D2022,6.53
-Vanuatu,VU,D2023,6.57
-Lebanon,LB,D2017,1.07
-Lebanon,LB,D2018,1.6
-Lebanon,LB,D2019,1.84
-Lebanon,LB,D2020,2.34
-Lebanon,LB,D2021,5.67
-Lebanon,LB,D2022,3.86
-Lebanon,LB,D2023,6.55
-Zambia,ZM,D2017,2.45
-Zambia,ZM,D2018,2.03
-Zambia,ZM,D2019,3.13
-Zambia,ZM,D2020,3.84
-Zambia,ZM,D2021,5.48
-Zambia,ZM,D2022,8.36
-Zambia,ZM,D2023,6.53
-São Tomé and Príncipe,ST,D2017,Sample too small
-São Tomé and Príncipe,ST,D2018,1.13
-São Tomé and Príncipe,ST,D2019,0.87
-São Tomé and Príncipe,ST,D2020,1.99
-São Tomé and Príncipe,ST,D2021,2.43
-São Tomé and Príncipe,ST,D2022,2.81
-São Tomé and Príncipe,ST,D2023,6.52
-Bangladesh,BD,D2017,1.34
-Bangladesh,BD,D2018,1.97
-Bangladesh,BD,D2019,2.72
-Bangladesh,BD,D2020,3.24
-Bangladesh,BD,D2021,2.9
-Bangladesh,BD,D2022,3.74
-Bangladesh,BD,D2023,6.41
-Libya,LY,D2017,0.89
-Libya,LY,D2018,1.42
-Libya,LY,D2019,1.88
-Libya,LY,D2020,2.6
-Libya,LY,D2021,3.73
-Libya,LY,D2022,5.27
-Libya,LY,D2023,6.32
-Chad,TD,D2017,Sample too small
-Chad,TD,D2018,Sample too small
-Chad,TD,D2019,Sample too small
-Chad,TD,D2020,2.25
-Chad,TD,D2021,2.39
-Chad,TD,D2022,3.49
-Chad,TD,D2023,5.83
-eSwatini (Formerly Swaziland),SZ,D2017,Sample too small
-eSwatini (Formerly Swaziland),SZ,D2018,1.26
-eSwatini (Formerly Swaziland),SZ,D2019,1.45
-eSwatini (Formerly Swaziland),SZ,D2020,4.51
-eSwatini (Formerly Swaziland),SZ,D2021,3.73
-eSwatini (Formerly Swaziland),SZ,D2022,4.76
-eSwatini (Formerly Swaziland),SZ,D2023,5.76
-Liberia,LR,D2017,2.12
-Liberia,LR,D2018,1.61
-Liberia,LR,D2019,2.11
-Liberia,LR,D2020,6.83
-Liberia,LR,D2021,5.23
-Liberia,LR,D2022,4.19
-Liberia,LR,D2023,5.6
-Niger,NE,D2017,Sample too small
-Niger,NE,D2018,0.83
-Niger,NE,D2019,0.71
-Niger,NE,D2020,2.77
-Niger,NE,D2021,3.23
-Niger,NE,D2022,4.33
-Niger,NE,D2023,5.5
-Pakistan,PK,D2017,0.91
-Pakistan,PK,D2018,1.32
-Pakistan,PK,D2019,1.44
-Pakistan,PK,D2020,2.14
-Pakistan,PK,D2021,2.82
-Pakistan,PK,D2022,3.55
-Pakistan,PK,D2023,5.32
-Sudan,SD,D2017,1.1
-Sudan,SD,D2018,1.56
-Sudan,SD,D2019,1.93
-Sudan,SD,D2020,1.35
-Sudan,SD,D2021,1.8
-Sudan,SD,D2022,2.57
-Sudan,SD,D2023,5.24
-Guinea-Bissau,GW,D2017,Sample too small
-Guinea-Bissau,GW,D2018,Sample too small
-Guinea-Bissau,GW,D2019,Sample too small
-Guinea-Bissau,GW,D2020,1.61
-Guinea-Bissau,GW,D2021,1.24
-Guinea-Bissau,GW,D2022,0.98
-Guinea-Bissau,GW,D2023,5.09
-Somalia,SO,D2017,0.62
-Somalia,SO,D2018,0.6
-Somalia,SO,D2019,0.86
-Somalia,SO,D2020,1.14
-Somalia,SO,D2021,1.59
-Somalia,SO,D2022,1.6
-Somalia,SO,D2023,5
-Djibouti,DJ,D2017,1.25
-Djibouti,DJ,D2018,0.92
-Djibouti,DJ,D2019,0.88
-Djibouti,DJ,D2020,1.5
-Djibouti,DJ,D2021,1.46
-Djibouti,DJ,D2022,2.34
-Djibouti,DJ,D2023,4.66
-Democratic Republic of the Congo,CD,D2017,0.72
-Democratic Republic of the Congo,CD,D2018,0.86
-Democratic Republic of the Congo,CD,D2019,1.1
-Democratic Republic of the Congo,CD,D2020,2.06
-Democratic Republic of the Congo,CD,D2021,3.63
-Democratic Republic of the Congo,CD,D2022,4.9
-Democratic Republic of the Congo,CD,D2023,4.62
-Turkmenistan,TM,D2017,1.4
-Turkmenistan,TM,D2018,0.56
-Turkmenistan,TM,D2019,0.7
-Turkmenistan,TM,D2020,0.74
-Turkmenistan,TM,D2021,0.5
-Turkmenistan,TM,D2022,0.77
-Turkmenistan,TM,D2023,4.49
-Gambia,GM,D2017,Sample too small
-Gambia,GM,D2018,1.45
-Gambia,GM,D2019,1.21
-Gambia,GM,D2020,1.6
-Gambia,GM,D2021,2.04
-Gambia,GM,D2022,2.75
-Gambia,GM,D2023,4.35
-Federated States of Micronesia,FM,D2017,Sample too small
-Federated States of Micronesia,FM,D2018,Sample too small
-Federated States of Micronesia,FM,D2019,Sample too small
-Federated States of Micronesia,FM,D2020,4.49
-Federated States of Micronesia,FM,D2021,1.63
-Federated States of Micronesia,FM,D2022,3.96
-Federated States of Micronesia,FM,D2023,4.25
-Cuba,CU,D2017,Sample too small
-Cuba,CU,D2018,5.83
-Cuba,CU,D2019,1.66
-Cuba,CU,D2020,3.16
-Cuba,CU,D2021,2.92
-Cuba,CU,D2022,3.26
-Cuba,CU,D2023,4.14
-South Sudan,SS,D2017,Sample too small
-South Sudan,SS,D2018,Sample too small
-South Sudan,SS,D2019,Sample too small
-South Sudan,SS,D2020,0.58
-South Sudan,SS,D2021,1.4
-South Sudan,SS,D2022,3.73
-South Sudan,SS,D2023,3.89
-Burundi,BI,D2017,Sample too small
-Burundi,BI,D2018,2.56
-Burundi,BI,D2019,3.03
-Burundi,BI,D2020,4.04
-Burundi,BI,D2021,2.82
-Burundi,BI,D2022,3.44
-Burundi,BI,D2023,3.7
-Ethiopia,ET,D2017,1.34
-Ethiopia,ET,D2018,1.13
-Ethiopia,ET,D2019,0.8
-Ethiopia,ET,D2020,1.12
-Ethiopia,ET,D2021,1.2
-Ethiopia,ET,D2022,1.68
-Ethiopia,ET,D2023,3.54
-Cameroon,CM,D2017,0.97
-Cameroon,CM,D2018,1.29
-Cameroon,CM,D2019,1.03
-Cameroon,CM,D2020,2.78
-Cameroon,CM,D2021,3.04
-Cameroon,CM,D2022,3.35
-Cameroon,CM,D2023,3.16
-Tajikistan,TJ,D2017,0.83
-Tajikistan,TJ,D2018,0.94
-Tajikistan,TJ,D2019,1.05
-Tajikistan,TJ,D2020,1.01
-Tajikistan,TJ,D2021,1.82
-Tajikistan,TJ,D2022,2.02
-Tajikistan,TJ,D2023,2.98
-Equatorial Guinea,GQ,D2017,Sample too small
-Equatorial Guinea,GQ,D2018,Sample too small
-Equatorial Guinea,GQ,D2019,0.51
-Equatorial Guinea,GQ,D2020,0.75
-Equatorial Guinea,GQ,D2021,1.3
-Equatorial Guinea,GQ,D2022,1.34
-Equatorial Guinea,GQ,D2023,2.7
-Democratic Republic of Timor-Leste,TL,D2017,Sample too small
-Democratic Republic of Timor-Leste,TL,D2018,0.49
-Democratic Republic of Timor-Leste,TL,D2019,0.45
-Democratic Republic of Timor-Leste,TL,D2020,0.89
-Democratic Republic of Timor-Leste,TL,D2021,1.33
-Democratic Republic of Timor-Leste,TL,D2022,0.94
-Democratic Republic of Timor-Leste,TL,D2023,2.5
-Syria,SY,D2017,0.68
-Syria,SY,D2018,0.81
-Syria,SY,D2019,0.95
-Syria,SY,D2020,0.76
-Syria,SY,D2021,1.67
-Syria,SY,D2022,2.88
-Syria,SY,D2023,2.3
-Yemen,YE,D2017,0.34
-Yemen,YE,D2018,0.31
-Yemen,YE,D2019,0.38
-Yemen,YE,D2020,0.65
-Yemen,YE,D2021,0.68
-Yemen,YE,D2022,0.97
-Yemen,YE,D2023,1.79
-Afghanistan,AF,D2017,1.27
-Afghanistan,AF,D2018,1.15
-Afghanistan,AF,D2019,1.26
-Afghanistan,AF,D2020,1.37
-Afghanistan,AF,D2021,1.41
-Afghanistan,AF,D2022,0.98
-Afghanistan,AF,D2023,1.71
-Aland Islands,AX,D2017,Sample too small
-Aland Islands,AX,D2018,Sample too small
-Aland Islands,AX,D2019,Sample too small
-Aland Islands,AX,D2020,81.31
-Aland Islands,AX,D2021,81.31
-Aland Islands,AX,D2022,78.47
-Aland Islands,AX,D2023,Sample too small
-Samoa,WS,D2017,Sample too small
-Samoa,WS,D2018,Sample too small
-Samoa,WS,D2019,Sample too small
-Samoa,WS,D2020,Sample too small
-Samoa,WS,D2021,6.8
-Samoa,WS,D2022,Sample too small
-Samoa,WS,D2023,Sample too small
-Palau,PW,D2017,Sample too small
-Palau,PW,D2018,Sample too small
-Palau,PW,D2019,Sample too small
-Palau,PW,D2020,4.24
-Palau,PW,D2021,4.84
-Palau,PW,D2022,Sample too small
-Palau,PW,D2023,Sample too small
-Comoros,KM,D2017,Sample too small
-Comoros,KM,D2018,Sample too small
-Comoros,KM,D2019,2.54
-Comoros,KM,D2020,4.85
-Comoros,KM,D2021,3.99
-Comoros,KM,D2022,Sample too small
-Comoros,KM,D2023,Sample too small
-Eritrea,ER,D2017,Sample too small
-Eritrea,ER,D2018,Sample too small
-Eritrea,ER,D2019,Sample too small
-Eritrea,ER,D2020,Sample too small
-Eritrea,ER,D2021,2.41
-Eritrea,ER,D2022,1.89
-Eritrea,ER,D2023,Sample too small
-Wallis and Futuna,WF,D2017,Sample too small
-Wallis and Futuna,WF,D2018,Sample too small
-Wallis and Futuna,WF,D2019,Sample too small
-Wallis and Futuna,WF,D2020,Sample too small
-Wallis and Futuna,WF,D2021,Sample too small
-Wallis and Futuna,WF,D2022,Sample too small
-Wallis and Futuna,WF,D2023,Sample too small
-Cocos (Keeling) Islands,CC,D2017,Sample too small
-Cocos (Keeling) Islands,CC,D2018,Sample too small
-Cocos (Keeling) Islands,CC,D2019,Sample too small
-Cocos (Keeling) Islands,CC,D2020,Sample too small
-Cocos (Keeling) Islands,CC,D2021,Sample too small
-Cocos (Keeling) Islands,CC,D2022,Sample too small
-Cocos (Keeling) Islands,CC,D2023,Sample too small
-Central African Republic,CF,D2017,Sample too small
-Central African Republic,CF,D2018,Sample too small
-Central African Republic,CF,D2019,Sample too small
-Central African Republic,CF,D2020,Sample too small
-Central African Republic,CF,D2021,Sample too small
-Central African Republic,CF,D2022,Sample too small
-Central African Republic,CF,D2023,Sample too small
-Cook Islands,CK,D2017,Sample too small
-Cook Islands,CK,D2018,Sample too small
-Cook Islands,CK,D2019,Sample too small
-Cook Islands,CK,D2020,Sample too small
-Cook Islands,CK,D2021,Sample too small
-Cook Islands,CK,D2022,Sample too small
-Cook Islands,CK,D2023,Sample too small
-Christmas Island,CX,D2017,Sample too small
-Christmas Island,CX,D2018,Sample too small
-Christmas Island,CX,D2019,Sample too small
-Christmas Island,CX,D2020,Sample too small
-Christmas Island,CX,D2021,Sample too small
-Christmas Island,CX,D2022,Sample too small
-Christmas Island,CX,D2023,Sample too small
-Western Sahara,EH,D2017,Sample too small
-Western Sahara,EH,D2018,Sample too small
-Western Sahara,EH,D2019,Sample too small
-Western Sahara,EH,D2020,Sample too small
-Western Sahara,EH,D2021,Sample too small
-Western Sahara,EH,D2022,Sample too small
-Western Sahara,EH,D2023,Sample too small
-Falkland Islands,FK,D2017,Sample too small
-Falkland Islands,FK,D2018,Sample too small
-Falkland Islands,FK,D2019,Sample too small
-Falkland Islands,FK,D2020,Sample too small
-Falkland Islands,FK,D2021,Sample too small
-Falkland Islands,FK,D2022,Sample too small
-Falkland Islands,FK,D2023,Sample too small
-British Indian Ocean Territory,IO,D2017,Sample too small
-British Indian Ocean Territory,IO,D2018,Sample too small
-British Indian Ocean Territory,IO,D2019,Sample too small
-British Indian Ocean Territory,IO,D2020,Sample too small
-British Indian Ocean Territory,IO,D2021,Sample too small
-British Indian Ocean Territory,IO,D2022,Sample too small
-British Indian Ocean Territory,IO,D2023,Sample too small
-Kiribati,KI,D2017,Sample too small
-Kiribati,KI,D2018,Sample too small
-Kiribati,KI,D2019,Sample too small
-Kiribati,KI,D2020,Sample too small
-Kiribati,KI,D2021,Sample too small
-Kiribati,KI,D2022,Sample too small
-Kiribati,KI,D2023,Sample too small
-North Korea,KP,D2017,Sample too small
-North Korea,KP,D2018,Sample too small
-North Korea,KP,D2019,Sample too small
-North Korea,KP,D2020,Sample too small
-North Korea,KP,D2021,Sample too small
-North Korea,KP,D2022,Sample too small
-North Korea,KP,D2023,Sample too small
-Montserrat,MS,D2017,Sample too small
-Montserrat,MS,D2018,Sample too small
-Montserrat,MS,D2019,Sample too small
-Montserrat,MS,D2020,Sample too small
-Montserrat,MS,D2021,Sample too small
-Montserrat,MS,D2022,Sample too small
-Montserrat,MS,D2023,Sample too small
-Norfolk Island,NF,D2017,Sample too small
-Norfolk Island,NF,D2018,Sample too small
-Norfolk Island,NF,D2019,Sample too small
-Norfolk Island,NF,D2020,Sample too small
-Norfolk Island,NF,D2021,Sample too small
-Norfolk Island,NF,D2022,Sample too small
-Norfolk Island,NF,D2023,Sample too small
-Nauru,NR,D2017,Sample too small
-Nauru,NR,D2018,Sample too small
-Nauru,NR,D2019,Sample too small
-Nauru,NR,D2020,Sample too small
-Nauru,NR,D2021,Sample too small
-Nauru,NR,D2022,Sample too small
-Nauru,NR,D2023,Sample too small
-Niue,NU,D2017,Sample too small
-Niue,NU,D2018,Sample too small
-Niue,NU,D2019,Sample too small
-Niue,NU,D2020,Sample too small
-Niue,NU,D2021,Sample too small
-Niue,NU,D2022,Sample too small
-Niue,NU,D2023,Sample too small
-Pitcairn Islands,PN,D2017,Sample too small
-Pitcairn Islands,PN,D2018,Sample too small
-Pitcairn Islands,PN,D2019,Sample too small
-Pitcairn Islands,PN,D2020,Sample too small
-Pitcairn Islands,PN,D2021,Sample too small
-Pitcairn Islands,PN,D2022,Sample too small
-Pitcairn Islands,PN,D2023,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2017,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2018,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2019,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2020,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2021,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2022,Sample too small
-"Saint Helena, Ascension and Tristan da Cunha",SH,D2023,Sample too small
-Svalbard and Jan Mayen,SJ,D2017,Sample too small
-Svalbard and Jan Mayen,SJ,D2018,Sample too small
-Svalbard and Jan Mayen,SJ,D2019,Sample too small
-Svalbard and Jan Mayen,SJ,D2020,Sample too small
-Svalbard and Jan Mayen,SJ,D2021,Sample too small
-Svalbard and Jan Mayen,SJ,D2022,Sample too small
-Svalbard and Jan Mayen,SJ,D2023,Sample too small
-French Southern and Antarctic Lands,TF,D2017,Sample too small
-French Southern and Antarctic Lands,TF,D2018,Sample too small
-French Southern and Antarctic Lands,TF,D2019,Sample too small
-French Southern and Antarctic Lands,TF,D2020,Sample too small
-French Southern and Antarctic Lands,TF,D2021,Sample too small
-French Southern and Antarctic Lands,TF,D2022,Sample too small
-French Southern and Antarctic Lands,TF,D2023,Sample too small
-Tokelau,TK,D2017,Sample too small
-Tokelau,TK,D2018,Sample too small
-Tokelau,TK,D2019,Sample too small
-Tokelau,TK,D2020,Sample too small
-Tokelau,TK,D2021,Sample too small
-Tokelau,TK,D2022,Sample too small
-Tokelau,TK,D2023,Sample too small
-Tonga,TO,D2017,Sample too small
-Tonga,TO,D2018,Sample too small
-Tonga,TO,D2019,Sample too small
-Tonga,TO,D2020,Sample too small
-Tonga,TO,D2021,Sample too small
-Tonga,TO,D2022,Sample too small
-Tonga,TO,D2023,Sample too small
-Tuvalu,TV,D2017,Sample too small
-Tuvalu,TV,D2018,Sample too small
-Tuvalu,TV,D2019,Sample too small
-Tuvalu,TV,D2020,Sample too small
-Tuvalu,TV,D2021,Sample too small
-Tuvalu,TV,D2022,Sample too small
-Tuvalu,TV,D2023,Sample too small
-United States Minor Outlying Islands,UM,D2017,Sample too small
-United States Minor Outlying Islands,UM,D2018,Sample too small
-United States Minor Outlying Islands,UM,D2019,Sample too small
-United States Minor Outlying Islands,UM,D2020,Sample too small
-United States Minor Outlying Islands,UM,D2021,Sample too small
-United States Minor Outlying Islands,UM,D2022,Sample too small
-United States Minor Outlying Islands,UM,D2023,Sample too small
-Global regional averages,,D2017,7.41
-Global regional averages,,D2018,9.14
-Global regional averages,,D2019,11.03
-Global regional averages,,D2020,24.83
-Global regional averages,,D2021,29.79
-Global regional averages,,D2022,35.98
-Global regional averages,,D2023,46.79
+"region","Name","Continental.region","Price.per.GB...change..5.years.","Dyear","values"
+"ISR","Israel","NEAR EAST","-97.57%","D2019","0.90"
+"ISR","Israel","NEAR EAST","-97.57%","D2020","0.11"
+"ISR","Israel","NEAR EAST","-97.57%","D2021","0.05"
+"ISR","Israel","NEAR EAST","-97.57%","D2022","0.04"
+"ISR","Israel","NEAR EAST","-97.57%","D2023","0.02"
+"ITA","Italy","WESTERN EUROPE","-95.04%","D2019","1.73"
+"ITA","Italy","WESTERN EUROPE","-95.04%","D2020","0.43"
+"ITA","Italy","WESTERN EUROPE","-95.04%","D2021","0.27"
+"ITA","Italy","WESTERN EUROPE","-95.04%","D2022","0.12"
+"ITA","Italy","WESTERN EUROPE","-95.04%","D2023","0.09"
+"FJI","Fiji","OCEANIA","-97.54%","D2019","3.57"
+"FJI","Fiji","OCEANIA","-97.54%","D2020","0.59"
+"FJI","Fiji","OCEANIA","-97.54%","D2021","0.19"
+"FJI","Fiji","OCEANIA","-97.54%","D2022","0.15"
+"FJI","Fiji","OCEANIA","-97.54%","D2023","0.09"
+"SMR","San Marino","WESTERN EUROPE","-98.60%","D2019","6.86"
+"SMR","San Marino","WESTERN EUROPE","-98.60%","D2020","1.16"
+"SMR","San Marino","WESTERN EUROPE","-98.60%","D2021","0.43"
+"SMR","San Marino","WESTERN EUROPE","-98.60%","D2022","0.14"
+"SMR","San Marino","WESTERN EUROPE","-98.60%","D2023","0.10"
+"KHM","Cambodia","ASIA (EX. NEAR EAST)","-98.82%","D2019","10.18"
+"KHM","Cambodia","ASIA (EX. NEAR EAST)","-98.82%","D2020","1.50"
+"KHM","Cambodia","ASIA (EX. NEAR EAST)","-98.82%","D2021","0.83"
+"KHM","Cambodia","ASIA (EX. NEAR EAST)","-98.82%","D2022","0.42"
+"KHM","Cambodia","ASIA (EX. NEAR EAST)","-98.82%","D2023","0.12"
+"PAK","Pakistan","ASIA (EX. NEAR EAST)","-93.31%","D2019","1.85"
+"PAK","Pakistan","ASIA (EX. NEAR EAST)","-93.31%","D2020","0.69"
+"PAK","Pakistan","ASIA (EX. NEAR EAST)","-93.31%","D2021","0.59"
+"PAK","Pakistan","ASIA (EX. NEAR EAST)","-93.31%","D2022","0.36"
+"PAK","Pakistan","ASIA (EX. NEAR EAST)","-93.31%","D2023","0.12"
+"IND","India","ASIA (EX. NEAR EAST)","-38.18%","D2019","0.26"
+"IND","India","ASIA (EX. NEAR EAST)","-38.18%","D2020","0.09"
+"IND","India","ASIA (EX. NEAR EAST)","-38.18%","D2021","0.68"
+"IND","India","ASIA (EX. NEAR EAST)","-38.18%","D2022","0.17"
+"IND","India","ASIA (EX. NEAR EAST)","-38.18%","D2023","0.16"
+"KGZ","Kyrgyzstan","CIS (FORMER USSR)","-35.17%","D2019","0.27"
+"KGZ","Kyrgyzstan","CIS (FORMER USSR)","-35.17%","D2020","0.21"
+"KGZ","Kyrgyzstan","CIS (FORMER USSR)","-35.17%","D2021","0.15"
+"KGZ","Kyrgyzstan","CIS (FORMER USSR)","-35.17%","D2022","0.17"
+"KGZ","Kyrgyzstan","CIS (FORMER USSR)","-35.17%","D2023","0.17"
+"FRA","France","WESTERN EUROPE","-83.71%","D2019","1.21"
+"FRA","France","WESTERN EUROPE","-83.71%","D2020","0.81"
+"FRA","France","WESTERN EUROPE","-83.71%","D2021","0.41"
+"FRA","France","WESTERN EUROPE","-83.71%","D2022","0.23"
+"FRA","France","WESTERN EUROPE","-83.71%","D2023","0.20"
+"COL","Colombia","SOUTH AMERICA","-93.84%","D2019","3.22"
+"COL","Colombia","SOUTH AMERICA","-93.84%","D2020","3.46"
+"COL","Colombia","SOUTH AMERICA","-93.84%","D2021","2.80"
+"COL","Colombia","SOUTH AMERICA","-93.84%","D2022","0.49"
+"COL","Colombia","SOUTH AMERICA","-93.84%","D2023","0.20"
+"HTI","Haiti","CARIBBEAN","-82.46%","D2019","1.25"
+"HTI","Haiti","CARIBBEAN","-82.46%","D2020","2.74"
+"HTI","Haiti","CARIBBEAN","-82.46%","D2021","0.85"
+"HTI","Haiti","CARIBBEAN","-82.46%","D2022","0.37"
+"HTI","Haiti","CARIBBEAN","-82.46%","D2023","0.22"
+"BGD","Bangladesh","ASIA (EX. NEAR EAST)","-76.57%","D2019","0.99"
+"BGD","Bangladesh","ASIA (EX. NEAR EAST)","-76.57%","D2020","0.70"
+"BGD","Bangladesh","ASIA (EX. NEAR EAST)","-76.57%","D2021","0.34"
+"BGD","Bangladesh","ASIA (EX. NEAR EAST)","-76.57%","D2022","0.32"
+"BGD","Bangladesh","ASIA (EX. NEAR EAST)","-76.57%","D2023","0.23"
+"LKA","Sri Lanka","ASIA (EX. NEAR EAST)","-68.10%","D2019","0.78"
+"LKA","Sri Lanka","ASIA (EX. NEAR EAST)","-68.10%","D2020","0.51"
+"LKA","Sri Lanka","ASIA (EX. NEAR EAST)","-68.10%","D2021","0.38"
+"LKA","Sri Lanka","ASIA (EX. NEAR EAST)","-68.10%","D2022","0.27"
+"LKA","Sri Lanka","ASIA (EX. NEAR EAST)","-68.10%","D2023","0.25"
+"LAO","Lao People's Democratic Republic","ASIA (EX. NEAR EAST)","-92.61%","D2019","3.42"
+"LAO","Lao People's Democratic Republic","ASIA (EX. NEAR EAST)","-92.61%","D2020","4.16"
+"LAO","Lao People's Democratic Republic","ASIA (EX. NEAR EAST)","-92.61%","D2021","3.19"
+"LAO","Lao People's Democratic Republic","ASIA (EX. NEAR EAST)","-92.61%","D2022","0.99"
+"LAO","Lao People's Democratic Republic","ASIA (EX. NEAR EAST)","-92.61%","D2023","0.25"
+"RUS","Russian Federation","CIS (FORMER USSR)","-72.19%","D2019","0.91"
+"RUS","Russian Federation","CIS (FORMER USSR)","-72.19%","D2020","0.52"
+"RUS","Russian Federation","CIS (FORMER USSR)","-72.19%","D2021","0.29"
+"RUS","Russian Federation","CIS (FORMER USSR)","-72.19%","D2022","0.48"
+"RUS","Russian Federation","CIS (FORMER USSR)","-72.19%","D2023","0.25"
+"UKR","Ukraine","CIS (FORMER USSR)","-95.44%","D2019","5.93"
+"UKR","Ukraine","CIS (FORMER USSR)","-95.44%","D2020","0.46"
+"UKR","Ukraine","CIS (FORMER USSR)","-95.44%","D2021","0.75"
+"UKR","Ukraine","CIS (FORMER USSR)","-95.44%","D2022","0.43"
+"UKR","Ukraine","CIS (FORMER USSR)","-95.44%","D2023","0.27"
+"IDN","Indonesia","ASIA (EX. NEAR EAST)","-90.77%","D2019","2.99"
+"IDN","Indonesia","ASIA (EX. NEAR EAST)","-90.77%","D2020","0.64"
+"IDN","Indonesia","ASIA (EX. NEAR EAST)","-90.77%","D2021","0.42"
+"IDN","Indonesia","ASIA (EX. NEAR EAST)","-90.77%","D2022","0.46"
+"IDN","Indonesia","ASIA (EX. NEAR EAST)","-90.77%","D2023","0.28"
+"URY","Uruguay","SOUTH AMERICA","-90.09%","D2019","2.80"
+"URY","Uruguay","SOUTH AMERICA","-90.09%","D2020","1.58"
+"URY","Uruguay","SOUTH AMERICA","-90.09%","D2021","1.51"
+"URY","Uruguay","SOUTH AMERICA","-90.09%","D2022","0.27"
+"URY","Uruguay","SOUTH AMERICA","-90.09%","D2023","0.28"
+"MDA","Moldova","EASTERN EUROPE","-90.10%","D2019","2.82"
+"MDA","Moldova","EASTERN EUROPE","-90.10%","D2020","1.12"
+"MDA","Moldova","EASTERN EUROPE","-90.10%","D2021","0.32"
+"MDA","Moldova","EASTERN EUROPE","-90.10%","D2022","0.26"
+"MDA","Moldova","EASTERN EUROPE","-90.10%","D2023","0.28"
+"MYS","Malaysia","ASIA (EX. NEAR EAST)","-82.81%","D2019","1.66"
+"MYS","Malaysia","ASIA (EX. NEAR EAST)","-82.81%","D2020","1.12"
+"MYS","Malaysia","ASIA (EX. NEAR EAST)","-82.81%","D2021","0.89"
+"MYS","Malaysia","ASIA (EX. NEAR EAST)","-82.81%","D2022","0.45"
+"MYS","Malaysia","ASIA (EX. NEAR EAST)","-82.81%","D2023","0.28"
+"VNM","Vietnam","ASIA (EX. NEAR EAST)","-77.73%","D2019","1.31"
+"VNM","Vietnam","ASIA (EX. NEAR EAST)","-77.73%","D2020","0.57"
+"VNM","Vietnam","ASIA (EX. NEAR EAST)","-77.73%","D2021","0.49"
+"VNM","Vietnam","ASIA (EX. NEAR EAST)","-77.73%","D2022","0.61"
+"VNM","Vietnam","ASIA (EX. NEAR EAST)","-77.73%","D2023","0.29"
+"UZB","Uzbekistan","CIS (FORMER USSR)","-90.78%","D2019","3.27"
+"UZB","Uzbekistan","CIS (FORMER USSR)","-90.78%","D2020","1.34"
+"UZB","Uzbekistan","CIS (FORMER USSR)","-90.78%","D2021","0.60"
+"UZB","Uzbekistan","CIS (FORMER USSR)","-90.78%","D2022","0.37"
+"UZB","Uzbekistan","CIS (FORMER USSR)","-90.78%","D2023","0.30"
+"TTO","Trinidad and Tobago","CARIBBEAN","-88.14%","D2019","2.69"
+"TTO","Trinidad and Tobago","CARIBBEAN","-88.14%","D2020","5.92"
+"TTO","Trinidad and Tobago","CARIBBEAN","-88.14%","D2021","1.90"
+"TTO","Trinidad and Tobago","CARIBBEAN","-88.14%","D2022","0.98"
+"TTO","Trinidad and Tobago","CARIBBEAN","-88.14%","D2023","0.32"
+"MNE","Montenegro","EASTERN EUROPE","-88.65%","D2019","2.83"
+"MNE","Montenegro","EASTERN EUROPE","-88.65%","D2020","3.94"
+"MNE","Montenegro","EASTERN EUROPE","-88.65%","D2021","2.12"
+"MNE","Montenegro","EASTERN EUROPE","-88.65%","D2022","0.60"
+"MNE","Montenegro","EASTERN EUROPE","-88.65%","D2023","0.32"
+"MTQ","Martinique","CARIBBEAN","-95.30%","D2019","7.12"
+"MTQ","Martinique","CARIBBEAN","-95.30%","D2020","2.60"
+"MTQ","Martinique","CARIBBEAN","-95.30%","D2021","3.46"
+"MTQ","Martinique","CARIBBEAN","-95.30%","D2022","1.33"
+"MTQ","Martinique","CARIBBEAN","-95.30%","D2023","0.33"
+"WSM","Samoa","OCEANIA","-98.80%","D2019","30.09"
+"WSM","Samoa","OCEANIA","-98.80%","D2020","10.86"
+"WSM","Samoa","OCEANIA","-98.80%","D2021","0.56"
+"WSM","Samoa","OCEANIA","-98.80%","D2022","0.94"
+"WSM","Samoa","OCEANIA","-98.80%","D2023","0.36"
+"POL","Poland","EASTERN EUROPE","-71.95%","D2019","1.32"
+"POL","Poland","EASTERN EUROPE","-71.95%","D2020","0.70"
+"POL","Poland","EASTERN EUROPE","-71.95%","D2021","0.64"
+"POL","Poland","EASTERN EUROPE","-71.95%","D2022","0.41"
+"POL","Poland","EASTERN EUROPE","-71.95%","D2023","0.37"
+"CHN","China","ASIA (EX. NEAR EAST)","-96.21%","D2019","9.89"
+"CHN","China","ASIA (EX. NEAR EAST)","-96.21%","D2020","0.61"
+"CHN","China","ASIA (EX. NEAR EAST)","-96.21%","D2021","0.52"
+"CHN","China","ASIA (EX. NEAR EAST)","-96.21%","D2022","0.41"
+"CHN","China","ASIA (EX. NEAR EAST)","-96.21%","D2023","0.38"
+"MWI","Malawi","SUB-SAHARAN AFRICA","-89.39%","D2019","3.59"
+"MWI","Malawi","SUB-SAHARAN AFRICA","-89.39%","D2020","27.41"
+"MWI","Malawi","SUB-SAHARAN AFRICA","-89.39%","D2021","25.46"
+"MWI","Malawi","SUB-SAHARAN AFRICA","-89.39%","D2022","2.72"
+"MWI","Malawi","SUB-SAHARAN AFRICA","-89.39%","D2023","0.38"
+"MNG","Mongolia","ASIA (EX. NEAR EAST)","-53.21%","D2019","0.82"
+"MNG","Mongolia","ASIA (EX. NEAR EAST)","-53.21%","D2020","0.74"
+"MNG","Mongolia","ASIA (EX. NEAR EAST)","-53.21%","D2021","0.60"
+"MNG","Mongolia","ASIA (EX. NEAR EAST)","-53.21%","D2022","0.67"
+"MNG","Mongolia","ASIA (EX. NEAR EAST)","-53.21%","D2023","0.38"
+"NGA","Nigeria","SUB-SAHARAN AFRICA","-95.03%","D2019","7.91"
+"NGA","Nigeria","SUB-SAHARAN AFRICA","-95.03%","D2020","1.39"
+"NGA","Nigeria","SUB-SAHARAN AFRICA","-95.03%","D2021","0.88"
+"NGA","Nigeria","SUB-SAHARAN AFRICA","-95.03%","D2022","0.71"
+"NGA","Nigeria","SUB-SAHARAN AFRICA","-95.03%","D2023","0.39"
+"BRA","Brazil","SOUTH AMERICA","-88.51%","D2019","3.50"
+"BRA","Brazil","SOUTH AMERICA","-88.51%","D2020","1.01"
+"BRA","Brazil","SOUTH AMERICA","-88.51%","D2021","0.92"
+"BRA","Brazil","SOUTH AMERICA","-88.51%","D2022","0.74"
+"BRA","Brazil","SOUTH AMERICA","-88.51%","D2023","0.40"
+"GHA","Ghana","SUB-SAHARAN AFRICA","-74.12%","D2019","1.56"
+"GHA","Ghana","SUB-SAHARAN AFRICA","-74.12%","D2020","0.94"
+"GHA","Ghana","SUB-SAHARAN AFRICA","-74.12%","D2021","0.66"
+"GHA","Ghana","SUB-SAHARAN AFRICA","-74.12%","D2022","0.61"
+"GHA","Ghana","SUB-SAHARAN AFRICA","-74.12%","D2023","0.40"
+"THA","Thailand","ASIA (EX. NEAR EAST)","-85.36%","D2019","2.78"
+"THA","Thailand","ASIA (EX. NEAR EAST)","-85.36%","D2020","1.23"
+"THA","Thailand","ASIA (EX. NEAR EAST)","-85.36%","D2021","1.06"
+"THA","Thailand","ASIA (EX. NEAR EAST)","-85.36%","D2022","0.38"
+"THA","Thailand","ASIA (EX. NEAR EAST)","-85.36%","D2023","0.41"
+"KAZ","Kazakhstan","CIS (FORMER USSR)","-17.06%","D2019","0.49"
+"KAZ","Kazakhstan","CIS (FORMER USSR)","-17.06%","D2020","0.46"
+"KAZ","Kazakhstan","CIS (FORMER USSR)","-17.06%","D2021","0.59"
+"KAZ","Kazakhstan","CIS (FORMER USSR)","-17.06%","D2022","0.37"
+"KAZ","Kazakhstan","CIS (FORMER USSR)","-17.06%","D2023","0.41"
+"MCO","Monaco","WESTERN EUROPE","-65.42%","D2019","1.21"
+"MCO","Monaco","WESTERN EUROPE","-65.42%","D2020","0.98"
+"MCO","Monaco","WESTERN EUROPE","-65.42%","D2021","1.08"
+"MCO","Monaco","WESTERN EUROPE","-65.42%","D2022","0.40"
+"MCO","Monaco","WESTERN EUROPE","-65.42%","D2023","0.42"
+"NPL","Nepal","ASIA (EX. NEAR EAST)","-80.82%","D2019","2.25"
+"NPL","Nepal","ASIA (EX. NEAR EAST)","-80.82%","D2020","0.86"
+"NPL","Nepal","ASIA (EX. NEAR EAST)","-80.82%","D2021","0.61"
+"NPL","Nepal","ASIA (EX. NEAR EAST)","-80.82%","D2022","0.27"
+"NPL","Nepal","ASIA (EX. NEAR EAST)","-80.82%","D2023","0.43"
+"TUR","Turkey","NEAR EAST","-80.62%","D2019","2.25"
+"TUR","Turkey","NEAR EAST","-80.62%","D2020","0.72"
+"TUR","Turkey","NEAR EAST","-80.62%","D2021","0.63"
+"TUR","Turkey","NEAR EAST","-80.62%","D2022","0.39"
+"TUR","Turkey","NEAR EAST","-80.62%","D2023","0.44"
+"AUS","Australia","OCEANIA","-82.24%","D2019","2.47"
+"AUS","Australia","OCEANIA","-82.24%","D2020","0.68"
+"AUS","Australia","OCEANIA","-82.24%","D2021","0.70"
+"AUS","Australia","OCEANIA","-82.24%","D2022","0.57"
+"AUS","Australia","OCEANIA","-82.24%","D2023","0.44"
+"PER","Peru","SOUTH AMERICA","-82.00%","D2019","2.48"
+"PER","Peru","SOUTH AMERICA","-82.00%","D2020","2.13"
+"PER","Peru","SOUTH AMERICA","-82.00%","D2021","1.15"
+"PER","Peru","SOUTH AMERICA","-82.00%","D2022","1.01"
+"PER","Peru","SOUTH AMERICA","-82.00%","D2023","0.45"
+"REU","Réunion","SUB-SAHARAN AFRICA","-70.76%","D2019","1.65"
+"REU","Réunion","SUB-SAHARAN AFRICA","-70.76%","D2020","0.72"
+"REU","Réunion","SUB-SAHARAN AFRICA","-70.76%","D2021","0.76"
+"REU","Réunion","SUB-SAHARAN AFRICA","-70.76%","D2022","0.70"
+"REU","Réunion","SUB-SAHARAN AFRICA","-70.76%","D2023","0.48"
+"ESP","Spain","WESTERN EUROPE","-13.73%","D2019","0.56"
+"ESP","Spain","WESTERN EUROPE","-13.73%","D2020","1.81"
+"ESP","Spain","WESTERN EUROPE","-13.73%","D2021","1.24"
+"ESP","Spain","WESTERN EUROPE","-13.73%","D2022","0.60"
+"ESP","Spain","WESTERN EUROPE","-13.73%","D2023","0.48"
+"GLP","Guadeloupe","CARIBBEAN","-91.87%","D2019","6.06"
+"GLP","Guadeloupe","CARIBBEAN","-91.87%","D2020","2.42"
+"GLP","Guadeloupe","CARIBBEAN","-91.87%","D2021","0.89"
+"GLP","Guadeloupe","CARIBBEAN","-91.87%","D2022","1.10"
+"GLP","Guadeloupe","CARIBBEAN","-91.87%","D2023","0.49"
+"GUF","French Guiana","SOUTH AMERICA","-96.32%","D2019","13.41"
+"GUF","French Guiana","SOUTH AMERICA","-96.32%","D2020","3.61"
+"GUF","French Guiana","SOUTH AMERICA","-96.32%","D2021","1.58"
+"GUF","French Guiana","SOUTH AMERICA","-96.32%","D2022","1.50"
+"GUF","French Guiana","SOUTH AMERICA","-96.32%","D2023","0.49"
+"SOM","Somalia","SUB-SAHARAN AFRICA","-91.92%","D2019","6.19"
+"SOM","Somalia","SUB-SAHARAN AFRICA","-91.92%","D2020","0.50"
+"SOM","Somalia","SUB-SAHARAN AFRICA","-91.92%","D2021","0.60"
+"SOM","Somalia","SUB-SAHARAN AFRICA","-91.92%","D2022","0.63"
+"SOM","Somalia","SUB-SAHARAN AFRICA","-91.92%","D2023","0.50"
+"AUT","Austria","WESTERN EUROPE","-73.14%","D2019","1.88"
+"AUT","Austria","WESTERN EUROPE","-73.14%","D2020","1.08"
+"AUT","Austria","WESTERN EUROPE","-73.14%","D2021","1.17"
+"AUT","Austria","WESTERN EUROPE","-73.14%","D2022","0.94"
+"AUT","Austria","WESTERN EUROPE","-73.14%","D2023","0.51"
+"KWT","Kuwait","NEAR EAST","-74.22%","D2019","2.01"
+"KWT","Kuwait","NEAR EAST","-74.22%","D2020","0.77"
+"KWT","Kuwait","NEAR EAST","-74.22%","D2021","0.81"
+"KWT","Kuwait","NEAR EAST","-74.22%","D2022","0.71"
+"KWT","Kuwait","NEAR EAST","-74.22%","D2023","0.52"
+"FIN","Finland","WESTERN EUROPE","-55.27%","D2019","1.16"
+"FIN","Finland","WESTERN EUROPE","-55.27%","D2020","2.14"
+"FIN","Finland","WESTERN EUROPE","-55.27%","D2021","0.97"
+"FIN","Finland","WESTERN EUROPE","-55.27%","D2022","7.47"
+"FIN","Finland","WESTERN EUROPE","-55.27%","D2023","0.52"
+"COD","Congo (Democratic Republic of)","SUB-SAHARAN AFRICA","MISSSING DATA","D2019","NO PACKAGES"
+"COD","Congo (Democratic Republic of)","SUB-SAHARAN AFRICA","MISSSING DATA","D2020","NO PACKAGES"
+"COD","Congo (Democratic Republic of)","SUB-SAHARAN AFRICA","MISSSING DATA","D2021","NO PACKAGES"
+"COD","Congo (Democratic Republic of)","SUB-SAHARAN AFRICA","MISSSING DATA","D2022","NO PACKAGES"
+"COD","Congo (Democratic Republic of)","SUB-SAHARAN AFRICA","MISSSING DATA","D2023","0.52"
+"ROU","Romania","EASTERN EUROPE","-71.66%","D2019","1.89"
+"ROU","Romania","EASTERN EUROPE","-71.66%","D2020","1.03"
+"ROU","Romania","EASTERN EUROPE","-71.66%","D2021","1.18"
+"ROU","Romania","EASTERN EUROPE","-71.66%","D2022","0.45"
+"ROU","Romania","EASTERN EUROPE","-71.66%","D2023","0.54"
+"NIC","Nicaragua","CENTRAL AMERICA","-99.17%","D2019","65.83"
+"NIC","Nicaragua","CENTRAL AMERICA","-99.17%","D2020","1.71"
+"NIC","Nicaragua","CENTRAL AMERICA","-99.17%","D2021","0.94"
+"NIC","Nicaragua","CENTRAL AMERICA","-99.17%","D2022","0.70"
+"NIC","Nicaragua","CENTRAL AMERICA","-99.17%","D2023","0.55"
+"RWA","Rwanda","SUB-SAHARAN AFRICA","-85.41%","D2019","3.79"
+"RWA","Rwanda","SUB-SAHARAN AFRICA","-85.41%","D2020","1.48"
+"RWA","Rwanda","SUB-SAHARAN AFRICA","-85.41%","D2021","1.25"
+"RWA","Rwanda","SUB-SAHARAN AFRICA","-85.41%","D2022","1.10"
+"RWA","Rwanda","SUB-SAHARAN AFRICA","-85.41%","D2023","0.55"
+"ESH","Western Sahara","NORTHERN AFRICA","-51.05%","D2019","1.18"
+"ESH","Western Sahara","NORTHERN AFRICA","-51.05%","D2020","0.99"
+"ESH","Western Sahara","NORTHERN AFRICA","-51.05%","D2021","0.88"
+"ESH","Western Sahara","NORTHERN AFRICA","-51.05%","D2022","0.72"
+"ESH","Western Sahara","NORTHERN AFRICA","-51.05%","D2023","0.58"
+"SRB","Serbia","EASTERN EUROPE","-88.03%","D2019","4.83"
+"SRB","Serbia","EASTERN EUROPE","-88.03%","D2020","1.60"
+"SRB","Serbia","EASTERN EUROPE","-88.03%","D2021","1.30"
+"SRB","Serbia","EASTERN EUROPE","-88.03%","D2022","0.76"
+"SRB","Serbia","EASTERN EUROPE","-88.03%","D2023","0.58"
+"PHL","Philippines","ASIA (EX. NEAR EAST)","-81.40%","D2019","3.16"
+"PHL","Philippines","ASIA (EX. NEAR EAST)","-81.40%","D2020","1.42"
+"PHL","Philippines","ASIA (EX. NEAR EAST)","-81.40%","D2021","1.77"
+"PHL","Philippines","ASIA (EX. NEAR EAST)","-81.40%","D2022","0.52"
+"PHL","Philippines","ASIA (EX. NEAR EAST)","-81.40%","D2023","0.59"
+"TCA","Turks and Caicos Islands","CARIBBEAN","-97.45%","D2019","23.09"
+"TCA","Turks and Caicos Islands","CARIBBEAN","-97.45%","D2020","13.33"
+"TCA","Turks and Caicos Islands","CARIBBEAN","-97.45%","D2021","8.00"
+"TCA","Turks and Caicos Islands","CARIBBEAN","-97.45%","D2022","14.27"
+"TCA","Turks and Caicos Islands","CARIBBEAN","-97.45%","D2023","0.59"
+"KEN","Kenya","SUB-SAHARAN AFRICA","-78.43%","D2019","2.73"
+"KEN","Kenya","SUB-SAHARAN AFRICA","-78.43%","D2020","1.05"
+"KEN","Kenya","SUB-SAHARAN AFRICA","-78.43%","D2021","2.25"
+"KEN","Kenya","SUB-SAHARAN AFRICA","-78.43%","D2022","0.84"
+"KEN","Kenya","SUB-SAHARAN AFRICA","-78.43%","D2023","0.59"
+"GBR","United Kingdom","WESTERN EUROPE","-90.63%","D2019","6.66"
+"GBR","United Kingdom","WESTERN EUROPE","-90.63%","D2020","1.39"
+"GBR","United Kingdom","WESTERN EUROPE","-90.63%","D2021","1.42"
+"GBR","United Kingdom","WESTERN EUROPE","-90.63%","D2022","0.79"
+"GBR","United Kingdom","WESTERN EUROPE","-90.63%","D2023","0.62"
+"SGP","Singapore","ASIA (EX. NEAR EAST)","-78.18%","D2019","2.87"
+"SGP","Singapore","ASIA (EX. NEAR EAST)","-78.18%","D2020","2.47"
+"SGP","Singapore","ASIA (EX. NEAR EAST)","-78.18%","D2021","1.09"
+"SGP","Singapore","ASIA (EX. NEAR EAST)","-78.18%","D2022","0.61"
+"SGP","Singapore","ASIA (EX. NEAR EAST)","-78.18%","D2023","0.63"
+"MAR","Morocco","NORTHERN AFRICA","-61.89%","D2019","1.66"
+"MAR","Morocco","NORTHERN AFRICA","-61.89%","D2020","0.99"
+"MAR","Morocco","NORTHERN AFRICA","-61.89%","D2021","0.88"
+"MAR","Morocco","NORTHERN AFRICA","-61.89%","D2022","0.69"
+"MAR","Morocco","NORTHERN AFRICA","-61.89%","D2023","0.63"
+"CHL","Chile","SOUTH AMERICA","-65.90%","D2019","1.87"
+"CHL","Chile","SOUTH AMERICA","-65.90%","D2020","0.71"
+"CHL","Chile","SOUTH AMERICA","-65.90%","D2021","0.39"
+"CHL","Chile","SOUTH AMERICA","-65.90%","D2022","0.51"
+"CHL","Chile","SOUTH AMERICA","-65.90%","D2023","0.64"
+"EGY","Egypt","NORTHERN AFRICA","-56.65%","D2019","1.49"
+"EGY","Egypt","NORTHERN AFRICA","-56.65%","D2020","1.09"
+"EGY","Egypt","NORTHERN AFRICA","-56.65%","D2021","1.04"
+"EGY","Egypt","NORTHERN AFRICA","-56.65%","D2022","0.93"
+"EGY","Egypt","NORTHERN AFRICA","-56.65%","D2023","0.65"
+"SYR","Syria","NEAR EAST","-83.88%","D2019","4.14"
+"SYR","Syria","NEAR EAST","-83.88%","D2020","6.55"
+"SYR","Syria","NEAR EAST","-83.88%","D2021","7.15"
+"SYR","Syria","NEAR EAST","-83.88%","D2022","17.88"
+"SYR","Syria","NEAR EAST","-83.88%","D2023","0.67"
+"MUS","Mauritius","SUB-SAHARAN AFRICA","30.01%","D2019","0.51"
+"MUS","Mauritius","SUB-SAHARAN AFRICA","30.01%","D2020","0.69"
+"MUS","Mauritius","SUB-SAHARAN AFRICA","30.01%","D2021","0.75"
+"MUS","Mauritius","SUB-SAHARAN AFRICA","30.01%","D2022","0.87"
+"MUS","Mauritius","SUB-SAHARAN AFRICA","30.01%","D2023","0.67"
+"SLE","Sierra Leone","SUB-SAHARAN AFRICA","-92.74%","D2019","9.22"
+"SLE","Sierra Leone","SUB-SAHARAN AFRICA","-92.74%","D2020","3.69"
+"SLE","Sierra Leone","SUB-SAHARAN AFRICA","-92.74%","D2021","3.26"
+"SLE","Sierra Leone","SUB-SAHARAN AFRICA","-92.74%","D2022","1.26"
+"SLE","Sierra Leone","SUB-SAHARAN AFRICA","-92.74%","D2023","0.67"
+"BLR","Belarus","CIS (FORMER USSR)","-71.59%","D2019","2.36"
+"BLR","Belarus","CIS (FORMER USSR)","-71.59%","D2020","0.89"
+"BLR","Belarus","CIS (FORMER USSR)","-71.59%","D2021","0.43"
+"BLR","Belarus","CIS (FORMER USSR)","-71.59%","D2022","0.79"
+"BLR","Belarus","CIS (FORMER USSR)","-71.59%","D2023","0.67"
+"GIB","Gibraltar","WESTERN EUROPE","-78.36%","D2019","3.10"
+"GIB","Gibraltar","WESTERN EUROPE","-78.36%","D2020","7.38"
+"GIB","Gibraltar","WESTERN EUROPE","-78.36%","D2021","2.78"
+"GIB","Gibraltar","WESTERN EUROPE","-78.36%","D2022","1.26"
+"GIB","Gibraltar","WESTERN EUROPE","-78.36%","D2023","0.67"
+"COG","Congo","SUB-SAHARAN AFRICA","-85.06%","D2019","4.57"
+"COG","Congo","SUB-SAHARAN AFRICA","-85.06%","D2020","1.94"
+"COG","Congo","SUB-SAHARAN AFRICA","-85.06%","D2021","2.88"
+"COG","Congo","SUB-SAHARAN AFRICA","-85.06%","D2022","1.03"
+"COG","Congo","SUB-SAHARAN AFRICA","-85.06%","D2023","0.68"
+"ETH","Ethiopia","SUB-SAHARAN AFRICA","-66.82%","D2019","2.06"
+"ETH","Ethiopia","SUB-SAHARAN AFRICA","-66.82%","D2020","2.44"
+"ETH","Ethiopia","SUB-SAHARAN AFRICA","-66.82%","D2021","1.71"
+"ETH","Ethiopia","SUB-SAHARAN AFRICA","-66.82%","D2022","1.00"
+"ETH","Ethiopia","SUB-SAHARAN AFRICA","-66.82%","D2023","0.68"
+"DNK","Denmark","WESTERN EUROPE","-49.14%","D2019","1.36"
+"DNK","Denmark","WESTERN EUROPE","-49.14%","D2020","0.80"
+"DNK","Denmark","WESTERN EUROPE","-49.14%","D2021","0.79"
+"DNK","Denmark","WESTERN EUROPE","-49.14%","D2022","0.43"
+"DNK","Denmark","WESTERN EUROPE","-49.14%","D2023","0.69"
+"TWN","Taiwan","ASIA (EX. NEAR EAST)","-94.24%","D2019","12.02"
+"TWN","Taiwan","ASIA (EX. NEAR EAST)","-94.24%","D2020","5.91"
+"TWN","Taiwan","ASIA (EX. NEAR EAST)","-94.24%","D2021","5.67"
+"TWN","Taiwan","ASIA (EX. NEAR EAST)","-94.24%","D2022","0.74"
+"TWN","Taiwan","ASIA (EX. NEAR EAST)","-94.24%","D2023","0.69"
+"JAM","Jamaica","CARIBBEAN","-71.33%","D2019","2.43"
+"JAM","Jamaica","CARIBBEAN","-71.33%","D2020","3.88"
+"JAM","Jamaica","CARIBBEAN","-71.33%","D2021","2.74"
+"JAM","Jamaica","CARIBBEAN","-71.33%","D2022","1.21"
+"JAM","Jamaica","CARIBBEAN","-71.33%","D2023","0.70"
+"BTN","Bhutan","ASIA (EX. NEAR EAST)","-52.60%","D2019","1.49"
+"BTN","Bhutan","ASIA (EX. NEAR EAST)","-52.60%","D2020","1.16"
+"BTN","Bhutan","ASIA (EX. NEAR EAST)","-52.60%","D2021","0.83"
+"BTN","Bhutan","ASIA (EX. NEAR EAST)","-52.60%","D2022","0.39"
+"BTN","Bhutan","ASIA (EX. NEAR EAST)","-52.60%","D2023","0.71"
+"MYT","Mayotte","SUB-SAHARAN AFRICA","-67.87%","D2019","2.22"
+"MYT","Mayotte","SUB-SAHARAN AFRICA","-67.87%","D2020","1.08"
+"MYT","Mayotte","SUB-SAHARAN AFRICA","-67.87%","D2021","0.82"
+"MYT","Mayotte","SUB-SAHARAN AFRICA","-67.87%","D2022","1.23"
+"MYT","Mayotte","SUB-SAHARAN AFRICA","-67.87%","D2023","0.71"
+"DZA","Algeria","NORTHERN AFRICA","-85.85%","D2019","5.15"
+"DZA","Algeria","NORTHERN AFRICA","-85.85%","D2020","0.65"
+"DZA","Algeria","NORTHERN AFRICA","-85.85%","D2021","0.51"
+"DZA","Algeria","NORTHERN AFRICA","-85.85%","D2022","0.48"
+"DZA","Algeria","NORTHERN AFRICA","-85.85%","D2023","0.73"
+"PYF","French Polynesia","OCEANIA","-84.95%","D2019","4.96"
+"PYF","French Polynesia","OCEANIA","-84.95%","D2020","15.42"
+"PYF","French Polynesia","OCEANIA","-84.95%","D2021","4.20"
+"PYF","French Polynesia","OCEANIA","-84.95%","D2022","0.74"
+"PYF","French Polynesia","OCEANIA","-84.95%","D2023","0.75"
+"JOR","Jordan","NEAR EAST","-57.80%","D2019","1.79"
+"JOR","Jordan","NEAR EAST","-57.80%","D2020","1.03"
+"JOR","Jordan","NEAR EAST","-57.80%","D2021","1.41"
+"JOR","Jordan","NEAR EAST","-57.80%","D2022","0.63"
+"JOR","Jordan","NEAR EAST","-57.80%","D2023","0.76"
+"MOZ","Mozambique","SUB-SAHARAN AFRICA","-93.89%","D2019","12.82"
+"MOZ","Mozambique","SUB-SAHARAN AFRICA","-93.89%","D2020","3.33"
+"MOZ","Mozambique","SUB-SAHARAN AFRICA","-93.89%","D2021","2.79"
+"MOZ","Mozambique","SUB-SAHARAN AFRICA","-93.89%","D2022","1.33"
+"MOZ","Mozambique","SUB-SAHARAN AFRICA","-93.89%","D2023","0.78"
+"HND","Honduras","CENTRAL AMERICA","-83.30%","D2019","4.69"
+"HND","Honduras","CENTRAL AMERICA","-83.30%","D2020","3.12"
+"HND","Honduras","CENTRAL AMERICA","-83.30%","D2021","1.56"
+"HND","Honduras","CENTRAL AMERICA","-83.30%","D2022","0.76"
+"HND","Honduras","CENTRAL AMERICA","-83.30%","D2023","0.78"
+"DOM","Dominican Republic","CARIBBEAN","-38.05%","D2019","1.28"
+"DOM","Dominican Republic","CARIBBEAN","-38.05%","D2020","0.74"
+"DOM","Dominican Republic","CARIBBEAN","-38.05%","D2021","1.51"
+"DOM","Dominican Republic","CARIBBEAN","-38.05%","D2022","0.94"
+"DOM","Dominican Republic","CARIBBEAN","-38.05%","D2023","0.79"
+"BLM","Saint Barthélemy (St. Barts)","CARIBBEAN","-84.05%","D2019","5.04"
+"BLM","Saint Barthélemy (St. Barts)","CARIBBEAN","-84.05%","D2020","4.06"
+"BLM","Saint Barthélemy (St. Barts)","CARIBBEAN","-84.05%","D2021","2.36"
+"BLM","Saint Barthélemy (St. Barts)","CARIBBEAN","-84.05%","D2022","1.55"
+"BLM","Saint Barthélemy (St. Barts)","CARIBBEAN","-84.05%","D2023","0.80"
+"HKG","Hong Kong","ASIA (EX. NEAR EAST)","-88.60%","D2019","7.15"
+"HKG","Hong Kong","ASIA (EX. NEAR EAST)","-88.60%","D2020","2.55"
+"HKG","Hong Kong","ASIA (EX. NEAR EAST)","-88.60%","D2021","2.30"
+"HKG","Hong Kong","ASIA (EX. NEAR EAST)","-88.60%","D2022","1.25"
+"HKG","Hong Kong","ASIA (EX. NEAR EAST)","-88.60%","D2023","0.82"
+"LBY","Libya","NORTHERN AFRICA","-83.07%","D2019","4.87"
+"LBY","Libya","NORTHERN AFRICA","-83.07%","D2020","4.73"
+"LBY","Libya","NORTHERN AFRICA","-83.07%","D2021","0.74"
+"LBY","Libya","NORTHERN AFRICA","-83.07%","D2022","0.61"
+"LBY","Libya","NORTHERN AFRICA","-83.07%","D2023","0.82"
+"TZA","Tanzania","SUB-SAHARAN AFRICA","-77.39%","D2019","3.71"
+"TZA","Tanzania","SUB-SAHARAN AFRICA","-77.39%","D2020","0.73"
+"TZA","Tanzania","SUB-SAHARAN AFRICA","-77.39%","D2021","0.75"
+"TZA","Tanzania","SUB-SAHARAN AFRICA","-77.39%","D2022","0.71"
+"TZA","Tanzania","SUB-SAHARAN AFRICA","-77.39%","D2023","0.84"
+"SVN","Slovenia","EASTERN EUROPE","-61.94%","D2019","2.21"
+"SVN","Slovenia","EASTERN EUROPE","-61.94%","D2020","1.48"
+"SVN","Slovenia","EASTERN EUROPE","-61.94%","D2021","1.72"
+"SVN","Slovenia","EASTERN EUROPE","-61.94%","D2022","1.62"
+"SVN","Slovenia","EASTERN EUROPE","-61.94%","D2023","0.84"
+"MKD","Macedonia","EASTERN EUROPE","-76.20%","D2019","3.62"
+"MKD","Macedonia","EASTERN EUROPE","-76.20%","D2020","1.75"
+"MKD","Macedonia","EASTERN EUROPE","-76.20%","D2021","0.96"
+"MKD","Macedonia","EASTERN EUROPE","-76.20%","D2022","0.92"
+"MKD","Macedonia","EASTERN EUROPE","-76.20%","D2023","0.86"
+"SUR","Suriname","SOUTH AMERICA","-84.39%","D2019","6.08"
+"SUR","Suriname","SOUTH AMERICA","-84.39%","D2020","4.92"
+"SUR","Suriname","SOUTH AMERICA","-84.39%","D2021","1.94"
+"SUR","Suriname","SOUTH AMERICA","-84.39%","D2022","1.78"
+"SUR","Suriname","SOUTH AMERICA","-84.39%","D2023","0.95"
+"ARM","Armenia","CIS (FORMER USSR)","-61.10%","D2019","2.51"
+"ARM","Armenia","CIS (FORMER USSR)","-61.10%","D2020","1.05"
+"ARM","Armenia","CIS (FORMER USSR)","-61.10%","D2021","0.76"
+"ARM","Armenia","CIS (FORMER USSR)","-61.10%","D2022","0.91"
+"ARM","Armenia","CIS (FORMER USSR)","-61.10%","D2023","0.98"
+"MMR","Myanmar","ASIA (EX. NEAR EAST)","13.67%","D2019","0.87"
+"MMR","Myanmar","ASIA (EX. NEAR EAST)","13.67%","D2020","0.78"
+"MMR","Myanmar","ASIA (EX. NEAR EAST)","13.67%","D2021","0.78"
+"MMR","Myanmar","ASIA (EX. NEAR EAST)","13.67%","D2022","1.11"
+"MMR","Myanmar","ASIA (EX. NEAR EAST)","13.67%","D2023","0.99"
+"ECU","Ecuador","SOUTH AMERICA","-85.56%","D2019","6.93"
+"ECU","Ecuador","SOUTH AMERICA","-85.56%","D2020","3.24"
+"ECU","Ecuador","SOUTH AMERICA","-85.56%","D2021","1.06"
+"ECU","Ecuador","SOUTH AMERICA","-85.56%","D2022","1.00"
+"ECU","Ecuador","SOUTH AMERICA","-85.56%","D2023","1.00"
+"AGO","Angola","SUB-SAHARAN AFRICA","-87.33%","D2019","7.95"
+"AGO","Angola","SUB-SAHARAN AFRICA","-87.33%","D2020","5.29"
+"AGO","Angola","SUB-SAHARAN AFRICA","-87.33%","D2021","1.61"
+"AGO","Angola","SUB-SAHARAN AFRICA","-87.33%","D2022","2.67"
+"AGO","Angola","SUB-SAHARAN AFRICA","-87.33%","D2023","1.01"
+"AFG","Afghanistan","ASIA (EX. NEAR EAST)","-36.16%","D2019","1.60"
+"AFG","Afghanistan","ASIA (EX. NEAR EAST)","-36.16%","D2020","1.55"
+"AFG","Afghanistan","ASIA (EX. NEAR EAST)","-36.16%","D2021","1.02"
+"AFG","Afghanistan","ASIA (EX. NEAR EAST)","-36.16%","D2022","0.90"
+"AFG","Afghanistan","ASIA (EX. NEAR EAST)","-36.16%","D2023","1.02"
+"BIH","Bosnia and Herzegovina","EASTERN EUROPE","-66.33%","D2019","3.05"
+"BIH","Bosnia and Herzegovina","EASTERN EUROPE","-66.33%","D2020","3.04"
+"BIH","Bosnia and Herzegovina","EASTERN EUROPE","-66.33%","D2021","2.39"
+"BIH","Bosnia and Herzegovina","EASTERN EUROPE","-66.33%","D2022","3.06"
+"BIH","Bosnia and Herzegovina","EASTERN EUROPE","-66.33%","D2023","1.03"
+"PRY","Paraguay","SOUTH AMERICA","-91.01%","D2019","11.56"
+"PRY","Paraguay","SOUTH AMERICA","-91.01%","D2020","2.30"
+"PRY","Paraguay","SOUTH AMERICA","-91.01%","D2021","2.53"
+"PRY","Paraguay","SOUTH AMERICA","-91.01%","D2022","1.08"
+"PRY","Paraguay","SOUTH AMERICA","-91.01%","D2023","1.04"
+"VEN","Venezuela","SOUTH AMERICA","MISSSING DATA","D2019","NO PACKAGES"
+"VEN","Venezuela","SOUTH AMERICA","MISSSING DATA","D2020","NO PACKAGES"
+"VEN","Venezuela","SOUTH AMERICA","MISSSING DATA","D2021","NO PACKAGES"
+"VEN","Venezuela","SOUTH AMERICA","MISSSING DATA","D2022","2.51"
+"VEN","Venezuela","SOUTH AMERICA","MISSSING DATA","D2023","1.05"
+"VCT","Saint Vincent and the Grenadines","CARIBBEAN","-70.58%","D2019","3.58"
+"VCT","Saint Vincent and the Grenadines","CARIBBEAN","-70.58%","D2020","3.33"
+"VCT","Saint Vincent and the Grenadines","CARIBBEAN","-70.58%","D2021","2.41"
+"VCT","Saint Vincent and the Grenadines","CARIBBEAN","-70.58%","D2022","2.49"
+"VCT","Saint Vincent and the Grenadines","CARIBBEAN","-70.58%","D2023","1.05"
+"IRQ","Iraq","NEAR EAST","-86.65%","D2019","8.00"
+"IRQ","Iraq","NEAR EAST","-86.65%","D2020","4.20"
+"IRQ","Iraq","NEAR EAST","-86.65%","D2021","1.14"
+"IRQ","Iraq","NEAR EAST","-86.65%","D2022","0.68"
+"IRQ","Iraq","NEAR EAST","-86.65%","D2023","1.07"
+"SPM","St. Pierre and Miquelon","CARIBBEAN","MISSSING DATA","D2019","NO PACKAGES"
+"SPM","St. Pierre and Miquelon","CARIBBEAN","MISSSING DATA","D2020","NO PACKAGES"
+"SPM","St. Pierre and Miquelon","CARIBBEAN","MISSSING DATA","D2021","NO PACKAGES"
+"SPM","St. Pierre and Miquelon","CARIBBEAN","MISSSING DATA","D2022","3.00"
+"SPM","St. Pierre and Miquelon","CARIBBEAN","MISSSING DATA","D2023","1.07"
+"SLV","El Salvador","CENTRAL AMERICA","-76.27%","D2019","4.55"
+"SLV","El Salvador","CENTRAL AMERICA","-76.27%","D2020","1.45"
+"SLV","El Salvador","CENTRAL AMERICA","-76.27%","D2021","1.33"
+"SLV","El Salvador","CENTRAL AMERICA","-76.27%","D2022","1.27"
+"SLV","El Salvador","CENTRAL AMERICA","-76.27%","D2023","1.08"
+"ISL","Iceland","WESTERN EUROPE","-71.40%","D2019","3.78"
+"ISL","Iceland","WESTERN EUROPE","-71.40%","D2020","1.46"
+"ISL","Iceland","WESTERN EUROPE","-71.40%","D2021","1.23"
+"ISL","Iceland","WESTERN EUROPE","-71.40%","D2022","1.01"
+"ISL","Iceland","WESTERN EUROPE","-71.40%","D2023","1.08"
+"PSE","Palestine, State of","NEAR EAST","-83.50%","D2019","6.56"
+"PSE","Palestine, State of","NEAR EAST","-83.50%","D2020","3.26"
+"PSE","Palestine, State of","NEAR EAST","-83.50%","D2021","1.71"
+"PSE","Palestine, State of","NEAR EAST","-83.50%","D2022","2.33"
+"PSE","Palestine, State of","NEAR EAST","-83.50%","D2023","1.08"
+"BDI","Burundi","SUB-SAHARAN AFRICA","-94.13%","D2019","18.79"
+"BDI","Burundi","SUB-SAHARAN AFRICA","-94.13%","D2020","2.12"
+"BDI","Burundi","SUB-SAHARAN AFRICA","-94.13%","D2021","2.10"
+"BDI","Burundi","SUB-SAHARAN AFRICA","-94.13%","D2022","1.86"
+"BDI","Burundi","SUB-SAHARAN AFRICA","-94.13%","D2023","1.10"
+"UGA","Uganda","SUB-SAHARAN AFRICA","-77.96%","D2019","5.02"
+"UGA","Uganda","SUB-SAHARAN AFRICA","-77.96%","D2020","1.62"
+"UGA","Uganda","SUB-SAHARAN AFRICA","-77.96%","D2021","1.56"
+"UGA","Uganda","SUB-SAHARAN AFRICA","-77.96%","D2022","1.32"
+"UGA","Uganda","SUB-SAHARAN AFRICA","-77.96%","D2023","1.11"
+"ARG","Argentina","SOUTH AMERICA","-85.03%","D2019","7.40"
+"ARG","Argentina","SOUTH AMERICA","-85.03%","D2020","1.45"
+"ARG","Argentina","SOUTH AMERICA","-85.03%","D2021","2.38"
+"ARG","Argentina","SOUTH AMERICA","-85.03%","D2022","1.48"
+"ARG","Argentina","SOUTH AMERICA","-85.03%","D2023","1.11"
+"DMA","Dominica","CARIBBEAN","-92.40%","D2019","14.60"
+"DMA","Dominica","CARIBBEAN","-92.40%","D2020","4.92"
+"DMA","Dominica","CARIBBEAN","-92.40%","D2021","1.76"
+"DMA","Dominica","CARIBBEAN","-92.40%","D2022","1.14"
+"DMA","Dominica","CARIBBEAN","-92.40%","D2023","1.11"
+"MDG","Madagascar","SUB-SAHARAN AFRICA","-84.52%","D2019","7.24"
+"MDG","Madagascar","SUB-SAHARAN AFRICA","-84.52%","D2020","8.81"
+"MDG","Madagascar","SUB-SAHARAN AFRICA","-84.52%","D2021","5.14"
+"MDG","Madagascar","SUB-SAHARAN AFRICA","-84.52%","D2022","1.52"
+"MDG","Madagascar","SUB-SAHARAN AFRICA","-84.52%","D2023","1.12"
+"EST","Estonia","BALTICS","-68.69%","D2019","3.67"
+"EST","Estonia","BALTICS","-68.69%","D2020","1.27"
+"EST","Estonia","BALTICS","-68.69%","D2021","1.39"
+"EST","Estonia","BALTICS","-68.69%","D2022","1.20"
+"EST","Estonia","BALTICS","-68.69%","D2023","1.15"
+"SDN","Sudan","SUB-SAHARAN AFRICA","71.63%","D2019","0.68"
+"SDN","Sudan","SUB-SAHARAN AFRICA","71.63%","D2020","0.63"
+"SDN","Sudan","SUB-SAHARAN AFRICA","71.63%","D2021","0.27"
+"SDN","Sudan","SUB-SAHARAN AFRICA","71.63%","D2022","0.75"
+"SDN","Sudan","SUB-SAHARAN AFRICA","71.63%","D2023","1.16"
+"GTM","Guatemala","CENTRAL AMERICA","-75.76%","D2019","4.84"
+"GTM","Guatemala","CENTRAL AMERICA","-75.76%","D2020","2.17"
+"GTM","Guatemala","CENTRAL AMERICA","-75.76%","D2021","1.94"
+"GTM","Guatemala","CENTRAL AMERICA","-75.76%","D2022","1.28"
+"GTM","Guatemala","CENTRAL AMERICA","-75.76%","D2023","1.17"
+"CIV","Côte d'Ivoire","SUB-SAHARAN AFRICA","-80.87%","D2019","6.18"
+"CIV","Côte d'Ivoire","SUB-SAHARAN AFRICA","-80.87%","D2020","3.20"
+"CIV","Côte d'Ivoire","SUB-SAHARAN AFRICA","-80.87%","D2021","2.58"
+"CIV","Côte d'Ivoire","SUB-SAHARAN AFRICA","-80.87%","D2022","4.04"
+"CIV","Côte d'Ivoire","SUB-SAHARAN AFRICA","-80.87%","D2023","1.18"
+"HRV","Croatia","EASTERN EUROPE","-70.29%","D2019","4.00"
+"HRV","Croatia","EASTERN EUROPE","-70.29%","D2020","2.48"
+"HRV","Croatia","EASTERN EUROPE","-70.29%","D2021","2.35"
+"HRV","Croatia","EASTERN EUROPE","-70.29%","D2022","1.84"
+"HRV","Croatia","EASTERN EUROPE","-70.29%","D2023","1.19"
+"LIE","Liechtenstein","WESTERN EUROPE","-85.10%","D2019","7.99"
+"LIE","Liechtenstein","WESTERN EUROPE","-85.10%","D2020","4.01"
+"LIE","Liechtenstein","WESTERN EUROPE","-85.10%","D2021","3.10"
+"LIE","Liechtenstein","WESTERN EUROPE","-85.10%","D2022","5.18"
+"LIE","Liechtenstein","WESTERN EUROPE","-85.10%","D2023","1.19"
+"TON","Tonga","OCEANIA","-59.09%","D2019","2.92"
+"TON","Tonga","OCEANIA","-59.09%","D2020","3.41"
+"TON","Tonga","OCEANIA","-59.09%","D2021","1.28"
+"TON","Tonga","OCEANIA","-59.09%","D2022","1.19"
+"TON","Tonga","OCEANIA","-59.09%","D2023","1.19"
+NA,"Namibia","SUB-SAHARAN AFRICA","-89.14%","D2019","11.02"
+NA,"Namibia","SUB-SAHARAN AFRICA","-89.14%","D2020","4.78"
+NA,"Namibia","SUB-SAHARAN AFRICA","-89.14%","D2021","22.37"
+NA,"Namibia","SUB-SAHARAN AFRICA","-89.14%","D2022","2.00"
+NA,"Namibia","SUB-SAHARAN AFRICA","-89.14%","D2023","1.20"
+NA,"Kosovo","EASTERN EUROPE","MISSSING DATA","D2019","NO PACKAGES"
+NA,"Kosovo","EASTERN EUROPE","MISSSING DATA","D2020","NO PACKAGES"
+NA,"Kosovo","EASTERN EUROPE","MISSSING DATA","D2021","NO PACKAGES"
+NA,"Kosovo","EASTERN EUROPE","MISSSING DATA","D2022","1.20"
+NA,"Kosovo","EASTERN EUROPE","MISSSING DATA","D2023","1.25"
+"SWZ","Eswatini","SUB-SAHARAN AFRICA","-76.05%","D2019","5.25"
+"SWZ","Eswatini","SUB-SAHARAN AFRICA","-76.05%","D2020","13.31"
+"SWZ","Eswatini","SUB-SAHARAN AFRICA","-76.05%","D2021","2.24"
+"SWZ","Eswatini","SUB-SAHARAN AFRICA","-76.05%","D2022","0.84"
+"SWZ","Eswatini","SUB-SAHARAN AFRICA","-76.05%","D2023","1.26"
+"LTU","Lithuania","BALTICS","-38.80%","D2019","2.06"
+"LTU","Lithuania","BALTICS","-38.80%","D2020","1.85"
+"LTU","Lithuania","BALTICS","-38.80%","D2021","1.38"
+"LTU","Lithuania","BALTICS","-38.80%","D2022","1.17"
+"LTU","Lithuania","BALTICS","-38.80%","D2023","1.26"
+"DJI","Djibouti","SUB-SAHARAN AFRICA","-96.67%","D2019","37.92"
+"DJI","Djibouti","SUB-SAHARAN AFRICA","-96.67%","D2020","1.12"
+"DJI","Djibouti","SUB-SAHARAN AFRICA","-96.67%","D2021","1.12"
+"DJI","Djibouti","SUB-SAHARAN AFRICA","-96.67%","D2022","1.12"
+"DJI","Djibouti","SUB-SAHARAN AFRICA","-96.67%","D2023","1.26"
+"TUN","Tunisia","NORTHERN AFRICA","-65.21%","D2019","3.67"
+"TUN","Tunisia","NORTHERN AFRICA","-65.21%","D2020","1.37"
+"TUN","Tunisia","NORTHERN AFRICA","-65.21%","D2021","1.09"
+"TUN","Tunisia","NORTHERN AFRICA","-65.21%","D2022","1.21"
+"TUN","Tunisia","NORTHERN AFRICA","-65.21%","D2023","1.28"
+"JEY","Jersey","WESTERN EUROPE","-65.59%","D2019","3.82"
+"JEY","Jersey","WESTERN EUROPE","-65.59%","D2020","1.71"
+"JEY","Jersey","WESTERN EUROPE","-65.59%","D2021","1.32"
+"JEY","Jersey","WESTERN EUROPE","-65.59%","D2022","1.18"
+"JEY","Jersey","WESTERN EUROPE","-65.59%","D2023","1.31"
+"BHR","Bahrain","NEAR EAST","-34.40%","D2019","2.00"
+"BHR","Bahrain","NEAR EAST","-34.40%","D2020","2.27"
+"BHR","Bahrain","NEAR EAST","-34.40%","D2021","2.12"
+"BHR","Bahrain","NEAR EAST","-34.40%","D2022","1.17"
+"BHR","Bahrain","NEAR EAST","-34.40%","D2023","1.31"
+"MRT","Mauritania","NORTHERN AFRICA","-86.14%","D2019","9.49"
+"MRT","Mauritania","NORTHERN AFRICA","-86.14%","D2020","4.63"
+"MRT","Mauritania","NORTHERN AFRICA","-86.14%","D2021","5.56"
+"MRT","Mauritania","NORTHERN AFRICA","-86.14%","D2022","3.00"
+"MRT","Mauritania","NORTHERN AFRICA","-86.14%","D2023","1.32"
+"PNG","Papua New Guinea","OCEANIA","-88.76%","D2019","12.14"
+"PNG","Papua New Guinea","OCEANIA","-88.76%","D2020","5.40"
+"PNG","Papua New Guinea","OCEANIA","-88.76%","D2021","2.26"
+"PNG","Papua New Guinea","OCEANIA","-88.76%","D2022","2.89"
+"PNG","Papua New Guinea","OCEANIA","-88.76%","D2023","1.36"
+"MAC","Macau","ASIA (EX. NEAR EAST)","-91.60%","D2019","17.10"
+"MAC","Macau","ASIA (EX. NEAR EAST)","-91.60%","D2020","2.89"
+"MAC","Macau","ASIA (EX. NEAR EAST)","-91.60%","D2021","1.93"
+"MAC","Macau","ASIA (EX. NEAR EAST)","-91.60%","D2022","1.13"
+"MAC","Macau","ASIA (EX. NEAR EAST)","-91.60%","D2023","1.44"
+"IMN","Isle of Man","WESTERN EUROPE","-56.65%","D2019","3.33"
+"IMN","Isle of Man","WESTERN EUROPE","-56.65%","D2020","1.66"
+"IMN","Isle of Man","WESTERN EUROPE","-56.65%","D2021","1.80"
+"IMN","Isle of Man","WESTERN EUROPE","-56.65%","D2022","2.04"
+"IMN","Isle of Man","WESTERN EUROPE","-56.65%","D2023","1.44"
+"TGO","Togo","SUB-SAHARAN AFRICA","-90.42%","D2019","15.12"
+"TGO","Togo","SUB-SAHARAN AFRICA","-90.42%","D2020","4.50"
+"TGO","Togo","SUB-SAHARAN AFRICA","-90.42%","D2021","4.69"
+"TGO","Togo","SUB-SAHARAN AFRICA","-90.42%","D2022","2.17"
+"TGO","Togo","SUB-SAHARAN AFRICA","-90.42%","D2023","1.45"
+"SAU","Saudi Arabia","NEAR EAST","-73.42%","D2019","5.62"
+"SAU","Saudi Arabia","NEAR EAST","-73.42%","D2020","2.12"
+"SAU","Saudi Arabia","NEAR EAST","-73.42%","D2021","1.47"
+"SAU","Saudi Arabia","NEAR EAST","-73.42%","D2022","1.52"
+"SAU","Saudi Arabia","NEAR EAST","-73.42%","D2023","1.49"
+"IRL","Ireland","WESTERN EUROPE","-62.07%","D2019","3.95"
+"IRL","Ireland","WESTERN EUROPE","-62.07%","D2020","1.36"
+"IRL","Ireland","WESTERN EUROPE","-62.07%","D2021","1.42"
+"IRL","Ireland","WESTERN EUROPE","-62.07%","D2022","1.58"
+"IRL","Ireland","WESTERN EUROPE","-62.07%","D2023","1.50"
+"IRN","Iran","ASIA (EX. NEAR EAST)","-20.14%","D2019","1.88"
+"IRN","Iran","ASIA (EX. NEAR EAST)","-20.14%","D2020","0.75"
+"IRN","Iran","ASIA (EX. NEAR EAST)","-20.14%","D2021","1.52"
+"IRN","Iran","ASIA (EX. NEAR EAST)","-20.14%","D2022","1.31"
+"IRN","Iran","ASIA (EX. NEAR EAST)","-20.14%","D2023","1.50"
+"ASM","American Samoa","OCEANIA","-22.53%","D2019","1.94"
+"ASM","American Samoa","OCEANIA","-22.53%","D2020","2.50"
+"ASM","American Samoa","OCEANIA","-22.53%","D2021","2.00"
+"ASM","American Samoa","OCEANIA","-22.53%","D2022","2.69"
+"ASM","American Samoa","OCEANIA","-22.53%","D2023","1.50"
+"GIN","Guinea","SUB-SAHARAN AFRICA","-66.58%","D2019","4.53"
+"GIN","Guinea","SUB-SAHARAN AFRICA","-66.58%","D2020","2.08"
+"GIN","Guinea","SUB-SAHARAN AFRICA","-66.58%","D2021","1.99"
+"GIN","Guinea","SUB-SAHARAN AFRICA","-66.58%","D2022","1.74"
+"GIN","Guinea","SUB-SAHARAN AFRICA","-66.58%","D2023","1.51"
+"KNA","Saint Kitts and Nevis","CARIBBEAN","-89.65%","D2019","14.90"
+"KNA","Saint Kitts and Nevis","CARIBBEAN","-89.65%","D2020","11.07"
+"KNA","Saint Kitts and Nevis","CARIBBEAN","-89.65%","D2021","3.70"
+"KNA","Saint Kitts and Nevis","CARIBBEAN","-89.65%","D2022","1.85"
+"KNA","Saint Kitts and Nevis","CARIBBEAN","-89.65%","D2023","1.54"
+"VUT","Vanuatu","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"VUT","Vanuatu","OCEANIA","MISSSING DATA","D2020","4.25"
+"VUT","Vanuatu","OCEANIA","MISSSING DATA","D2021","6.06"
+"VUT","Vanuatu","OCEANIA","MISSSING DATA","D2022","1.70"
+"VUT","Vanuatu","OCEANIA","MISSSING DATA","D2023","1.54"
+"ALB","Albania","EASTERN EUROPE","-70.58%","D2019","5.28"
+"ALB","Albania","EASTERN EUROPE","-70.58%","D2020","2.83"
+"ALB","Albania","EASTERN EUROPE","-70.58%","D2021","2.80"
+"ALB","Albania","EASTERN EUROPE","-70.58%","D2022","2.97"
+"ALB","Albania","EASTERN EUROPE","-70.58%","D2023","1.55"
+"LCA","Saint Lucia","CARIBBEAN","-67.43%","D2019","4.84"
+"LCA","Saint Lucia","CARIBBEAN","-67.43%","D2020","3.27"
+"LCA","Saint Lucia","CARIBBEAN","-67.43%","D2021","2.62"
+"LCA","Saint Lucia","CARIBBEAN","-67.43%","D2022","2.98"
+"LCA","Saint Lucia","CARIBBEAN","-67.43%","D2023","1.58"
+"MAF","Saint-Martin (France)","CARIBBEAN","-81.34%","D2019","8.46"
+"MAF","Saint-Martin (France)","CARIBBEAN","-81.34%","D2020","3.32"
+"MAF","Saint-Martin (France)","CARIBBEAN","-81.34%","D2021","3.46"
+"MAF","Saint-Martin (France)","CARIBBEAN","-81.34%","D2022","2.74"
+"MAF","Saint-Martin (France)","CARIBBEAN","-81.34%","D2023","1.58"
+"GNQ","Equatorial Guinea","SUB-SAHARAN AFRICA","-96.65%","D2019","47.39"
+"GNQ","Equatorial Guinea","SUB-SAHARAN AFRICA","-96.65%","D2020","12.78"
+"GNQ","Equatorial Guinea","SUB-SAHARAN AFRICA","-96.65%","D2021","49.67"
+"GNQ","Equatorial Guinea","SUB-SAHARAN AFRICA","-96.65%","D2022","38.45"
+"GNQ","Equatorial Guinea","SUB-SAHARAN AFRICA","-96.65%","D2023","1.59"
+"NLD","The Netherlands","WESTERN EUROPE","-65.20%","D2019","4.62"
+"NLD","The Netherlands","WESTERN EUROPE","-65.20%","D2020","2.98"
+"NLD","The Netherlands","WESTERN EUROPE","-65.20%","D2021","3.11"
+"NLD","The Netherlands","WESTERN EUROPE","-65.20%","D2022","1.90"
+"NLD","The Netherlands","WESTERN EUROPE","-65.20%","D2023","1.61"
+"PAN","Panama","CENTRAL AMERICA","-65.22%","D2019","4.69"
+"PAN","Panama","CENTRAL AMERICA","-65.22%","D2020","6.69"
+"PAN","Panama","CENTRAL AMERICA","-65.22%","D2021","4.49"
+"PAN","Panama","CENTRAL AMERICA","-65.22%","D2022","3.36"
+"PAN","Panama","CENTRAL AMERICA","-65.22%","D2023","1.63"
+"CMR","Cameroon","SUB-SAHARAN AFRICA","-4.60%","D2019","1.71"
+"CMR","Cameroon","SUB-SAHARAN AFRICA","-4.60%","D2020","2.75"
+"CMR","Cameroon","SUB-SAHARAN AFRICA","-4.60%","D2021","0.90"
+"CMR","Cameroon","SUB-SAHARAN AFRICA","-4.60%","D2022","1.53"
+"CMR","Cameroon","SUB-SAHARAN AFRICA","-4.60%","D2023","1.63"
+"SEN","Senegal","SUB-SAHARAN AFRICA","-50.20%","D2019","3.28"
+"SEN","Senegal","SUB-SAHARAN AFRICA","-50.20%","D2020","3.30"
+"SEN","Senegal","SUB-SAHARAN AFRICA","-50.20%","D2021","0.94"
+"SEN","Senegal","SUB-SAHARAN AFRICA","-50.20%","D2022","1.53"
+"SEN","Senegal","SUB-SAHARAN AFRICA","-50.20%","D2023","1.63"
+"NER","Niger","SUB-SAHARAN AFRICA","-93.59%","D2019","25.52"
+"NER","Niger","SUB-SAHARAN AFRICA","-93.59%","D2020","3.30"
+"NER","Niger","SUB-SAHARAN AFRICA","-93.59%","D2021","1.28"
+"NER","Niger","SUB-SAHARAN AFRICA","-93.59%","D2022","1.85"
+"NER","Niger","SUB-SAHARAN AFRICA","-93.59%","D2023","1.63"
+"TJK","Tajikistan","CIS (FORMER USSR)","-59.72%","D2019","4.10"
+"TJK","Tajikistan","CIS (FORMER USSR)","-59.72%","D2020","4.65"
+"TJK","Tajikistan","CIS (FORMER USSR)","-59.72%","D2021","2.60"
+"TJK","Tajikistan","CIS (FORMER USSR)","-59.72%","D2022","1.94"
+"TJK","Tajikistan","CIS (FORMER USSR)","-59.72%","D2023","1.65"
+"GGY","Guernsey","WESTERN EUROPE","-44.54%","D2019","3.05"
+"GGY","Guernsey","WESTERN EUROPE","-44.54%","D2020","1.24"
+"GGY","Guernsey","WESTERN EUROPE","-44.54%","D2021","1.46"
+"GGY","Guernsey","WESTERN EUROPE","-44.54%","D2022","1.43"
+"GGY","Guernsey","WESTERN EUROPE","-44.54%","D2023","1.69"
+"LUX","Luxembourg","WESTERN EUROPE","-87.79%","D2019","13.95"
+"LUX","Luxembourg","WESTERN EUROPE","-87.79%","D2020","3.89"
+"LUX","Luxembourg","WESTERN EUROPE","-87.79%","D2021","3.00"
+"LUX","Luxembourg","WESTERN EUROPE","-87.79%","D2022","2.23"
+"LUX","Luxembourg","WESTERN EUROPE","-87.79%","D2023","1.70"
+"HUN","Hungary","EASTERN EUROPE","-41.04%","D2019","2.91"
+"HUN","Hungary","EASTERN EUROPE","-41.04%","D2020","5.32"
+"HUN","Hungary","EASTERN EUROPE","-41.04%","D2021","1.70"
+"HUN","Hungary","EASTERN EUROPE","-41.04%","D2022","1.27"
+"HUN","Hungary","EASTERN EUROPE","-41.04%","D2023","1.71"
+"AZE","Azerbaijan","CIS (FORMER USSR)","-72.52%","D2019","6.42"
+"AZE","Azerbaijan","CIS (FORMER USSR)","-72.52%","D2020","1.86"
+"AZE","Azerbaijan","CIS (FORMER USSR)","-72.52%","D2021","1.82"
+"AZE","Azerbaijan","CIS (FORMER USSR)","-72.52%","D2022","1.76"
+"AZE","Azerbaijan","CIS (FORMER USSR)","-72.52%","D2023","1.76"
+"PRT","Portugal","WESTERN EUROPE","-87.23%","D2019","13.98"
+"PRT","Portugal","WESTERN EUROPE","-87.23%","D2020","4.97"
+"PRT","Portugal","WESTERN EUROPE","-87.23%","D2021","3.85"
+"PRT","Portugal","WESTERN EUROPE","-87.23%","D2022","4.56"
+"PRT","Portugal","WESTERN EUROPE","-87.23%","D2023","1.79"
+"ZAF","South Africa","SUB-SAHARAN AFRICA","-76.73%","D2019","7.77"
+"ZAF","South Africa","SUB-SAHARAN AFRICA","-76.73%","D2020","4.30"
+"ZAF","South Africa","SUB-SAHARAN AFRICA","-76.73%","D2021","2.67"
+"ZAF","South Africa","SUB-SAHARAN AFRICA","-76.73%","D2022","2.30"
+"ZAF","South Africa","SUB-SAHARAN AFRICA","-76.73%","D2023","1.81"
+"GRD","Grenada","CARIBBEAN","-84.93%","D2019","12.00"
+"GRD","Grenada","CARIBBEAN","-84.93%","D2020","5.37"
+"GRD","Grenada","CARIBBEAN","-84.93%","D2021","2.44"
+"GRD","Grenada","CARIBBEAN","-84.93%","D2022","2.59"
+"GRD","Grenada","CARIBBEAN","-84.93%","D2023","1.81"
+"ABW","Aruba","CARIBBEAN","-66.62%","D2019","5.56"
+"ABW","Aruba","CARIBBEAN","-66.62%","D2020","9.11"
+"ABW","Aruba","CARIBBEAN","-66.62%","D2021","4.44"
+"ABW","Aruba","CARIBBEAN","-66.62%","D2022","6.64"
+"ABW","Aruba","CARIBBEAN","-66.62%","D2023","1.85"
+"CRI","Costa Rica","CENTRAL AMERICA","-61.93%","D2019","4.89"
+"CRI","Costa Rica","CENTRAL AMERICA","-61.93%","D2020","2.74"
+"CRI","Costa Rica","CENTRAL AMERICA","-61.93%","D2021","2.36"
+"CRI","Costa Rica","CENTRAL AMERICA","-61.93%","D2022","2.33"
+"CRI","Costa Rica","CENTRAL AMERICA","-61.93%","D2023","1.86"
+"BOL","Bolivia","SOUTH AMERICA","-68.87%","D2019","5.99"
+"BOL","Bolivia","SOUTH AMERICA","-68.87%","D2020","5.09"
+"BOL","Bolivia","SOUTH AMERICA","-68.87%","D2021","2.18"
+"BOL","Bolivia","SOUTH AMERICA","-68.87%","D2022","2.60"
+"BOL","Bolivia","SOUTH AMERICA","-68.87%","D2023","1.87"
+"AIA","Anguilla","CARIBBEAN","-86.65%","D2019","14.12"
+"AIA","Anguilla","CARIBBEAN","-86.65%","D2020","5.92"
+"AIA","Anguilla","CARIBBEAN","-86.65%","D2021","3.85"
+"AIA","Anguilla","CARIBBEAN","-86.65%","D2022","4.47"
+"AIA","Anguilla","CARIBBEAN","-86.65%","D2023","1.88"
+"BRN","Brunei Darussalam","ASIA (EX. NEAR EAST)","-77.74%","D2019","8.51"
+"BRN","Brunei Darussalam","ASIA (EX. NEAR EAST)","-77.74%","D2020","2.64"
+"BRN","Brunei Darussalam","ASIA (EX. NEAR EAST)","-77.74%","D2021","2.23"
+"BRN","Brunei Darussalam","ASIA (EX. NEAR EAST)","-77.74%","D2022","1.70"
+"BRN","Brunei Darussalam","ASIA (EX. NEAR EAST)","-77.74%","D2023","1.89"
+"GEO","Georgia","CIS (FORMER USSR)","-66.10%","D2019","5.63"
+"GEO","Georgia","CIS (FORMER USSR)","-66.10%","D2020","0.93"
+"GEO","Georgia","CIS (FORMER USSR)","-66.10%","D2021","1.80"
+"GEO","Georgia","CIS (FORMER USSR)","-66.10%","D2022","1.03"
+"GEO","Georgia","CIS (FORMER USSR)","-66.10%","D2023","1.91"
+"LBN","Lebanon","NEAR EAST","-67.23%","D2019","5.84"
+"LBN","Lebanon","NEAR EAST","-67.23%","D2020","3.82"
+"LBN","Lebanon","NEAR EAST","-67.23%","D2021","4.81"
+"LBN","Lebanon","NEAR EAST","-67.23%","D2022","3.67"
+"LBN","Lebanon","NEAR EAST","-67.23%","D2023","1.91"
+"TLS","Timor-Leste","ASIA (EX. NEAR EAST)","-57.10%","D2019","4.48"
+"TLS","Timor-Leste","ASIA (EX. NEAR EAST)","-57.10%","D2020","2.08"
+"TLS","Timor-Leste","ASIA (EX. NEAR EAST)","-57.10%","D2021","1.67"
+"TLS","Timor-Leste","ASIA (EX. NEAR EAST)","-57.10%","D2022","2.33"
+"TLS","Timor-Leste","ASIA (EX. NEAR EAST)","-57.10%","D2023","1.92"
+"OMN","Oman","NEAR EAST","-82.73%","D2019","11.28"
+"OMN","Oman","NEAR EAST","-82.73%","D2020","4.58"
+"OMN","Oman","NEAR EAST","-82.73%","D2021","2.12"
+"OMN","Oman","NEAR EAST","-82.73%","D2022","3.19"
+"OMN","Oman","NEAR EAST","-82.73%","D2023","1.95"
+"LSO","Lesotho","SUB-SAHARAN AFRICA","-72.81%","D2019","7.19"
+"LSO","Lesotho","SUB-SAHARAN AFRICA","-72.81%","D2020","2.13"
+"LSO","Lesotho","SUB-SAHARAN AFRICA","-72.81%","D2021","2.66"
+"LSO","Lesotho","SUB-SAHARAN AFRICA","-72.81%","D2022","2.42"
+"LSO","Lesotho","SUB-SAHARAN AFRICA","-72.81%","D2023","1.96"
+"BWA","Botswana","SUB-SAHARAN AFRICA","-88.15%","D2019","16.79"
+"BWA","Botswana","SUB-SAHARAN AFRICA","-88.15%","D2020","13.87"
+"BWA","Botswana","SUB-SAHARAN AFRICA","-88.15%","D2021","3.92"
+"BWA","Botswana","SUB-SAHARAN AFRICA","-88.15%","D2022","2.22"
+"BWA","Botswana","SUB-SAHARAN AFRICA","-88.15%","D2023","1.99"
+"MEX","Mexico","CENTRAL AMERICA","-86.48%","D2019","15.05"
+"MEX","Mexico","CENTRAL AMERICA","-86.48%","D2020","4.77"
+"MEX","Mexico","CENTRAL AMERICA","-86.48%","D2021","3.62"
+"MEX","Mexico","CENTRAL AMERICA","-86.48%","D2022","3.10"
+"MEX","Mexico","CENTRAL AMERICA","-86.48%","D2023","2.03"
+"DEU","Germany","WESTERN EUROPE","-69.24%","D2019","6.96"
+"DEU","Germany","WESTERN EUROPE","-69.24%","D2020","4.06"
+"DEU","Germany","WESTERN EUROPE","-69.24%","D2021","3.38"
+"DEU","Germany","WESTERN EUROPE","-69.24%","D2022","2.96"
+"DEU","Germany","WESTERN EUROPE","-69.24%","D2023","2.14"
+"MDV","Maldives","ASIA (EX. NEAR EAST)","-62.76%","D2019","5.79"
+"MDV","Maldives","ASIA (EX. NEAR EAST)","-62.76%","D2020","3.88"
+"MDV","Maldives","ASIA (EX. NEAR EAST)","-62.76%","D2021","3.24"
+"MDV","Maldives","ASIA (EX. NEAR EAST)","-62.76%","D2022","2.63"
+"MDV","Maldives","ASIA (EX. NEAR EAST)","-62.76%","D2023","2.16"
+"COM","Comoros","SUB-SAHARAN AFRICA","-58.69%","D2019","5.27"
+"COM","Comoros","SUB-SAHARAN AFRICA","-58.69%","D2020","4.38"
+"COM","Comoros","SUB-SAHARAN AFRICA","-58.69%","D2021","3.21"
+"COM","Comoros","SUB-SAHARAN AFRICA","-58.69%","D2022","1.08"
+"COM","Comoros","SUB-SAHARAN AFRICA","-58.69%","D2023","2.18"
+"BEL","Belgium","WESTERN EUROPE","-28.56%","D2019","3.12"
+"BEL","Belgium","WESTERN EUROPE","-28.56%","D2020","4.88"
+"BEL","Belgium","WESTERN EUROPE","-28.56%","D2021","5.28"
+"BEL","Belgium","WESTERN EUROPE","-28.56%","D2022","3.83"
+"BEL","Belgium","WESTERN EUROPE","-28.56%","D2023","2.23"
+"FRO","Faroe Islands","WESTERN EUROPE","-77.14%","D2019","9.78"
+"FRO","Faroe Islands","WESTERN EUROPE","-77.14%","D2020","2.41"
+"FRO","Faroe Islands","WESTERN EUROPE","-77.14%","D2021","2.64"
+"FRO","Faroe Islands","WESTERN EUROPE","-77.14%","D2022","1.96"
+"FRO","Faroe Islands","WESTERN EUROPE","-77.14%","D2023","2.24"
+"PLW","Palau","OCEANIA","-73.02%","D2019","8.34"
+"PLW","Palau","OCEANIA","-73.02%","D2020","2.50"
+"PLW","Palau","OCEANIA","-73.02%","D2021","1.67"
+"PLW","Palau","OCEANIA","-73.02%","D2022","1.67"
+"PLW","Palau","OCEANIA","-73.02%","D2023","2.25"
+"MSR","Montserrat","CARIBBEAN","-54.02%","D2019","4.92"
+"MSR","Montserrat","CARIBBEAN","-54.02%","D2020","8.33"
+"MSR","Montserrat","CARIBBEAN","-54.02%","D2021","4.01"
+"MSR","Montserrat","CARIBBEAN","-54.02%","D2022","2.76"
+"MSR","Montserrat","CARIBBEAN","-54.02%","D2023","2.26"
+"SWE","Sweden","WESTERN EUROPE","-36.15%","D2019","3.66"
+"SWE","Sweden","WESTERN EUROPE","-36.15%","D2020","2.07"
+"SWE","Sweden","WESTERN EUROPE","-36.15%","D2021","1.45"
+"SWE","Sweden","WESTERN EUROPE","-36.15%","D2022","1.88"
+"SWE","Sweden","WESTERN EUROPE","-36.15%","D2023","2.33"
+"MLT","Malta","WESTERN EUROPE","-82.01%","D2019","13.10"
+"MLT","Malta","WESTERN EUROPE","-82.01%","D2020","3.62"
+"MLT","Malta","WESTERN EUROPE","-82.01%","D2021","2.01"
+"MLT","Malta","WESTERN EUROPE","-82.01%","D2022","3.36"
+"MLT","Malta","WESTERN EUROPE","-82.01%","D2023","2.36"
+"GUY","Guyana","SOUTH AMERICA","-80.82%","D2019","12.30"
+"GUY","Guyana","SOUTH AMERICA","-80.82%","D2020","5.46"
+"GUY","Guyana","SOUTH AMERICA","-80.82%","D2021","5.25"
+"GUY","Guyana","SOUTH AMERICA","-80.82%","D2022","5.46"
+"GUY","Guyana","SOUTH AMERICA","-80.82%","D2023","2.36"
+"BEN","Benin","SUB-SAHARAN AFRICA","-88.72%","D2019","20.99"
+"BEN","Benin","SUB-SAHARAN AFRICA","-88.72%","D2020","27.22"
+"BEN","Benin","SUB-SAHARAN AFRICA","-88.72%","D2021","3.61"
+"BEN","Benin","SUB-SAHARAN AFRICA","-88.72%","D2022","2.61"
+"BEN","Benin","SUB-SAHARAN AFRICA","-88.72%","D2023","2.37"
+"QAT","Qatar","NEAR EAST","-80.88%","D2019","12.57"
+"QAT","Qatar","NEAR EAST","-80.88%","D2020","4.12"
+"QAT","Qatar","NEAR EAST","-80.88%","D2021","3.20"
+"QAT","Qatar","NEAR EAST","-80.88%","D2022","12.66"
+"QAT","Qatar","NEAR EAST","-80.88%","D2023","2.40"
+"STP","São Tomé and Príncipe","SUB-SAHARAN AFRICA","-92.40%","D2019","31.68"
+"STP","São Tomé and Príncipe","SUB-SAHARAN AFRICA","-92.40%","D2020","28.26"
+"STP","São Tomé and Príncipe","SUB-SAHARAN AFRICA","-92.40%","D2021","30.97"
+"STP","São Tomé and Príncipe","SUB-SAHARAN AFRICA","-92.40%","D2022","28.54"
+"STP","São Tomé and Príncipe","SUB-SAHARAN AFRICA","-92.40%","D2023","2.41"
+"CYP","Cyprus","NEAR EAST","-88.10%","D2019","20.25"
+"CYP","Cyprus","NEAR EAST","-88.10%","D2020","13.56"
+"CYP","Cyprus","NEAR EAST","-88.10%","D2021","8.84"
+"CYP","Cyprus","NEAR EAST","-88.10%","D2022","6.74"
+"CYP","Cyprus","NEAR EAST","-88.10%","D2023","2.41"
+"LBR","Liberia","SUB-SAHARAN AFRICA","-33.39%","D2019","3.75"
+"LBR","Liberia","SUB-SAHARAN AFRICA","-33.39%","D2020","3.25"
+"LBR","Liberia","SUB-SAHARAN AFRICA","-33.39%","D2021","2.59"
+"LBR","Liberia","SUB-SAHARAN AFRICA","-33.39%","D2022","2.92"
+"LBR","Liberia","SUB-SAHARAN AFRICA","-33.39%","D2023","2.50"
+"GUM","Guam","OCEANIA","-41.36%","D2019","4.26"
+"GUM","Guam","OCEANIA","-41.36%","D2020","2.00"
+"GUM","Guam","OCEANIA","-41.36%","D2021","2.14"
+"GUM","Guam","OCEANIA","-41.36%","D2022","2.27"
+"GUM","Guam","OCEANIA","-41.36%","D2023","2.50"
+"PRI","Puerto Rico","CARIBBEAN","-82.32%","D2019","14.61"
+"PRI","Puerto Rico","CARIBBEAN","-82.32%","D2020","9.17"
+"PRI","Puerto Rico","CARIBBEAN","-82.32%","D2021","4.00"
+"PRI","Puerto Rico","CARIBBEAN","-82.32%","D2022","1.93"
+"PRI","Puerto Rico","CARIBBEAN","-82.32%","D2023","2.58"
+"COK","Cook Islands","OCEANIA","-52.83%","D2019","5.56"
+"COK","Cook Islands","OCEANIA","-52.83%","D2020","NO PACKAGES"
+"COK","Cook Islands","OCEANIA","-52.83%","D2021","3.50"
+"COK","Cook Islands","OCEANIA","-52.83%","D2022","3.00"
+"COK","Cook Islands","OCEANIA","-52.83%","D2023","2.62"
+"MNP","Northern Mariana Islands","OCEANIA","-79.44%","D2019","12.97"
+"MNP","Northern Mariana Islands","OCEANIA","-79.44%","D2020","2.65"
+"MNP","Northern Mariana Islands","OCEANIA","-79.44%","D2021","2.15"
+"MNP","Northern Mariana Islands","OCEANIA","-79.44%","D2022","2.71"
+"MNP","Northern Mariana Islands","OCEANIA","-79.44%","D2023","2.67"
+"SVK","Slovakia","EASTERN EUROPE","-63.68%","D2019","7.38"
+"SVK","Slovakia","EASTERN EUROPE","-63.68%","D2020","3.84"
+"SVK","Slovakia","EASTERN EUROPE","-63.68%","D2021","3.55"
+"SVK","Slovakia","EASTERN EUROPE","-63.68%","D2022","2.82"
+"SVK","Slovakia","EASTERN EUROPE","-63.68%","D2023","2.68"
+"CUW","Curaçao","CARIBBEAN","-84.16%","D2019","16.91"
+"CUW","Curaçao","CARIBBEAN","-84.16%","D2020","11.06"
+"CUW","Curaçao","CARIBBEAN","-84.16%","D2021","6.47"
+"CUW","Curaçao","CARIBBEAN","-84.16%","D2022","9.57"
+"CUW","Curaçao","CARIBBEAN","-84.16%","D2023","2.68"
+"BES","Caribbean Netherlands","CARIBBEAN","-71.67%","D2019","9.57"
+"BES","Caribbean Netherlands","CARIBBEAN","-71.67%","D2020","9.95"
+"BES","Caribbean Netherlands","CARIBBEAN","-71.67%","D2021","10.94"
+"BES","Caribbean Netherlands","CARIBBEAN","-71.67%","D2022","8.57"
+"BES","Caribbean Netherlands","CARIBBEAN","-71.67%","D2023","2.71"
+"CUB","Cuba","CARIBBEAN","MISSSING DATA","D2019","NO PACKAGES"
+"CUB","Cuba","CARIBBEAN","MISSSING DATA","D2020","13.33"
+"CUB","Cuba","CARIBBEAN","MISSSING DATA","D2021","7.50"
+"CUB","Cuba","CARIBBEAN","MISSSING DATA","D2022","4.04"
+"CUB","Cuba","CARIBBEAN","MISSSING DATA","D2023","2.71"
+"GNB","Guinea-Bissau","SUB-SAHARAN AFRICA","-76.73%","D2019","11.71"
+"GNB","Guinea-Bissau","SUB-SAHARAN AFRICA","-76.73%","D2020","4.12"
+"GNB","Guinea-Bissau","SUB-SAHARAN AFRICA","-76.73%","D2021","4.41"
+"GNB","Guinea-Bissau","SUB-SAHARAN AFRICA","-76.73%","D2022","1.53"
+"GNB","Guinea-Bissau","SUB-SAHARAN AFRICA","-76.73%","D2023","2.72"
+"BRB","Barbados","CARIBBEAN","-82.64%","D2019","15.82"
+"BRB","Barbados","CARIBBEAN","-82.64%","D2020","9.32"
+"BRB","Barbados","CARIBBEAN","-82.64%","D2021","6.79"
+"BRB","Barbados","CARIBBEAN","-82.64%","D2022","12.55"
+"BRB","Barbados","CARIBBEAN","-82.64%","D2023","2.75"
+"SXM","Sint Maarten","CARIBBEAN","-87.19%","D2019","21.64"
+"SXM","Sint Maarten","CARIBBEAN","-87.19%","D2020","4.66"
+"SXM","Sint Maarten","CARIBBEAN","-87.19%","D2021","4.17"
+"SXM","Sint Maarten","CARIBBEAN","-87.19%","D2022","4.29"
+"SXM","Sint Maarten","CARIBBEAN","-87.19%","D2023","2.77"
+"GRC","Greece","WESTERN EUROPE","-43.25%","D2019","4.91"
+"GRC","Greece","WESTERN EUROPE","-43.25%","D2020","12.06"
+"GRC","Greece","WESTERN EUROPE","-43.25%","D2021","8.16"
+"GRC","Greece","WESTERN EUROPE","-43.25%","D2022","6.72"
+"GRC","Greece","WESTERN EUROPE","-43.25%","D2023","2.79"
+"BLZ","Belize","CENTRAL AMERICA","-33.63%","D2019","4.39"
+"BLZ","Belize","CENTRAL AMERICA","-33.63%","D2020","3.25"
+"BLZ","Belize","CENTRAL AMERICA","-33.63%","D2021","2.97"
+"BLZ","Belize","CENTRAL AMERICA","-33.63%","D2022","3.20"
+"BLZ","Belize","CENTRAL AMERICA","-33.63%","D2023","2.92"
+"CCK","Cocos (Keeling) Islands","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"CCK","Cocos (Keeling) Islands","OCEANIA","MISSSING DATA","D2020","16.98"
+"CCK","Cocos (Keeling) Islands","OCEANIA","MISSSING DATA","D2021","13.47"
+"CCK","Cocos (Keeling) Islands","OCEANIA","MISSSING DATA","D2022","4.26"
+"CCK","Cocos (Keeling) Islands","OCEANIA","MISSSING DATA","D2023","3.03"
+"NRU","Nauru","OCEANIA","-89.02%","D2019","28.13"
+"NRU","Nauru","OCEANIA","-89.02%","D2020","30.47"
+"NRU","Nauru","OCEANIA","-89.02%","D2021","7.62"
+"NRU","Nauru","OCEANIA","-89.02%","D2022","6.76"
+"NRU","Nauru","OCEANIA","-89.02%","D2023","3.09"
+"CZE","Czech Republic","EASTERN EUROPE","-90.46%","D2019","32.71"
+"CZE","Czech Republic","EASTERN EUROPE","-90.46%","D2020","7.95"
+"CZE","Czech Republic","EASTERN EUROPE","-90.46%","D2021","8.15"
+"CZE","Czech Republic","EASTERN EUROPE","-90.46%","D2022","3.95"
+"CZE","Czech Republic","EASTERN EUROPE","-90.46%","D2023","3.12"
+"NIU","Niue","OCEANIA","-65.87%","D2019","9.20"
+"NIU","Niue","OCEANIA","-65.87%","D2020","4.50"
+"NIU","Niue","OCEANIA","-65.87%","D2021","7.37"
+"NIU","Niue","OCEANIA","-65.87%","D2022","41.06"
+"NIU","Niue","OCEANIA","-65.87%","D2023","3.14"
+"KIR","Kiribati","OCEANIA","-71.09%","D2019","11.05"
+"KIR","Kiribati","OCEANIA","-71.09%","D2020","10.50"
+"KIR","Kiribati","OCEANIA","-71.09%","D2021","9.94"
+"KIR","Kiribati","OCEANIA","-71.09%","D2022","4.30"
+"KIR","Kiribati","OCEANIA","-71.09%","D2023","3.19"
+"ATG","Antigua and Barbuda","CARIBBEAN","-74.77%","D2019","12.70"
+"ATG","Antigua and Barbuda","CARIBBEAN","-74.77%","D2020","7.17"
+"ATG","Antigua and Barbuda","CARIBBEAN","-74.77%","D2021","4.44"
+"ATG","Antigua and Barbuda","CARIBBEAN","-74.77%","D2022","5.25"
+"ATG","Antigua and Barbuda","CARIBBEAN","-74.77%","D2023","3.20"
+"LVA","Latvia","BALTICS","-82.29%","D2019","18.12"
+"LVA","Latvia","BALTICS","-82.29%","D2020","3.79"
+"LVA","Latvia","BALTICS","-82.29%","D2021","3.49"
+"LVA","Latvia","BALTICS","-82.29%","D2022","3.85"
+"LVA","Latvia","BALTICS","-82.29%","D2023","3.21"
+"CPV","Cape Verde","SUB-SAHARAN AFRICA","-23.78%","D2019","4.25"
+"CPV","Cape Verde","SUB-SAHARAN AFRICA","-23.78%","D2020","4.81"
+"CPV","Cape Verde","SUB-SAHARAN AFRICA","-23.78%","D2021","4.78"
+"CPV","Cape Verde","SUB-SAHARAN AFRICA","-23.78%","D2022","5.34"
+"CPV","Cape Verde","SUB-SAHARAN AFRICA","-23.78%","D2023","3.24"
+"BFA","Burkina Faso","SUB-SAHARAN AFRICA","-68.13%","D2019","10.26"
+"BFA","Burkina Faso","SUB-SAHARAN AFRICA","-68.13%","D2020","2.47"
+"BFA","Burkina Faso","SUB-SAHARAN AFRICA","-68.13%","D2021","4.52"
+"BFA","Burkina Faso","SUB-SAHARAN AFRICA","-68.13%","D2022","4.60"
+"BFA","Burkina Faso","SUB-SAHARAN AFRICA","-68.13%","D2023","3.27"
+"BMU","Bermuda","NORTHERN AMERICA","-90.95%","D2019","37.74"
+"BMU","Bermuda","NORTHERN AMERICA","-90.95%","D2020","28.75"
+"BMU","Bermuda","NORTHERN AMERICA","-90.95%","D2021","19.80"
+"BMU","Bermuda","NORTHERN AMERICA","-90.95%","D2022","6.01"
+"BMU","Bermuda","NORTHERN AMERICA","-90.95%","D2023","3.42"
+"JPN","Japan","ASIA (EX. NEAR EAST)","-66.51%","D2019","10.40"
+"JPN","Japan","ASIA (EX. NEAR EAST)","-66.51%","D2020","3.91"
+"JPN","Japan","ASIA (EX. NEAR EAST)","-66.51%","D2021","3.38"
+"JPN","Japan","ASIA (EX. NEAR EAST)","-66.51%","D2022","5.00"
+"JPN","Japan","ASIA (EX. NEAR EAST)","-66.51%","D2023","3.48"
+"GMB","Gambia","SUB-SAHARAN AFRICA","-48.35%","D2019","6.89"
+"GMB","Gambia","SUB-SAHARAN AFRICA","-48.35%","D2020","5.10"
+"GMB","Gambia","SUB-SAHARAN AFRICA","-48.35%","D2021","5.86"
+"GMB","Gambia","SUB-SAHARAN AFRICA","-48.35%","D2022","5.72"
+"GMB","Gambia","SUB-SAHARAN AFRICA","-48.35%","D2023","3.56"
+"GRL","Greenland","NORTHERN AMERICA","-67.77%","D2019","11.12"
+"GRL","Greenland","NORTHERN AMERICA","-67.77%","D2020","9.56"
+"GRL","Greenland","NORTHERN AMERICA","-67.77%","D2021","3.97"
+"GRL","Greenland","NORTHERN AMERICA","-67.77%","D2022","4.44"
+"GRL","Greenland","NORTHERN AMERICA","-67.77%","D2023","3.58"
+"NCL","New Caledonia","OCEANIA","-47.83%","D2019","7.21"
+"NCL","New Caledonia","OCEANIA","-47.83%","D2020","4.81"
+"NCL","New Caledonia","OCEANIA","-47.83%","D2021","6.49"
+"NCL","New Caledonia","OCEANIA","-47.83%","D2022","6.51"
+"NCL","New Caledonia","OCEANIA","-47.83%","D2023","3.76"
+"NOR","Norway","WESTERN EUROPE","-23.63%","D2019","5.33"
+"NOR","Norway","WESTERN EUROPE","-23.63%","D2020","5.28"
+"NOR","Norway","WESTERN EUROPE","-23.63%","D2021","5.81"
+"NOR","Norway","WESTERN EUROPE","-23.63%","D2022","5.36"
+"NOR","Norway","WESTERN EUROPE","-23.63%","D2023","4.07"
+"GAB","Gabon","SUB-SAHARAN AFRICA","20.64%","D2019","3.39"
+"GAB","Gabon","SUB-SAHARAN AFRICA","20.64%","D2020","4.89"
+"GAB","Gabon","SUB-SAHARAN AFRICA","20.64%","D2021","4.82"
+"GAB","Gabon","SUB-SAHARAN AFRICA","20.64%","D2022","5.00"
+"GAB","Gabon","SUB-SAHARAN AFRICA","20.64%","D2023","4.09"
+"TCD","Chad","SUB-SAHARAN AFRICA","-82.48%","D2019","23.33"
+"TCD","Chad","SUB-SAHARAN AFRICA","-82.48%","D2020","23.33"
+"TCD","Chad","SUB-SAHARAN AFRICA","-82.48%","D2021","23.33"
+"TCD","Chad","SUB-SAHARAN AFRICA","-82.48%","D2022","6.34"
+"TCD","Chad","SUB-SAHARAN AFRICA","-82.48%","D2023","4.09"
+"VIR","Virgin Islands (U.S.)","CARIBBEAN","-12.94%","D2019","4.97"
+"VIR","Virgin Islands (U.S.)","CARIBBEAN","-12.94%","D2020","4.67"
+"VIR","Virgin Islands (U.S.)","CARIBBEAN","-12.94%","D2021","2.00"
+"VIR","Virgin Islands (U.S.)","CARIBBEAN","-12.94%","D2022","5.62"
+"VIR","Virgin Islands (U.S.)","CARIBBEAN","-12.94%","D2023","4.33"
+"IOT","British Indian Ocean Territory","ASIA (EX. NEAR EAST)","-52.25%","D2019","9.31"
+"IOT","British Indian Ocean Territory","ASIA (EX. NEAR EAST)","-52.25%","D2020","7.50"
+"IOT","British Indian Ocean Territory","ASIA (EX. NEAR EAST)","-52.25%","D2021","7.50"
+"IOT","British Indian Ocean Territory","ASIA (EX. NEAR EAST)","-52.25%","D2022","6.15"
+"IOT","British Indian Ocean Territory","ASIA (EX. NEAR EAST)","-52.25%","D2023","4.44"
+"MLI","Mali","SUB-SAHARAN AFRICA","-63.15%","D2019","12.37"
+"MLI","Mali","SUB-SAHARAN AFRICA","-63.15%","D2020","4.12"
+"MLI","Mali","SUB-SAHARAN AFRICA","-63.15%","D2021","3.28"
+"MLI","Mali","SUB-SAHARAN AFRICA","-63.15%","D2022","3.01"
+"MLI","Mali","SUB-SAHARAN AFRICA","-63.15%","D2023","4.56"
+"ARE","United Arab Emirates","NEAR EAST","-54.95%","D2019","10.23"
+"ARE","United Arab Emirates","NEAR EAST","-54.95%","D2020","3.78"
+"ARE","United Arab Emirates","NEAR EAST","-54.95%","D2021","7.62"
+"ARE","United Arab Emirates","NEAR EAST","-54.95%","D2022","5.30"
+"ARE","United Arab Emirates","NEAR EAST","-54.95%","D2023","4.61"
+"AND","Andorra","WESTERN EUROPE","-61.68%","D2019","12.58"
+"AND","Andorra","WESTERN EUROPE","-61.68%","D2020","9.54"
+"AND","Andorra","WESTERN EUROPE","-61.68%","D2021","7.49"
+"AND","Andorra","WESTERN EUROPE","-61.68%","D2022","8.93"
+"AND","Andorra","WESTERN EUROPE","-61.68%","D2023","4.82"
+"BHS","Bahamas","CARIBBEAN","0.97%","D2019","4.94"
+"BHS","Bahamas","CARIBBEAN","0.97%","D2020","6.02"
+"BHS","Bahamas","CARIBBEAN","0.97%","D2021","5.98"
+"BHS","Bahamas","CARIBBEAN","0.97%","D2022","6.87"
+"BHS","Bahamas","CARIBBEAN","0.97%","D2023","4.99"
+"KOR","South Korea","ASIA (EX. NEAR EAST)","-45.58%","D2019","9.21"
+"KOR","South Korea","ASIA (EX. NEAR EAST)","-45.58%","D2020","10.94"
+"KOR","South Korea","ASIA (EX. NEAR EAST)","-45.58%","D2021","4.72"
+"KOR","South Korea","ASIA (EX. NEAR EAST)","-45.58%","D2022","2.05"
+"KOR","South Korea","ASIA (EX. NEAR EAST)","-45.58%","D2023","5.01"
+"VGB","Virgin Islands (British)","CARIBBEAN","-71.74%","D2019","18.55"
+"VGB","Virgin Islands (British)","CARIBBEAN","-71.74%","D2020","12.50"
+"VGB","Virgin Islands (British)","CARIBBEAN","-71.74%","D2021","9.54"
+"VGB","Virgin Islands (British)","CARIBBEAN","-71.74%","D2022","12.94"
+"VGB","Virgin Islands (British)","CARIBBEAN","-71.74%","D2023","5.24"
+"CAN","Canada","NORTHERN AMERICA","-59.38%","D2019","13.21"
+"CAN","Canada","NORTHERN AMERICA","-59.38%","D2020","12.55"
+"CAN","Canada","NORTHERN AMERICA","-59.38%","D2021","5.72"
+"CAN","Canada","NORTHERN AMERICA","-59.38%","D2022","7.37"
+"CAN","Canada","NORTHERN AMERICA","-59.38%","D2023","5.37"
+"SYC","Seychelles","SUB-SAHARAN AFRICA","-72.20%","D2019","19.55"
+"SYC","Seychelles","SUB-SAHARAN AFRICA","-72.20%","D2020","11.43"
+"SYC","Seychelles","SUB-SAHARAN AFRICA","-72.20%","D2021","8.64"
+"SYC","Seychelles","SUB-SAHARAN AFRICA","-72.20%","D2022","2.16"
+"SYC","Seychelles","SUB-SAHARAN AFRICA","-72.20%","D2023","5.43"
+"NZL","New Zealand","OCEANIA","-39.86%","D2019","9.79"
+"NZL","New Zealand","OCEANIA","-39.86%","D2020","6.06"
+"NZL","New Zealand","OCEANIA","-39.86%","D2021","6.99"
+"NZL","New Zealand","OCEANIA","-39.86%","D2022","10.52"
+"NZL","New Zealand","OCEANIA","-39.86%","D2023","5.89"
+"USA","United States","NORTHERN AMERICA","-28.06%","D2019","8.34"
+"USA","United States","NORTHERN AMERICA","-28.06%","D2020","8.00"
+"USA","United States","NORTHERN AMERICA","-28.06%","D2021","3.33"
+"USA","United States","NORTHERN AMERICA","-28.06%","D2022","6.88"
+"USA","United States","NORTHERN AMERICA","-28.06%","D2023","6.00"
+"MHL","Marshall Islands","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"MHL","Marshall Islands","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"MHL","Marshall Islands","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"MHL","Marshall Islands","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"MHL","Marshall Islands","OCEANIA","MISSSING DATA","D2023","6.08"
+"TUV","Tuvalu","OCEANIA","-51.00%","D2019","12.42"
+"TUV","Tuvalu","OCEANIA","-51.00%","D2020","NO PACKAGES"
+"TUV","Tuvalu","OCEANIA","-51.00%","D2021","6.35"
+"TUV","Tuvalu","OCEANIA","-51.00%","D2022","16.58"
+"TUV","Tuvalu","OCEANIA","-51.00%","D2023","6.08"
+"ALA","Åland Islands","WESTERN EUROPE","32.11%","D2019","4.64"
+"ALA","Åland Islands","WESTERN EUROPE","32.11%","D2020","3.24"
+"ALA","Åland Islands","WESTERN EUROPE","32.11%","D2021","2.75"
+"ALA","Åland Islands","WESTERN EUROPE","32.11%","D2022","7.00"
+"ALA","Åland Islands","WESTERN EUROPE","32.11%","D2023","6.12"
+"NFK","Norfolk Island","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"NFK","Norfolk Island","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"NFK","Norfolk Island","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"NFK","Norfolk Island","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"NFK","Norfolk Island","OCEANIA","MISSSING DATA","D2023","6.39"
+"SLB","Solomon Islands","OCEANIA","-16.76%","D2019","8.37"
+"SLB","Solomon Islands","OCEANIA","-16.76%","D2020","8.53"
+"SLB","Solomon Islands","OCEANIA","-16.76%","D2021","7.83"
+"SLB","Solomon Islands","OCEANIA","-16.76%","D2022","12.13"
+"SLB","Solomon Islands","OCEANIA","-16.76%","D2023","6.96"
+"FSM","Micronesia (Federated States of)","OCEANIA","-44.76%","D2019","12.87"
+"FSM","Micronesia (Federated States of)","OCEANIA","-44.76%","D2020","7.20"
+"FSM","Micronesia (Federated States of)","OCEANIA","-44.76%","D2021","7.85"
+"FSM","Micronesia (Federated States of)","OCEANIA","-44.76%","D2022","10.43"
+"FSM","Micronesia (Federated States of)","OCEANIA","-44.76%","D2023","7.11"
+"CHE","Switzerland","WESTERN EUROPE","-63.95%","D2019","20.22"
+"CHE","Switzerland","WESTERN EUROPE","-63.95%","D2020","8.38"
+"CHE","Switzerland","WESTERN EUROPE","-63.95%","D2021","5.24"
+"CHE","Switzerland","WESTERN EUROPE","-63.95%","D2022","15.55"
+"CHE","Switzerland","WESTERN EUROPE","-63.95%","D2023","7.29"
+"ZMB","Zambia","SUB-SAHARAN AFRICA","256.49%","D2019","2.25"
+"ZMB","Zambia","SUB-SAHARAN AFRICA","256.49%","D2020","1.36"
+"ZMB","Zambia","SUB-SAHARAN AFRICA","256.49%","D2021","1.13"
+"ZMB","Zambia","SUB-SAHARAN AFRICA","256.49%","D2022","1.36"
+"ZMB","Zambia","SUB-SAHARAN AFRICA","256.49%","D2023","8.01"
+"CYM","Cayman Islands","CARIBBEAN","-68.67%","D2019","26.79"
+"CYM","Cayman Islands","CARIBBEAN","-68.67%","D2020","23.05"
+"CYM","Cayman Islands","CARIBBEAN","-68.67%","D2021","11.97"
+"CYM","Cayman Islands","CARIBBEAN","-68.67%","D2022","2.00"
+"CYM","Cayman Islands","CARIBBEAN","-68.67%","D2023","8.39"
+"SJM","Svalbard and Jan Mayen","WESTERN EUROPE","-23.46%","D2019","11.76"
+"SJM","Svalbard and Jan Mayen","WESTERN EUROPE","-23.46%","D2020","5.90"
+"SJM","Svalbard and Jan Mayen","WESTERN EUROPE","-23.46%","D2021","4.65"
+"SJM","Svalbard and Jan Mayen","WESTERN EUROPE","-23.46%","D2022","NO PACKAGES"
+"SJM","Svalbard and Jan Mayen","WESTERN EUROPE","-23.46%","D2023","9.00"
+"CAF","Central African Republic","SUB-SAHARAN AFRICA","80.65%","D2019","6.03"
+"CAF","Central African Republic","SUB-SAHARAN AFRICA","80.65%","D2020","8.25"
+"CAF","Central African Republic","SUB-SAHARAN AFRICA","80.65%","D2021","9.03"
+"CAF","Central African Republic","SUB-SAHARAN AFRICA","80.65%","D2022","10.42"
+"CAF","Central African Republic","SUB-SAHARAN AFRICA","80.65%","D2023","10.90"
+"TKM","Turkmenistan","CIS (FORMER USSR)","-42.37%","D2019","19.81"
+"TKM","Turkmenistan","CIS (FORMER USSR)","-42.37%","D2020","11.44"
+"TKM","Turkmenistan","CIS (FORMER USSR)","-42.37%","D2021","21.41"
+"TKM","Turkmenistan","CIS (FORMER USSR)","-42.37%","D2022","2.20"
+"TKM","Turkmenistan","CIS (FORMER USSR)","-42.37%","D2023","11.42"
+"YEM","Yemen","NEAR EAST","-0.30%","D2019","15.73"
+"YEM","Yemen","NEAR EAST","-0.30%","D2020","15.98"
+"YEM","Yemen","NEAR EAST","-0.30%","D2021","15.98"
+"YEM","Yemen","NEAR EAST","-0.30%","D2022","2.22"
+"YEM","Yemen","NEAR EAST","-0.30%","D2023","15.68"
+"TKL","Tokelau","OCEANIA","-42.46%","D2019","29.96"
+"TKL","Tokelau","OCEANIA","-42.46%","D2020","17.75"
+"TKL","Tokelau","OCEANIA","-42.46%","D2021","20.48"
+"TKL","Tokelau","OCEANIA","-42.46%","D2022","2.22"
+"TKL","Tokelau","OCEANIA","-42.46%","D2023","17.24"
+"SSD","South Sudan","SUB-SAHARAN AFRICA","MISSSING DATA","D2019","NO PACKAGES"
+"SSD","South Sudan","SUB-SAHARAN AFRICA","MISSSING DATA","D2020","NO PACKAGES"
+"SSD","South Sudan","SUB-SAHARAN AFRICA","MISSSING DATA","D2021","NO PACKAGES"
+"SSD","South Sudan","SUB-SAHARAN AFRICA","MISSSING DATA","D2022","2.75"
+"SSD","South Sudan","SUB-SAHARAN AFRICA","MISSSING DATA","D2023","23.70"
+"SHN","Saint Helena","SUB-SAHARAN AFRICA","-35.94%","D2019","62.65"
+"SHN","Saint Helena","SUB-SAHARAN AFRICA","-35.94%","D2020","52.50"
+"SHN","Saint Helena","SUB-SAHARAN AFRICA","-35.94%","D2021","39.87"
+"SHN","Saint Helena","SUB-SAHARAN AFRICA","-35.94%","D2022","43.79"
+"SHN","Saint Helena","SUB-SAHARAN AFRICA","-35.94%","D2023","40.13"
+"FLK","Falkland Islands","SOUTH AMERICA","-26.84%","D2019","55.47"
+"FLK","Falkland Islands","SOUTH AMERICA","-26.84%","D2020","40.41"
+"FLK","Falkland Islands","SOUTH AMERICA","-26.84%","D2021","44.56"
+"FLK","Falkland Islands","SOUTH AMERICA","-26.84%","D2022","5.10"
+"FLK","Falkland Islands","SOUTH AMERICA","-26.84%","D2023","40.58"
+"ZWE","Zimbabwe","SUB-SAHARAN AFRICA","MISSSING DATA","D2019","NO PACKAGES"
+"ZWE","Zimbabwe","SUB-SAHARAN AFRICA","MISSSING DATA","D2020","NO PACKAGES"
+"ZWE","Zimbabwe","SUB-SAHARAN AFRICA","MISSSING DATA","D2021","NO PACKAGES"
+"ZWE","Zimbabwe","SUB-SAHARAN AFRICA","MISSSING DATA","D2022","NO PACKAGES"
+"ZWE","Zimbabwe","SUB-SAHARAN AFRICA","MISSSING DATA","D2023","43.75"
+"BGR","Bulgaria","EASTERN EUROPE","MISSSING DATA","D2019","11.51"
+"BGR","Bulgaria","EASTERN EUROPE","MISSSING DATA","D2020","2.22"
+"BGR","Bulgaria","EASTERN EUROPE","MISSSING DATA","D2021","2.26"
+"BGR","Bulgaria","EASTERN EUROPE","MISSSING DATA","D2022","0.90"
+"BGR","Bulgaria","EASTERN EUROPE","MISSSING DATA","D2023","NO LIMITED PACKAGES AV USE UNAVAILABLE"
+"WLF","Wallis and Futuna","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"WLF","Wallis and Futuna","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"WLF","Wallis and Futuna","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"WLF","Wallis and Futuna","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"WLF","Wallis and Futuna","OCEANIA","MISSSING DATA","D2023","NO PACKAGES"
+"CXR","Christmas Island","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"CXR","Christmas Island","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"CXR","Christmas Island","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"CXR","Christmas Island","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"CXR","Christmas Island","OCEANIA","MISSSING DATA","D2023","NO PACKAGES"
+"ERI","Eritrea","NORTHERN AFRICA","MISSSING DATA","D2019","NO PACKAGES"
+"ERI","Eritrea","NORTHERN AFRICA","MISSSING DATA","D2020","NO PACKAGES"
+"ERI","Eritrea","NORTHERN AFRICA","MISSSING DATA","D2021","NO PACKAGES"
+"ERI","Eritrea","NORTHERN AFRICA","MISSSING DATA","D2022","NO PACKAGES"
+"ERI","Eritrea","NORTHERN AFRICA","MISSSING DATA","D2023","NO PACKAGES"
+"PRK","North Korea","ASIA (EX. NEAR EAST)","MISSSING DATA","D2019","NO PACKAGES"
+"PRK","North Korea","ASIA (EX. NEAR EAST)","MISSSING DATA","D2020","NO PACKAGES"
+"PRK","North Korea","ASIA (EX. NEAR EAST)","MISSSING DATA","D2021","NO PACKAGES"
+"PRK","North Korea","ASIA (EX. NEAR EAST)","MISSSING DATA","D2022","NO PACKAGES"
+"PRK","North Korea","ASIA (EX. NEAR EAST)","MISSSING DATA","D2023","NO PACKAGES"
+"PCN","Pitcairn Islands","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"PCN","Pitcairn Islands","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"PCN","Pitcairn Islands","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"PCN","Pitcairn Islands","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"PCN","Pitcairn Islands","OCEANIA","MISSSING DATA","D2023","NO PACKAGES"
+"ATF","French Southern and Antarctic Lands","OCEANIA","MISSSING DATA","D2019","NO PACKAGES"
+"ATF","French Southern and Antarctic Lands","OCEANIA","MISSSING DATA","D2020","NO PACKAGES"
+"ATF","French Southern and Antarctic Lands","OCEANIA","MISSSING DATA","D2021","NO PACKAGES"
+"ATF","French Southern and Antarctic Lands","OCEANIA","MISSSING DATA","D2022","NO PACKAGES"
+"ATF","French Southern and Antarctic Lands","OCEANIA","MISSSING DATA","D2023","NO PACKAGES"
+"UMI","United States Minor Outlying Islands","NORTH AMERICA","MISSSING DATA","D2019","NO PACKAGES"
+"UMI","United States Minor Outlying Islands","NORTH AMERICA","MISSSING DATA","D2020","NO PACKAGES"
+"UMI","United States Minor Outlying Islands","NORTH AMERICA","MISSSING DATA","D2021","NO PACKAGES"
+"UMI","United States Minor Outlying Islands","NORTH AMERICA","MISSSING DATA","D2022","NO PACKAGES"
+"UMI","United States Minor Outlying Islands","NORTH AMERICA","MISSSING DATA","D2023","NO PACKAGES"
+"VAT","Vatican City (Holy See)","WESTERN EUROPE","MISSSING DATA","D2019","NO PACKAGES"
+"VAT","Vatican City (Holy See)","WESTERN EUROPE","MISSSING DATA","D2020","NO PACKAGES"
+"VAT","Vatican City (Holy See)","WESTERN EUROPE","MISSSING DATA","D2021","NO PACKAGES"
+"VAT","Vatican City (Holy See)","WESTERN EUROPE","MISSSING DATA","D2022","NO PACKAGES"
+"VAT","Vatican City (Holy See)","WESTERN EUROPE","MISSSING DATA","D2023","NO PACKAGES"
+NA,"Global Averages","","","D2019","8.18"
+NA,"Global Averages","","","D2020","5.09"
+NA,"Global Averages","","","D2021","4.07"
+NA,"Global Averages","","","D2022","3.12"
+NA,"Global Averages","","","D2023","2.61"

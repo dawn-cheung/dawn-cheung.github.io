@@ -9,32 +9,15 @@ library(plotly)
 # Import the data with coordinates
 world_map <- map_data("world")
 world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-isocode <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
+#ALL DATASETS CHANGED TO ISO3
 access_dataset <- read.csv("accesstointernet.csv")
-speed_dataset <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
+speed_dataset <- read.csv("worldwideInternetSpeed.csv")
+price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv")
 
 price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
-world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES
-isocode <- "iso2c"
 
 #group = group connects the points in the correct order
 mapplotting <- function(wee, dayear, colourscheme) {
-  if(identical(wee, access_dataset)) { 
-    if (isocode == "iso2c") { #its a global variable so its fine
-      world_map$region <- countrycode(world_map$region, "iso2c", "iso3c")
-      isocode == "iso3c"
-    } else {
-      isocode == "iso3c"
-    }
-  } else {
-    if (isocode == "iso3c") {
-      world_map$region <- countrycode(world_map$region, "iso3c", "iso2c")
-      isocode == "iso2c"
-    } else {
-      isocode == "iso3c"
-    }
-  }
   weep <- wee %>% filter(Dyear == paste0("D", dayear))
   weep$values <- as.numeric(weep$values)
   mapdataset <- left_join(world_map, weep, by = "region")
