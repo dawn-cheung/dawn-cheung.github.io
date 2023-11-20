@@ -127,1086 +127,439 @@ ul.task-list li input[type="checkbox"] {
 </iframe>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-1.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/unbroken-1.png" class="img-fluid" width="1344"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unbroken-2.png" class="img-fluid" width="1344"></p>
+</div>
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/unbroken-3.png" class="img-fluid" width="1344"></p>
 </div>
 <div class="cell-output cell-output-stdout">
-<pre><code>    country region year.x  gini region_un   region_un_sub
-1   Albania    ALB   2020 33.20    Europe Southern Europe
-2 Argentina    ARG   2020 40.00  Americas   South America
-3 Argentina    ARG   2020 42.34  Americas   South America
-4   Armenia    ARM   2020 25.17      Asia    Western Asia
-5   Austria    AUT   2020 30.40    Europe  Western Europe
-6   Austria    AUT   2020 27.09    Europe  Western Europe
-                        region_wb     eu     oecd         incomegroup   gdp
-1         Europe and Central Asia Non-EU Non-OECD Upper middle income 13192
-2 Latin America and the Caribbean Non-EU Non-OECD Upper middle income 19691
-3 Latin America and the Caribbean Non-EU Non-OECD Upper middle income 19691
-4         Europe and Central Asia Non-EU Non-OECD Upper middle income 12620
-5         Europe and Central Asia     EU     OECD         High income 51856
-6         Europe and Central Asia     EU     OECD         High income 51856
-  population      Name Continental.region Price.per.GB...change..5.years. Dyear
-1    2877800   Albania     EASTERN EUROPE                         -70.58% D2020
-2   45195776 Argentina      SOUTH AMERICA                         -85.03% D2020
-3   45195776 Argentina      SOUTH AMERICA                         -85.03% D2020
-4    2963234   Armenia  CIS (FORMER USSR)                         -61.10% D2020
-5    9006400   Austria     WESTERN EUROPE                         -73.14% D2020
-6    9006400   Austria     WESTERN EUROPE                         -73.14% D2020
-  values year.y GDP.per.capita
-1   2.83   2020       13256.12
-2   1.45   2020       19685.22
-3   1.45   2020       19685.22
-4   1.05   2020       13357.70
-5   1.08   2020       51988.41
-6   1.08   2020       51988.41</code></pre>
+<pre><code>               country year  gini GDP.per.capita
+1              Albania 2020 33.20      13256.125
+2            Argentina 2020 40.00      19685.217
+3            Argentina 2020 42.34      19685.217
+4              Armenia 2020 25.17      13357.697
+5              Austria 2020 30.40      51988.414
+6              Austria 2020 27.09      51988.414
+7              Austria 2020 27.45      51988.414
+8              Austria 2020 33.97      51988.414
+9              Austria 2020 34.83      51988.414
+10             Austria 2020 31.96      51988.414
+11             Austria 2020 32.17      51988.414
+12             Austria 2020 38.06      51988.414
+13             Austria 2020 27.00      51988.414
+14             Austria 2020 30.24      51988.414
+15             Austria 2020 26.98      51988.414
+16             Austria 2020 27.38      51988.414
+17             Austria 2020 33.97      51988.414
+18             Austria 2020 34.81      51988.414
+19             Austria 2020 31.93      51988.414
+20             Austria 2020 32.14      51988.414
+21             Austria 2020 38.02      51988.414
+22             Austria 2020 30.21      51988.414
+23             Belarus 2020 24.38      19225.574
+24             Belgium 2020 25.40      48978.934
+25             Belgium 2020 27.32      48978.934
+26             Belgium 2020 25.33      48978.934
+27             Belgium 2020 25.98      48978.934
+28             Belgium 2020 34.65      48978.934
+29             Belgium 2020 33.26      48978.934
+30             Belgium 2020 31.89      48978.934
+31             Belgium 2020 32.34      48978.934
+32             Belgium 2020 39.83      48978.934
+33             Belgium 2020 27.22      48978.934
+34             Bolivia 2020 44.90       7679.933
+35             Bolivia 2020 48.30       7679.933
+36             Bolivia 2020 40.80       7679.933
+37             Bolivia 2020 43.62       7679.933
+38              Brazil 2020 51.90      14021.958
+39              Brazil 2020 44.90      14021.958
+40              Brazil 2020 51.50      14021.958
+41              Brazil 2020 48.88      14021.958
+42            Bulgaria 2020 40.00      22483.598
+43            Bulgaria 2020 40.27      22483.598
+44            Bulgaria 2020 40.04      22483.598
+45            Bulgaria 2020 40.33      22483.598
+46            Bulgaria 2020 46.59      22483.598
+47            Bulgaria 2020 41.62      22483.598
+48            Bulgaria 2020 41.48      22483.598
+49            Bulgaria 2020 41.74      22483.598
+50            Bulgaria 2020 48.43      22483.598
+51            Bulgaria 2020 40.27      22483.598
+52              Canada 2020 28.10      46064.254
+53              Canada 2020 32.10      46064.254
+54              Canada 2020 43.90      46064.254
+55               Chile 2020 47.50      23017.690
+56               Chile 2020 43.10      23017.690
+57               Chile 2020 47.60      23017.690
+58               Chile 2020 44.92      23017.690
+59               China 2020 46.80      16296.779
+60               China 2020    NA      16296.779
+61               China 2020    NA      16296.779
+62            Colombia 2020 54.09      13387.701
+63            Colombia 2020 50.85      13387.701
+64            Colombia 2020 50.38      13387.701
+65            Colombia 2020 52.06      13387.701
+66            Colombia 2020 56.47      13387.701
+67            Colombia 2020 53.30      13387.701
+68            Colombia 2020 52.79      13387.701
+69            Colombia 2020 54.51      13387.701
+70            Colombia 2020 55.20      13387.701
+71            Colombia 2020 46.40      13387.701
+72            Colombia 2020 54.70      13387.701
+73            Colombia 2020 54.17      13387.701
+74          Costa Rica 2020 49.00      19824.348
+75          Costa Rica 2020 45.40      19824.348
+76          Costa Rica 2020 48.50      19824.348
+77          Costa Rica 2020 49.70      19824.348
+78          Costa Rica 2020 50.70      19824.348
+79          Costa Rica 2020 57.60      19824.348
+80          Costa Rica 2020 49.25      19824.348
+81             Croatia 2020 28.30      26950.719
+82             Croatia 2020 28.93      26950.719
+83             Croatia 2020 28.33      26950.719
+84             Croatia 2020 28.84      26950.719
+85             Croatia 2020 37.83      26950.719
+86             Croatia 2020 32.92      26950.719
+87             Croatia 2020 32.38      26950.719
+88             Croatia 2020 32.64      26950.719
+89             Croatia 2020 41.41      26950.719
+90             Croatia 2020 28.91      26950.719
+91              Cyprus 2020 29.30      39471.582
+92              Cyprus 2020 31.22      39471.582
+93              Cyprus 2020 29.32      39471.582
+94              Cyprus 2020 29.70      39471.582
+95              Cyprus 2020 35.69      39471.582
+96              Cyprus 2020 34.47      39471.582
+97              Cyprus 2020 32.71      39471.582
+98              Cyprus 2020 32.95      39471.582
+99              Cyprus 2020 38.37      39471.582
+100             Cyprus 2020 31.22      39471.582
+101            Czechia 2020 24.20      38639.980
+102            Czechia 2020 25.27      38639.980
+103            Czechia 2020 24.15      38639.980
+104            Czechia 2020 24.90      38639.980
+105            Czechia 2020 32.82      38639.980
+106            Czechia 2020 28.84      38639.980
+107            Czechia 2020 27.95      38639.980
+108            Czechia 2020 28.56      38639.980
+109            Czechia 2020 35.96      38639.980
+110            Czechia 2020 25.26      38639.980
+111            Denmark 2020 27.30      55518.598
+112            Denmark 2020 28.53      55518.598
+113            Denmark 2020 27.10      55518.598
+114            Denmark 2020 28.06      55518.598
+115            Denmark 2020 36.50      55518.598
+116            Denmark 2020 32.49      55518.598
+117            Denmark 2020 31.96      55518.598
+118            Denmark 2020 32.82      55518.598
+119            Denmark 2020 40.82      55518.598
+120            Denmark 2020 27.72      55518.598
+121 Dominican Republic 2020 40.50      16768.426
+122 Dominican Republic 2020 36.00      16768.426
+123 Dominican Republic 2020 41.00      16768.426
+124 Dominican Republic 2020 39.64      16768.426
+125            Ecuador 2020 46.60      10356.975
+126            Ecuador 2020 43.60      10356.975
+127            Ecuador 2020 45.50      10356.975
+128            Ecuador 2020 47.31      10356.975
+129        El Salvador 2020 42.10       8267.251
+130        El Salvador 2020 39.70       8267.251
+131        El Salvador 2020 40.40       8267.251
+132            Estonia 2020 30.50      35883.266
+133            Estonia 2020 30.87      35883.266
+134            Estonia 2020 30.49      35883.266
+135            Estonia 2020 30.92      35883.266
+136            Estonia 2020 40.09      35883.266
+137            Estonia 2020 34.65      35883.266
+138            Estonia 2020 34.47      35883.266
+139            Estonia 2020 34.76      35883.266
+140            Estonia 2020 43.36      35883.266
+141            Estonia 2020 30.77      35883.266
+142               Fiji 2020 30.71      10966.925
+143            Finland 2020 26.50      47443.902
+144            Finland 2020 27.74      47443.902
+145            Finland 2020 26.50      47443.902
+146            Finland 2020 27.22      47443.902
+147            Finland 2020 35.95      47443.902
+148            Finland 2020 32.11      47443.902
+149            Finland 2020 31.37      47443.902
+150            Finland 2020 32.03      47443.902
+151            Finland 2020 40.13      47443.902
+152            Finland 2020 27.74      47443.902
+153             France 2020 29.30      42233.140
+154             France 2020 31.60      42233.140
+155             France 2020 29.00      42233.140
+156             France 2020 29.03      42233.140
+157             France 2020 35.29      42233.140
+158             France 2020 37.52      42233.140
+159             France 2020 36.15      42233.140
+160             France 2020 36.25      42233.140
+161             France 2020 42.30      42233.140
+162            Georgia 2020 34.47      13966.326
+163            Germany 2020 34.40      51840.330
+164             Greece 2020 31.40      27103.541
+165             Greece 2020 33.51      27103.541
+166             Greece 2020 31.35      27103.541
+167             Greece 2020 31.28      27103.541
+168             Greece 2020 35.89      27103.541
+169             Greece 2020 35.55      27103.541
+170             Greece 2020 33.69      27103.541
+171             Greece 2020 33.66      27103.541
+172             Greece 2020 38.18      27103.541
+173             Greece 2020 33.10      27103.541
+174            Hungary 2020 28.00      31231.596
+175            Hungary 2020 29.66      31231.596
+176            Hungary 2020 28.01      31231.596
+177            Hungary 2020 28.55      31231.596
+178            Hungary 2020 36.04      31231.596
+179            Hungary 2020 33.64      31231.596
+180            Hungary 2020 32.38      31231.596
+181            Hungary 2020 32.92      31231.596
+182            Hungary 2020 39.95      31231.596
+183            Hungary 2020 29.95      31231.596
+184          Indonesia 2020 36.99      11515.740
+185          Indonesia 2020 31.67      11515.740
+186          Indonesia 2020 39.26      11515.740
+187               Iran 2020 40.94      14432.362
+188            Ireland 2020 28.70      91099.750
+189            Ireland 2020 31.15      91099.750
+190            Ireland 2020 28.67      91099.750
+191            Ireland 2020 29.29      91099.750
+192            Ireland 2020 36.49      91099.750
+193            Ireland 2020 37.10      91099.750
+194            Ireland 2020 35.47      91099.750
+195            Ireland 2020 35.87      91099.750
+196            Ireland 2020 42.32      91099.750
+197           Kiribati 2020 27.83       1944.847
+198         Kyrgyzstan 2020 28.99       4726.197
+199             Latvia 2020 34.50      30568.502
+200             Latvia 2020 34.69      30568.502
+201             Latvia 2020 34.47      30568.502
+202             Latvia 2020 34.92      30568.502
+203             Latvia 2020 43.11      30568.502
+204             Latvia 2020 37.72      30568.502
+205             Latvia 2020 37.32      30568.502
+206             Latvia 2020 37.64      30568.502
+207             Latvia 2020 45.38      30568.502
+208             Latvia 2020 34.49      30568.502
+209          Lithuania 2020 35.10      37166.410
+210          Lithuania 2020 33.51      37166.410
+211          Lithuania 2020 33.54      37166.410
+212          Lithuania 2020 34.42      37166.410
+213          Lithuania 2020 41.98      37166.410
+214          Lithuania 2020 37.37      37166.410
+215          Lithuania 2020 37.57      37166.410
+216          Lithuania 2020 38.33      37166.410
+217          Lithuania 2020 46.05      37166.410
+218          Lithuania 2020 35.25      37166.410
+219         Luxembourg 2020 31.20     111751.310
+220         Luxembourg 2020 34.44     111751.310
+221         Luxembourg 2020 30.78     111751.310
+222         Luxembourg 2020 30.35     111751.310
+223         Luxembourg 2020 34.10     111751.310
+224         Luxembourg 2020 36.42     111751.310
+225         Luxembourg 2020 33.19     111751.310
+226         Luxembourg 2020 32.64     111751.310
+227         Luxembourg 2020 36.09     111751.310
+228         Luxembourg 2020 34.24     111751.310
+229             Malawi 2020 37.90       1489.601
+230             Malawi 2020 33.20       1489.601
+231             Malawi 2020 39.00       1489.601
+232             Malawi 2020 38.54       1489.601
+233           Maldives 2020 29.29      13419.335
+234               Mali 2020 40.21       2123.828
+235               Mali 2020 37.21       2123.828
+236               Mali 2020 36.85       2123.828
+237               Mali 2020 40.58       2123.828
+238               Mali 2020 40.40       2123.828
+239               Mali 2020 36.28       2123.828
+240               Mali 2020 33.47       2123.828
+241               Mali 2020 36.25       2123.828
+242              Malta 2020 30.30      40740.970
+243              Malta 2020 31.08      40740.970
+244              Malta 2020 30.33      40740.970
+245              Malta 2020 30.84      40740.970
+246              Malta 2020 38.03      40740.970
+247              Malta 2020 34.32      40740.970
+248              Malta 2020 33.91      40740.970
+249              Malta 2020 34.24      40740.970
+250              Malta 2020 41.19      40740.970
+251              Malta 2020 31.04      40740.970
+252   Marshall Islands 2020 35.48       5710.973
+253             Mexico 2020 45.20      18327.990
+254             Mexico 2020 42.60      18327.990
+255             Mexico 2020 44.00      18327.990
+256             Mexico 2020 45.40      18327.990
+257         Montenegro 2020 32.90      18262.236
+258        Netherlands 2020 28.20      54275.004
+259        Netherlands 2020 29.35      54275.004
+260        Netherlands 2020 28.20      54275.004
+261        Netherlands 2020 28.84      54275.004
+262        Netherlands 2020 36.72      54275.004
+263        Netherlands 2020 33.82      54275.004
+264        Netherlands 2020 33.03      54275.004
+265        Netherlands 2020 33.58      54275.004
+266        Netherlands 2020 40.87      54275.004
+267        Netherlands 2020 29.25      54275.004
+268             Norway 2020 25.30      63548.000
+269             Norway 2020 27.86      63548.000
+270             Norway 2020 25.03      63548.000
+271             Norway 2020 25.72      63548.000
+272             Norway 2020 34.86      63548.000
+273             Norway 2020 31.59      63548.000
+274             Norway 2020 29.40      63548.000
+275             Norway 2020 30.05      63548.000
+276             Norway 2020 38.50      63548.000
+277             Norway 2020 27.74      63548.000
+278           Paraguay 2020 46.68      13317.321
+279           Paraguay 2020 44.43      13317.321
+280           Paraguay 2020 44.34      13317.321
+281           Paraguay 2020 46.82      13317.321
+282           Paraguay 2020 45.20      13317.321
+283           Paraguay 2020 43.90      13317.321
+284           Paraguay 2020 43.00      13317.321
+285           Paraguay 2020 43.48      13317.321
+286               Peru 2020 46.40      11176.919
+287               Peru 2020 40.50      11176.919
+288               Peru 2020 44.90      11176.919
+289               Peru 2020 43.79      11176.919
+290             Poland 2020 31.84      32546.826
+291             Poland 2020 30.22      32546.826
+292             Poland 2020 30.13      32546.826
+293             Poland 2020 37.07      32546.826
+294             Poland 2020 30.24      32546.826
+295             Poland 2020 27.44      32546.826
+296             Poland 2020 26.68      32546.826
+297             Poland 2020 32.06      32546.826
+298             Poland 2020 27.20      32546.826
+299             Poland 2020 28.84      32546.826
+300             Poland 2020 27.16      32546.826
+301             Poland 2020 26.94      32546.826
+302             Poland 2020 34.92      32546.826
+303             Poland 2020 30.02      32546.826
+304             Poland 2020 28.42      32546.826
+305             Poland 2020 28.12      32546.826
+306             Poland 2020 35.93      32546.826
+307           Portugal 2020 31.20      32011.324
+308           Portugal 2020 32.76      32011.324
+309           Portugal 2020 31.19      32011.324
+310           Portugal 2020 31.25      32011.324
+311           Portugal 2020 35.53      32011.324
+312           Portugal 2020 38.33      32011.324
+313           Portugal 2020 37.31      32011.324
+314           Portugal 2020 37.35      32011.324
+315           Portugal 2020 41.28      32011.324
+316           Portugal 2020 32.76      32011.324
+317            Romania 2020 33.80      29062.473
+318            Romania 2020 35.04      29062.473
+319            Romania 2020 33.77      29062.473
+320            Romania 2020 33.89      29062.473
+321            Romania 2020 40.11      29062.473
+322            Romania 2020 39.48      29062.473
+323            Romania 2020 38.86      29062.473
+324            Romania 2020 38.85      29062.473
+325            Romania 2020 45.59      29062.473
+326            Romania 2020 34.80      29062.473
+327             Russia 2020 35.04      26583.797
+328             Russia 2020 32.22      26583.797
+329             Russia 2020 32.28      26583.797
+330             Russia 2020 35.87      26583.797
+331             Russia 2020 35.96      26583.797
+332             Russia 2020 33.28      26583.797
+333             Russia 2020 33.31      26583.797
+334             Russia 2020 36.90      26583.797
+335             Russia 2020 36.03      26583.797
+336             Serbia 2020 33.30      18265.967
+337             Serbia 2020 34.48      18265.967
+338             Serbia 2020 33.28      18265.967
+339             Serbia 2020 33.54      18265.967
+340             Serbia 2020 40.48      18265.967
+341             Serbia 2020 35.94      18265.967
+342             Serbia 2020 35.25      18265.967
+343             Serbia 2020 35.50      18265.967
+344             Serbia 2020 42.71      18265.967
+345             Serbia 2020 34.54      18265.967
+346           Slovakia 2020 20.90      30867.973
+347           Slovakia 2020 23.24      30867.973
+348           Slovakia 2020 20.95      30867.973
+349           Slovakia 2020 21.98      30867.973
+350           Slovakia 2020 29.20      30867.973
+351           Slovakia 2020 25.63      30867.973
+352           Slovakia 2020 23.89      30867.973
+353           Slovakia 2020 24.85      30867.973
+354           Slovakia 2020 32.12      30867.973
+355           Slovakia 2020 23.23      30867.973
+356           Slovenia 2020 23.50      37098.120
+357           Slovenia 2020 24.38      37098.120
+358           Slovenia 2020 23.50      37098.120
+359           Slovenia 2020 24.67      37098.120
+360           Slovenia 2020 33.98      37098.120
+361           Slovenia 2020 28.83      37098.120
+362           Slovenia 2020 28.74      37098.120
+363           Slovenia 2020 29.70      37098.120
+364           Slovenia 2020 38.77      37098.120
+365           Slovenia 2020 24.38      37098.120
+366              Spain 2020 32.10      35967.890
+367              Spain 2020 34.37      35967.890
+368              Spain 2020 32.04      35967.890
+369              Spain 2020 32.06      35967.890
+370              Spain 2020 36.21      35967.890
+371              Spain 2020 37.74      35967.890
+372              Spain 2020 35.76      35967.890
+373              Spain 2020 35.74      35967.890
+374              Spain 2020 39.46      35967.890
+375              Spain 2020 34.31      35967.890
+376             Sweden 2020 26.90      51331.280
+377             Sweden 2020 29.49      51331.280
+378             Sweden 2020 26.83      51331.280
+379             Sweden 2020 27.40      51331.280
+380             Sweden 2020 35.61      51331.280
+381             Sweden 2020 32.65      51331.280
+382             Sweden 2020 30.56      51331.280
+383             Sweden 2020 31.13      51331.280
+384             Sweden 2020 38.77      51331.280
+385             Sweden 2020 29.31      51331.280
+386        Switzerland 2020 31.20      68670.240
+387        Switzerland 2020 34.11      68670.240
+388        Switzerland 2020 31.12      68670.240
+389        Switzerland 2020 31.46      68670.240
+390        Switzerland 2020 36.43      68670.240
+391        Switzerland 2020 34.22      68670.240
+392        Switzerland 2020 31.10      68670.240
+393        Switzerland 2020 31.39      68670.240
+394        Switzerland 2020 36.43      68670.240
+395           Thailand 2020 34.99      16848.584
+396             Turkey 2020 43.40      28473.205
+397             Uganda 2020 42.71       2240.490
+398            Ukraine 2020 25.63      12407.790
+399     United Kingdom 2020 35.17      41984.105
+400      United States 2020 41.54      60167.855
+401      United States 2020 39.31      60167.855
+402      United States 2020 39.14      60167.855
+403      United States 2020 43.64      60167.855
+404      United States 2020 45.59      60167.855
+405      United States 2020 43.63      60167.855
+406      United States 2020 43.45      60167.855
+407      United States 2020 47.48      60167.855
+408      United States 2020 46.90      60167.855
+409      United States 2020 48.90      60167.855
+410            Uruguay 2020 39.70      21828.640
+411            Uruguay 2020 34.30      21828.640
+412            Uruguay 2020 39.70      21828.640
+413            Uruguay 2020 40.15      21828.640
+414            Vanuatu 2020 32.32       2836.814</code></pre>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-2.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/unbroken-4.png" class="img-fluid" width="1344"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-3.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/unbroken-5.png" class="img-fluid" width="1344"></p>
 </div>
 <div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-4.png" class="img-fluid" width="1152"></p>
-</div>
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-5.png" class="img-fluid" width="1152"></p>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>                                            Country.Name region Dyear
-1                                                  Aruba    ABW D2020
-2                            Africa Eastern and Southern    AFE D2020
-3                                            Afghanistan    AFG D2020
-4                             Africa Western and Central    AFW D2020
-5                                                 Angola    AGO D2020
-6                                                Albania    ALB D2020
-7                                                Andorra    AND D2020
-8                                             Arab World    ARB D2020
-9                                   United Arab Emirates    ARE D2020
-10                                             Argentina    ARG D2020
-11                                               Armenia    ARM D2020
-12                                        American Samoa    ASM D2020
-13                                   Antigua and Barbuda    ATG D2020
-14                                             Australia    AUS D2020
-15                                               Austria    AUT D2020
-16                                            Azerbaijan    AZE D2020
-17                                               Burundi    BDI D2020
-18                                               Belgium    BEL D2020
-19                                                 Benin    BEN D2020
-20                                          Burkina Faso    BFA D2020
-21                                            Bangladesh    BGD D2020
-22                                              Bulgaria    BGR D2020
-23                                               Bahrain    BHR D2020
-24                                          Bahamas, The    BHS D2020
-25                                Bosnia and Herzegovina    BIH D2020
-26                                               Belarus    BLR D2020
-27                                                Belize    BLZ D2020
-28                                               Bermuda    BMU D2020
-29                                               Bolivia    BOL D2020
-30                                                Brazil    BRA D2020
-31                                              Barbados    BRB D2020
-32                                     Brunei Darussalam    BRN D2020
-33                                                Bhutan    BTN D2020
-34                                              Botswana    BWA D2020
-35                              Central African Republic    CAF D2020
-36                                                Canada    CAN D2020
-37                        Central Europe and the Baltics    CEB D2020
-38                                           Switzerland    CHE D2020
-39                                       Channel Islands    CHI D2020
-40                                                 Chile    CHL D2020
-41                                                 China    CHN D2020
-42                                         Cote d'Ivoire    CIV D2020
-43                                              Cameroon    CMR D2020
-44                                      Congo, Dem. Rep.    COD D2020
-45                                           Congo, Rep.    COG D2020
-46                                              Colombia    COL D2020
-47                                               Comoros    COM D2020
-48                                            Cabo Verde    CPV D2020
-49                                            Costa Rica    CRI D2020
-50                                Caribbean small states    CSS D2020
-51                                                  Cuba    CUB D2020
-52                                               Curacao    CUW D2020
-53                                        Cayman Islands    CYM D2020
-54                                                Cyprus    CYP D2020
-55                                               Czechia    CZE D2020
-56                                               Germany    DEU D2020
-57                                              Djibouti    DJI D2020
-58                                              Dominica    DMA D2020
-59                                               Denmark    DNK D2020
-60                                    Dominican Republic    DOM D2020
-61                                               Algeria    DZA D2020
-62           East Asia &amp; Pacific (excluding high income)    EAP D2020
-63                            Early-demographic dividend    EAR D2020
-64                                   East Asia &amp; Pacific    EAS D2020
-65         Europe &amp; Central Asia (excluding high income)    ECA D2020
-66                                 Europe &amp; Central Asia    ECS D2020
-67                                               Ecuador    ECU D2020
-68                                      Egypt, Arab Rep.    EGY D2020
-69                                             Euro area    EMU D2020
-70                                               Eritrea    ERI D2020
-71                                                 Spain    ESP D2020
-72                                               Estonia    EST D2020
-73                                              Ethiopia    ETH D2020
-74                                        European Union    EUU D2020
-75              Fragile and conflict affected situations    FCS D2020
-76                                               Finland    FIN D2020
-77                                                  Fiji    FJI D2020
-78                                                France    FRA D2020
-79                                         Faroe Islands    FRO D2020
-80                                 Micronesia, Fed. Sts.    FSM D2020
-81                                                 Gabon    GAB D2020
-82                                        United Kingdom    GBR D2020
-83                                               Georgia    GEO D2020
-84                                                 Ghana    GHA D2020
-85                                             Gibraltar    GIB D2020
-86                                                Guinea    GIN D2020
-87                                           Gambia, The    GMB D2020
-88                                         Guinea-Bissau    GNB D2020
-89                                     Equatorial Guinea    GNQ D2020
-90                                                Greece    GRC D2020
-91                                               Grenada    GRD D2020
-92                                             Greenland    GRL D2020
-93                                             Guatemala    GTM D2020
-94                                                  Guam    GUM D2020
-95                                                Guyana    GUY D2020
-96                                           High income    HIC D2020
-97                                  Hong Kong SAR, China    HKG D2020
-98                                              Honduras    HND D2020
-99                Heavily indebted poor countries (HIPC)    HPC D2020
-100                                              Croatia    HRV D2020
-101                                                Haiti    HTI D2020
-102                                              Hungary    HUN D2020
-103                                            IBRD only    IBD D2020
-104                                     IDA &amp; IBRD total    IBT D2020
-105                                            IDA total    IDA D2020
-106                                            IDA blend    IDB D2020
-107                                            Indonesia    IDN D2020
-108                                             IDA only    IDX D2020
-109                                          Isle of Man    IMN D2020
-110                                                India    IND D2020
-111                                       Not classified    INX D2020
-112                                              Ireland    IRL D2020
-113                                   Iran, Islamic Rep.    IRN D2020
-114                                                 Iraq    IRQ D2020
-115                                              Iceland    ISL D2020
-116                                               Israel    ISR D2020
-117                                                Italy    ITA D2020
-118                                              Jamaica    JAM D2020
-119                                               Jordan    JOR D2020
-120                                                Japan    JPN D2020
-121                                           Kazakhstan    KAZ D2020
-122                                                Kenya    KEN D2020
-123                                      Kyrgyz Republic    KGZ D2020
-124                                             Cambodia    KHM D2020
-125                                             Kiribati    KIR D2020
-126                                  St. Kitts and Nevis    KNA D2020
-127                                          Korea, Rep.    KOR D2020
-128                                               Kuwait    KWT D2020
-129    Latin America &amp; Caribbean (excluding high income)    LAC D2020
-130                                              Lao PDR    LAO D2020
-131                                              Lebanon    LBN D2020
-132                                              Liberia    LBR D2020
-133                                                Libya    LBY D2020
-134                                            St. Lucia    LCA D2020
-135                            Latin America &amp; Caribbean    LCN D2020
-136         Least developed countries: UN classification    LDC D2020
-137                                           Low income    LIC D2020
-138                                        Liechtenstein    LIE D2020
-139                                            Sri Lanka    LKA D2020
-140                                  Lower middle income    LMC D2020
-141                                  Low &amp; middle income    LMY D2020
-142                                              Lesotho    LSO D2020
-143                            Late-demographic dividend    LTE D2020
-144                                            Lithuania    LTU D2020
-145                                           Luxembourg    LUX D2020
-146                                               Latvia    LVA D2020
-147                                     Macao SAR, China    MAC D2020
-148                             St. Martin (French part)    MAF D2020
-149                                              Morocco    MAR D2020
-150                                               Monaco    MCO D2020
-151                                              Moldova    MDA D2020
-152                                           Madagascar    MDG D2020
-153                                             Maldives    MDV D2020
-154                           Middle East &amp; North Africa    MEA D2020
-155                                               Mexico    MEX D2020
-156                                     Marshall Islands    MHL D2020
-157                                        Middle income    MIC D2020
-158                                      North Macedonia    MKD D2020
-159                                                 Mali    MLI D2020
-160                                                Malta    MLT D2020
-161                                              Myanmar    MMR D2020
-162   Middle East &amp; North Africa (excluding high income)    MNA D2020
-163                                           Montenegro    MNE D2020
-164                                             Mongolia    MNG D2020
-165                             Northern Mariana Islands    MNP D2020
-166                                           Mozambique    MOZ D2020
-167                                           Mauritania    MRT D2020
-168                                            Mauritius    MUS D2020
-169                                               Malawi    MWI D2020
-170                                             Malaysia    MYS D2020
-171                                        North America    NAC D2020
-172                                              Namibia    NAM D2020
-173                                        New Caledonia    NCL D2020
-174                                                Niger    NER D2020
-175                                              Nigeria    NGA D2020
-176                                            Nicaragua    NIC D2020
-177                                          Netherlands    NLD D2020
-178                                               Norway    NOR D2020
-179                                                Nepal    NPL D2020
-180                                                Nauru    NRU D2020
-181                                          New Zealand    NZL D2020
-182                                         OECD members    OED D2020
-183                                                 Oman    OMN D2020
-184                                   Other small states    OSS D2020
-185                                             Pakistan    PAK D2020
-186                                               Panama    PAN D2020
-187                                                 Peru    PER D2020
-188                                          Philippines    PHL D2020
-189                                                Palau    PLW D2020
-190                                     Papua New Guinea    PNG D2020
-191                                               Poland    POL D2020
-192                             Pre-demographic dividend    PRE D2020
-193                                          Puerto Rico    PRI D2020
-194                            Korea, Dem. People's Rep.    PRK D2020
-195                                             Portugal    PRT D2020
-196                                             Paraguay    PRY D2020
-197                                   West Bank and Gaza    PSE D2020
-198                          Pacific island small states    PSS D2020
-199                            Post-demographic dividend    PST D2020
-200                                     French Polynesia    PYF D2020
-201                                                Qatar    QAT D2020
-202                                              Romania    ROU D2020
-203                                   Russian Federation    RUS D2020
-204                                               Rwanda    RWA D2020
-205                                           South Asia    SAS D2020
-206                                         Saudi Arabia    SAU D2020
-207                                                Sudan    SDN D2020
-208                                              Senegal    SEN D2020
-209                                            Singapore    SGP D2020
-210                                      Solomon Islands    SLB D2020
-211                                         Sierra Leone    SLE D2020
-212                                          El Salvador    SLV D2020
-213                                           San Marino    SMR D2020
-214                                              Somalia    SOM D2020
-215                                               Serbia    SRB D2020
-216           Sub-Saharan Africa (excluding high income)    SSA D2020
-217                                          South Sudan    SSD D2020
-218                                   Sub-Saharan Africa    SSF D2020
-219                                         Small states    SST D2020
-220                                Sao Tome and Principe    STP D2020
-221                                             Suriname    SUR D2020
-222                                      Slovak Republic    SVK D2020
-223                                             Slovenia    SVN D2020
-224                                               Sweden    SWE D2020
-225                                             Eswatini    SWZ D2020
-226                            Sint Maarten (Dutch part)    SXM D2020
-227                                           Seychelles    SYC D2020
-228                                 Syrian Arab Republic    SYR D2020
-229                             Turks and Caicos Islands    TCA D2020
-230                                                 Chad    TCD D2020
-231           East Asia &amp; Pacific (IDA &amp; IBRD countries)    TEA D2020
-232         Europe &amp; Central Asia (IDA &amp; IBRD countries)    TEC D2020
-233                                                 Togo    TGO D2020
-234                                             Thailand    THA D2020
-235                                           Tajikistan    TJK D2020
-236                                         Turkmenistan    TKM D2020
-237 Latin America &amp; the Caribbean (IDA &amp; IBRD countries)    TLA D2020
-238                                          Timor-Leste    TLS D2020
-239    Middle East &amp; North Africa (IDA &amp; IBRD countries)    TMN D2020
-240                                                Tonga    TON D2020
-241                              South Asia (IDA &amp; IBRD)    TSA D2020
-242            Sub-Saharan Africa (IDA &amp; IBRD countries)    TSS D2020
-243                                  Trinidad and Tobago    TTO D2020
-244                                              Tunisia    TUN D2020
-245                                              Turkiye    TUR D2020
-246                                               Tuvalu    TUV D2020
-247                                             Tanzania    TZA D2020
-248                                               Uganda    UGA D2020
-249                                              Ukraine    UKR D2020
-250                                  Upper middle income    UMC D2020
-251                                              Uruguay    URY D2020
-252                                        United States    USA D2020
-253                                           Uzbekistan    UZB D2020
-254                       St. Vincent and the Grenadines    VCT D2020
-255                                        Venezuela, RB    VEN D2020
-256                               British Virgin Islands    VGB D2020
-257                                Virgin Islands (U.S.)    VIR D2020
-258                                             Viet Nam    VNM D2020
-259                                              Vanuatu    VUT D2020
-260                                                World    WLD D2020
-261                                                Samoa    WSM D2020
-262                                               Kosovo    XKX D2020
-263                                          Yemen, Rep.    YEM D2020
-264                                         South Africa    ZAF D2020
-265                                               Zambia    ZMB D2020
-266                                             Zimbabwe    ZWE D2020
-    accessyear_values
-1                  NA
-2           24.988401
-3           18.400000
-4           41.749819
-5           32.550147
-6           72.237677
-7           93.205649
-8           66.440355
-9          100.000000
-10          85.514386
-11          76.507701
-12                 NA
-13          95.685508
-14          96.394467
-15          87.529428
-16          84.599996
-17           3.787954
-18          91.526416
-19          28.229154
-20          13.937972
-21          32.870000
-22          70.162484
-23          99.671032
-24          92.476020
-25          73.211753
-26          85.087912
-27          59.506389
-28                 NA
-29          59.940102
-30          81.342694
-31          82.458446
-32          96.069126
-33          79.869849
-34          72.748020
-35           8.565672
-36          92.300000
-37          81.780240
-38          94.349952
-39                 NA
-40          86.370995
-41          70.052760
-42          41.373605
-43          45.529223
-44          22.864948
-45                 NA
-46          69.795335
-47          21.163215
-48          63.161191
-49          80.530186
-50          77.961154
-51          71.119075
-52                 NA
-53                 NA
-54          90.801946
-55          81.338897
-56          89.812941
-57          61.261523
-58          77.065048
-59          96.549146
-60          82.198306
-61          63.949996
-62          66.171296
-63          48.176940
-64          68.901066
-65          79.894656
-66          83.715413
-67          70.700000
-68          71.914201
-69          85.294810
-70          14.179987
-71          93.205649
-72          89.058287
-73          16.422947
-74          84.769836
-75          34.425633
-76          92.170271
-77          84.876781
-78          84.706409
-79                 NA
-80          40.129467
-81          70.788748
-82          94.818201
-83          72.531575
-84          56.682160
-85                 NA
-86          28.823231
-87          31.604191
-88          27.905281
-89          53.836141
-90          78.115845
-91          74.721854
-92                 NA
-93          47.512342
-94                 NA
-95          81.801979
-96          89.444196
-97          92.413136
-98          43.489546
-99          24.511844
-100         78.320900
-101         36.394748
-102         84.771152
-103         62.466545
-104         54.193686
-105         30.535949
-106         36.209840
-107         53.726494
-108         27.608999
-109                NA
-110         43.405443
-111                NA
-112         91.999891
-113         75.569866
-114         45.786370
-115         99.532752
-116         90.127341
-117         70.483428
-118         79.432440
-119         75.447695
-120         90.219458
-121         85.942599
-122         25.532940
-123         72.000000
-124         53.650767
-125         45.148043
-126         80.358541
-127         96.505061
-128         99.105870
-129         73.449232
-130         54.000000
-131         83.103817
-132         27.953081
-133                NA
-134         77.537734
-135         73.913016
-136         25.463908
-137         18.753452
-138         94.349952
-139         36.184734
-140         45.394753
-141         53.848692
-142         42.856166
-143         73.658412
-144         83.055547
-145         98.459629
-146         88.897961
-147         88.332620
-148                NA
-149         84.120363
-150         84.706409
-151         59.152949
-152         13.716778
-153         77.586225
-154         72.789257
-155         71.490175
-156                NA
-157         57.391573
-158         81.405538
-159         27.856538
-160         86.858762
-161         41.954290
-162         68.387578
-163         77.608793
-164         65.630580
-165                NA
-166         16.312267
-167         53.516998
-168         64.884904
-169         18.926770
-170         89.555012
-171         90.790695
-172         48.764204
-173                NA
-174         21.463795
-175         51.458374
-176         53.404653
-177         91.333333
-178         94.607556
-179         45.846159
-180         76.682651
-181         92.865074
-182         86.202730
-183         95.232293
-184         62.956166
-185         18.934815
-186         65.541880
-187         65.251798
-188         47.111908
-189                NA
-190         27.730010
-191         83.184887
-192         30.372233
-193                NA
-194                NA
-195         78.261660
-196         73.957511
-197         76.010000
-198         61.166059
-199         88.622663
-200                NA
-201         99.652849
-202         78.455269
-203         84.994670
-204         23.800000
-205         38.976123
-206         97.862332
-207         28.400000
-208         47.179425
-209         92.004347
-210         35.881458
-211         18.000000
-212         54.601370
-213         70.483428
-214                NA
-215         78.368049
-216         31.820210
-217          6.500000
-218         31.824290
-219         65.508498
-220         40.310672
-221         62.085638
-222         89.920904
-223         86.601301
-224         94.539431
-225         56.420937
-226                NA
-227         75.469196
-228         35.780000
-229                NA
-230         11.660192
-231         66.171357
-232         80.101387
-233         29.075833
-234         77.843741
-235                NA
-236                NA
-237         73.948687
-238         34.129274
-239         68.281995
-240         66.648431
-241         38.976123
-242         31.824290
-243         78.671158
-244         72.807487
-245         77.669561
-246                NA
-247         23.447509
-248          6.100000
-249         75.037909
-250         70.816322
-251         86.310191
-252         90.620470
-253         71.099998
-254         80.429529
-255                NA
-256                NA
-257                NA
-258         70.300000
-259         53.275023
-260         59.569138
-261         69.205988
-262                NA
-263                NA
-264         70.320310
-265         18.051915
-266         29.298565</code></pre>
-</div>
-<div class="cell-output cell-output-stdout">
-<pre><code>    region                                 Name   Continental.region
-1      ISR                               Israel            NEAR EAST
-2      ITA                                Italy       WESTERN EUROPE
-3      FJI                                 Fiji              OCEANIA
-4      SMR                           San Marino       WESTERN EUROPE
-5      KHM                             Cambodia ASIA (EX. NEAR EAST)
-6      PAK                             Pakistan ASIA (EX. NEAR EAST)
-7      IND                                India ASIA (EX. NEAR EAST)
-8      KGZ                           Kyrgyzstan    CIS (FORMER USSR)
-9      FRA                               France       WESTERN EUROPE
-10     COL                             Colombia        SOUTH AMERICA
-11     HTI                                Haiti            CARIBBEAN
-12     BGD                           Bangladesh ASIA (EX. NEAR EAST)
-13     LKA                            Sri Lanka ASIA (EX. NEAR EAST)
-14     LAO     Lao People's Democratic Republic ASIA (EX. NEAR EAST)
-15     RUS                   Russian Federation    CIS (FORMER USSR)
-16     UKR                              Ukraine    CIS (FORMER USSR)
-17     IDN                            Indonesia ASIA (EX. NEAR EAST)
-18     URY                              Uruguay        SOUTH AMERICA
-19     MDA                              Moldova       EASTERN EUROPE
-20     MYS                             Malaysia ASIA (EX. NEAR EAST)
-21     VNM                              Vietnam ASIA (EX. NEAR EAST)
-22     UZB                           Uzbekistan    CIS (FORMER USSR)
-23     TTO                  Trinidad and Tobago            CARIBBEAN
-24     MNE                           Montenegro       EASTERN EUROPE
-25     MTQ                           Martinique            CARIBBEAN
-26     WSM                                Samoa              OCEANIA
-27     POL                               Poland       EASTERN EUROPE
-28     CHN                                China ASIA (EX. NEAR EAST)
-29     MWI                               Malawi   SUB-SAHARAN AFRICA
-30     MNG                             Mongolia ASIA (EX. NEAR EAST)
-31     NGA                              Nigeria   SUB-SAHARAN AFRICA
-32     BRA                               Brazil        SOUTH AMERICA
-33     GHA                                Ghana   SUB-SAHARAN AFRICA
-34     THA                             Thailand ASIA (EX. NEAR EAST)
-35     KAZ                           Kazakhstan    CIS (FORMER USSR)
-36     MCO                               Monaco       WESTERN EUROPE
-37     NPL                                Nepal ASIA (EX. NEAR EAST)
-38     TUR                               Turkey            NEAR EAST
-39     AUS                            Australia              OCEANIA
-40     PER                                 Peru        SOUTH AMERICA
-41     REU                              Réunion   SUB-SAHARAN AFRICA
-42     ESP                                Spain       WESTERN EUROPE
-43     GLP                           Guadeloupe            CARIBBEAN
-44     GUF                        French Guiana        SOUTH AMERICA
-45     SOM                              Somalia   SUB-SAHARAN AFRICA
-46     AUT                              Austria       WESTERN EUROPE
-47     KWT                               Kuwait            NEAR EAST
-48     FIN                              Finland       WESTERN EUROPE
-49     COD       Congo (Democratic Republic of)   SUB-SAHARAN AFRICA
-50     ROU                              Romania       EASTERN EUROPE
-51     NIC                            Nicaragua      CENTRAL AMERICA
-52     RWA                               Rwanda   SUB-SAHARAN AFRICA
-53     ESH                       Western Sahara      NORTHERN AFRICA
-54     SRB                               Serbia       EASTERN EUROPE
-55     PHL                          Philippines ASIA (EX. NEAR EAST)
-56     TCA             Turks and Caicos Islands            CARIBBEAN
-57     KEN                                Kenya   SUB-SAHARAN AFRICA
-58     GBR                       United Kingdom       WESTERN EUROPE
-59     SGP                            Singapore ASIA (EX. NEAR EAST)
-60     MAR                              Morocco      NORTHERN AFRICA
-61     CHL                                Chile        SOUTH AMERICA
-62     EGY                                Egypt      NORTHERN AFRICA
-63     SYR                                Syria            NEAR EAST
-64     MUS                            Mauritius   SUB-SAHARAN AFRICA
-65     SLE                         Sierra Leone   SUB-SAHARAN AFRICA
-66     BLR                              Belarus    CIS (FORMER USSR)
-67     GIB                            Gibraltar       WESTERN EUROPE
-68     COG                                Congo   SUB-SAHARAN AFRICA
-69     ETH                             Ethiopia   SUB-SAHARAN AFRICA
-70     DNK                              Denmark       WESTERN EUROPE
-71     TWN                               Taiwan ASIA (EX. NEAR EAST)
-72     JAM                              Jamaica            CARIBBEAN
-73     BTN                               Bhutan ASIA (EX. NEAR EAST)
-74     MYT                              Mayotte   SUB-SAHARAN AFRICA
-75     DZA                              Algeria      NORTHERN AFRICA
-76     PYF                     French Polynesia              OCEANIA
-77     JOR                               Jordan            NEAR EAST
-78     MOZ                           Mozambique   SUB-SAHARAN AFRICA
-79     HND                             Honduras      CENTRAL AMERICA
-80     DOM                   Dominican Republic            CARIBBEAN
-81     BLM         Saint Barthélemy (St. Barts)            CARIBBEAN
-82     HKG                            Hong Kong ASIA (EX. NEAR EAST)
-83     LBY                                Libya      NORTHERN AFRICA
-84     TZA                             Tanzania   SUB-SAHARAN AFRICA
-85     SVN                             Slovenia       EASTERN EUROPE
-86     MKD                            Macedonia       EASTERN EUROPE
-87     SUR                             Suriname        SOUTH AMERICA
-88     ARM                              Armenia    CIS (FORMER USSR)
-89     MMR                              Myanmar ASIA (EX. NEAR EAST)
-90     ECU                              Ecuador        SOUTH AMERICA
-91     AGO                               Angola   SUB-SAHARAN AFRICA
-92     AFG                          Afghanistan ASIA (EX. NEAR EAST)
-93     BIH               Bosnia and Herzegovina       EASTERN EUROPE
-94     PRY                             Paraguay        SOUTH AMERICA
-95     VEN                            Venezuela        SOUTH AMERICA
-96     VCT     Saint Vincent and the Grenadines            CARIBBEAN
-97     IRQ                                 Iraq            NEAR EAST
-98     SPM              St. Pierre and Miquelon            CARIBBEAN
-99     SLV                          El Salvador      CENTRAL AMERICA
-100    ISL                              Iceland       WESTERN EUROPE
-101    PSE                  Palestine, State of            NEAR EAST
-102    BDI                              Burundi   SUB-SAHARAN AFRICA
-103    UGA                               Uganda   SUB-SAHARAN AFRICA
-104    ARG                            Argentina        SOUTH AMERICA
-105    DMA                             Dominica            CARIBBEAN
-106    MDG                           Madagascar   SUB-SAHARAN AFRICA
-107    EST                              Estonia              BALTICS
-108    SDN                                Sudan   SUB-SAHARAN AFRICA
-109    GTM                            Guatemala      CENTRAL AMERICA
-110    CIV                        Côte d'Ivoire   SUB-SAHARAN AFRICA
-111    HRV                              Croatia       EASTERN EUROPE
-112    LIE                        Liechtenstein       WESTERN EUROPE
-113    TON                                Tonga              OCEANIA
-114   &lt;NA&gt;                              Namibia   SUB-SAHARAN AFRICA
-115   &lt;NA&gt;                               Kosovo       EASTERN EUROPE
-116    SWZ                             Eswatini   SUB-SAHARAN AFRICA
-117    LTU                            Lithuania              BALTICS
-118    DJI                             Djibouti   SUB-SAHARAN AFRICA
-119    TUN                              Tunisia      NORTHERN AFRICA
-120    JEY                               Jersey       WESTERN EUROPE
-121    BHR                              Bahrain            NEAR EAST
-122    MRT                           Mauritania      NORTHERN AFRICA
-123    PNG                     Papua New Guinea              OCEANIA
-124    MAC                                Macau ASIA (EX. NEAR EAST)
-125    IMN                          Isle of Man       WESTERN EUROPE
-126    TGO                                 Togo   SUB-SAHARAN AFRICA
-127    SAU                         Saudi Arabia            NEAR EAST
-128    IRL                              Ireland       WESTERN EUROPE
-129    IRN                                 Iran ASIA (EX. NEAR EAST)
-130    ASM                       American Samoa              OCEANIA
-131    GIN                               Guinea   SUB-SAHARAN AFRICA
-132    KNA                Saint Kitts and Nevis            CARIBBEAN
-133    VUT                              Vanuatu              OCEANIA
-134    ALB                              Albania       EASTERN EUROPE
-135    LCA                          Saint Lucia            CARIBBEAN
-136    MAF                Saint-Martin (France)            CARIBBEAN
-137    GNQ                    Equatorial Guinea   SUB-SAHARAN AFRICA
-138    NLD                      The Netherlands       WESTERN EUROPE
-139    PAN                               Panama      CENTRAL AMERICA
-140    CMR                             Cameroon   SUB-SAHARAN AFRICA
-141    SEN                              Senegal   SUB-SAHARAN AFRICA
-142    NER                                Niger   SUB-SAHARAN AFRICA
-143    TJK                           Tajikistan    CIS (FORMER USSR)
-144    GGY                             Guernsey       WESTERN EUROPE
-145    LUX                           Luxembourg       WESTERN EUROPE
-146    HUN                              Hungary       EASTERN EUROPE
-147    AZE                           Azerbaijan    CIS (FORMER USSR)
-148    PRT                             Portugal       WESTERN EUROPE
-149    ZAF                         South Africa   SUB-SAHARAN AFRICA
-150    GRD                              Grenada            CARIBBEAN
-151    ABW                                Aruba            CARIBBEAN
-152    CRI                           Costa Rica      CENTRAL AMERICA
-153    BOL                              Bolivia        SOUTH AMERICA
-154    AIA                             Anguilla            CARIBBEAN
-155    BRN                    Brunei Darussalam ASIA (EX. NEAR EAST)
-156    GEO                              Georgia    CIS (FORMER USSR)
-157    LBN                              Lebanon            NEAR EAST
-158    TLS                          Timor-Leste ASIA (EX. NEAR EAST)
-159    OMN                                 Oman            NEAR EAST
-160    LSO                              Lesotho   SUB-SAHARAN AFRICA
-161    BWA                             Botswana   SUB-SAHARAN AFRICA
-162    MEX                               Mexico      CENTRAL AMERICA
-163    DEU                              Germany       WESTERN EUROPE
-164    MDV                             Maldives ASIA (EX. NEAR EAST)
-165    COM                              Comoros   SUB-SAHARAN AFRICA
-166    BEL                              Belgium       WESTERN EUROPE
-167    FRO                        Faroe Islands       WESTERN EUROPE
-168    PLW                                Palau              OCEANIA
-169    MSR                           Montserrat            CARIBBEAN
-170    SWE                               Sweden       WESTERN EUROPE
-171    MLT                                Malta       WESTERN EUROPE
-172    GUY                               Guyana        SOUTH AMERICA
-173    BEN                                Benin   SUB-SAHARAN AFRICA
-174    QAT                                Qatar            NEAR EAST
-175    STP                São Tomé and Príncipe   SUB-SAHARAN AFRICA
-176    CYP                               Cyprus            NEAR EAST
-177    LBR                              Liberia   SUB-SAHARAN AFRICA
-178    GUM                                 Guam              OCEANIA
-179    PRI                          Puerto Rico            CARIBBEAN
-180    COK                         Cook Islands              OCEANIA
-181    MNP             Northern Mariana Islands              OCEANIA
-182    SVK                             Slovakia       EASTERN EUROPE
-183    CUW                              Curaçao            CARIBBEAN
-184    BES                Caribbean Netherlands            CARIBBEAN
-185    CUB                                 Cuba            CARIBBEAN
-186    GNB                        Guinea-Bissau   SUB-SAHARAN AFRICA
-187    BRB                             Barbados            CARIBBEAN
-188    SXM                         Sint Maarten            CARIBBEAN
-189    GRC                               Greece       WESTERN EUROPE
-190    BLZ                               Belize      CENTRAL AMERICA
-191    CCK              Cocos (Keeling) Islands              OCEANIA
-192    NRU                                Nauru              OCEANIA
-193    CZE                       Czech Republic       EASTERN EUROPE
-194    NIU                                 Niue              OCEANIA
-195    KIR                             Kiribati              OCEANIA
-196    ATG                  Antigua and Barbuda            CARIBBEAN
-197    LVA                               Latvia              BALTICS
-198    CPV                           Cape Verde   SUB-SAHARAN AFRICA
-199    BFA                         Burkina Faso   SUB-SAHARAN AFRICA
-200    BMU                              Bermuda     NORTHERN AMERICA
-201    JPN                                Japan ASIA (EX. NEAR EAST)
-202    GMB                               Gambia   SUB-SAHARAN AFRICA
-203    GRL                            Greenland     NORTHERN AMERICA
-204    NCL                        New Caledonia              OCEANIA
-205    NOR                               Norway       WESTERN EUROPE
-206    GAB                                Gabon   SUB-SAHARAN AFRICA
-207    TCD                                 Chad   SUB-SAHARAN AFRICA
-208    VIR                Virgin Islands (U.S.)            CARIBBEAN
-209    IOT       British Indian Ocean Territory ASIA (EX. NEAR EAST)
-210    MLI                                 Mali   SUB-SAHARAN AFRICA
-211    ARE                 United Arab Emirates            NEAR EAST
-212    AND                              Andorra       WESTERN EUROPE
-213    BHS                              Bahamas            CARIBBEAN
-214    KOR                          South Korea ASIA (EX. NEAR EAST)
-215    VGB             Virgin Islands (British)            CARIBBEAN
-216    CAN                               Canada     NORTHERN AMERICA
-217    SYC                           Seychelles   SUB-SAHARAN AFRICA
-218    NZL                          New Zealand              OCEANIA
-219    USA                        United States     NORTHERN AMERICA
-220    MHL                     Marshall Islands              OCEANIA
-221    TUV                               Tuvalu              OCEANIA
-222    ALA                        Åland Islands       WESTERN EUROPE
-223    NFK                       Norfolk Island              OCEANIA
-224    SLB                      Solomon Islands              OCEANIA
-225    FSM     Micronesia (Federated States of)              OCEANIA
-226    CHE                          Switzerland       WESTERN EUROPE
-227    ZMB                               Zambia   SUB-SAHARAN AFRICA
-228    CYM                       Cayman Islands            CARIBBEAN
-229    SJM               Svalbard and Jan Mayen       WESTERN EUROPE
-230    CAF             Central African Republic   SUB-SAHARAN AFRICA
-231    TKM                         Turkmenistan    CIS (FORMER USSR)
-232    YEM                                Yemen            NEAR EAST
-233    TKL                              Tokelau              OCEANIA
-234    SSD                          South Sudan   SUB-SAHARAN AFRICA
-235    SHN                         Saint Helena   SUB-SAHARAN AFRICA
-236    FLK                     Falkland Islands        SOUTH AMERICA
-237    ZWE                             Zimbabwe   SUB-SAHARAN AFRICA
-238    BGR                             Bulgaria       EASTERN EUROPE
-239    WLF                    Wallis and Futuna              OCEANIA
-240    CXR                     Christmas Island              OCEANIA
-241    ERI                              Eritrea      NORTHERN AFRICA
-242    PRK                          North Korea ASIA (EX. NEAR EAST)
-243    PCN                     Pitcairn Islands              OCEANIA
-244    ATF  French Southern and Antarctic Lands              OCEANIA
-245    UMI United States Minor Outlying Islands        NORTH AMERICA
-246    VAT              Vatican City (Holy See)       WESTERN EUROPE
-247   &lt;NA&gt;                      Global Averages                     
-    Price.per.GB...change..5.years. Dyear priceyear_values
-1                           -97.57% D2020             0.11
-2                           -95.04% D2020             0.43
-3                           -97.54% D2020             0.59
-4                           -98.60% D2020             1.16
-5                           -98.82% D2020             1.50
-6                           -93.31% D2020             0.69
-7                           -38.18% D2020             0.09
-8                           -35.17% D2020             0.21
-9                           -83.71% D2020             0.81
-10                          -93.84% D2020             3.46
-11                          -82.46% D2020             2.74
-12                          -76.57% D2020             0.70
-13                          -68.10% D2020             0.51
-14                          -92.61% D2020             4.16
-15                          -72.19% D2020             0.52
-16                          -95.44% D2020             0.46
-17                          -90.77% D2020             0.64
-18                          -90.09% D2020             1.58
-19                          -90.10% D2020             1.12
-20                          -82.81% D2020             1.12
-21                          -77.73% D2020             0.57
-22                          -90.78% D2020             1.34
-23                          -88.14% D2020             5.92
-24                          -88.65% D2020             3.94
-25                          -95.30% D2020             2.60
-26                          -98.80% D2020            10.86
-27                          -71.95% D2020             0.70
-28                          -96.21% D2020             0.61
-29                          -89.39% D2020            27.41
-30                          -53.21% D2020             0.74
-31                          -95.03% D2020             1.39
-32                          -88.51% D2020             1.01
-33                          -74.12% D2020             0.94
-34                          -85.36% D2020             1.23
-35                          -17.06% D2020             0.46
-36                          -65.42% D2020             0.98
-37                          -80.82% D2020             0.86
-38                          -80.62% D2020             0.72
-39                          -82.24% D2020             0.68
-40                          -82.00% D2020             2.13
-41                          -70.76% D2020             0.72
-42                          -13.73% D2020             1.81
-43                          -91.87% D2020             2.42
-44                          -96.32% D2020             3.61
-45                          -91.92% D2020             0.50
-46                          -73.14% D2020             1.08
-47                          -74.22% D2020             0.77
-48                          -55.27% D2020             2.14
-49                    MISSSING DATA D2020               NA
-50                          -71.66% D2020             1.03
-51                          -99.17% D2020             1.71
-52                          -85.41% D2020             1.48
-53                          -51.05% D2020             0.99
-54                          -88.03% D2020             1.60
-55                          -81.40% D2020             1.42
-56                          -97.45% D2020            13.33
-57                          -78.43% D2020             1.05
-58                          -90.63% D2020             1.39
-59                          -78.18% D2020             2.47
-60                          -61.89% D2020             0.99
-61                          -65.90% D2020             0.71
-62                          -56.65% D2020             1.09
-63                          -83.88% D2020             6.55
-64                           30.01% D2020             0.69
-65                          -92.74% D2020             3.69
-66                          -71.59% D2020             0.89
-67                          -78.36% D2020             7.38
-68                          -85.06% D2020             1.94
-69                          -66.82% D2020             2.44
-70                          -49.14% D2020             0.80
-71                          -94.24% D2020             5.91
-72                          -71.33% D2020             3.88
-73                          -52.60% D2020             1.16
-74                          -67.87% D2020             1.08
-75                          -85.85% D2020             0.65
-76                          -84.95% D2020            15.42
-77                          -57.80% D2020             1.03
-78                          -93.89% D2020             3.33
-79                          -83.30% D2020             3.12
-80                          -38.05% D2020             0.74
-81                          -84.05% D2020             4.06
-82                          -88.60% D2020             2.55
-83                          -83.07% D2020             4.73
-84                          -77.39% D2020             0.73
-85                          -61.94% D2020             1.48
-86                          -76.20% D2020             1.75
-87                          -84.39% D2020             4.92
-88                          -61.10% D2020             1.05
-89                           13.67% D2020             0.78
-90                          -85.56% D2020             3.24
-91                          -87.33% D2020             5.29
-92                          -36.16% D2020             1.55
-93                          -66.33% D2020             3.04
-94                          -91.01% D2020             2.30
-95                    MISSSING DATA D2020               NA
-96                          -70.58% D2020             3.33
-97                          -86.65% D2020             4.20
-98                    MISSSING DATA D2020               NA
-99                          -76.27% D2020             1.45
-100                         -71.40% D2020             1.46
-101                         -83.50% D2020             3.26
-102                         -94.13% D2020             2.12
-103                         -77.96% D2020             1.62
-104                         -85.03% D2020             1.45
-105                         -92.40% D2020             4.92
-106                         -84.52% D2020             8.81
-107                         -68.69% D2020             1.27
-108                          71.63% D2020             0.63
-109                         -75.76% D2020             2.17
-110                         -80.87% D2020             3.20
-111                         -70.29% D2020             2.48
-112                         -85.10% D2020             4.01
-113                         -59.09% D2020             3.41
-114                         -89.14% D2020             4.78
-115                   MISSSING DATA D2020               NA
-116                         -76.05% D2020            13.31
-117                         -38.80% D2020             1.85
-118                         -96.67% D2020             1.12
-119                         -65.21% D2020             1.37
-120                         -65.59% D2020             1.71
-121                         -34.40% D2020             2.27
-122                         -86.14% D2020             4.63
-123                         -88.76% D2020             5.40
-124                         -91.60% D2020             2.89
-125                         -56.65% D2020             1.66
-126                         -90.42% D2020             4.50
-127                         -73.42% D2020             2.12
-128                         -62.07% D2020             1.36
-129                         -20.14% D2020             0.75
-130                         -22.53% D2020             2.50
-131                         -66.58% D2020             2.08
-132                         -89.65% D2020            11.07
-133                   MISSSING DATA D2020             4.25
-134                         -70.58% D2020             2.83
-135                         -67.43% D2020             3.27
-136                         -81.34% D2020             3.32
-137                         -96.65% D2020            12.78
-138                         -65.20% D2020             2.98
-139                         -65.22% D2020             6.69
-140                          -4.60% D2020             2.75
-141                         -50.20% D2020             3.30
-142                         -93.59% D2020             3.30
-143                         -59.72% D2020             4.65
-144                         -44.54% D2020             1.24
-145                         -87.79% D2020             3.89
-146                         -41.04% D2020             5.32
-147                         -72.52% D2020             1.86
-148                         -87.23% D2020             4.97
-149                         -76.73% D2020             4.30
-150                         -84.93% D2020             5.37
-151                         -66.62% D2020             9.11
-152                         -61.93% D2020             2.74
-153                         -68.87% D2020             5.09
-154                         -86.65% D2020             5.92
-155                         -77.74% D2020             2.64
-156                         -66.10% D2020             0.93
-157                         -67.23% D2020             3.82
-158                         -57.10% D2020             2.08
-159                         -82.73% D2020             4.58
-160                         -72.81% D2020             2.13
-161                         -88.15% D2020            13.87
-162                         -86.48% D2020             4.77
-163                         -69.24% D2020             4.06
-164                         -62.76% D2020             3.88
-165                         -58.69% D2020             4.38
-166                         -28.56% D2020             4.88
-167                         -77.14% D2020             2.41
-168                         -73.02% D2020             2.50
-169                         -54.02% D2020             8.33
-170                         -36.15% D2020             2.07
-171                         -82.01% D2020             3.62
-172                         -80.82% D2020             5.46
-173                         -88.72% D2020            27.22
-174                         -80.88% D2020             4.12
-175                         -92.40% D2020            28.26
-176                         -88.10% D2020            13.56
-177                         -33.39% D2020             3.25
-178                         -41.36% D2020             2.00
-179                         -82.32% D2020             9.17
-180                         -52.83% D2020               NA
-181                         -79.44% D2020             2.65
-182                         -63.68% D2020             3.84
-183                         -84.16% D2020            11.06
-184                         -71.67% D2020             9.95
-185                   MISSSING DATA D2020            13.33
-186                         -76.73% D2020             4.12
-187                         -82.64% D2020             9.32
-188                         -87.19% D2020             4.66
-189                         -43.25% D2020            12.06
-190                         -33.63% D2020             3.25
-191                   MISSSING DATA D2020            16.98
-192                         -89.02% D2020            30.47
-193                         -90.46% D2020             7.95
-194                         -65.87% D2020             4.50
-195                         -71.09% D2020            10.50
-196                         -74.77% D2020             7.17
-197                         -82.29% D2020             3.79
-198                         -23.78% D2020             4.81
-199                         -68.13% D2020             2.47
-200                         -90.95% D2020            28.75
-201                         -66.51% D2020             3.91
-202                         -48.35% D2020             5.10
-203                         -67.77% D2020             9.56
-204                         -47.83% D2020             4.81
-205                         -23.63% D2020             5.28
-206                          20.64% D2020             4.89
-207                         -82.48% D2020            23.33
-208                         -12.94% D2020             4.67
-209                         -52.25% D2020             7.50
-210                         -63.15% D2020             4.12
-211                         -54.95% D2020             3.78
-212                         -61.68% D2020             9.54
-213                           0.97% D2020             6.02
-214                         -45.58% D2020            10.94
-215                         -71.74% D2020            12.50
-216                         -59.38% D2020            12.55
-217                         -72.20% D2020            11.43
-218                         -39.86% D2020             6.06
-219                         -28.06% D2020             8.00
-220                   MISSSING DATA D2020               NA
-221                         -51.00% D2020               NA
-222                          32.11% D2020             3.24
-223                   MISSSING DATA D2020               NA
-224                         -16.76% D2020             8.53
-225                         -44.76% D2020             7.20
-226                         -63.95% D2020             8.38
-227                         256.49% D2020             1.36
-228                         -68.67% D2020            23.05
-229                         -23.46% D2020             5.90
-230                          80.65% D2020             8.25
-231                         -42.37% D2020            11.44
-232                          -0.30% D2020            15.98
-233                         -42.46% D2020            17.75
-234                   MISSSING DATA D2020               NA
-235                         -35.94% D2020            52.50
-236                         -26.84% D2020            40.41
-237                   MISSSING DATA D2020               NA
-238                   MISSSING DATA D2020             2.22
-239                   MISSSING DATA D2020               NA
-240                   MISSSING DATA D2020               NA
-241                   MISSSING DATA D2020               NA
-242                   MISSSING DATA D2020               NA
-243                   MISSSING DATA D2020               NA
-244                   MISSSING DATA D2020               NA
-245                   MISSSING DATA D2020               NA
-246                   MISSSING DATA D2020               NA
-247                                 D2020             5.09</code></pre>
-</div>
-<div class="cell-output-display">
-<p><img src="index_files/figure-html/unbroken-6.png" class="img-fluid" width="1152"></p>
+<p><img src="index_files/figure-html/unbroken-6.png" class="img-fluid" width="1344"></p>
 </div>
 </div>
 <p>(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.<br>
