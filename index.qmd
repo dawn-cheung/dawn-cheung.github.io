@@ -239,8 +239,6 @@ speedscatter %>% #probelm
   drop_na(values) %>%
   ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(values), colour = region_wb)) +
   geom_point()
-speedscatter %>%
-  select(country, year, gini, GDP.per.capita) #debug line
 
 pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = "region")
