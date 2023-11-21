@@ -5,7 +5,7 @@ output: html_document
 
 *Work in progress for final project*
 
-<iframe height="435" width="145%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
+<iframe height="435" width="115%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
 
 </iframe>
 
@@ -230,8 +230,11 @@ speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
 #options(repr.plot.width = 10, repr.plot.height =3) #seemingly does nothing
 speedscatter %>% #KEEPING
   drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = values, colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
+  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
+  geom_point() + 
+  labs(x = "Speed of Internet", y = "GDP per capita", title = str_wrap("How economic development affects mean speed of internet", 40)) +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
 
 pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = "region")
@@ -286,21 +289,15 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
 ```
 
-```{r fixingbroken, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+```{r fixingbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 #remove all non-pg13 commenst when setting echo to true
-library(tidyverse)
-library(ggplot2)
-library(maps)
-library(sf)
-library(dplyr)
-library(countrycode)
-library(shiny)
-library(ggpubr)
-library(rsconnect)
-
-speed_dataset <- read.csv("worldwideInternetSpeed.csv")
-speed_dataset$region <- countrycode(speed_dataset$region, "iso2c", "iso3c")
-write.csv(speed_dataset,"./worldwideInternetSpeed.csv", row.names=FALSE)
+speedscatter %>% #KEEPING
+  drop_na(values) %>%
+  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
+  geom_point() + 
+  labs(x = "Speed of Internet", y = "GDP per capita", title = "How economic development affects mean speed of internet") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
 
 ```
 

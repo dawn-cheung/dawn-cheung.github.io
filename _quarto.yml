@@ -13,6 +13,7 @@ website:
 
 format:
   html:
+    page-layout: full
     theme: cyborg
     css: styles.css
     toc: true

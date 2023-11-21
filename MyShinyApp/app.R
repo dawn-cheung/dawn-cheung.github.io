@@ -22,7 +22,7 @@ mapplotting <- function(wee, dayear, colourscheme) {
   weep$values <- as.numeric(weep$values)
   mapdataset <- left_join(world_map, weep, by = "region")
   ggplot(mapdataset, aes(long, lat, group = group)) +
-    geom_polygon(aes(fill = values), color = "white", size = 0.04) +
+    geom_polygon(aes(fill = values), color = "white", linewidth = 0.04) +
     scale_fill_viridis_c(option = colourscheme) +
     theme(plot.margin = margin(0, 0, 0, 0, "cm"))
 }
@@ -51,11 +51,7 @@ ui <- fluidPage(
     # Main panel for displaying outputs ----
     mainPanel(
       
-      # Output: Verbatim text for data summary ----
-      verbatimTextOutput("summary"),
-      
-      # Output: HTML table with requested number of observations ----
-      plotlyOutput("view", width = "80%")
+      plotlyOutput("view", width = "90%")
     )
   )
 )
