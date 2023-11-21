@@ -222,48 +222,39 @@ accessscatter %>%  #KEEPING
   geom_point() + 
   labs(x = "Percentage of the population using the Internet", y = "logarithm of GDP per capita", title = "How acess to the internet affects economic output") +
   geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=25))
+  theme(plot.title=element_text(size=35))
 
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = c("region", "year"))
 
 #options(repr.plot.width = 10, repr.plot.height =3) #seemingly does nothing
-speedscatter %>% 
-  filter(year == 2020) %>%
+speedscatter %>%
   drop_na(values) %>%
   ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = values, colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
-
-speedscatter %>% #probelm
-  filter(year == 2020) %>%
-  drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(values), colour = region_wb)) +
-  geom_point()
 
 pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = "region")
 
 pricescatter %>% 
         drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = GDP.per.capita, colour = gini)) +
+  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values), colour = eu)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
-pricescatter %>% 
-        drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = gini, y = values, colour = region_wb)) +
+
+
+accessyear <- accessyear %>% rename(accessyear_values = values)
+priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
+priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
+  left_join(. , econindicator, by = "region")
+
+priceaccessscatter %>% 
+        drop_na(priceyear, accessyear) %>%
+  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
-#accessyear %>% rename(accessyear_values = values)
-#priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
-#priceaccessscatter <- left_join(accessyear, priceyear, by = "region")
-
-#priceaccessscatter %>% 
-#        drop_na(priceyear, accessyear) %>%
-#  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
-#  geom_point()
-
-#accessyear %>% rename(values = accessyear_values)
-#priceyear %>% rename(values = priceyear_values)
+accessyear <- accessyear %>% rename(values = accessyear_values)
+priceyear <- priceyear %>% rename(values = priceyear_values)
 
 AgreeDisagreePie <- function(percent, my_title) {
   percent = as.numeric(percent)
