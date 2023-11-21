@@ -228,7 +228,7 @@ speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = c("region", "year"))
 
 #options(repr.plot.width = 10, repr.plot.height =3) #seemingly does nothing
-speedscatter %>%
+speedscatter %>% #KEEPING
   drop_na(values) %>%
   ggplot(data = speedscatter, mapping = aes(x = GDP.per.capita, y = values, colour = gini)) +
   geom_point() + geom_smooth(method="lm", col="black")
@@ -238,19 +238,29 @@ pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
 
 pricescatter %>% 
         drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values), colour = eu)) +
+  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values))) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 
 
 accessyear <- accessyear %>% rename(accessyear_values = values)
 priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
+speedyear <- speedyear %>% rename(speedyear_values = values)
+
 priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
   left_join(. , econindicator, by = "region")
 
 priceaccessscatter %>% 
         drop_na(priceyear, accessyear) %>%
   ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
+  geom_point() + geom_smooth(method="lm", col="black")
+
+pricespeedcatter <- left_join(speedyear, priceyear, by = "region") %>%
+  left_join(. , econindicator, by = "region")
+
+pricespeedcatter %>% 
+        drop_na(priceyear, speedyear) %>%
+  ggplot(data = pricespeedcatter, mapping = aes(x = as.numeric(priceyear_values), y = speedyear_values)) +
   geom_point() + geom_smooth(method="lm", col="black")
 
 accessyear <- accessyear %>% rename(values = accessyear_values)
@@ -266,13 +276,32 @@ AgreeDisagreePie <- function(percent, my_title) {
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5)) +
     theme_void() +
     theme(plot.title = element_text(size=15),
-          plot.margin = margin(0, 0.2, 0, 1.7, "cm"))
+          axis.title = element_text(size=10),
+          plot.margin = margin(0, 0.2, 0, 1.5, "cm"))
 }
 
 ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
           AgreeDisagreePie(66, "The internet has improved life in my country"),
           AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
+```
+
+```{r fixingbroken, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+#remove all non-pg13 commenst when setting echo to true
+library(tidyverse)
+library(ggplot2)
+library(maps)
+library(sf)
+library(dplyr)
+library(countrycode)
+library(shiny)
+library(ggpubr)
+library(rsconnect)
+
+speed_dataset <- read.csv("worldwideInternetSpeed.csv")
+speed_dataset$region <- countrycode(speed_dataset$region, "iso2c", "iso3c")
+write.csv(speed_dataset,"./worldwideInternetSpeed.csv", row.names=FALSE)
+
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
