@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Placeholders!"
+  title: "The Digital Divide — and Why it Matters"
   navbar:
     left:
       - href: index.qmd #to hyperlink the file
