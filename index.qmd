@@ -221,7 +221,6 @@ accessscatter %>%  #KEEPING
   theme(plot.title=element_text(size=35))
 
 
-
 pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = "region")
 
@@ -229,7 +228,6 @@ pricescatter %>%
         drop_na(values) %>%
   ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values))) +
   geom_point() + geom_smooth(method="lm", col="black")
-
 
 
 accessyear <- accessyear %>% rename(accessyear_values = values)
@@ -254,13 +252,13 @@ pricespeedcatter %>%
 
 accessyear <- accessyear %>% rename(values = accessyear_values)
 priceyear <- priceyear %>% rename(values = priceyear_values)
+speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 #remove all non-pg13 commenst when setting echo to true
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = c("region", "year"))
-
 speedscatter %>% #KEEPING
   drop_na(values) %>%
   ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
