@@ -3,9 +3,13 @@ title: "dawn-cheung"
 output: html_document
 ---
 
-*Work in progress for final project*
+*Welcome to the data story of the world's digital inequality, and why it kinda sucks!*
 
-<iframe height="435" width="115%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
+This very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case.
+
+Below is a widget that shows, across space, 3 key factors that affects one's ability to use the internet: physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices), the price of internet
+
+<iframe height="435" width="110%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
 
 </iframe>
 
