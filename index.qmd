@@ -165,7 +165,6 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
 ```
 
 ```{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-#remove all non-pg13 commenst when setting echo to true
 library(tidyverse)
 library(ggplot2)
 library(maps)
@@ -218,7 +217,7 @@ accessscatter %>%  #KEEPING
   geom_point() + 
   labs(x = "Percentage of the population acessing the Internet", y = "logarithm of GDP per capita", title = "How acess to the internet affects economic output") +
   geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
+  theme(plot.title=element_text(size=30))
 
 accessyear <- accessyear %>% rename(accessyear_values = values)
 priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
@@ -233,7 +232,7 @@ priceaccessscatter %>%
   geom_point() + 
   labs(x = "Price of Internet", y = "Percentage of the population acessing the Internet", title = "How price of internet affects acess to the internet") +
   geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
+  theme(plot.title=element_text(size=30))
 
 accessyear <- accessyear %>% rename(values = accessyear_values)
 priceyear <- priceyear %>% rename(values = priceyear_values)
@@ -241,7 +240,6 @@ speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-#remove all non-pg13 commenst when setting echo to true
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = c("region", "year"))
 speedscatter %>% #KEEPING
@@ -250,7 +248,11 @@ speedscatter %>% #KEEPING
   geom_point() + 
   labs(x = "Speed of Internet", y = "GDP per capita", title = "How economic development affects mean speed of internet") +
   geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
+  theme(plot.title=element_text(size=30)) +
+  geom_vline(xintercept=2.5, linetype="dashed", color = "red") +
+  geom_vline(xintercept=15, linetype="dashed", color = "red") +
+  annotate(geom="text", x=3, y=98000, label=str_wrap("Official bandwith requirements needed for zoom to function", 15), color="black", fontsize=6, hjust = "left", lineheight = 0.8) +
+  annotate(geom="text", x=15.6, y=82900, label=str_wrap("Zoom functions, but experiences buffer & poor video and audio quality", 20), color="black", fontsize=6, hjust = "left", lineheight = 0.8)
 ```
 
 ```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
@@ -260,12 +262,12 @@ AgreeDisagreePie <- function(percent, my_title) {
   ggplot(data, aes(x="", y=amount, fill=category)) +
     geom_bar(stat="identity", width=1) +
     coord_polar("y") +
-    labs(title = str_wrap(my_title, 40)) +
+    labs(title = str_wrap(my_title, 48)) +
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5)) +
     theme_void() +
     theme(plot.title = element_text(size=15),
           axis.title = element_text(size=10),
-          plot.margin = margin(0, 0.2, 0, 1.5, "cm"))
+          plot.margin = margin(0, 0.7, 0, 1.5, "cm"))
 }
 
 ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
