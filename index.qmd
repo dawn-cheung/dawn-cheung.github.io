@@ -180,7 +180,7 @@ library(plotly)
 #Shiny app:
 #https://myshinyappplease.shinyapps.io/MyShinyApp/
 
-#HARDCODE ALL DATASETS INTO ISO3 PLS
+#HARDCODE ALL DATASETS INTO ISO3: DONE
 
 # Import the data with coordinates
 world_map <- map_data("world")
@@ -216,19 +216,9 @@ accessscatter %>%  #KEEPING
         drop_na(values) %>%
   ggplot(data = accessscatter, mapping = aes(x = values, y = log(GDP.per.capita), colour = gini)) +
   geom_point() + 
-  labs(x = "Percentage of the population using the Internet", y = "logarithm of GDP per capita", title = "How acess to the internet affects economic output") +
+  labs(x = "Percentage of the population acessing the Internet", y = "logarithm of GDP per capita", title = "How acess to the internet affects economic output") +
   geom_smooth(method="lm", col="black")  +
   theme(plot.title=element_text(size=35))
-
-
-pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = "region")
-
-pricescatter %>% 
-        drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values))) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
 
 accessyear <- accessyear %>% rename(accessyear_values = values)
 priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
@@ -240,15 +230,10 @@ priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
 priceaccessscatter %>% 
         drop_na(priceyear, accessyear) %>%
   ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-pricespeedcatter <- left_join(speedyear, priceyear, by = "region") %>%
-  left_join(. , econindicator, by = "region")
-
-pricespeedcatter %>% 
-        drop_na(priceyear, speedyear) %>%
-  ggplot(data = pricespeedcatter, mapping = aes(x = as.numeric(priceyear_values), y = speedyear_values)) +
-  geom_point() + geom_smooth(method="lm", col="black")
+  geom_point() + 
+  labs(x = "Price of Internet", y = "Percentage of the population acessing the Internet", title = "How price of internet affects acess to the internet") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
 
 accessyear <- accessyear %>% rename(values = accessyear_values)
 priceyear <- priceyear %>% rename(values = priceyear_values)
@@ -287,6 +272,39 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           AgreeDisagreePie(66, "The internet has improved life in my country"),
           AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
+```
+
+DUMPSTER PILE
+
+```{r GDPoverPRICE, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14 }
+pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region")
+
+pricescatter %>% 
+        drop_na(values) %>%
+  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values))) +
+  geom_point() + geom_smooth(method="lm", col="black")
+```
+
+```{r PRICEoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+accessyear <- accessyear %>% rename(accessyear_values = values)
+priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
+speedyear <- speedyear %>% rename(speedyear_values = values)
+
+pricespeedcatter <- left_join(speedyear, priceyear, by = "region") %>%
+  left_join(. , econindicator, by = "region")
+
+pricespeedcatter %>% 
+        drop_na(priceyear, speedyear) %>%
+  ggplot(data = pricespeedcatter, mapping = aes(x = as.numeric(priceyear_values), y = speedyear_values)) +
+  geom_point() + 
+  labs(x = "Price of Internet", y = "GDP per capita", title = "How price of internet changes with speed of internet available") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
+
+accessyear <- accessyear %>% rename(values = accessyear_values)
+priceyear <- priceyear %>% rename(values = priceyear_values)
+speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
