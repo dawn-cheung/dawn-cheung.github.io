@@ -180,10 +180,6 @@ library(plotly)
 #Shiny app:
 #https://myshinyappplease.shinyapps.io/MyShinyApp/
 
-
-#SOURCES:
-#accesstointernet.csv: https://data.worldbank.org/indicator/IT.NET.USER.ZS?end=2022&start=2009&view=chart [Individuals using the Internet (% of population)]
-#https://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/ + https://www.worldometers.info/world-population/japan-population/ [to estimate Individuals using the Internet (% of population) in 2022 where there was insufficient data in the earlier datatset]
 #HARDCODE ALL DATASETS INTO ISO3 PLS
 
 # Import the data with coordinates
@@ -224,17 +220,7 @@ accessscatter %>%  #KEEPING
   geom_smooth(method="lm", col="black")  +
   theme(plot.title=element_text(size=35))
 
-speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = c("region", "year"))
 
-#options(repr.plot.width = 10, repr.plot.height =3) #seemingly does nothing
-speedscatter %>% #KEEPING
-  drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
-  geom_point() + 
-  labs(x = "Speed of Internet", y = "GDP per capita", title = str_wrap("How economic development affects mean speed of internet", 40)) +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
 
 pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
   left_join(. , gdpPERCAPITA, by = "region")
@@ -268,7 +254,23 @@ pricespeedcatter %>%
 
 accessyear <- accessyear %>% rename(values = accessyear_values)
 priceyear <- priceyear %>% rename(values = priceyear_values)
+```
 
+```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+#remove all non-pg13 commenst when setting echo to true
+speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = c("region", "year"))
+
+speedscatter %>% #KEEPING
+  drop_na(values) %>%
+  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
+  geom_point() + 
+  labs(x = "Speed of Internet", y = "GDP per capita", title = "How economic development affects mean speed of internet") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
+```
+
+```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 AgreeDisagreePie <- function(percent, my_title) {
   percent = as.numeric(percent)
   data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
@@ -287,18 +289,6 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           AgreeDisagreePie(66, "The internet has improved life in my country"),
           AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
-```
-
-```{r fixingbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-#remove all non-pg13 commenst when setting echo to true
-speedscatter %>% #KEEPING
-  drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
-  geom_point() + 
-  labs(x = "Speed of Internet", y = "GDP per capita", title = "How economic development affects mean speed of internet") +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
-
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
