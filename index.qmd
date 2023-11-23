@@ -109,7 +109,7 @@ speedscatter %>% #KEEPING
   theme(plot.title=element_text(size=30)) +
   geom_vline(xintercept=2.5, linetype="dashed", color = "red") +
   geom_vline(xintercept=15, linetype="dashed", color = "red") +
-  annotate(geom="text", x=3, y=98000, label=str_wrap("Official bandwith requirements needed for zoom to function", 15), color="black", fontsize=6, hjust = "left", lineheight = 0.8) +
+  annotate(geom="text", x=3, y=98000, label=str_wrap("Official bandwith requirements needed for Zoom to function", 15), color="black", fontsize=6, hjust = "left", lineheight = 0.8) +
   annotate(geom="text", x=15.6, y=82900, label=str_wrap("Zoom functions, but experiences buffer & poor video and audio quality", 20), color="black", fontsize=6, hjust = "left", lineheight = 0.8)
 ```
 
