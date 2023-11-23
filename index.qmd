@@ -129,10 +129,10 @@ desiscatter <- left_join(desi, accessyear, by = "region")  %>%
 
 ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, fill = indicator)) +
   geom_col() +
-  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How GDP per capita affects digital skills") +
+  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How economic development affects digital skills") +
   scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
   scale_fill_discrete(name="DESI indicator (% of population)",
-                     labels=c("1a2: Basic digital literacy skills","1a3: Above basic digital literacy skills","1a6: Females having at least basic digital literacy skills"))+
+                     labels=c("1a2: Basic digital skills","1a3: Above basic digital skills","1a6: Females having at least basic skills"))+
   theme(plot.title=element_text(size=30),
         axis.text.x = element_text(vjust = 0.5 , size = 7.8))
 accessyear <- access_dataset %>% filter(Dyear == "D2020")
