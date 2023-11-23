@@ -75,7 +75,7 @@ insert flavour text explaining whats gg on
 
 ```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
-priceyear <- priceyear %>% rename(price = values) #i keep so much just to laugh at the EU
+priceyear <- priceyear %>% rename(price = values)
 speedyear <- speedyear %>% rename(speedyear_values = values)
 
 priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
@@ -147,11 +147,10 @@ AgreeDisagreePie <- function(percent, my_title) {
   ggplot(data, aes(x="", y=amount, fill=category)) +
     geom_bar(stat="identity", width=1) +
     coord_polar("y") +
-    labs(title = str_wrap(my_title, 42)) +
-    geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5)) +
+    labs(title = str_wrap(my_title, 40)) +
+    geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5), size = 8.2) +
     theme_void() +
     theme(plot.title = element_text(size=16, hjust = 0.5),
-          axis.title = element_text(size=10),
           plot.margin = margin(0, 1.3, 0, 1.3, "cm"))
 }
 
