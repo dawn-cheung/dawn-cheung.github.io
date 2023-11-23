@@ -26,6 +26,7 @@ library(shiny)
 library(ggpubr)
 library(rsconnect)
 library(plotly)
+library(forcats)
 
 #Shiny app:
 #https://myshinyappplease.shinyapps.io/MyShinyApp/
@@ -52,7 +53,6 @@ gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv")
 econindicator <- econineq %>% 
   filter(year == 2020) #%>% #MY PROPOSED SOLUTION: use gini ONLY FOR COLOURATION. do NOT use gini values for xy values
   #filter(scale == "Equivalized")
-desi <- desidata %>% filter(year == "2020")
 gdpPERCAPITA <- gdpPERCAPITA %>% filter(year == 2020)
 
 econindicator$gini <- as.numeric(econindicator$gini)
@@ -138,18 +138,27 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
 
 insert flavour text explaining whats gg on
 
-```{r desi-tester, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-desi <- desi %>% filter(indicator == "desi_1a2")
-head(desi)
-desiscatter <- left_join(desi, accessyear, by = "region")
+```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+accessyear <- access_dataset %>% filter(Dyear == "D2022")
+desi <- desidata %>%
+  filter(period == 2022) %>%
+  group_by(region) %>%
+  mutate(desi_values = sum(values)) %>%
+  ungroup()
+
+desiscatter <- left_join(desi, accessyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region") %>%
+  drop_na(region)
 head(desiscatter)
-desiscatter %>%  #KEEPING
-        drop_na(values) %>%
-  ggplot(data = desiscatter, mapping = aes(x = values, y = desi_values)) +
-  geom_point() + 
-  labs(x = "Percentage of the population accessing the Internet", y = "basic literacy skills", title = "what even lol") +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=30))
+ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, fill = indicator)) +
+  geom_col() +
+  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How GDP per capita affects digital skills") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  scale_color_manual(name="DESI indicator (% of population)",
+                     labels=c("1a2: Basic digital literacy skills","1a3: Above basic digital literacy skills","1a6: females having at least basic digital literacy skills"))+
+  theme(plot.title=element_text(size=30),
+        axis.text.x = element_text(vjust = 0.5 , size = 7.8))
+accessyear <- access_dataset %>% filter(Dyear == "D2020")
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
