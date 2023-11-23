@@ -115,6 +115,31 @@ speedscatter %>% #KEEPING
 
 insert flavour text explaining whats gg on
 
+```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+accessyear <- access_dataset %>% filter(Dyear == "D2022")
+desi <- desidata %>%
+  filter(period == 2022) %>%
+  group_by(region) %>%
+  mutate(desi_values = sum(values)) %>%
+  ungroup()
+
+desiscatter <- left_join(desi, accessyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region") %>%
+  drop_na(region)
+
+ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, fill = indicator)) +
+  geom_col() +
+  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How GDP per capita affects digital skills") +
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
+  scale_fill_discrete(name="DESI indicator (% of population)",
+                     labels=c("1a2: Basic digital literacy skills","1a3: Above basic digital literacy skills","1a6: Females having at least basic digital literacy skills"))+
+  theme(plot.title=element_text(size=30),
+        axis.text.x = element_text(vjust = 0.5 , size = 7.8))
+accessyear <- access_dataset %>% filter(Dyear == "D2020")
+```
+
+insert flavour text explaining whats gg on
+
 ```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 AgreeDisagreePie <- function(percent, my_title) {
   percent = as.numeric(percent)
@@ -122,7 +147,7 @@ AgreeDisagreePie <- function(percent, my_title) {
   ggplot(data, aes(x="", y=amount, fill=category)) +
     geom_bar(stat="identity", width=1) +
     coord_polar("y") +
-    labs(title = str_wrap(my_title, 48)) +
+    labs(title = str_wrap(my_title, 42)) +
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5)) +
     theme_void() +
     theme(plot.title = element_text(size=16, hjust = 0.5),
@@ -137,29 +162,6 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
 ```
 
 insert flavour text explaining whats gg on
-
-```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-accessyear <- access_dataset %>% filter(Dyear == "D2022")
-desi <- desidata %>%
-  filter(period == 2022) %>%
-  group_by(region) %>%
-  mutate(desi_values = sum(values)) %>%
-  ungroup()
-
-desiscatter <- left_join(desi, accessyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = "region") %>%
-  drop_na(region)
-head(desiscatter)
-ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, fill = indicator)) +
-  geom_col() +
-  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How GDP per capita affects digital skills") +
-  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
-  scale_color_manual(name="DESI indicator (% of population)",
-                     labels=c("1a2: Basic digital literacy skills","1a3: Above basic digital literacy skills","1a6: females having at least basic digital literacy skills"))+
-  theme(plot.title=element_text(size=30),
-        axis.text.x = element_text(vjust = 0.5 , size = 7.8))
-accessyear <- access_dataset %>% filter(Dyear == "D2020")
-```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
 \
