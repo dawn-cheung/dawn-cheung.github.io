@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "dawn-cheung",
     "section": "",
-    "text": "Welcome to the data story of the world’s digital inequality, and why it kinda sucks!\nThis very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case.\nBelow is a widget that shows, across space, 3 key factors that affects one’s ability to use the internet: physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices), the price of internet\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDUMPSTER PILE\n\n\n\n\n\n\n\n\n\n\n(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\n\n(2) github folder: https://github.com/dawn-cheung/NM2207-Folder-Upload"
+    "text": "Welcome to the data story of the world’s digital inequality, and why it kinda sucks!\nThis very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case.\nBelow is a widget that shows, across space, 3 key factors that affects one’s ability to use the internet: physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices), the price of internet\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n(1) Hi! I’m Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\n\n(2) github folder: https://github.com/dawn-cheung/NM2207-Folder-Upload"
   },
   {
     "objectID": "about.html",
@@ -12,5 +12,12 @@
     "title": "Write Up",
     "section": "",
     "text": "About this site\n\n1 + 1\n\n[1] 2\n\n\nSOURCES:\nIndividuals using the Internet (% of population): stored in accesstointernet.csv\n\nhttps://api.worldbank.org/v2/en/indicator/IT.NET.USER.ZS?downloadformat=csv\nhttps://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/ used in tandem with https://www.worldometers.info/world-population/ to estimate Individuals using the Internet (% of population) in 2022 where there was insufficient data in the earlier datatset\n\nAverage price of 1GB (in USD): stored in worldwideMobileDataPricing2019to2023.csv\n\nhttps://www.cable.co.uk/mobiles/worldwide-data-pricing/2023/worldwide_mobile_data_pricing_data.xlsx\n\nMean download speed (Mbps): stored in worldwideInternetSpeed.csv\n\nhttps://www.cable.co.uk/broadband/worldwide-speed-league/2023/worldwide_speed_league_data.xlsx\n\nThe Digital Economy and Society (DESI) index: stored in desi-data.csv\n\nhttps://digital-decade-desi.digital-strategy.ec.europa.eu/api/v1/chart-groups/desi/facts/"
+  },
+  {
+    "objectID": "scrapped.html",
+    "href": "scrapped.html",
+    "title": "Scrapped Plots",
+    "section": "",
+    "text": "Welcome to the dumpster pile full of graph rejects!\nHere are some of the scrapped plots that showed no correlations. Please don’t take them that seriously, I was just playing around with the data I had. Its just for fun."
   }
 ]

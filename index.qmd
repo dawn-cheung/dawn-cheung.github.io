@@ -13,161 +13,6 @@ Below is a widget that shows, across space, 3 key factors that affects one's abi
 
 </iframe>
 
-```{r myversion, eval=FALSE,echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 12}
-#remove all non-pg13 commenst when setting echo to true
-library(tidyverse)
-library(ggplot2)
-library(maps)
-library(sf)
-library(dplyr)
-library(countrycode)
-library(shiny)
-library(ggpubr)
-library(rsconnect)
-library(plotly)
-
-#Shiny app:
-#https://myshinyappplease.shinyapps.io/MyShinyApp/
-
-#FROM PREVIOUS CODE
-#group = group connects the points in the correct order
-mapplotting <- function(wee, dayear, colourscheme) {
-  weep <- wee %>% filter(Dyear == paste0("D", dayear))
-  weep$values <- as.numeric(weep$values)
-  mapdataset <- left_join(world_map, weep, by = "region")
-  ggplot(mapdataset, aes(long, lat, group = group)) +
-    geom_polygon(aes(fill = values), color = "white", size = 0.03) +
-    scale_fill_viridis_c(option = colourscheme) +
-    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
-}
-
-#SOURCES:
-#accesstointernet.csv: https://data.worldbank.org/indicator/IT.NET.USER.ZS?end=2022&start=2009&view=chart [Individuals using the Internet (% of population)]
-#https://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/ + https://www.worldometers.info/world-population/japan-population/ [to estimate Individuals using the Internet (% of population) in 2022 where there was insufficient data in the earlier datatset]
-
-# Import the data with coordinates
-world_map <- map_data("world")
-world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-isocode <- c("iso3") #keeps track of what iso code we're on and im so sorry i couldnt be bothered to figure out how to tag it onto word_map itself
-access_dataset <- read.csv("accesstointernet.csv")
-speed_dataset <- read.csv("worldwideInternetSpeed.csv") #ISO2 code used in dataset!
-price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv") #ISO2 code used in dataset!
-
-price_dataset$values <- gsub('[$,]', '', price_dataset$values) 
-
-#CHANGING METHOD: left_join() access, price and speed datasets with world map datasets, THEN filter by year
-#this is inline with preprocessing, a data optmising technique, to "make the data ready for use beforehand"
-
-#sostupid_map <- left_join(world_map, access_dataset, by = "region")
-#world_map$region <- countrycode(world_map$region, "iso3c", "iso2c") #RESET ISO CODES
-#isocode <- "iso2c"
-#sohungry_map <- left_join(world_map, speed_dataset, by = "region")
-#sotired_map <- left_join(world_map, price_dataset, by = "region")
-
-#group = group connects the points in the correct order
-mapplotting <- function(wee, dayear, colourscheme) {
-  if(identical(wee, access_dataset)) { 
-    if (isocode == "iso2c") { #its a global variable so its fine
-      world_map$region <- countrycode(world_map$region, "iso2c", "iso3c")
-      isocode == "iso3c"
-    } 
-  } else {
-      if (isocode == "iso3c") {
-        world_map$region <- countrycode(world_map$region, "iso3c", "iso2c")
-        isocode == "iso2c"
-      }
-  }
-  weep <- wee %>% filter(Dyear == paste0("D", dayear))
-  weep$values <- as.numeric(weep$values)
-  mapdataset <- left_join(world_map, weep, by = "region")
-  ggplot(mapdataset, aes(long, lat, group = group)) +
-    geom_polygon(aes(fill = values), color = "white", size = 0.03) +
-    scale_fill_viridis_c(option = colourscheme) +
-    theme(plot.margin = margin(0, 0, 0, 0, "cm"))
-}
-
-#mapplotting(access_dataset, 2019, "B")
-#mapplotting(speed_dataset, 2019,"C")
-#mapplotting(price_dataset, 2019,"C")
-
-accessyear <- sostupid_map %>% filter(Dyear == "D2020")
-speedyear <- speed_dataset %>% filter(Dyear == "D2020")
-priceyear <- sotired_map %>% filter(Dyear == "D2020")
-
-econineq <- read.csv("EconomicInequality.csv") #converted into ISO3! also gdp is literally just gdp
-desidata <- read.csv("desi-data.csv") #ISO2 used!
-
-econindicator <- econineq %>%
-  filter(year == 2020)
-  #select(gini, c3)
-
-desidata$region <- countrycode(desidata$region, "iso2c", "iso3c")
-write.csv(desidata$region, "C:\Users\dcsil\OneDrive\Documents\GitHub\dawn-cheung.github.io\desi-data.csv")
-
-accessscatter <- left_join(econindicator, accessyear, by = "region")
-accessscatter %>% 
-        drop_na(values) %>%
-  ggplot(data = accessscatter, mapping = aes(x = values, y = log(gdp), colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-accessscatter %>% 
-        drop_na(values) %>%
-  ggplot(data = accessscatter, mapping = aes(x = log(values), y = gdp, colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-speedscatter <- left_join(econindicator, speedyear, by = "region")
-
-options(repr.plot.width = 10, repr.plot.height =3) 
-speedscatter %>% 
-        drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gdp, y = as.numeric(values), colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-speedscatter %>% 
-        drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = gini, y = as.numeric(values), colour = region_wb)) +
-  geom_point()
-
-pricescatter <- left_join(econindicator, priceyear, by = "region") %>%
-  left_join(. , gdpPERCAPITA, by = "region")
-pricescatter %>% 
-        drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = gdp, colour = gini)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-pricescatter %>% 
-        drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = as.numeric(values), y = gdp, colour = region_wb)) +
-  geom_point() + geom_smooth(method="lm", col="black")
-
-accessyear$region <- countrycode(accessyear$region, "iso3c", "iso2c")
-accessyear %>% rename(accessyear_values = values)
-priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
-priceaccessscatter <- left_join(accessyear, priceyear, by = "region")
-
-#priceaccessscatter %>% 
-#        drop_na(priceyear, accessyear) %>%
-#  ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
-#  geom_point()
-
-#accessyear %>% rename(values = accessyear_values)
-#priceyear %>% rename(values = priceyear_values)
-
-AgreeDisagreePie <- function(percent, my_title) {
-  percent = as.numeric(percent)
-  data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
-  ggplot(data, aes(x="", y=amount, fill=category)) +
-    geom_bar(stat="identity", width=1) +
-    coord_polar("y") +
-    labs(title = str_wrap(my_title, 45))
-}
-
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
-          AgreeDisagreePie(66, "The internet has improved life in my country"),
-          AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
-          ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
-```
-
 ```{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 library(tidyverse)
 library(ggplot2)
@@ -219,7 +64,7 @@ accessscatter %>%  #KEEPING
         drop_na(values) %>%
   ggplot(data = accessscatter, mapping = aes(x = values, y = log(GDP.per.capita), colour = gini)) +
   geom_point() + 
-  labs(x = "Percentage of the population acessing the Internet", y = "logarithm of GDP per capita", title = "How acess to the internet affects economic output") +
+  labs(x = "Percentage of the population accessing the Internet", y = "logarithm of GDP per capita", title = "How access to the internet affects economic output") +
   geom_smooth(method="lm", col="black")  +
   theme(plot.title=element_text(size=30))
 
@@ -234,7 +79,7 @@ priceaccessscatter %>%
         drop_na(priceyear, accessyear) %>%
   ggplot(data = priceaccessscatter, mapping = aes(x = as.numeric(priceyear_values), y = accessyear_values, colour = Continental.region)) +
   geom_point() + 
-  labs(x = "Price of Internet", y = "Percentage of the population acessing the Internet", title = "How price of internet affects acess to the internet") +
+  labs(x = "Price of Internet", y = "Percentage of the population accessing the Internet", title = "How price of internet affects access to the internet") +
   geom_smooth(method="lm", col="black")  +
   theme(plot.title=element_text(size=30))
 
@@ -280,37 +125,18 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
 ```
 
-DUMPSTER PILE
-
-```{r GDPoverPRICE, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14 }
-pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = "region")
-
-pricescatter %>% 
+```{r desi-tester, eval=FALSE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+desi <- desi %>% filter(indicator == "desi_1a2")
+head(desi)
+desiscatter <- left_join(desi, accessyear, by = "region")
+head(desiscatter)
+desiscatter %>%  #KEEPING
         drop_na(values) %>%
-  ggplot(data = pricescatter, mapping = aes(x = GDP.per.capita, y = as.numeric(values))) +
-  geom_point() + geom_smooth(method="lm", col="black")
-```
-
-```{r PRICEoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-accessyear <- accessyear %>% rename(accessyear_values = values)
-priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
-speedyear <- speedyear %>% rename(speedyear_values = values)
-
-pricespeedcatter <- left_join(speedyear, priceyear, by = "region") %>%
-  left_join(. , econindicator, by = "region")
-
-pricespeedcatter %>% 
-        drop_na(priceyear, speedyear) %>%
-  ggplot(data = pricespeedcatter, mapping = aes(x = as.numeric(priceyear_values), y = speedyear_values)) +
+  ggplot(data = desiscatter, mapping = aes(x = values, y = desi_values)) +
   geom_point() + 
-  labs(x = "Price of Internet", y = "GDP per capita", title = "How price of internet changes with speed of internet available") +
+  labs(x = "Percentage of the population accessing the Internet", y = "basic literacy skills", title = "what even lol") +
   geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=35))
-
-accessyear <- accessyear %>% rename(values = accessyear_values)
-priceyear <- priceyear %>% rename(values = priceyear_values)
-speedyear <- speedyear %>% rename(values = speedyear_values)
+  theme(plot.title=element_text(size=30))
 ```
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\

@@ -1,0 +1,82 @@
+---
+title: "Scrapped Plots"
+---
+
+*Welcome to the dumpster pile full of graph rejects!*
+
+Here are some of the scrapped plots that showed no correlations. Please don't take them that seriously, I was just playing around with the data I had. Its just for fun.
+
+```{r startupcode, echo=FALSE, warning=FALSE, message=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(maps)
+library(sf)
+library(dplyr)
+library(countrycode)
+library(shiny)
+library(ggpubr)
+library(rsconnect)
+library(plotly)
+
+# Import the data with coordinates
+world_map <- map_data("world")
+world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
+
+access_dataset <- read.csv("accesstointernet.csv")
+speed_dataset <- read.csv("worldwideInternetSpeed.csv")
+price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv")
+
+#filter by year
+accessyear <- access_dataset %>% filter(Dyear == "D2020")
+speedyear <- speed_dataset %>% filter(Dyear == "D2020")
+priceyear <- price_dataset %>% filter(Dyear == "D2020")
+
+econineq <- read.csv("EconomicInequality.csv") #ISO3 used
+desidata <- read.csv("desi-data.csv") #ISO3 used!
+gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv")
+
+econindicator <- econineq %>% 
+  filter(year == 2020) #%>% #MY PROPOSED SOLUTION: use gini ONLY FOR COLOURATION. do NOT use gini values for xy values
+  #filter(scale == "Equivalized")
+desi <- desidata %>% filter(year == "2020")
+gdpPERCAPITA <- gdpPERCAPITA %>% filter(year == 2020)
+
+econindicator$gini <- as.numeric(econindicator$gini)
+gdpPERCAPITA$GDP.per.capita <- as.numeric(gdpPERCAPITA$GDP.per.capita)
+speedyear$values <- as.numeric(speedyear$values)
+priceyear$values <- as.numeric(priceyear$values)
+```
+
+```{r GDPoverPRICE, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14 }
+pricescatter <- left_join(econindicator, priceyear, by = "region")  %>%
+  left_join(. , gdpPERCAPITA, by = "region")
+
+pricescatter %>% 
+        drop_na(values) %>%
+  ggplot(data = pricescatter, mapping = aes(x = values, y = GDP.per.capita)) +
+  geom_point() + 
+  labs(x = "Price of Internet", y = "GDP per capita", title = "How price of internet affects economic output") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
+```
+
+```{r PRICEoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+accessyear <- accessyear %>% rename(accessyear_values = values)
+priceyear <- priceyear %>% rename(priceyear_values = values) #i keep so much just to laugh at the EU
+speedyear <- speedyear %>% rename(speedyear_values = values)
+
+pricespeedcatter <- left_join(speedyear, priceyear, by = "region") %>%
+  left_join(. , econindicator, by = "region")
+
+pricespeedcatter %>% 
+        drop_na(priceyear, speedyear) %>%
+  ggplot(data = pricespeedcatter, mapping = aes(x = as.numeric(priceyear_values), y = speedyear_values)) +
+  geom_point() + 
+  labs(x = "Price of Internet", y = "Speed of internet", title = "How price of internet changes with speed of internet available") +
+  geom_smooth(method="lm", col="black")  +
+  theme(plot.title=element_text(size=35))
+
+accessyear <- accessyear %>% rename(values = accessyear_values)
+priceyear <- priceyear %>% rename(values = priceyear_values)
+speedyear <- speedyear %>% rename(values = speedyear_values)
+```
