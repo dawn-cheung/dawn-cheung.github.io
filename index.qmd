@@ -116,7 +116,7 @@ AgreeDisagreePie <- function(percent, my_title) {
     theme_void() +
     theme(plot.title = element_text(size=15),
           axis.title = element_text(size=10),
-          plot.margin = margin(0, 0.7, 0, 1.5, "cm"))
+          plot.margin = margin(0, 1.3, 0, 1.3, "cm"))
 }
 
 ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
