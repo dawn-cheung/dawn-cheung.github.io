@@ -78,7 +78,7 @@ accessscatter %>%  #KEEPING
   theme(plot.title=element_text(size=30))
 ```
 
-insert flavour text explaining whats gg on <br><br><br>
+This scatter graph shows that ***internet usage directly contributes to economic development***. There is a positive correlation between a country\'s access to the internet and economic output; as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases. <br><br><br>
 
 ```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
@@ -102,7 +102,7 @@ priceyear <- priceyear %>% rename(values = price)
 speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
-insert flavour text explaining whats gg on<br><br>
+The scatter graph plot \"How price of internet affects access to the internet\" shows that as the price of internet (PoI) increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that financial cost is a hindrance to accessing digital resources. <br><br><br>
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
