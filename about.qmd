@@ -30,6 +30,12 @@ The Digital Economy and Society (DESI) index: stored in desi-data.csv
 
 -   <a href = https://digital-decade-desi.digital-strategy.ec.europa.eu/api/v1/chart-groups/desi/facts/>https://digital-decade-desi.digital-strategy.ec.europa.eu/api/v1/chart-groups/desi/facts/</a>
 
+Economic Indicators: stored in EconomicInequality.csv and gdpPERCAPITA.csv
+
+-   <a href = https://doi.org/10.35188/UNU-WIDER/WIID-300622>https://doi.org/10.35188/UNU-WIDER/WIID-300622</a>
+
+-   <a href = https://ourworldindata.org/grapher/gdp-per-capita-worldbank>https://ourworldindata.org/grapher/gdp-per-capita-worldbank</a>\
+
 Statistics used in pie charts:
 
 -   <a href = https://www.statista.com/statistics/1387375/internet-using-global-reasons/>https://www.statista.com/statistics/1387375/internet-using-global-reasons/</a>
