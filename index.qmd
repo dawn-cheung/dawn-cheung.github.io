@@ -38,9 +38,6 @@ library(rsconnect)
 library(plotly)
 library(forcats)
 
-#Shiny app:
-#https://myshinyappplease.shinyapps.io/MyShinyApp/
-
 #HARDCODE ALL DATASETS INTO ISO3: DONE
 
 # Import the data with coordinates
@@ -150,8 +147,8 @@ accessyear <- access_dataset %>% filter(Dyear == "D2020")
 
 Did you know that the World Wide Web originated from Europe? Despite the EU being the birthplace of the internet, there is still significant digital inequality within the EU. This graph shows that within the EU, ***lower economic development impedes the population's digital skills**. As GDP increases, the proportion of the country's population with basic digital skills, above basic digital skills, and females possessing digital skills increases.* This means that in countries like Bulgaria and Romania, even if you have an internet connection, you might not have the skills to use the digital tools and resources discerningly and/or appropriately, which means you're more likely to fall for online scams and fake news.<br><br><br>
 
-```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-AgreeDisagreePie <- function(percent, my_title) {
+```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 9.8, fig.width = 14}
+AgreeDisagreePie <- function(percent, my_title, title_size) {
   percent = as.numeric(percent)
   data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
   ggplot(data, aes(x="", y=amount, fill=category)) +
@@ -160,14 +157,25 @@ AgreeDisagreePie <- function(percent, my_title) {
     labs(title = str_wrap(my_title, 40)) +
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5), size = 8.2) +
     theme_void() +
-    theme(plot.title = element_text(size=16, hjust = 0.5),
+    theme(plot.title = element_text(size = title_size, hjust = 0.5),
           plot.margin = margin(0, 1.3, 0, 1.3, "cm"))
 }
 
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right"),
-          AgreeDisagreePie(66, "The internet has improved life in my country"),
-          AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members"),
-          ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
+ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 16),
+          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 16),
+          AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 16),
+          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 16),
+          AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 16),
+          AgreeDisagreePie(55.9, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 16),
+          ncol = 3, nrow = 2,
+          labels = c("KNOWLEDGE AND INFORMATION", "KNOWLEDGE AND INFORMATION", "EDUCATION", "EDUCATION", "DEMOCRACY", "SOCIO-EMOTIONAL WELLBEING"),
+          common.legend = TRUE, legend = "bottom",
+          font.label = list(face = "italic"),
+          align = "hv")
+```
+
+```{r final-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.2, fig.width = 14}
+AgreeDisagreePie(66, "The internet has improved life in my country", 30)
 ```
 
 insert flavour text explaining whats gg on <br><br><br>
