@@ -4,10 +4,10 @@ title: "Sources and Write Up"
 
 *Welcome to the Sources and Write Up!*
 
-This is the exact same content I submitted in Canvas, except instead of APA citations I have provided links for easy access.
+This is the exact same content in "Final Submission" submitted on Canvas, except instead of APA citations I have provided links here for easy access.
 
 ```{r}
-1 + 1
+print("pls let me get a good grade ;-;")
 ```
 
 SOURCES:
