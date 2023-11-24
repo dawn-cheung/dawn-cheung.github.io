@@ -78,7 +78,9 @@ accessscatter %>%  #KEEPING
   theme(plot.title=element_text(size=30))
 ```
 
-This scatter graph shows that ***internet usage directly contributes to economic development***. There is a positive correlation between a country's access to the internet and economic output; as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases. <br><br><br>
+This scatter graph shows that ***internet usage directly contributes to economic development***. There is a positive correlation between a country's access to the internet and economic output; as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases.
+
+You'll also see that countries with very high percentage of population with internet access tend to have a lower GINI index. For GINI, a higher number means there is more economic inequality within the country. Hence, ***as economic equality within a country increases, the equality of internet access also increases***<br><br><br>
 
 ```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
@@ -102,7 +104,7 @@ priceyear <- priceyear %>% rename(values = price)
 speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
-The scatter graph plot "How price of internet affects access to the internet" shows that as the price of internet (PoI) increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that financial cost is a hindrance to accessing digital resources. <br><br><br>
+This scatter graph plot shows that when the price of internet increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that ***financial cost is a hindrance to accessing digital resources***. <br><br><br>
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
