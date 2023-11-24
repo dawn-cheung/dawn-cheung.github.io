@@ -1,8 +1,10 @@
 ---
-title: "Write Up"
+title: "Sources and Write Up"
 ---
 
-About this site
+*Welcome to the Sources and Write Up!*
+
+This is the exact same content I submitted in Canvas, except instead of APA citations I have provided links for easy access.
 
 ```{r}
 1 + 1

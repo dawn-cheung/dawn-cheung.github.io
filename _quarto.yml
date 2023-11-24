@@ -9,7 +9,7 @@ website:
       - href: index.qmd #to hyperlink the file
         text: Visualisations #to change the name of the tab
       - href: about.qmd
-        text: Write Up and Sources
+        text: Sources and Write Up
       - href: scrapped.qmd
         text: Scrapped Plots
 

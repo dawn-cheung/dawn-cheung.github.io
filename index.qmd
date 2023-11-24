@@ -5,15 +5,23 @@ output: html_document
 
 *Welcome to the data story of the world's digital inequality, and why it kinda sucks!*
 
-This very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case.
+This very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case. <br>
 
-Below is a widget that shows, across space, 3 key factors that affects one's ability to use the internet: physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices), the price of internet
+Below is a widget that shows, across space, 3 key factors that affects one's ability to use the internet:
+
+-   physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices),
+
+-   the price of internet, and
+
+-   speed of internet (the widget uses download speed which, simply put, is how fast you can receive information from the web).
+
+You might be wondering: "Why go beyond access to the internet? As long as the resource is physically available, isn't that enough?"
 
 <iframe height="435" width="110%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
 
 </iframe>
 
-insert flavour text explaining whats gg on
+insert flavour text explaining whats gg on <br><br><br>
 
 ```{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 library(tidyverse)
@@ -71,7 +79,7 @@ accessscatter %>%  #KEEPING
   theme(plot.title=element_text(size=30))
 ```
 
-insert flavour text explaining whats gg on
+insert flavour text explaining whats gg on <br><br><br>
 
 ```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
@@ -95,7 +103,7 @@ priceyear <- priceyear %>% rename(values = price)
 speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
-insert flavour text explaining whats gg on
+insert flavour text explaining whats gg on<br><br>
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
@@ -113,7 +121,7 @@ speedscatter %>% #KEEPING
   annotate(geom="text", x=15.6, y=82900, label=str_wrap("Zoom functions, but experiences buffer & poor video and audio quality", 20), color="black", fontsize=6, hjust = "left", lineheight = 0.8)
 ```
 
-insert flavour text explaining whats gg on
+insert flavour text explaining whats gg on <br><br><br>
 
 ```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 accessyear <- access_dataset %>% filter(Dyear == "D2022")
@@ -138,7 +146,7 @@ ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, 
 accessyear <- access_dataset %>% filter(Dyear == "D2020")
 ```
 
-insert flavour text explaining whats gg on
+Did you know that the World Wide Web originated from Europe? Despite the EU being the birthplace of the internet, there is still significant digital inequality within the EU. This graph shows that within the EU, ***lower economic development impedes the population's digital skills**. As GDP increases, the proportion of the country's population with basic digital skills, above basic digital skills, and females possessing digital skills increases.* This means that in countries like Bulgaria and Romania, even if you have an internet connection, you might not have the skills to use the digital tools and resources discerningly and/or appropriately, which means you're more likely to fall for online scams and fake news.<br><br><br>
 
 ```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 AgreeDisagreePie <- function(percent, my_title) {
@@ -160,7 +168,7 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           ncol = 3, nrow = 1, labels = c("A", "B", "C"), common.legend = TRUE, legend = "bottom") 
 ```
 
-insert flavour text explaining whats gg on
+insert flavour text explaining whats gg on <br><br><br>
 
 \(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
 \
