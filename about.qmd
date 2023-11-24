@@ -42,7 +42,7 @@ Statistics used in pie charts:
 -   <a href = https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/ >https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/</a>
 -   <a href = https://impact.economist.com/projects/inclusive-internet-index>https://impact.economist.com/projects/inclusive-internet-index</a>
 
-Write Up:
+<br>WRITE UP:
 
 The theme of my data story is on digital inequality on a global scale, and its socio-economic repercussions. Digital inequality can be defined as an unequal ability to use the internet and other infocomm communication technologies (ICTs) in a productive and/or meaningful way. This not only includes whether populations can physically access an internet connection, but also whether they can afford to pay for internet access, the quality of internet connection, and their grasp of digital skills.
 

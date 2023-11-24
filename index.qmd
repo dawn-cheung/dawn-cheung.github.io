@@ -80,7 +80,7 @@ accessscatter %>%  #KEEPING
 
 This scatter graph shows that ***internet usage directly contributes to economic development***. There is a positive correlation between a country's access to the internet and economic output; as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases.
 
-You'll also see that countries with very high percentage of population with internet access tend to have a lower GINI index. For GINI, a higher number means there is more economic inequality within the country. Hence, ***as economic equality within a country increases, the equality of internet access also increases***<br><br><br>
+You'll also see that countries with very high percentage of population with internet access tend to have a lower GINI index. For GINI, a higher number means there is more economic inequality within the country. Hence, ***as economic equality within a country increases, the equality of internet access also increases.***<br><br><br>
 
 ```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
@@ -104,7 +104,13 @@ priceyear <- priceyear %>% rename(values = price)
 speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
-This scatter graph plot shows that when the price of internet increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that ***financial cost is a hindrance to accessing digital resources***. <br><br><br>
+*This is an interactive plot!* Single click on the Continental Region names (eg ASIA (EX.NEAR EAST), BALTICS, etc) to temporarily remove their associated plots in the graph, and double click the names to isolate them in the graph! You can also hover over the points on the plot to see the exact price and percent access associated with the point.
+
+Overall, this scatter graph plot shows that when the price of internet increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that ***financial cost is a hindrance to accessing digital resources***.
+
+Some notable exceptions to this trend are the countries in Asia, and to a lesser extent Sub-Saharan Africa, which can be observed when isolating these groups of plots. One possible reason for this is that other factors affecting digital usage that supersede affordability, like lack of infocomm infrastructure available, especially for rural parts of the country, and civil unrest making the construction of such infrastructure very difficult. Another possible reason could be that despite the lower prices, many still can not afford internet services due to lower incomes.
+
+<br><br><br>
 
 ```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
@@ -122,7 +128,11 @@ speedscatter %>% #KEEPING
   annotate(geom="text", x=15.6, y=82900, label=str_wrap("Zoom functions, but experiences buffer & poor video and audio quality", 20), color="black", fontsize=6, hjust = "left", lineheight = 0.8)
 ```
 
-insert flavour text explaining whats gg on <br><br><br>
+This scatter graph shows that in 2020 as internet speed increases, GDP per capita increases. The positive correlation between quality of internet usage (based on efficiency of service) and economic output shows that a ***faster mean internet speed greatly helps economic productivity***.
+
+The red dashed lines at 2.5Mpbs and 15Mpbs show that while all country's mean internet speed is good enough for Zoom, an important video conferencing tool especially in 2020, to technically work, more than 22 countries will still have very poor audio and video qualities, which is not conducive for businesses. This shows there can be 'hidden' disadvantages to low internet speeds-- the resource of video conferencing is available to the population, strictly speaking, but its usefulness is severely limited.
+
+<br><br><br>
 
 ```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
 accessyear <- access_dataset %>% filter(Dyear == "D2022")
@@ -147,13 +157,13 @@ ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, 
 accessyear <- access_dataset %>% filter(Dyear == "D2020")
 ```
 
-Did you know that the World Wide Web originated from Europe? Despite the EU being the birthplace of the internet, there is still significant digital inequality within the EU. This graph shows that within the EU, ***lower economic development impedes the population's digital skills**. As GDP increases, the proportion of the country's population with basic digital skills, above basic digital skills, and females possessing digital skills increases.* This means that in countries like Bulgaria and Romania, even if you have an internet connection, you might not have the skills to use the digital tools and resources discerningly and/or appropriately, which means you're more likely to fall for online scams and fake news.<br><br><br>
+Did you know that the World Wide Web originated from Europe? Despite the EU being the birthplace of the internet, there is still significant digital inequality within the EU. This graph shows that within the EU, ***lower economic development impedes the population's digital skills**. As GDP increases, the proportion of the country's population with basic digital skills, above basic digital skills, and females possessing digital skills increases.* This means that in countries like Bulgaria and Romania, even if you have an internet connection, you might not have the skills to use the digital tools and resources discerningly and/or appropriately, which means you're more likely to fall for online scams and fake news.<br><br><br><br>
 
 <hr>
 
 <br>
 
-So now the question is, how does the internet benefit *people,* or in other words,
+So now the question is, how does the internet empower *people,* or in other words,
 
 <h1>How does the internet act as an enabler?</h1>
 
@@ -182,6 +192,8 @@ ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access informa
           align = "hv")
 ```
 
+The internet allows for the free exchange of information, which not only allows us to know publicly available information, which can be on health, public safety, and many other important topics, but also allows us to share our thoughts on this information, and create a open space for discussion and collaboration<br>
+
 <h2>*EDUCATION*</h2>
 
 ```{r EDUCATION-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
@@ -191,6 +203,8 @@ ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my educa
           common.legend = TRUE, legend = "bottom",
           align = "hv")
 ```
+
+The internet is a great place for us to find out more about educational institutions, including what options are available to us, what financial aid packages we are eligible for, and so on. The internet is also a treasure trove of information that we can gain knowledge from directly!<br>
 
 <h2>*DEMOCRACY*</h2>
 
@@ -202,6 +216,8 @@ ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with new
           align = "hv")
 ```
 
+The internet also helps uphold democracy. Keeping citizens informed of current issues is critical for them to actively participate in their society's politics. Social media, facilitated by the internet, also keeps politicians accountable and helps to make sure that they are working for the people.<br>
+
 <h2>*SOCIO-EMOTIONAL WELLBEING*</h2>
 
 ```{r WELLBEING-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
@@ -212,14 +228,12 @@ ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with frien
           align = "hv")
 ```
 
+The internet allows social connections to thrive when there are physical barriers between people (eg going overseas to study, during quarantines, etc). It is also a source of entertainment that can be enjoyed at home, which was especially important during Covid-19 lockdowns. Such means of entertainment also helps foster a sense of community between people who like the same media.<br>
+
 <h1>*TO CONCLUDE*</h1>
 
 ```{r final-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.2, fig.width = 14}
 AgreeDisagreePie(66, "The internet has improved life in my country", 30)
 ```
 
-insert flavour text explaining whats gg on <br><br><br>
-
-\(1\) Hi! I'm Dawn, a year one communications and new media student. I like to bake but no one eats what I make.\
-\
-(2) github folder: <https://github.com/dawn-cheung/NM2207-Folder-Upload>
+The internet is an enabler. It allows people to perform feats that would have seemed impossible before the age of the internet, and I firmly believe this power should be given to everyone. An equitable world hence requires equitable access to the internet.<br><br><br>
