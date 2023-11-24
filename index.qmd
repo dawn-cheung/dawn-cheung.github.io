@@ -172,21 +172,21 @@ There are many good things that good internet can bring about. I'd like to bring
 <h2>*KNOWLEDGE AND INFORMATION*</h2>
 
 ```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-AgreeDisagreePie <- function(percent, my_title, title_size) {
+AgreeDisagreePie <- function(percent, my_title, title_size, title_wrap) {
   percent = as.numeric(percent)
   data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
   ggplot(data, aes(x="", y=amount, fill=category)) +
     geom_bar(stat="identity", width=1) +
     coord_polar("y") +
-    labs(title = str_wrap(my_title, 40)) +
+    labs(title = str_wrap(my_title, title_wrap)) +
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5), size = 8.2) +
     theme_void() +
     theme(plot.title = element_text(size = title_size),
           plot.margin = margin(0, 1, 0, 1, "cm"))
 }
 
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 16),
-          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 16),
+ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 16, 40),
+          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 16, 40),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -197,8 +197,8 @@ The internet allows for the free exchange of information, which not only allows 
 <h2>*EDUCATION*</h2>
 
 ```{r EDUCATION-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 16),
-          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 16),
+ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 16, 40),
+          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 16, 40),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -209,8 +209,8 @@ The internet is a great place for us to find out more about educational institut
 <h2>*DEMOCRACY*</h2>
 
 ```{r DEMOCRACY-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 16),
-          AgreeDisagreePie(64, "I feel that social media is effective in getting elected officials to pay attention to issues)", 16),
+ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 16, 40),
+          AgreeDisagreePie(64, "I feel that social media is effective in getting elected officials to pay attention to issues", 16, 40),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -221,8 +221,8 @@ The internet also helps uphold democracy. Keeping citizens informed of current i
 <h2>*SOCIO-EMOTIONAL WELLBEING*</h2>
 
 ```{r WELLBEING-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 16),
-          AgreeDisagreePie(51.1, "I use the internet to watch videos, TV shows, or movies (#4 Most popular use case globally)", 16),
+ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 16, 40),
+          AgreeDisagreePie(51.1, "I use the internet to watch videos, TV shows, or movies (#4 Most popular use case globally)", 16, 40),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -233,7 +233,7 @@ The internet allows social connections to thrive when there are physical barrier
 <h1>*TO CONCLUDE*</h1>
 
 ```{r final-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.2, fig.width = 14}
-AgreeDisagreePie(66, "The internet has improved life in my country", 30)
+AgreeDisagreePie(66, "The internet has improved life in my country", 30, 90)
 ```
 
 The internet is an enabler. It allows people to perform feats that would have seemed impossible before the age of the internet, and I firmly believe this power should be given to everyone. An equitable world hence requires equitable access to the internet.<br><br><br>
