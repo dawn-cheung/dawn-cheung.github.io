@@ -5,6 +5,7 @@ project:
 website:
   title: "The Digital Divide — and Why it Matters"
   navbar:
+    search: true
     left:
       - href: index.qmd #to hyperlink the file
         text: Visualisations #to change the name of the tab

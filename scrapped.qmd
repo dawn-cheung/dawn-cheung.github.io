@@ -38,7 +38,7 @@ gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv")
 econindicator <- econineq %>% 
   filter(year == 2020) #%>% #MY PROPOSED SOLUTION: use gini ONLY FOR COLOURATION. do NOT use gini values for xy values
   #filter(scale == "Equivalized")
-desi <- desidata %>% filter(year == "2020")
+desi <- desidata %>% filter(period == "2020")
 gdpPERCAPITA <- gdpPERCAPITA %>% filter(year == 2020)
 
 econindicator$gini <- as.numeric(econindicator$gini)

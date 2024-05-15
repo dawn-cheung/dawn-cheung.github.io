@@ -82,29 +82,70 @@ This scatter graph shows that ***internet usage directly contributes to economic
 
 You'll also see that countries with very high percentage of population with internet access tend to have a lower GINI index. For GINI, a higher number means there is more economic inequality within the country. Hence, ***as economic equality within a country increases, the equality of internet access also increases.***<br><br><br>
 
-```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 11, fig.width = 14}
+```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 13, fig.width = 14}
 accessyear <- accessyear %>% rename(percent_access = values)
 priceyear <- priceyear %>% rename(price = values)
 speedyear <- speedyear %>% rename(speedyear_values = values)
 
 priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
-  left_join(. , econindicator, by = "region")
+  left_join(. , econindicator, by = "region") %>%
+  drop_na(percent_access, price)
 
-ggplotly(priceaccessscatter %>% 
-        drop_na(priceyear, accessyear) %>%
-  ggplot(data = priceaccessscatter, mapping = aes(x = price, y = percent_access, colour = Continental.region)) +
-  geom_point() + 
-  labs(x = "Price of Internet (USD$)", y = "Percentage of the population accessing the Internet (%)", title = "How price of internet affects access to the internet", colour = "Continental Region") +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=26)),
-  plot.margin = margin(0.05, 1.3, 0.05, 0.05, "cm"))
 
+fit <- lm(percent_access ~ price, data = priceaccessscatter)
+
+distinct_CR = c("ASIA (EX. NEAR EAST)", "BALTICS", "CARIBBEAN", "CENTRAL AMERICA", "CIS(FORMER USSR)", "EASTERN EUROPE", "NEAR EAST", "NORTHERN AFRICA", "NORTHEN AMERICA", "OCEANIA", "SOUTH AMERICA", "SUB-SAHARAN AFRICA", "WESTERN EUROPE")
+diff_data = c()
+#data.frame(percent_access = c(), price= c(), Continental.region= c())
+
+for (q in 1:length(distinct_CR)) {
+  diff_data[[q]] = priceaccessscatter[which(priceaccessscatter$Continental.region == distinct_CR[q]), c("percent_access", "price", "Continental.region")]
+}
+
+#palicating plotly's bs
+x_range <- seq(min(priceaccessscatter$price), max(priceaccessscatter$price), length.out = 150)
+x_range <- matrix(x_range, nrow=150, ncol=1)
+xdf <- data.frame(x_range)
+colnames(xdf) = c("price")
+
+ydf = data.frame(predict(fit, newdata = xdf))
+colnames(ydf) <- c("percent_access")
+xy = data.frame(xdf, ydf)
+
+graphly = plot_ly(data = priceaccessscatter,
+               x = ~price,
+               y = ~percent_access,
+               text = ~paste("Price: USD$", price, '<br>% Access:', round(percent_access,3)),
+               colors = "Set1")
+for (i in 1:length(distinct_CR)) {
+  graphly = graphly %>% 
+    add_trace(data = diff_data[[i]], x = ~price, y = ~percent_access, type = 'scatter', name = distinct_CR[[i]], mode = 'markers', alpha = 0.65, marker = list(size = 10.2))
+}
+
+t1 <- list(
+  family = "Arial",
+  size = 24.5,
+  color = "darkblue")
+
+graphly = graphly %>%
+  add_lines(data = xy, x = ~price, y = ~percent_access, name = '<b> Regression Line</b> ', mode = 'lines', alpha = 1) %>%
+  layout(title = list(text = "How price of internet affects access to the internet", font = t1, y = 0.99),
+         xaxis = list(title = 'Price of Internet (USD$)'),
+         yaxis = list(title = 'Percentage of the population accessing the Internet (%)'),
+         legend = list(title=list(text='<b> Continental Region </b>')))
+
+graphly
+
+# labs(x = "Price of Internet (USD$)",
+#       y = "Percentage of the population accessing the Internet (%)",
+ #      title = "How price of internet affects access to the internet",
+ #      colour = "Continental Region")
 accessyear <- accessyear %>% rename(values = percent_access)
 priceyear <- priceyear %>% rename(values = price)
 speedyear <- speedyear %>% rename(values = speedyear_values)
 ```
 
-*This is an interactive plot!* Single click on the Continental Region names (eg ASIA (EX.NEAR EAST), BALTICS, etc) to temporarily remove their associated plots in the graph, and double click the names to isolate them in the graph! You can also hover over the points on the plot to see the exact price and percent access associated with the point.
+*This is an interactive plot!* Single click on the Continental Region names (eg ASIA (EX. NEAR EAST), BALTICS, etc) to temporarily remove their associated plots in the graph, and double click the names to isolate them in the graph! You can also hover over the points on the plot to see the exact price and percent access associated with the point.
 
 Overall, this scatter graph plot shows that when the price of internet increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that ***financial cost is a hindrance to accessing digital resources***.
 
@@ -172,7 +213,7 @@ There are many good things that good internet can bring about. I'd like to bring
 <h2>*KNOWLEDGE AND INFORMATION*</h2>
 
 ```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-AgreeDisagreePie <- function(percent, my_title, title_size, title_wrap) {
+AgreeDisagreePie <- function(percent, my_title, title_size, title_wrap, vee_hee = -1) {
   percent = as.numeric(percent)
   data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
   ggplot(data, aes(x="", y=amount, fill=category)) +
@@ -181,12 +222,12 @@ AgreeDisagreePie <- function(percent, my_title, title_size, title_wrap) {
     labs(title = str_wrap(my_title, title_wrap)) +
     geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5), size = 8.2) +
     theme_void() +
-    theme(plot.title = element_text(size = title_size),
+    theme(plot.title = element_text(hjust = 0.5, vjust = vee_hee, size = title_size),
           plot.margin = margin(0, 1, 0, 1, "cm"))
 }
 
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 16, 40),
-          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 16, 40),
+ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 18, 40, -1),
+          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 18, 40, -0.1),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -197,8 +238,8 @@ The internet allows for the free exchange of information, which not only allows 
 <h2>*EDUCATION*</h2>
 
 ```{r EDUCATION-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 16, 40),
-          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 16, 40),
+ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 18, 40, -1),
+          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 18, 40, -1),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -209,8 +250,8 @@ The internet is a great place for us to find out more about educational institut
 <h2>*DEMOCRACY*</h2>
 
 ```{r DEMOCRACY-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 16, 40),
-          AgreeDisagreePie(64, "I feel that social media is effective in getting elected officials to pay attention to issues", 16, 40),
+ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 18, 40, -1),
+          AgreeDisagreePie(64, "I feel that social media is effective in getting elected officials to pay attention to issues", 18, 40, -1),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -221,8 +262,8 @@ The internet also helps uphold democracy. Keeping citizens informed of current i
 <h2>*SOCIO-EMOTIONAL WELLBEING*</h2>
 
 ```{r WELLBEING-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 16, 40),
-          AgreeDisagreePie(51.1, "I use the internet to watch videos, TV shows, or movies (#4 Most popular use case globally)", 16, 40),
+ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 18, 40, -1),
+          AgreeDisagreePie(51.1, "I use the internet to watch videos, TV shows, or movies (#4 Most popular use case globally)", 18, 40, -1),
           ncol = 2, nrow = 1,
           common.legend = TRUE, legend = "bottom",
           align = "hv")
@@ -233,7 +274,7 @@ The internet allows social connections to thrive when there are physical barrier
 <h1>*TO CONCLUDE*</h1>
 
 ```{r final-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.2, fig.width = 14}
-AgreeDisagreePie(66, "The internet has improved life in my country", 30, 90)
+AgreeDisagreePie(66, "The internet has improved life in my country", 32, 50, -0.5)
 ```
 
 The internet is an enabler. It allows people to perform feats that would have seemed impossible before the age of the internet, and I firmly believe this power should be given to everyone. An equitable world hence requires equitable access to the internet.<br><br><br>
