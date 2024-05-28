@@ -1,0 +1,65 @@
+---
+title: "Sources and Write Up"
+---
+
+*Welcome to the Sources and Write Up!*
+
+This is the exact same content in "Final Submission" submitted on Canvas, except instead of APA citations I have provided links used in the data story here for easy access.
+
+```{r}
+print("pls let me get a good grade ;-;")
+```
+
+SOURCES:
+
+Individuals using the Internet (% of population): stored in accesstointernet.csv
+
+-   <a href = https://api.worldbank.org/v2/en/indicator/IT.NET.USER.ZS?downloadformat=csv>https://api.worldbank.org/v2/en/indicator/IT.NET.USER.ZS?downloadformat=csv</a>
+
+-   <a href = https://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/>https://www.statista.com/statistics/262966/number-of-internet-users-in-selected-countries/</a> used in tandem with <a href = https://www.worldometers.info/world-population/>https://www.worldometers.info/world-population/</a> to estimate Individuals using the Internet (% of population) in 2022 where there was insufficient data in the earlier datatset
+
+Average price of 1GB (in USD): stored in worldwideMobileDataPricing2019to2023.csv
+
+-   <a href = https://www.cable.co.uk/mobiles/worldwide-data-pricing/2023/worldwide_mobile_data_pricing_data.xlsx>https://www.cable.co.uk/mobiles/worldwide-data-pricing/2023/worldwide_mobile_data_pricing_data.xlsx</a>
+
+Mean download speed (Mbps): stored in worldwideInternetSpeed.csv
+
+-   <a href = https://www.cable.co.uk/broadband/worldwide-speed-league/2023/worldwide_speed_league_data.xlsx>https://www.cable.co.uk/broadband/worldwide-speed-league/2023/worldwide_speed_league_data.xlsx</a>
+
+The Digital Economy and Society (DESI) index: stored in desi-data.csv
+
+-   <a href = https://digital-decade-desi.digital-strategy.ec.europa.eu/api/v1/chart-groups/desi/facts/>https://digital-decade-desi.digital-strategy.ec.europa.eu/api/v1/chart-groups/desi/facts/</a>
+
+Economic Indicators: stored in EconomicInequality.csv and gdpPERCAPITA.csv
+
+-   <a href = https://doi.org/10.35188/UNU-WIDER/WIID-300622>https://doi.org/10.35188/UNU-WIDER/WIID-300622</a>
+
+-   <a href = https://ourworldindata.org/grapher/gdp-per-capita-worldbank>https://ourworldindata.org/grapher/gdp-per-capita-worldbank</a>\
+
+Statistics used in pie charts:
+
+-   <a href = https://www.statista.com/statistics/1387375/internet-using-global-reasons/>https://www.statista.com/statistics/1387375/internet-using-global-reasons/</a>
+-   <a href = https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/ >https://www.pewresearch.org/global/2022/12/06/social-media-seen-as-mostly-good-for-democracy-across-many-nations-but-u-s-is-a-major-outlier/</a>
+-   <a href = https://impact.economist.com/projects/inclusive-internet-index>https://impact.economist.com/projects/inclusive-internet-index</a>
+
+<br>WRITE UP:
+
+The theme of my data story is on digital inequality on a global scale, and its socio-economic repercussions. Digital inequality can be defined as an unequal ability to use the internet and other infocomm communication technologies (ICTs) in a productive and/or meaningful way. This not only includes whether populations can physically access an internet connection, but also whether they can afford to pay for internet access, the quality of internet connection, and their grasp of digital skills.
+
+It is important to address this question as firstly, internet access is often taken for granted in technologically-savvy Singapore, so I feel that Singaporeans do not realise the extent of global digital inequality. Secondly, digital inequality exacerbates economic and social inequality, by depriving certain communities of the digital tools and resources they need to raise their socio-economic status (SES), while other communities better off communities get to further advance their SES using ICTs, increasing disparities between communities. This worsens some countries' overall development, and limits their communities' standard of living and quality of life.
+
+To quantify the extent of digital inequality, the dataset I curated includes these variables: individuals using the internet, average price of 1GB, mean download speed, and percentage of population with digital skills taken from the Digital Economy and Society (DESI) index. To relate these variables to social and economic development, indicators including GDP per capita and GINI index were included, alongside various survey data that relates internet usage to positive outcomes for wellbeing, education, and democracy. Using these data sources answers the question of "why digital inequality matters" because they enable a multi-faceted approach in proving the severity of digital inequality, which shows how critical digital disparities are today, and helps to draw a correlation between poor ability to use the internet with poor social and economic outcomes, which shows why digital inequality is problematic and keeps underdeveloped countries from progressing socially and economically.
+
+The first plot, titled "Comparing Variations in Access, Speed, and Price of Internet, Over Time" is an interactive choropleth world map that shows how internet access, speed, and price varies by country, with a slider that changes the year these variables were observed. Across time and space, inequalities of all 3 variables persist.
+
+The scatter graph "How access to the internet affects economic output" shows that as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases. The positive correlation between a country's access to the internet and economic output shows that internet usage directly contributes to economic development. It is also notable that majority of countries with at least 87.5% population access to the internet have a relatively low GINI index of 35 and below, with exception of around 3 countries. This shows that as economic equality within a country increases, digital equality in terms of access to internet also increases.
+
+The scatter graph plot "How price of internet affects access to the internet" shows that as the price of internet (PoI) increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that financial cost is a hindrance to accessing digital resources. This reduces the poor's ability to attain tools and knowledge they might need to raise their standard of living. This holds true across different continental regions, except Asia and to a lesser extent Sub-Saharan Africa (SSA), which can be observed when isolating these groups of plots. In Asia, the majority of countries' PoI is below USD\$4, but the range of population with access to the internet is very large. A possible reason for this is the rural-urban gap, where the country's relatively large rural population lacks access to the ICT infrastructures (Ang, 2020), so in many cases physical access supersedes financial limitations. In SSA there are many countries with both low PoI and low population with access to the internet, which could be due to high levels of poverty, so the relatively low PoI is still unaffordable to many, and civil unrest, which stagnates ICT infrastructure development (Ang, 2020).
+
+The scatter graph "How mean speed of internet affects economic development" shows that in 2020 as internet speed increases, GDP per capita increases. The positive correlation between quality of internet usage (based on efficiency of service) and economic output shows that a faster mean internet speed greatly helps economic productivity. The line labelled "Official bandwidth requirements needed for Zoom to function" at Speed of Internet = 2.5Mpbs (Holslin, 2022) shows that only 2 countries fall below the bare minimum speed needed for Zoom calls, but Holslin also stated that the call quality is still very disruptive at 15Mpbs, indicated by the second line, of which 22 countries do not surpass. This shows there can be 'hidden' disadvantages to low internet speeds. The resource of video conferencing is technically available to the population, but its usefulness is severely limited, which is particularly problematic in 2020 due to social distancing rules requiring Zoom for business and institutional operations.
+
+The stacked bar graph "How economic development affects digital skills'' depicts countries arranged by GDP per capita, and their populations' respective basic digital skills, above basic digital skills, and female's basic digital skills. As GDP per capita increases, overall digital skills increase slightly, hence countries with stronger economic development are generally more equipped to utilise digital resources. With the exception of Croatia, Poland and Germany, gender equality in digital skills also increases as GDP increases as a larger proportion of females have at least basic digital skills, hence inequalities in digital enablement within the country falls when the country has more financial resources.
+
+The pie charts show how the internet benefits people, through increased access to knowledge and information, enhancing education and educational institutions, strengthening democracy and increasing socio-emotional wellbeing. They show that the internet is able to do all these things, people are already aware of these use cases, and people already use the internet for them. They hence show how empowering having good internet can be.
+
+The entire project implemented data pre-processing, by manipulating the dataset and overriding the original .csv file so the plots could be rendered faster, and ISO code manipulation and standardisation. Beyond using the aes() layer, aesthetics were also customised using theme(), scale_x_discrete(), scale_fill_discrete(), str_wrap() and annotate() within ggplot. Attempts at optimization in the interactive world map include implementing a cache system and minimising server workload. The scatter graphs used plotly so anomalies can be visually isolated and regression lines so trends are clearer. \[1084 words\]

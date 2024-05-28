@@ -1,280 +1,86 @@
 ---
 title: "dawn-cheung"
 output: html_document
+title-block-banner: yippienasa.jpg
+format: 
+  html:
+    code-fold: true
+    page-layout: full
+    
+layout: max-width
 ---
 
-*Welcome to the data story of the world's digital inequality, and why it kinda sucks!*
+HELLO CHANGING HEHE
 
-This very webpage is a testament to how far digital technologies have come. All of the data presented collated here, and the tools used for collation (Rstudio, Quarto, various library packages, etc) were accessed and/or downloaded from the internet with a clunky old laptop. Hence, you would think that once this data story is published online, virtually anyone could access it! However, this is clearly not the case. <br><br>
+```{=html}
+<style>
 
-Below is a widget that shows, across space, 3 key factors that affects one's ability to use the internet:
+body {
 
--   physical access to the internet (i.e. the availability of the relevant infocomm technologies, like cell towers and electronic devices),
+background-image: url(result$url) }
 
--   the price of internet, and
-
--   speed of internet (the widget uses download speed which is basically how fast you can receive information from the web). <br>
-
-You might be wondering: "Why go beyond access to the internet? As long as the resource is physically available, isn't that enough?" Well, imagine I opened an uncooked meat store in every country and city in the world. Everyone can buy infinite meat; global hunger solved! But some people don't have access to stoves or spaces to make fires to cook the meat, some people are allergic to/can't eat meat, maybe at some locations I only sell meat scraps that are about to go bad, and perhaps the most obvious caveat: some people simply can't afford the meat, even if its right there in my store. The same goes for the internet.
-
-The access, price and speed of internet are equally important for digital equity. The graphs after this widget will further demonstrate the impact of all 3 factors, but if the widget below still hasn't loaded yet, I think that's a pretty solid case for why internet speed so important.
-
-<iframe height="435" width="110%" frameborder="no" src="https://myshinyappplease.shinyapps.io/MyShinyApp/">
-
-</iframe>
-
-On a more serious note, if the widget still refuses to load, try switching off background processes (eg Youtube, Spotify, Canvas, Discord, etc), then reload the page. Otherwise, try this link instead <a href = https://myshinyappplease.shinyapps.io/MyShinyApp/>https://myshinyappplease.shinyapps.io/MyShinyApp/</a>. As a last resort, restart your computer, use someone elses computer with a higher RAM capacity, or download the application files from <a href = https://github.com/dawn-cheung/dawn-cheung.github.io/tree/main/MyShinyApp>my github</a> and run "app.R" on your local machine.<br><br><br>
-
-```{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-library(tidyverse)
-library(ggplot2)
-library(maps)
-library(sf)
-library(dplyr)
-library(countrycode)
-library(shiny)
-library(ggpubr)
-library(rsconnect)
-library(plotly)
-library(forcats)
-
-#HARDCODE ALL DATASETS INTO ISO3: DONE
-
-# Import the data with coordinates
-world_map <- map_data("world")
-world_map$region <- countrycode(world_map$region, "country.name", "iso3c")
-
-access_dataset <- read.csv("accesstointernet.csv")
-speed_dataset <- read.csv("worldwideInternetSpeed.csv")
-price_dataset <- read.csv("worldwideMobileDataPricing2019to2023.csv")
-
-#filter by year
-accessyear <- access_dataset %>% filter(Dyear == "D2020")
-speedyear <- speed_dataset %>% filter(Dyear == "D2020")
-priceyear <- price_dataset %>% filter(Dyear == "D2020")
-
-econineq <- read.csv("EconomicInequality.csv") #ISO3 used
-desidata <- read.csv("desi-data.csv") #ISO3 used!
-gdpPERCAPITA <- read.csv("gdpPERCAPITA.csv")
-
-econindicator <- econineq %>% 
-  filter(year == 2020) #%>% #MY PROPOSED SOLUTION: use gini ONLY FOR COLOURATION. do NOT use gini values for xy values
-  #filter(scale == "Equivalized")
-gdpPERCAPITA <- gdpPERCAPITA %>% filter(year == 2020)
-
-econindicator$gini <- as.numeric(econindicator$gini)
-gdpPERCAPITA$GDP.per.capita <- as.numeric(gdpPERCAPITA$GDP.per.capita)
-speedyear$values <- as.numeric(speedyear$values)
-priceyear$values <- as.numeric(priceyear$values)
-
-accessscatter <- left_join(econindicator, accessyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = "region")
-accessscatter %>%  #KEEPING
-        drop_na(values) %>%
-  ggplot(data = accessscatter, mapping = aes(x = values, y = log(GDP.per.capita), colour = gini)) +
-  geom_point() + 
-  labs(x = "Percentage of the population accessing the Internet (%)", y = "logarithm of GDP per capita", title = "How access to the internet affects economic output") +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=30))
-```
-
-This scatter graph shows that ***internet usage directly contributes to economic development***. There is a positive correlation between a country's access to the internet and economic output; as the percentage of the population accessing the internet increases, the logarithm of GDP per capita increases.
-
-You'll also see that countries with very high percentage of population with internet access tend to have a lower GINI index. For GINI, a higher number means there is more economic inequality within the country. Hence, ***as economic equality within a country increases, the equality of internet access also increases.***<br><br><br>
-
-```{r PRICEoverACCESS, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 13, fig.width = 14}
-accessyear <- accessyear %>% rename(percent_access = values)
-priceyear <- priceyear %>% rename(price = values)
-speedyear <- speedyear %>% rename(speedyear_values = values)
-
-priceaccessscatter <- left_join(accessyear, priceyear, by = "region") %>%
-  left_join(. , econindicator, by = "region") %>%
-  drop_na(percent_access, price)
-
-
-fit <- lm(percent_access ~ price, data = priceaccessscatter)
-
-distinct_CR = c("ASIA (EX. NEAR EAST)", "BALTICS", "CARIBBEAN", "CENTRAL AMERICA", "CIS(FORMER USSR)", "EASTERN EUROPE", "NEAR EAST", "NORTHERN AFRICA", "NORTHEN AMERICA", "OCEANIA", "SOUTH AMERICA", "SUB-SAHARAN AFRICA", "WESTERN EUROPE")
-diff_data = c()
-#data.frame(percent_access = c(), price= c(), Continental.region= c())
-
-for (q in 1:length(distinct_CR)) {
-  diff_data[[q]] = priceaccessscatter[which(priceaccessscatter$Continental.region == distinct_CR[q]), c("percent_access", "price", "Continental.region")]
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -5px;
+  height: 270px;
+  background-image: yippienasa.jpg;
 }
 
-#palicating plotly's bs
-x_range <- seq(min(priceaccessscatter$price), max(priceaccessscatter$price), length.out = 150)
-x_range <- matrix(x_range, nrow=150, ncol=1)
-xdf <- data.frame(x_range)
-colnames(xdf) = c("price")
+</style>
+```
+```{r startupcode, echo=FALSE, warning=FALSE, message=FALSE}
+#remove this or ur gonna get hacked lol
+#Account Email: dawnc.sols@gmail.com
+#Account ID: 37fe2910-d9ad-438e-a597-1581a1b2a40b
 
-ydf = data.frame(predict(fit, newdata = xdf))
-colnames(ydf) <- c("percent_access")
-xy = data.frame(xdf, ydf)
+library(httr)
+library(jsonlite)
+library(rjson)
+library(htmltools)
 
-graphly = plot_ly(data = priceaccessscatter,
-               x = ~price,
-               y = ~percent_access,
-               text = ~paste("Price: USD$", price, '<br>% Access:', round(percent_access,3)),
-               colors = "Set1")
-for (i in 1:length(distinct_CR)) {
-  graphly = graphly %>% 
-    add_trace(data = diff_data[[i]], x = ~price, y = ~percent_access, type = 'scatter', name = distinct_CR[[i]], mode = 'markers', alpha = 0.65, marker = list(size = 10.2))
+
+myAPI = "m47ay41Ny3UV6MfKyz0E7M4PJfRIOpvhR40fksAu"
+current_date = Sys.Date()
+
+fukyou <- function() {
+  #hepl https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2014-10-01&concept_tags=True
+  newurl = paste0("https://api.nasa.gov/planetary/apod?api_key=", myAPI, "&date=", current_date)
+  res = GET(newurl)
+  resultie <<- fromJSON(rawToChar(res$content))
 }
+fukyou()
 
-t1 <- list(
-  family = "Arial",
-  size = 24.5,
-  color = "darkblue")
-
-graphly = graphly %>%
-  add_lines(data = xy, x = ~price, y = ~percent_access, name = '<b> Regression Line</b> ', mode = 'lines', alpha = 1) %>%
-  layout(title = list(text = "How price of internet affects access to the internet", font = t1, y = 0.99),
-         xaxis = list(title = 'Price of Internet (USD$)'),
-         yaxis = list(title = 'Percentage of the population accessing the Internet (%)'),
-         legend = list(title=list(text='<b> Continental Region </b>')))
-
-graphly
-
-# labs(x = "Price of Internet (USD$)",
-#       y = "Percentage of the population accessing the Internet (%)",
- #      title = "How price of internet affects access to the internet",
- #      colour = "Continental Region")
-accessyear <- accessyear %>% rename(values = percent_access)
-priceyear <- priceyear %>% rename(values = price)
-speedyear <- speedyear %>% rename(values = speedyear_values)
-```
-
-*This is an interactive plot!* Single click on the Continental Region names (eg ASIA (EX. NEAR EAST), BALTICS, etc) to temporarily remove their associated plots in the graph, and double click the names to isolate them in the graph! You can also hover over the points on the plot to see the exact price and percent access associated with the point.
-
-Overall, this scatter graph plot shows that when the price of internet increases, the percentage of the population accessing the internet decreases. The negative correlation between the cost of the internet and access to the internet shows that ***financial cost is a hindrance to accessing digital resources***.
-
-Some notable exceptions to this trend are the countries in Asia, and to a lesser extent Sub-Saharan Africa, which can be observed when isolating these groups of plots. One possible reason for this is that other factors affecting digital usage that supersede affordability, like lack of infocomm infrastructure available, especially for rural parts of the country, and civil unrest making the construction of such infrastructure very difficult. Another possible reason could be that despite the lower prices, many still can not afford internet services due to lower incomes.
-
-<br><br><br>
-
-```{r GDPoverSPEED, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-speedscatter <- left_join(econindicator, speedyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = c("region", "year"))
-speedscatter %>% #KEEPING
-  drop_na(values) %>%
-  ggplot(data = speedscatter, mapping = aes(x = values, y = GDP.per.capita, colour = gini)) +
-  geom_point() + 
-  labs(x = "Speed of Internet (Mpbs)", y = "GDP per capita (USD$)", title = "How economic development affects mean speed of internet") +
-  geom_smooth(method="lm", col="black")  +
-  theme(plot.title=element_text(size=30)) +
-  geom_vline(xintercept=2.5, linetype="dashed", color = "red") +
-  geom_vline(xintercept=15, linetype="dashed", color = "red") +
-  annotate(geom="text", x=3, y=98000, label=str_wrap("Official bandwith requirements needed for Zoom to function", 15), color="black", fontsize=6, hjust = "left", lineheight = 0.8) +
-  annotate(geom="text", x=15.6, y=82900, label=str_wrap("Zoom functions, but experiences buffer & poor video and audio quality", 20), color="black", fontsize=6, hjust = "left", lineheight = 0.8)
-```
-
-This scatter graph shows that in 2020 as internet speed increases, GDP per capita increases. The positive correlation between quality of internet usage (based on efficiency of service) and economic output shows that a ***faster mean internet speed greatly helps economic productivity***.
-
-The red dashed lines at 2.5Mpbs and 15Mpbs show that while all country's mean internet speed is good enough for Zoom, an important video conferencing tool especially in 2020, to technically work, more than 22 countries will still have very poor audio and video qualities, which is not conducive for businesses. This shows there can be 'hidden' disadvantages to low internet speeds-- the resource of video conferencing is available to the population, strictly speaking, but its usefulness is severely limited.
-
-<br><br><br>
-
-```{r desi-tester, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
-accessyear <- access_dataset %>% filter(Dyear == "D2022")
-desi <- desidata %>%
-  filter(period == 2022) %>%
-  group_by(region) %>%
-  mutate(desi_values = sum(values)) %>%
-  ungroup()
-
-desiscatter <- left_join(desi, accessyear, by = "region")  %>%
-  left_join(. , gdpPERCAPITA, by = "region") %>%
-  drop_na(region)
-
-ggplot(desiscatter, aes(fct_reorder(Country.Name, GDP.per.capita), desi_values, fill = indicator)) +
-  geom_col() +
-  labs(x = "Countries ranked by GDP per capita", y = "Digital skill by DESI index", title = "How economic development affects digital skills") +
-  scale_x_discrete(guide = guide_axis(n.dodge = 2)) +
-  scale_fill_discrete(name="DESI indicator (% of population)",
-                     labels=c("1a2: Basic digital skills","1a3: Above basic digital skills","1a6: Females having at least basic skills"))+
-  theme(plot.title=element_text(size=30),
-        axis.text.x = element_text(vjust = 0.5 , size = 7.8))
-accessyear <- access_dataset %>% filter(Dyear == "D2020")
-```
-
-Did you know that the World Wide Web originated from Europe? Despite the EU being the birthplace of the internet, there is still significant digital inequality within the EU. This graph shows that within the EU, ***lower economic development impedes the population's digital skills**. As GDP increases, the proportion of the country's population with basic digital skills, above basic digital skills, and females possessing digital skills increases.* This means that in countries like Bulgaria and Romania, even if you have an internet connection, you might not have the skills to use the digital tools and resources discerningly and/or appropriately, which means you're more likely to fall for online scams and fake news.<br><br><br><br>
-
-<hr>
-
-<br>
-
-So now the question is, how does the internet empower *people,* or in other words,
-
-<h1>How does the internet act as an enabler?</h1>
-
-There are many good things that good internet can bring about. I'd like to bring up 4 benefits in particular: increased access to knowledge and information, enhancing education and educational institutions, strengthening democracy and increasing socio-emotional wellbeing.
-
-<h2>*KNOWLEDGE AND INFORMATION*</h2>
-
-```{r 3i-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-AgreeDisagreePie <- function(percent, my_title, title_size, title_wrap, vee_hee = -1) {
-  percent = as.numeric(percent)
-  data <- data.frame("category" = c('Agree', 'Disagree'), "amount" = c(percent, 100-percent))
-  ggplot(data, aes(x="", y=amount, fill=category)) +
-    geom_bar(stat="identity", width=1) +
-    coord_polar("y") +
-    labs(title = str_wrap(my_title, title_wrap)) +
-    geom_text(aes(label = paste0(amount, "%")), position = position_stack(vjust = 0.5), size = 8.2) +
-    theme_void() +
-    theme(plot.title = element_text(hjust = 0.5, vjust = vee_hee, size = title_size),
-          plot.margin = margin(0, 1, 0, 1, "cm"))
+if (resultie[[1]] == "400") {
+  current_date = current_date - 5
+  fukyou()
+} else if (resultie$media_type != "image") {
+  current_date = current_date - 3
+  fukyou()
 }
+attach(resultie)
+resultie
+tags$body(tags$img(src = resultie$hdurl))
 
-ggarrange(AgreeDisagreePie(73, "Being able to use the internet to access information and express opinions should be a human right", 18, 40, -1),
-          AgreeDisagreePie(60.1, "I use the internet to find information (#1 Most popular use case globally)", 18, 40, -0.1),
-          ncol = 2, nrow = 1,
-          common.legend = TRUE, legend = "bottom",
-          align = "hv")
+bindFillRole(css(border.color = resultie$hdurl))
+
+
+tagz <- div(
+  id = "outer",
+  style = css(height = "600px",
+               border = "3px red solid" ),
+  div(id = "inner",
+      style = css(height = "400px",
+                  border = "3px blue solid" ) ) ) # Inner doesn't fill outer
+if (interactive()) {
+  browsable(tagz)
+}
+  
+tagz <- bindFillRole(tagz, container = TRUE)
+tagz <- bindFillRole(tagz, item = TRUE, .cssSelector = "inner")
+
+
 ```
 
-The internet allows for the free exchange of information, which not only allows us to know publicly available information, which can be on health, public safety, and many other important topics, but also allows us to share our thoughts on this information, and create a open space for discussion and collaboration<br>
-
-<h2>*EDUCATION*</h2>
-
-```{r EDUCATION-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(67, "Using the internet has helped me pursue my education or that of my household members", 18, 40, -1),
-          AgreeDisagreePie(39, "I use the internet for education and study-related purposes (#10 Most popular use case globally)", 18, 40, -1),
-          ncol = 2, nrow = 1,
-          common.legend = TRUE, legend = "bottom",
-          align = "hv")
+```         
 ```
-
-The internet is a great place for us to find out more about educational institutions, including what options are available to us, what financial aid packages we are eligible for, and so on. The internet is also a treasure trove of information that we can gain knowledge from directly!<br>
-
-<h2>*DEMOCRACY*</h2>
-
-```{r DEMOCRACY-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to keep up-to-date with news and events (#3 Most popular use case globally)", 18, 40, -1),
-          AgreeDisagreePie(64, "I feel that social media is effective in getting elected officials to pay attention to issues", 18, 40, -1),
-          ncol = 2, nrow = 1,
-          common.legend = TRUE, legend = "bottom",
-          align = "hv")
-```
-
-The internet also helps uphold democracy. Keeping citizens informed of current issues is critical for them to actively participate in their society's politics. Social media, facilitated by the internet, also keeps politicians accountable and helps to make sure that they are working for the people.<br>
-
-<h2>*SOCIO-EMOTIONAL WELLBEING*</h2>
-
-```{r WELLBEING-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.5, fig.width = 14}
-ggarrange(AgreeDisagreePie(51.8, "I use the internet to stay in touch with friends and family (#2 Most popular use case globally)", 18, 40, -1),
-          AgreeDisagreePie(51.1, "I use the internet to watch videos, TV shows, or movies (#4 Most popular use case globally)", 18, 40, -1),
-          ncol = 2, nrow = 1,
-          common.legend = TRUE, legend = "bottom",
-          align = "hv")
-```
-
-The internet allows social connections to thrive when there are physical barriers between people (eg going overseas to study, during quarantines, etc). It is also a source of entertainment that can be enjoyed at home, which was especially important during Covid-19 lockdowns. Such means of entertainment also helps foster a sense of community between people who like the same media.<br>
-
-<h1>*TO CONCLUDE*</h1>
-
-```{r final-survey-pie-charts, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6.2, fig.width = 14}
-AgreeDisagreePie(66, "The internet has improved life in my country", 32, 50, -0.5)
-```
-
-The internet is an enabler. It allows people to perform feats that would have seemed impossible before the age of the internet, and I firmly believe this power should be given to everyone. An equitable world hence requires equitable access to the internet.<br><br><br>
