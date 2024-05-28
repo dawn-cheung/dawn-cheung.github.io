@@ -1,2 +1,19 @@
 /* css styles */
 
+<style>
+
+body {
+
+background-image: url("{{ background_url }}") }
+
+.quarto-title-banner {
+  margin-block-end: 1rem;
+  position: relative;
+  margin-top: -5px;
+  height: 270px;
+  background-image: url("{{ background_url }}");
+  text-align: center;
+}
+
+
+</style>
