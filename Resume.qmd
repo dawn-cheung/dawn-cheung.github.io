@@ -2,9 +2,10 @@
 title: "Resume"
 ---
 
-<embed title="My CV" src="resume-for-web.pdf" width="100%" height="980" />
+<embed title="My CV" src="resume-for-web.pdf" width="100%" height="690" />
 
-Portfolio: https://tinyurl.com/dawn-editing-proj
-CQT videos I worked on (so far): https://www.youtube.com/watch?v=kVSq2obDxhU&list=PL_hgFtqvvK-OD3tY1OObGvPVtjrtLuZ7q&pp=gAQB 
+Portfolio: `<a href = `{=html}https://tinyurl.com/dawn-editing-proj`>`{=html}https://tinyurl.com/dawn-editing-proj</a>
+
+CQT videos I worked on (so far): `<a href = `{=html}https://www.youtube.com/watch?v=kVSq2obDxhU&list=PL_hgFtqvvK-OD3tY1OObGvPVtjrtLuZ7q&pp=gAQB`>`{=html}https://www.youtube.com/watch?v=kVSq2obDxhU&list=PL_hgFtqvvK-OD3tY1OObGvPVtjrtLuZ7q&pp=gAQB</a>
 
 i will integrate these into this website once i get my act together... just you wait ok
