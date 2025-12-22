@@ -17,6 +17,8 @@ website:
             href: TDD-Sources-Write-Up.qmd
           - text: Scrapped Content
             href: TDD-Scrapped.qmd
+      - text: CV
+        href: Resume.qmd
 
 format:
   html:

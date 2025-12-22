@@ -1,8 +1,8 @@
 ---
-title: "dawn-cheung"
+title: "welcome !!"
 output: html_document
 title-block-banner: yippienasa.jpg
-format: 
+format:
   html:
     code-fold: true
     page-layout: full
@@ -10,7 +10,24 @@ format:
 layout: max-width
 ---
 
-HELLO CHANGING HEHE
+hello welcome to my website!! I'm just here to have fun honestly {{ \< fa face-smile \>}} <wa-icon name="rug"></wa-icon> <i class="fa-face-smile"></i>
+
+```         
+{{< fa face-smile >}}
+{{< fa face-smile >}}
+
+{{<fa face-smile>}}
+```
+
+if that works i'll go "AHHH SO CUTE" otherwise i'll be annoyed!!!
+
+<i class="fa-solid fa-rug"></i>
+
+<i class="fa-regular fa-face-smile"></i>
+
+YAYYYY that only took 15 tries!!!
+
+ok it is LATE so i just wanna, for tonight, staple my CV onto the menu navbar, and push HAHHA
 
 ```{=html}
 <style>
@@ -34,6 +51,7 @@ background-image: url("{{ background_url }}") }
 <div class="dynamic-background">
   </div>
 ```
+
 ```{r startupcode, echo=FALSE, warning=FALSE, message=FALSE}
 #remove this or ur gonna get hacked lol
 #Account Email: dawnc.sols@gmail.com
@@ -69,10 +87,14 @@ tags$body(tags$img(src = resultie$hdurl))
 
 background_url = resultie$hdurl
 
-
+#can use this as a "when was this page last updated lil thing, i think would be cute"
 
 
 ```
 
 ```         
 ```
+
+SPECIAL thank you to this guy and his lecture slides: [https://damien-dupre.github.io/BAA1028/lectures/lecture_1](https://damien-dupre.github.io/BAA1028/lectures/lecture_1#/title-slide)
+
+He doesn't know me. But now I know him. Parasocially. Just stumbled upon the slides; really like the guy. Anyways. This is the most approachable and understandable guide on how to make & customise Quarto websites I could find. I was so close to giving up and re-starting from scratch with a trad. HTML / CSS / JS file structure but now I don't have to!!! Yippie everyone clap now
