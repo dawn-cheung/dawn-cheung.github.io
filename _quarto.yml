@@ -3,6 +3,7 @@ project:
   output-dir: docs
 
 website:
+  page-navigation: true
   title: "Meet Dawn Cheung"
   navbar:
     search: true
@@ -17,8 +18,22 @@ website:
             href: TDD-Sources-Write-Up.qmd
           - text: Scrapped Content
             href: TDD-Scrapped.qmd
+      - text: Work
+        href: talks.qmd
+      - text: Play
+        href: play_start.qmd
       - text: CV
         href: Resume.qmd
+
+  sidebar: 
+    - title: Work
+      contents:
+        - talks.qmd
+        - work_proj/index.qmd
+    - title: Play
+      contents:
+        - play_start.qmd
+        - play_proj/index.qmd
         
 
 format:

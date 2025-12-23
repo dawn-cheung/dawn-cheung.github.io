@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "welcome !!",
     "section": "",
-    "text": "hello welcome to my website!! I’m just here to have fun honestly {{ &lt; fa face-smile &gt;}}  \n\n\n\n\nif that works i’ll go “AHHH SO CUTE” otherwise i’ll be annoyed!!!\n\n\nYAYYYY that only took 15 tries!!!\nok it is LATE so i just wanna, for tonight, staple my CV onto the menu navbar, and push HAHHA\n\n\n\n  \n\n\n$copyright\n[1] \"David Cruz\"\n\n$date\n[1] \"2025-12-18\"\n\n$explanation\n[1] \"Jupiter, the Solar System's ruling gas giant, is the brightest celestial beacon at the center of this composite night skyscape. The scene was constructed by selecting the 40 exposures containing meteors from about 500 exposures made on the nights of December 13 and 14, near peak activity for this year's annual Geminid meteor shower. With each selected exposure registered in the night sky above Alentejo, Portugal, planet Earth, it does look like the meteors are streaming away from Jupiter. But the apparent radiant of the Geminid meteors is actually closer to bright star Castor, in the shower's eponymous constellation Gemini. In this frame that's just a little above and left of the Solar System's most massive planet. Still, the parent body of Geminid meteors is known to be rocky, near-Earth asteroid 3200 Phaethon. And the orbit of Phaethon itself is influenced by the gravitational attraction exerted by massive Jupiter, in concert with planets of the inner Solar System.\"\n\n$hdurl\n[1] \"https://apod.nasa.gov/apod/image/2512/GeminidsJupiterCruz.jpg\"\n\n$media_type\n[1] \"image\"\n\n$service_version\n[1] \"v1\"\n\n$title\n[1] \"Jupiter and the Meteors from Gemini\"\n\n$url\n[1] \"https://apod.nasa.gov/apod/image/2512/GeminidsJupiterCruz1024.jpg\"\n\n\n\n\n\n\n\n\nSPECIAL thank you to this guy and his lecture slides: https://damien-dupre.github.io/BAA1028/lectures/lecture_1\nHe doesn’t know me. But now I know him. Parasocially. Just stumbled upon the slides; really like the guy. Anyways. This is the most approachable and understandable guide on how to make & customise Quarto websites I could find. I was so close to giving up and re-starting from scratch with a trad. HTML / CSS / JS file structure but now I don’t have to!!! Yippie everyone clap now"
+    "text": "Hello! Welcome to my little internet hole  I aim to use this space to share my past projects, and put a little speck of me onto the vast expense of the world wide web      \n\n\n\n\n\n  \n\n\n\n\n\n\np.s. if you’ve been redirected from this google drive link, don’t worry, you’re in the right place! I’ve just been… redecorating. Or making it easier to scan through than a wall of files, at least.\nYou can find the exact same videos / graphics (and more!) in the “Work” and “Play” tabs. The “Work” tab contains more official projects done for school / work, while the “Play” tab is for projects that are less polished, and done more for my own enjoyment & exploration than anything else. \np.p.s. SPECIAL thank you to this guy and his lecture slides: https://damien-dupre.github.io/BAA1028/lectures/lecture_1\nHe doesn’t know me. But now I know him. Parasocially. Just stumbled upon the slides; really like the guy. Anyways. This is the most approachable and understandable guide on how to make & customise Quarto websites I could find. I was so close to giving up and re-starting from scratch with a trad. HTML / CSS / JS file structure but now I don’t have to!!! Yippie everyone clap now"
   },
   {
     "objectID": "about.html",
@@ -47,5 +47,16 @@
     "title": "Resume",
     "section": "",
     "text": "Portfolio: https://tinyurl.com/dawn-editing-proj\nCQT videos I worked on (so far): https://www.youtube.com/watch?v=kVSq2obDxhU&list=PL_hgFtqvvK-OD3tY1OObGvPVtjrtLuZ7q&pp=gAQB\ni will integrate these into this website once i get my act together… just you wait ok"
+  },
+  {
+    "objectID": "work_proj/index.html",
+    "href": "work_proj/index.html",
+    "title": "Work Projects",
+    "section": "",
+    "text": "incl acad\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nproj1\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nproj2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nproj3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Work",
+      "Work Projects"
+    ]
   }
 ]

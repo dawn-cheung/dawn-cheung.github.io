@@ -10,24 +10,12 @@ format:
 layout: max-width
 ---
 
-hello welcome to my website!! I'm just here to have fun honestly {{ \< fa face-smile \>}} <wa-icon name="rug"></wa-icon> <i class="fa-face-smile"></i>
+Hello! Welcome to my little internet hole <i class="fa-regular fa-face-smile-beam"></i> I aim to use this space to share my past projects, and put a little speck of me onto the vast expense of the world wide web <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-person-drowning"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i>
 
 ```         
-{{< fa face-smile >}}
-{{< fa face-smile >}}
-
-{{<fa face-smile>}}
 ```
 
-if that works i'll go "AHHH SO CUTE" otherwise i'll be annoyed!!!
-
-<i class="fa-solid fa-rug"></i>
-
-<i class="fa-regular fa-face-smile"></i>
-
-YAYYYY that only took 15 tries!!!
-
-ok it is LATE so i just wanna, for tonight, staple my CV onto the menu navbar, and push HAHHA
+<i class="fa-solid fa-pserson-drowning"></i>
 
 ```{=html}
 <style>
@@ -39,7 +27,7 @@ background-image: url("{{ background_url }}") }
 .quarto-title-banner {
   margin-block-end: 1rem;
   position: relative;
-  margin-top: -5px;
+  margin-top: -30px;
   height: 270px;
   background-image: url("{{ background_url }}");
   text-align: center;
@@ -53,6 +41,8 @@ background-image: url("{{ background_url }}") }
 ```
 
 ```{r startupcode, echo=FALSE, warning=FALSE, message=FALSE}
+# will fix this one day sigh
+
 #remove this or ur gonna get hacked lol
 #Account Email: dawnc.sols@gmail.com
 #Account ID: 37fe2910-d9ad-438e-a597-1581a1b2a40b
@@ -61,33 +51,10 @@ library(httr)
 library(jsonlite)
 library(rjson)
 library(htmltools)
+fontawesome::fa_html_dependency()
 
 
-myAPI = "m47ay41Ny3UV6MfKyz0E7M4PJfRIOpvhR40fksAu"
-current_date = Sys.Date()
 
-fukyou <- function() {
-  #hepl https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY&date=2014-10-01&concept_tags=True
-  newurl = paste0("https://api.nasa.gov/planetary/apod?api_key=", myAPI, "&date=", current_date)
-  res = GET(newurl)
-  resultie <<- fromJSON(rawToChar(res$content))
-}
-fukyou()
-
-if (resultie[[1]] == "400") {
-  current_date = current_date - 5
-  fukyou()
-} else if (resultie$media_type != "image") {
-  current_date = current_date - 3
-  fukyou()
-}
-attach(resultie)
-resultie
-tags$body(tags$img(src = resultie$hdurl))
-
-background_url = resultie$hdurl
-
-#can use this as a "when was this page last updated lil thing, i think would be cute"
 
 
 ```
@@ -95,6 +62,10 @@ background_url = resultie$hdurl
 ```         
 ```
 
-SPECIAL thank you to this guy and his lecture slides: [https://damien-dupre.github.io/BAA1028/lectures/lecture_1](https://damien-dupre.github.io/BAA1028/lectures/lecture_1#/title-slide)
+p.s. if you've been redirected from `<a href =`{=html}https://drive.google.com/drive/folders/1F0JPeF3S7A6dY621TJ5rCcIuw9SP7olN`>`{=html}this google drive link</a>, don't worry, you're in the right place! I've just been... *redecorating*. Or making it easier to scan through than a wall of files, at least.
+
+You can find the exact same videos / graphics (and more!) in the "Work" and "Play" tabs. The "Work" tab contains more official projects done for school / work, while the "Play" tab is for projects that are less polished, and done more for my own enjoyment & exploration than anything else. <br><br>
+
+p.p.s. SPECIAL thank you to this guy and his lecture slides: [https://damien-dupre.github.io/BAA1028/lectures/lecture_1](https://damien-dupre.github.io/BAA1028/lectures/lecture_1#/title-slide)
 
 He doesn't know me. But now I know him. Parasocially. Just stumbled upon the slides; really like the guy. Anyways. This is the most approachable and understandable guide on how to make & customise Quarto websites I could find. I was so close to giving up and re-starting from scratch with a trad. HTML / CSS / JS file structure but now I don't have to!!! Yippie everyone clap now
