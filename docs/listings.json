@@ -6,5 +6,25 @@
       "/work_proj/proj2.html",
       "/work_proj/proj3.html"
     ]
+  },
+  {
+    "listing": "/graphics_proj/index.html",
+    "items": [
+      "/graphics_proj/graphics_start.html",
+      "/graphics_proj/NUSGDG Pubs.html"
+    ]
+  },
+  {
+    "listing": "/videos_proj/index.html",
+    "items": [
+      "/videos_proj/videos_start.html",
+      "/videos_proj/proj1.html",
+      "/videos_proj/proj2.html",
+      "/videos_proj/proj3.html"
+    ]
+  },
+  {
+    "listing": "/misc_proj/index.html",
+    "items": []
   }
 ]
