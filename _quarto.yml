@@ -18,11 +18,11 @@ website:
             href: TDD-Sources-Write-Up.qmd
           - text: Scrapped Content
             href: TDD-Scrapped.qmd
-      - text: Viral Videos
+      - text: Videos
         href: videos_proj
-      - text: Great Graphics
+      - text: Graphics
         href: graphics_proj
-      - text: Leadership / Legendary Projects
+      - text: Leadership Projects
         href: misc_proj
       - text: CV
         href: Resume.qmd
