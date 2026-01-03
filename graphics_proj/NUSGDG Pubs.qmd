@@ -3,13 +3,21 @@ title: "Publicity Executive @ NUS Game Development Group"
 format: html
 ---
 
-<h2>Keywords: Branding, Social Media Strategy, Graphic Design, Publicity Collateral </h2>
+<h2>Keywords: Branding, Social Media Strategy, Graphic Design, Publicity Collateral</h2>
 
 <h3>Gamecraft! 2024</h3>
 
 Gamecraft! was my CCA's annual year-end game jam, where tertiary students across Singapore teamed up to develop a fully functional game in a week. We decided on a cute space-alien theme, with motifs of gears (since the Gamecraft! logo featured a gear and wrench).
 
 This is what I came up with!
+
+<img src= "judges 1 header.png" alt="judges gamecraft"></img>
+
+```         
+{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+
+knitr::include_graphics("NUSGDGSocMed/judges 1 header.png")
+```
 
 <br>
 
