@@ -20,6 +20,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -176,8 +210,22 @@ background-size: cover;
 
 
 <p>Hello! Welcome to my little internet hole <i class="fa-regular fa-face-smile-beam"></i> I aim to use this space to share my past projects, and put a little speck of me onto the vast expense of the world wide web <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-person-drowning"></i> <i class="fa-solid fa-water"></i> <i class="fa-solid fa-water"></i></p>
-<pre><code></code></pre>
-<p><i class="fa-solid fa-pserson-drowning"></i></p>
+<p><br></p>
+<p>If you’ve been redirected from <a href="https://drive.google.com/drive/folders/1F0JPeF3S7A6dY621TJ5rCcIuw9SP7olN">this google drive link</a>, don’t worry, you’re in the right place! I’ve just been… <em>redecorating</em>. Or making it easier to scan through than a wall of files, at least.</p>
+<p>You can find the exact same videos / graphics (and more!) in the “Videos” and “Graphics” tabs. Some are official projects done for school / work, while others are less polished, done more for my own enjoyment &amp; exploration than anything else. While employment is on my mind when making this, I also want to have fun with this free URL (thank you github student plan), so I don’t want to make this tooo formal tehee. Hopefully regardless of what I post here, it’ll show my capabilities one way or another!</p>
+<div class="cell">
+<details class="code-fold">
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>knitr<span class="sc">::</span><span class="fu">include_graphics</span>(<span class="st">"microsoft.png"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="microsoft.png" class="img-fluid figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
 <style>
 
 body {
@@ -203,13 +251,13 @@ background-image: url("{{ background_url }}") }
 
 </div>
 </div>
-<pre><code></code></pre>
-<iframe width="110" height="200" src="https://www.myinstants.com/instant/dramatic-tiktok-63207/embed/" frameborder="0" scrolling="no">
-</iframe>
-<p>p.s. if you’ve been redirected from <a href="https://drive.google.com/drive/folders/1F0JPeF3S7A6dY621TJ5rCcIuw9SP7olN">this google drive link</a>, don’t worry, you’re in the right place! I’ve just been… <em>redecorating</em>. Or making it easier to scan through than a wall of files, at least.</p>
-<p>You can find the exact same videos / graphics (and more!) in the “Work” and “Play” tabs. The “Work” tab contains more official projects done for school / work, while the “Play” tab is for projects that are less polished, and done more for my own enjoyment &amp; exploration than anything else. <br><br></p>
-<p>p.p.s. SPECIAL thank you to this guy and his lecture slides: <a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_1#/title-slide">https://damien-dupre.github.io/BAA1028/lectures/lecture_1</a></p>
+<p><br></p>
+<p>p.s. SPECIAL thank you to this guy and his lecture slides: <a href="https://damien-dupre.github.io/BAA1028/lectures/lecture_1#/title-slide">https://damien-dupre.github.io/BAA1028/lectures/lecture_1</a></p>
 <p>He doesn’t know me. But now I know him. Parasocially. Just stumbled upon the slides; really like the guy. Anyways. This is the most approachable and understandable guide on how to make &amp; customise Quarto websites I could find. I was so close to giving up and re-starting from scratch with a trad. HTML / CSS / JS file structure but now I don’t have to!!! Yippie everyone clap now</p>
+<p><br><br><br><br><br><br><br><br><br></p>
+<p>Scrolled this far? Here, have a fun button to press &gt;:)</p>
+<iframe width="110" height="200" src="https://www.myinstants.com/instant/dramatic-tiktok-63207/embed/" frameborder="1" scrolling="no">
+</iframe>
 
 
 

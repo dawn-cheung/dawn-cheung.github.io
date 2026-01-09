@@ -11,12 +11,13 @@ Gamecraft! was my CCA's annual year-end game jam, where tertiary students across
 
 This is what I came up with!
 
-<img src= "judges 1 header.png" alt="judges gamecraft"></img>
-
-```         
-{r unbroken, eval=TRUE, echo=FALSE, warning=FALSE, message=FALSE, fig.height = 6, fig.width = 14}
+```{r layout-ncol=2}
 
 knitr::include_graphics("NUSGDGSocMed/judges 1 header.png")
+
+```
+
+```         
 ```
 
 <br>
